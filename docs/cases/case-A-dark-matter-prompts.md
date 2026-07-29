@@ -1,0 +1,35 @@
+# Case A — Dark matter: prompts
+
+Three arms, per `protocol.md`. The task core is strictly identical in all three, only the scaffolding varies. The system prompt is in `protocol.md` and is likewise identical across arms.
+
+## Arm A — bare
+
+```
+Identify the main research programmes currently competing to explain dark matter. For each, set out where the programme stands today. Finish by ranking them from the programme in the best current shape to the worst, with a brief justification.
+```
+
+## Arm B — written placebo
+
+```
+Identify the main research programmes currently competing to explain dark matter. For each, set out where the programme stands today. Finish by ranking them from the programme in the best current shape to the worst, with a brief justification.
+
+Work the ranking out carefully rather than going on reputation. Consider how good the available evidence actually is and how much of it there is; whether the programme hangs together and sits well with the rest of physics; whether it is still producing results or has been quiet for a long time; how many independent groups and instruments are involved, and whether they are spread across institutions and countries or concentrated in one place; whether the programme made predictions that were later borne out, or has mainly been adjusted after the fact to fit what was found; and whether serious rivals have been properly considered. Weigh these against one another rather than treating any single one as decisive, consider the best objection to your own ranking, and say where you are unsure.
+
+For each programme, end with:
+
+**Verdict: [solid / defensible with reservations / fragile / inconclusive-by-evidence / inconclusive-by-balance]**
+**Principal problem (if fragile or worse):** name it in a few words; "none" otherwise.
+
+Strongest: ...
+Weakest: ...
+Worth checking further: ...
+Best objection to this verdict: ...
+```
+
+## Arm C — apparatus
+
+```
+Identify the main research programmes currently competing to explain dark matter. For each, set out where the programme stands today. Finish by ranking them from the programme in the best current shape to the worst, with a brief justification.
+
+Apply the epistemological apparatus.
+```

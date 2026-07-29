@@ -1,0 +1,15 @@
+# Dependencies
+node_modules/
+
+# Secrets — the API key comes from the environment, never from the repo
+.env
+
+# Editor/OS noise
+.DS_Store
+*.tmp
+
+# Transient campaign lock (left behind only by a crash)
+runs/**/.lock
+
+# NOTE: runs/ is deliberately NOT ignored — the archived runs are the
+# experiment's primary data and belong in version control.

@@ -1,0 +1,30 @@
+{
+  "name": "apparatus-trial-harness",
+  "version": "0.1.0",
+  "private": true,
+  "description": "CLI harness for a controlled A/B/C prompt experiment against the Anthropic Messages API — collects and archives runs, nothing else.",
+  "type": "module",
+  "scripts": {
+    "harness": "tsx src/cli.ts",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "lint": "oxlint",
+    "fmt": "oxfmt src tests",
+    "fmt:check": "oxfmt --check src tests",
+    "check": "npm run typecheck && npm run lint && npm run fmt:check && npm run test"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.115.0"
+  },
+  "devDependencies": {
+    "@types/node": "^26.1.2",
+    "oxfmt": "^0.61.0",
+    "oxlint": "^1.76.0",
+    "tsx": "^4.23.1",
+    "typescript": "^7.0.2",
+    "vitest": "^4.1.10"
+  },
+  "engines": {
+    "node": ">=20.11"
+  }
+}
