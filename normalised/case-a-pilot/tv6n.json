@@ -1,0 +1,219 @@
+{
+  "schema": "normalised-run/1",
+  "id": "tv6n",
+  "case": "case-a-pilot",
+  "programme_count": 7,
+  "programmes": [
+    {
+      "position": 1,
+      "label": "WIMPs / weak-scale thermal relics",
+      "verdict": "fragile",
+      "verdict_note": "",
+      "principal_problem": "the candidate is relocated to evade successive exclusions rather than predicted"
+    },
+    {
+      "position": 2,
+      "label": "Axions and ALPs (QCD axion, including the post-inflation window)",
+      "verdict": "defensible with reservations",
+      "verdict_note": "closest to solid; residual risk is the breadth of unexplored parameter space",
+      "principal_problem": "none"
+    },
+    {
+      "position": 3,
+      "label": "Light hidden sectors (sub-GeV dark matter, freeze-in, dark photons)",
+      "verdict": "defensible with reservations",
+      "verdict_note": "",
+      "principal_problem": "benchmark models proliferate, tuned to what the next instrument can reach"
+    },
+    {
+      "position": 4,
+      "label": "Non-minimal dark matter microphysics (SIDM / ETHOS)",
+      "verdict": "defensible with reservations",
+      "verdict_note": "",
+      "principal_problem": "evidence runs through one instrument family and one simulation frame"
+    },
+    {
+      "position": 5,
+      "label": "Primordial black holes",
+      "verdict": "defensible with reservations",
+      "verdict_note": "reservation is fine-tuning of the primordial source spectrum",
+      "principal_problem": "none"
+    },
+    {
+      "position": 6,
+      "label": "Sterile neutrinos / keV warm dark matter",
+      "verdict": "fragile",
+      "verdict_note": "",
+      "principal_problem": "production mechanisms swapped to evade successive bounds without shared gain"
+    },
+    {
+      "position": 7,
+      "label": "Modified gravity / modified inertia (MOND family)",
+      "verdict": "inconclusive-by-balance",
+      "verdict_note": "trending fragile",
+      "principal_problem": "a small, polarised community unable to settle its own decisive test"
+    }
+  ],
+  "ranking": [
+    "Axions and ALPs (QCD axion, including the post-inflation window)",
+    "Primordial black holes",
+    "Non-minimal dark matter microphysics (SIDM / ETHOS)",
+    "Light hidden sectors (sub-GeV dark matter, freeze-in, dark photons)",
+    "WIMPs / weak-scale thermal relics",
+    "Sterile neutrinos / keV warm dark matter",
+    "Modified gravity / modified inertia (MOND family)"
+  ],
+  "source_count": 30,
+  "sources": [
+    {
+      "ref": "Bertone, Hooper & Silk, \"Particle dark matter: evidence, candidates and constraints\", Phys. Rept. 405, 2005",
+      "programme": "general",
+      "claim": "standard framing of the evidence for dark matter and of the candidate space"
+    },
+    {
+      "ref": "Cirelli, Strumia & Zupan, \"Dark Matter\", arXiv:2406.01705, 2024",
+      "programme": "general",
+      "claim": "standard framing of the evidence for dark matter and of the candidate space"
+    },
+    {
+      "ref": "LZ collaboration, Phys. Rev. Lett., 2025",
+      "programme": "WIMPs / weak-scale thermal relics",
+      "claim": "a combined 280 live-day exposure returns no signal and sets the leading spin-independent limit"
+    },
+    {
+      "ref": "LBNL Physics Division announcement, July 2025",
+      "programme": "WIMPs / weak-scale thermal relics",
+      "claim": "announces the same null direct-detection result"
+    },
+    {
+      "ref": "XENONnT, Phys. Rev. Lett. 135, 221003, 2025",
+      "programme": "WIMPs / weak-scale thermal relics",
+      "claim": "a 3.1 tonne-year search finds no signal"
+    },
+    {
+      "ref": "\"Dark matter direct detection: status, results and future plans\", arXiv:2512.23039, 2025",
+      "programme": "WIMPs / weak-scale thermal relics",
+      "claim": "the field is running towards design exposures and the irreducible neutrino background"
+    },
+    {
+      "ref": "ADMX collaboration, \"Search for Axion Dark Matter from 1.1 to 1.3 GHz with ADMX\", arXiv:2504.07279 / Phys. Rev. Lett., 2025",
+      "programme": "Axions and ALPs (QCD axion, including the post-inflation window)",
+      "claim": "microwave-cavity scans continue into new mass ranges"
+    },
+    {
+      "ref": "CERN Courier, \"In pursuit of the post-inflation axion\", January 2026",
+      "programme": "Axions and ALPs (QCD axion, including the post-inflation window)",
+      "claim": "ALPHA Phase I begins physics data in 2026; ALPHA and MADMAX target the high-mass niche"
+    },
+    {
+      "ref": "Zurek, \"Dark Matter Candidates of a Very Low Mass\", Annu. Rev. Nucl. Part. Sci. 74, 2024, arXiv:2401.03025",
+      "programme": "Light hidden sectors (sub-GeV dark matter, freeze-in, dark photons)",
+      "claim": "reviews very low mass dark matter candidates"
+    },
+    {
+      "ref": "\"New benchmarks for direct detection of freeze-in dark matter in vector portal models\", arXiv:2603.16863, 2026",
+      "programme": "Light hidden sectors (sub-GeV dark matter, freeze-in, dark photons)",
+      "claim": "sets benchmark targets for freeze-in dark matter in vector portal models"
+    },
+    {
+      "ref": "arXiv:2601.13949, 2026",
+      "programme": "Light hidden sectors (sub-GeV dark matter, freeze-in, dark photons)",
+      "claim": "detection relies on new technologies including mineral detection"
+    },
+    {
+      "ref": "Nadler, Kong, Yang & Yu, \"SIDM Concerto\", arXiv:2503.10748, 2025",
+      "programme": "Non-minimal dark matter microphysics (SIDM / ETHOS)",
+      "claim": "public simulation suites for self-interacting dark matter are now available"
+    },
+    {
+      "ref": "\"Mergers Matter\", arXiv:2606.02566, 2026",
+      "programme": "Non-minimal dark matter microphysics (SIDM / ETHOS)",
+      "claim": "gravothermal collapse in dwarf haloes is modelled together with mergers"
+    },
+    {
+      "ref": "JHEP 03 (2026) 104",
+      "programme": "Non-minimal dark matter microphysics (SIDM / ETHOS)",
+      "claim": "particle models generating resonant self-scattering are being built"
+    },
+    {
+      "ref": "\"Possible evidence of self-interacting dark matter, or not\", A&A, 2026",
+      "programme": "Non-minimal dark matter microphysics (SIDM / ETHOS)",
+      "claim": "cluster-scale evidence is contested, with cuspy inner profiles reported in the Bullet cluster"
+    },
+    {
+      "ref": "Veermae et al., \"Primordial black holes: constraints, potential evidence and prospects\", arXiv:2601.06024, 2026",
+      "programme": "Primordial black holes",
+      "claim": "surveys the surviving asteroid-mass window and the claimed hints"
+    },
+    {
+      "ref": "arXiv:2607.17338, 2026",
+      "programme": "Primordial black holes",
+      "claim": "fast radio burst microlensing tightens the constraints"
+    },
+    {
+      "ref": "De la Torre Luque, Koechler & Balaji, Phys. Rev. D 110, 123022, 2024",
+      "programme": "Primordial black holes",
+      "claim": "refines the Galactic evaporation bounds"
+    },
+    {
+      "ref": "JCAP 2026(06)092",
+      "programme": "Primordial black holes",
+      "claim": "CMB limits follow from dark matter clustering around primordial black holes"
+    },
+    {
+      "ref": "Phys. Rev. D 113, 075018, 2026",
+      "programme": "Primordial black holes",
+      "claim": "underground detectors can see boosted dark matter from primordial black hole evaporation"
+    },
+    {
+      "ref": "\"Asteroid-mass Primordial Black Holes as Dark Matter from Supersymmetry\", arXiv:2604.26005, 2026",
+      "programme": "Primordial black holes",
+      "claim": "model-building connects the surviving window to fundamental physics"
+    },
+    {
+      "ref": "Rudakovskyi & Iakubovskyi, MNRAS 483, 4080, 2019",
+      "programme": "Sterile neutrinos / keV warm dark matter",
+      "claim": "reionisation grounds once favoured the 3.5 keV line interpretation"
+    },
+    {
+      "ref": "Dessert, Rodd & Safdi, \"The dark matter interpretation of the 3.5 keV line is inconsistent with blank-sky observations\", Science, 2020",
+      "programme": "Sterile neutrinos / keV warm dark matter",
+      "claim": "blank-sky observations undercut the 3.5 keV line"
+    },
+    {
+      "ref": "PTEP 2025(12) 123B12",
+      "programme": "Sterile neutrinos / keV warm dark matter",
+      "claim": "keV steriles are modelled in a left-right symmetric model with modular symmetry"
+    },
+    {
+      "ref": "McGaugh, Lelli & Schombert, Phys. Rev. Lett., 2016",
+      "programme": "Modified gravity / modified inertia (MOND family)",
+      "claim": "the radial acceleration relation and baryonic Tully-Fisher relation are galaxy-scale predictive successes"
+    },
+    {
+      "ref": "Pittordis & Sutherland, arXiv:2504.07569, 2025",
+      "programme": "Modified gravity / modified inertia (MOND family)",
+      "claim": "wide-binary analysis with realistic triple modelling prefers general relativity"
+    },
+    {
+      "ref": "Pittordis & Sutherland, arXiv:2205.02846",
+      "programme": "Modified gravity / modified inertia (MOND family)",
+      "claim": "earlier wide-binary analysis by the same authors"
+    },
+    {
+      "ref": "\"Confirmation of MOND-type Gravitational Anomaly at Low Acceleration\", arXiv:2607.14450, 2026",
+      "programme": "Modified gravity / modified inertia (MOND family)",
+      "claim": "a re-analysis claims a low-acceleration anomaly and blames a 61-binary sample for the null result"
+    },
+    {
+      "ref": "Cookson et al., 2026",
+      "programme": "Modified gravity / modified inertia (MOND family)",
+      "claim": "reports a null wide-binary result"
+    },
+    {
+      "ref": "C3PO wide binaries, arXiv:2512.19652",
+      "programme": "Modified gravity / modified inertia (MOND family)",
+      "claim": "independent high-precision radial-velocity tests are in progress"
+    }
+  ]
+}

@@ -1,0 +1,200 @@
+{
+  "schema": "normalised-run/1",
+  "id": "277k",
+  "case": "case-a-pilot",
+  "programme_count": 9,
+  "programmes": [
+    {
+      "position": 1,
+      "label": "Weak-scale WIMPs (thermal relics, 5 GeV to 100 TeV)",
+      "verdict": "not stated",
+      "verdict_note": "",
+      "principal_problem": "not stated"
+    },
+    {
+      "position": 2,
+      "label": "QCD axions and axion-like particles (neV to meV)",
+      "verdict": "not stated",
+      "verdict_note": "",
+      "principal_problem": "not stated"
+    },
+    {
+      "position": 3,
+      "label": "Light / sub-GeV dark sectors (MeV to GeV, hidden mediators)",
+      "verdict": "not stated",
+      "verdict_note": "",
+      "principal_problem": "not stated"
+    },
+    {
+      "position": 4,
+      "label": "Self-interacting dark matter (SIDM) and other cold-dark-matter-plus variants",
+      "verdict": "not stated",
+      "verdict_note": "",
+      "principal_problem": "not stated"
+    },
+    {
+      "position": 5,
+      "label": "Ultralight / wave (fuzzy) dark matter (1e-22 to 1e-18 eV)",
+      "verdict": "not stated",
+      "verdict_note": "",
+      "principal_problem": "not stated"
+    },
+    {
+      "position": 6,
+      "label": "keV sterile neutrinos / warm dark matter",
+      "verdict": "not stated",
+      "verdict_note": "",
+      "principal_problem": "not stated"
+    },
+    {
+      "position": 7,
+      "label": "Primordial black holes / macroscopic dark matter",
+      "verdict": "not stated",
+      "verdict_note": "",
+      "principal_problem": "not stated"
+    },
+    {
+      "position": 8,
+      "label": "Modified gravity / no dark matter (MOND and descendants)",
+      "verdict": "not stated",
+      "verdict_note": "",
+      "principal_problem": "not stated"
+    },
+    {
+      "position": 9,
+      "label": "Gravitationally coupled relics",
+      "verdict": "not stated",
+      "verdict_note": "",
+      "principal_problem": "not stated"
+    }
+  ],
+  "ranking": [
+    "QCD axions and axion-like particles (neV to meV)",
+    "Light / sub-GeV dark sectors (MeV to GeV, hidden mediators)",
+    "Weak-scale WIMPs (thermal relics, 5 GeV to 100 TeV)",
+    "Self-interacting dark matter (SIDM) and other cold-dark-matter-plus variants",
+    "Primordial black holes / macroscopic dark matter",
+    "Ultralight / wave (fuzzy) dark matter (1e-22 to 1e-18 eV)",
+    "keV sterile neutrinos / warm dark matter",
+    "Modified gravity / no dark matter (MOND and descendants)",
+    "Gravitationally coupled relics"
+  ],
+  "source_count": 23,
+  "sources": [
+    {
+      "ref": "Planck 2018 CMB results, A&A, 2020",
+      "programme": "general",
+      "claim": "the clustering component is about five times the baryon density"
+    },
+    {
+      "ref": "Clowe et al., \"A direct empirical proof of the existence of dark matter\", ApJ, 2006",
+      "programme": "general",
+      "claim": "the component is spatially separable from baryons in cluster collisions"
+    },
+    {
+      "ref": "LZ Collaboration, Phys. Rev. Lett., July 2025",
+      "programme": "Weak-scale WIMPs (thermal relics, 5 GeV to 100 TeV)",
+      "claim": "a 4.2 tonne-year analysis finds nothing and sets limits of order 1e-48 cm2 near 40 GeV"
+    },
+    {
+      "ref": "LZ/LLNL and SURF releases, December 2025",
+      "programme": "Weak-scale WIMPs (thermal relics, 5 GeV to 100 TeV)",
+      "claim": "limits are pushed below 9 GeV and solar boron-8 neutrinos are detected"
+    },
+    {
+      "ref": "XENON Collaboration, IDM 2026, Zaragoza",
+      "programme": "Weak-scale WIMPs (thermal relics, 5 GeV to 100 TeV)",
+      "claim": "about 6.8 tonne-years accumulated, with coherent elastic scattering of solar boron-8 neutrinos observed"
+    },
+    {
+      "ref": "XENON Collaboration, light dark matter in the neutrino fog paper, PRL Selection of the Year, February 2026",
+      "programme": "Weak-scale WIMPs (thermal relics, 5 GeV to 100 TeV)",
+      "claim": "the experiments have entered the neutrino fog that will floor nuclear-recoil searches"
+    },
+    {
+      "ref": "Ackermann et al., Phys. Rev. Lett., 2015",
+      "programme": "Weak-scale WIMPs (thermal relics, 5 GeV to 100 TeV)",
+      "claim": "Fermi-LAT dwarf-galaxy limits cut below the thermal cross-section below about 100 GeV"
+    },
+    {
+      "ref": "Bartels et al., Phys. Rev. Lett., 2016",
+      "programme": "Weak-scale WIMPs (thermal relics, 5 GeV to 100 TeV)",
+      "claim": "the Galactic-centre gamma-ray excess is well explained by millisecond pulsars"
+    },
+    {
+      "ref": "Macias et al., Nature Astronomy, 2018",
+      "programme": "Weak-scale WIMPs (thermal relics, 5 GeV to 100 TeV)",
+      "claim": "the Galactic-centre gamma-ray excess is well explained by millisecond pulsars"
+    },
+    {
+      "ref": "ADMX Collaboration, Phys. Rev. Lett. 127, 261803, 2021, and follow-ups",
+      "programme": "QCD axions and axion-like particles (neV to meV)",
+      "claim": "DFSZ-model sensitivity is reached in narrow windows around 2.7 to 4.2 micro-eV"
+    },
+    {
+      "ref": "CERN Courier, \"In pursuit of the post-inflation axion\", January 2026",
+      "programme": "QCD axions and axion-like particles (neV to meV)",
+      "claim": "MADMAX is on track for DFSZ/KSVZ sensitivity across 40 to 400 micro-eV"
+    },
+    {
+      "ref": "Tulin & Yu, Physics Reports, 2018",
+      "programme": "Self-interacting dark matter (SIDM) and other cold-dark-matter-plus variants",
+      "claim": "sets out the framework for dark-sector self-scattering"
+    },
+    {
+      "ref": "Rogers & Peiris, Phys. Rev. Lett., 2021",
+      "programme": "Ultralight / wave (fuzzy) dark matter (1e-22 to 1e-18 eV)",
+      "claim": "Lyman-alpha forest data require masses orders of magnitude above 1e-22 eV"
+    },
+    {
+      "ref": "Dalal & Kravtsov, ApJ, 2022",
+      "programme": "Ultralight / wave (fuzzy) dark matter (1e-22 to 1e-18 eV)",
+      "claim": "dynamical heating of ultra-faint dwarfs requires masses well above 1e-22 eV"
+    },
+    {
+      "ref": "Dessert, Rodd & Safdi, Science, 2020",
+      "programme": "keV sterile neutrinos / warm dark matter",
+      "claim": "the 3.5 keV line is inconsistent with Milky Way blank-sky X-ray data"
+    },
+    {
+      "ref": "Nadler et al., Phys. Rev. Lett., 2021",
+      "programme": "keV sterile neutrinos / warm dark matter",
+      "claim": "Milky Way satellite counts exclude thermal-relic masses below roughly 6 keV"
+    },
+    {
+      "ref": "Enzi et al., MNRAS, 2021",
+      "programme": "keV sterile neutrinos / warm dark matter",
+      "claim": "combined lensing, satellite and Lyman-alpha analyses tighten the same bound"
+    },
+    {
+      "ref": "Niikura et al., Nature Astronomy, 2019",
+      "programme": "Primordial black holes / macroscopic dark matter",
+      "claim": "Subaru HSC microlensing towards M31 closes mass windows"
+    },
+    {
+      "ref": "\"Primordial black holes: constraints, potential evidence and prospects\", arXiv:2601.06024, 2026",
+      "programme": "Primordial black holes / macroscopic dark matter",
+      "claim": "the hints are suggestive but not decisive"
+    },
+    {
+      "ref": "arXiv:2607.17338, 2026",
+      "programme": "Primordial black holes / macroscopic dark matter",
+      "claim": "fast radio burst microlensing constrains halo-dressed primordial black holes"
+    },
+    {
+      "ref": "Skordis & Zlosnik, Phys. Rev. Lett. 127, 161302, 2021",
+      "programme": "Modified gravity / no dark matter (MOND and descendants)",
+      "claim": "relativistic versions can fit the CMB and matter power spectra using extra dust-like fields"
+    },
+    {
+      "ref": "Chae, MNRAS, 2023-2024",
+      "programme": "Modified gravity / no dark matter (MOND and descendants)",
+      "claim": "reports a low-acceleration anomaly in wide binaries resembling MOND"
+    },
+    {
+      "ref": "Banik et al., MNRAS, 2023-2024",
+      "programme": "Modified gravity / no dark matter (MOND and descendants)",
+      "claim": "reports Newtonian consistency in wide binaries using the same Gaia data"
+    }
+  ]
+}

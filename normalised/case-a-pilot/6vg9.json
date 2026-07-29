@@ -1,0 +1,209 @@
+{
+  "schema": "normalised-run/1",
+  "id": "6vg9",
+  "case": "case-a-pilot",
+  "programme_count": 7,
+  "programmes": [
+    {
+      "position": 1,
+      "label": "Cold dark matter as effective paradigm (the gravitational core of LambdaCDM)",
+      "verdict": "solid",
+      "verdict_note": "",
+      "principal_problem": "none"
+    },
+    {
+      "position": 2,
+      "label": "Axions and axion-like / wave-like bosons",
+      "verdict": "defensible with reservations",
+      "verdict_note": "watch the sprawl of axion-like particles protecting the programme from any single null",
+      "principal_problem": "none"
+    },
+    {
+      "position": 3,
+      "label": "WIMPs / weak-scale thermal relics",
+      "verdict": "fragile",
+      "verdict_note": "",
+      "principal_problem": "each null result is met with a dedicated model corner, with no common gain"
+    },
+    {
+      "position": 4,
+      "label": "Self-interacting dark matter and structured dark sectors",
+      "verdict": "defensible with reservations",
+      "verdict_note": "standing risk is reliance on one instrument family and shared auxiliaries",
+      "principal_problem": "none"
+    },
+    {
+      "position": 5,
+      "label": "Primordial black holes",
+      "verdict": "fragile",
+      "verdict_note": "",
+      "principal_problem": "closed mass windows are reopened by new mechanisms or evaporation caveats"
+    },
+    {
+      "position": 6,
+      "label": "MOND and the modified-gravity family",
+      "verdict": "fragile",
+      "verdict_note": "",
+      "principal_problem": "evidence is almost entirely galaxy kinematics read through one dynamical auxiliary"
+    },
+    {
+      "position": 7,
+      "label": "keV sterile neutrinos / warm dark matter",
+      "verdict": "fragile",
+      "verdict_note": "",
+      "principal_problem": "the surviving window has no near-term decisive probe"
+    }
+  ],
+  "ranking": [
+    "Cold dark matter as effective paradigm (the gravitational core of LambdaCDM)",
+    "Axions and axion-like / wave-like bosons",
+    "Self-interacting dark matter and structured dark sectors",
+    "WIMPs / weak-scale thermal relics",
+    "Primordial black holes",
+    "MOND and the modified-gravity family",
+    "keV sterile neutrinos / warm dark matter"
+  ],
+  "source_count": 28,
+  "sources": [
+    {
+      "ref": "Planck 2018",
+      "programme": "Cold dark matter as effective paradigm (the gravitational core of LambdaCDM)",
+      "claim": "CMB acoustic peaks fit a non-baryonic, cold, collisionless component about five times the baryon density"
+    },
+    {
+      "ref": "Clowe et al., ApJ, 2006",
+      "programme": "Cold dark matter as effective paradigm (the gravitational core of LambdaCDM)",
+      "claim": "cluster lensing offsets in mergers support collisionless behaviour"
+    },
+    {
+      "ref": "Bullock & Boylan-Kolchin, ARA&A, 2017",
+      "programme": "Cold dark matter as effective paradigm (the gravitational core of LambdaCDM)",
+      "claim": "reviews the small-scale structure problems"
+    },
+    {
+      "ref": "Peccei & Quinn, 1977",
+      "programme": "Axions and axion-like / wave-like bosons",
+      "claim": "the axion is motivated by the independent strong-CP problem"
+    },
+    {
+      "ref": "Weinberg and Wilczek, 1978",
+      "programme": "Axions and axion-like / wave-like bosons",
+      "claim": "the axion is motivated by the independent strong-CP problem"
+    },
+    {
+      "ref": "Preskill, Wise & Wilczek, 1983",
+      "programme": "Axions and axion-like / wave-like bosons",
+      "claim": "cosmological production of the axion is built in"
+    },
+    {
+      "ref": "ADMX Collaboration, arXiv:2504.07279, 2025",
+      "programme": "Axions and axion-like / wave-like bosons",
+      "claim": "reports a search from 1.10 to 1.31 GHz, about 4.6 to 5.4 micro-eV, at extended-KSVZ sensitivity"
+    },
+    {
+      "ref": "KEK-QUP, arXiv:2602.20260, 2026",
+      "programme": "Axions and axion-like / wave-like bosons",
+      "claim": "a first search exploiting Earth-matter screening with an alkali-noble-gas comagnetometer"
+    },
+    {
+      "ref": "Hu, Barkana & Gruzinov, 2000",
+      "programme": "Axions and axion-like / wave-like bosons",
+      "claim": "introduces the ultralight branch whose small-scale selling point is now largely gone"
+    },
+    {
+      "ref": "LZ Collaboration, 2025",
+      "programme": "WIMPs / weak-scale thermal relics",
+      "claim": "417 live days find no WIMPs between 3 and 9 GeV and set world-leading low-mass limits"
+    },
+    {
+      "ref": "LZ Collaboration, Phys. Rev. Lett., 2025",
+      "programme": "WIMPs / weak-scale thermal relics",
+      "claim": "earlier record spin-independent limits"
+    },
+    {
+      "ref": "Phys. Rev. D 111, 103040, 2025",
+      "programme": "WIMPs / weak-scale thermal relics",
+      "claim": "documents the XENONnT statistical inference machinery"
+    },
+    {
+      "ref": "\"SIDM Concerto\" simulation compilation and data release, ApJ, 2025",
+      "programme": "Self-interacting dark matter and structured dark sectors",
+      "claim": "a strongly velocity-dependent cross-section yields cored haloes at high mass and core collapse at low mass"
+    },
+    {
+      "ref": "Kaplinghat et al., 2016",
+      "programme": "Self-interacting dark matter and structured dark sectors",
+      "claim": "cluster scales require a smaller cross-section per mass than galaxy scales"
+    },
+    {
+      "ref": "Nadler et al., 2023",
+      "programme": "Self-interacting dark matter and structured dark sectors",
+      "claim": "cluster scales require a smaller cross-section per mass than galaxy scales"
+    },
+    {
+      "ref": "Yang et al., 2023",
+      "programme": "Self-interacting dark matter and structured dark sectors",
+      "claim": "cluster scales require a smaller cross-section per mass than galaxy scales"
+    },
+    {
+      "ref": "Phys. Rev. D 112, 123019, 2025",
+      "programme": "Primordial black holes",
+      "claim": "Hawking-radiation heating of the intergalactic medium is reconstructed from Lyman-alpha thermal broadening"
+    },
+    {
+      "ref": "Dvali and collaborators, 2024",
+      "programme": "Primordial black holes",
+      "claim": "the memory burden argument claims semiclassical evaporation halts, reopening low masses"
+    },
+    {
+      "ref": "Milgrom, 1983",
+      "programme": "MOND and the modified-gravity family",
+      "claim": "the modification predicts galaxy-scale phenomenology from photometry alone"
+    },
+    {
+      "ref": "McGaugh, Lelli & Schombert, Phys. Rev. Lett., 2016",
+      "programme": "MOND and the modified-gravity family",
+      "claim": "the baryonic Tully-Fisher and radial acceleration relations match the prediction"
+    },
+    {
+      "ref": "Skordis & Zlosnik, Phys. Rev. Lett., 2021",
+      "programme": "MOND and the modified-gravity family",
+      "claim": "AeST fits the CMB and matter power spectra by adding fields of contested stability"
+    },
+    {
+      "ref": "arXiv:2607.14450, 2026",
+      "programme": "MOND and the modified-gravity family",
+      "claim": "reports the low-acceleration anomaly confirmed after reworking quality cuts and multiplicity modelling"
+    },
+    {
+      "ref": "Cookson et al., 2026",
+      "programme": "MOND and the modified-gravity family",
+      "claim": "a contrary result resting on 61 binaries in the MOND regime"
+    },
+    {
+      "ref": "Berezhiani & Khoury, 2015",
+      "programme": "MOND and the modified-gravity family",
+      "claim": "superfluid dark matter is a formulated but largely stalled hybrid option"
+    },
+    {
+      "ref": "Verlinde, 2016",
+      "programme": "MOND and the modified-gravity family",
+      "claim": "emergent gravity is a formulated but largely stalled hybrid option"
+    },
+    {
+      "ref": "Dessert, Rodd & Safdi, Science, 2020",
+      "programme": "keV sterile neutrinos / warm dark matter",
+      "claim": "blank-sky and halo analyses exclude the 3.5 keV line as decaying dark matter"
+    },
+    {
+      "ref": "Foster et al., 2021",
+      "programme": "keV sterile neutrinos / warm dark matter",
+      "claim": "blank-sky and halo analyses exclude the 3.5 keV line as decaying dark matter"
+    },
+    {
+      "ref": "Kakoti & Das, PTEP 2025, 123B12",
+      "programme": "keV sterile neutrinos / warm dark matter",
+      "claim": "embeds a keV sterile neutrino in a left-right symmetric model with modular flavour symmetry"
+    }
+  ]
+}

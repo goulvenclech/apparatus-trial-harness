@@ -1,0 +1,247 @@
+{
+  "schema": "normalised-run/1",
+  "id": "vg8m",
+  "case": "case-a-pilot",
+  "programme_count": 8,
+  "programmes": [
+    {
+      "position": 1,
+      "label": "Cold, collisionless dark matter as a cosmological framework (LambdaCDM)",
+      "verdict": "solid",
+      "verdict_note": "",
+      "principal_problem": "none"
+    },
+    {
+      "position": 2,
+      "label": "WIMPs / weak-scale thermal relics",
+      "verdict": "inconclusive-by-evidence",
+      "verdict_note": "",
+      "principal_problem": "motivating theory eroded and the search target repeatedly relaxed"
+    },
+    {
+      "position": 3,
+      "label": "QCD axion and axion-like particles",
+      "verdict": "defensible with reservations",
+      "verdict_note": "reservation is the vastness of the allowed parameter space",
+      "principal_problem": "none"
+    },
+    {
+      "position": 4,
+      "label": "Dark sectors: sub-GeV light dark matter and self-interacting dark matter",
+      "verdict": "defensible with reservations",
+      "verdict_note": "reservation is freedom in the self-interaction cross-section",
+      "principal_problem": "none"
+    },
+    {
+      "position": 5,
+      "label": "Primordial black holes and macroscopic dark matter",
+      "verdict": "fragile",
+      "verdict_note": "",
+      "principal_problem": "viable mass window reduced to a narrow corner with no positive signal"
+    },
+    {
+      "position": 6,
+      "label": "Ultralight / wave (fuzzy) dark matter",
+      "verdict": "fragile",
+      "verdict_note": "",
+      "principal_problem": "the motivating mass range is excluded"
+    },
+    {
+      "position": 7,
+      "label": "keV sterile neutrinos / warm dark matter",
+      "verdict": "fragile",
+      "verdict_note": "",
+      "principal_problem": "flagship signal refuted and structure limits close the remaining window"
+    },
+    {
+      "position": 8,
+      "label": "Modified gravity without dark matter (MOND and relativistic descendants)",
+      "verdict": "fragile",
+      "verdict_note": "",
+      "principal_problem": "failure at cluster and cosmological scales, no viable relativistic completion"
+    }
+  ],
+  "ranking": [
+    "Cold, collisionless dark matter as a cosmological framework (LambdaCDM)",
+    "QCD axion and axion-like particles",
+    "Dark sectors: sub-GeV light dark matter and self-interacting dark matter",
+    "WIMPs / weak-scale thermal relics",
+    "Primordial black holes and macroscopic dark matter",
+    "Ultralight / wave (fuzzy) dark matter",
+    "keV sterile neutrinos / warm dark matter",
+    "Modified gravity without dark matter (MOND and relativistic descendants)"
+  ],
+  "source_count": 34,
+  "sources": [
+    {
+      "ref": "Planck Collaboration, \"Planck 2018 results VI: cosmological parameters\", A&A, 2020",
+      "programme": "Cold, collisionless dark matter as a cosmological framework (LambdaCDM)",
+      "claim": "the cold dark matter density is about 0.12 in units of h squared"
+    },
+    {
+      "ref": "Clowe et al., \"A Direct Empirical Proof of the Existence of Dark Matter\", ApJL, 2006",
+      "programme": "Cold, collisionless dark matter as a cosmological framework (LambdaCDM)",
+      "claim": "the lensing-gas offset in merging clusters evidences collisionless behaviour"
+    },
+    {
+      "ref": "McGaugh, Lelli & Schombert, PRL, 2016",
+      "programme": "Cold, collisionless dark matter as a cosmological framework (LambdaCDM)",
+      "claim": "the radial acceleration relation is tight, which the framework absorbs through baryonic feedback"
+    },
+    {
+      "ref": "\"Dark matter direct detection: status, results and future plans\", arXiv:2512.23039, 2025",
+      "programme": "WIMPs / weak-scale thermal relics",
+      "claim": "reviews the multi-tonne xenon and argon direct-detection experiments"
+    },
+    {
+      "ref": "LUX-ZEPLIN Collaboration, PRL, 2025",
+      "programme": "WIMPs / weak-scale thermal relics",
+      "claim": "a 4.2 tonne-year exposure over 280 live days finds no excess and reaches about 2e-48 cm2 near 40 GeV"
+    },
+    {
+      "ref": "C. O'Hare, PRL, 2021",
+      "programme": "WIMPs / weak-scale thermal relics",
+      "claim": "sets out the irreducible neutrino background limiting direct detection"
+    },
+    {
+      "ref": "XENON1T, 2020",
+      "programme": "WIMPs / weak-scale thermal relics",
+      "claim": "reported an electron-recoil excess that later data did not reproduce"
+    },
+    {
+      "ref": "Peccei & Quinn, PRL, 1977",
+      "programme": "QCD axion and axion-like particles",
+      "claim": "introduces the mechanism addressing the strong-CP problem"
+    },
+    {
+      "ref": "Weinberg and Wilczek, PRL, 1978",
+      "programme": "QCD axion and axion-like particles",
+      "claim": "identify the axion as a by-product of that mechanism"
+    },
+    {
+      "ref": "Preskill, Wise & Wilczek, Phys. Lett. B, 1983",
+      "programme": "QCD axion and axion-like particles",
+      "claim": "establishes misalignment as the cosmological production route"
+    },
+    {
+      "ref": "Abbott & Sikivie, Phys. Lett. B, 1983",
+      "programme": "QCD axion and axion-like particles",
+      "claim": "establishes misalignment as the cosmological production route"
+    },
+    {
+      "ref": "Dine & Fischler, Phys. Lett. B, 1983",
+      "programme": "QCD axion and axion-like particles",
+      "claim": "establishes misalignment as the cosmological production route"
+    },
+    {
+      "ref": "ADMX Collaboration, PRL 135, 191001, 2025",
+      "programme": "QCD axion and axion-like particles",
+      "claim": "scans 1.1 to 1.3 GHz, about 4.5 to 5.4 micro-eV, at DFSZ sensitivity"
+    },
+    {
+      "ref": "CAPP-MAX (IBS/KAIST), Phys. Rev. X 14, 031023, 2024",
+      "programme": "QCD axion and axion-like particles",
+      "claim": "extends haloscope searches above 1 GHz"
+    },
+    {
+      "ref": "Buschmann et al., Nature Communications, 2022",
+      "programme": "QCD axion and axion-like particles",
+      "claim": "axion-string network simulations predict a post-inflationary mass of tens of micro-eV"
+    },
+    {
+      "ref": "\"Astrophysical tests of dark matter self-interactions\", Rev. Mod. Phys. 97, 045004, 2025",
+      "programme": "Dark sectors: sub-GeV light dark matter and self-interacting dark matter",
+      "claim": "light-mediator dark sectors arise generically and self-interaction explains rotation-curve diversity"
+    },
+    {
+      "ref": "A. M. Green, \"Primordial black hole stellar microlensing constraints\", JCAP 04 (2025) 023",
+      "programme": "Primordial black holes and macroscopic dark matter",
+      "claim": "microlensing limits depend on assumed halo density and velocity distribution"
+    },
+    {
+      "ref": "Carr, Kohri, Sendouda & Yokoyama, Rep. Prog. Phys., 2021",
+      "programme": "Primordial black holes and macroscopic dark matter",
+      "claim": "compiles the constraints on primordial black holes as dark matter"
+    },
+    {
+      "ref": "Green & Kavanagh, J. Phys. G, 2021",
+      "programme": "Primordial black holes and macroscopic dark matter",
+      "claim": "compiles the constraints on primordial black holes as dark matter"
+    },
+    {
+      "ref": "Hu, Barkana & Gruzinov, PRL, 2000",
+      "programme": "Ultralight / wave (fuzzy) dark matter",
+      "claim": "a kiloparsec de Broglie wavelength would address small-scale structure problems"
+    },
+    {
+      "ref": "Hui, Ostriker, Tremaine & Witten, PRD, 2017",
+      "programme": "Ultralight / wave (fuzzy) dark matter",
+      "claim": "reviews ultralight scalar dark matter"
+    },
+    {
+      "ref": "Iršič et al., PRL, 2017",
+      "programme": "Ultralight / wave (fuzzy) dark matter",
+      "claim": "Lyman-alpha forest limits push the boson mass above the motivating band"
+    },
+    {
+      "ref": "Dalal & Kravtsov, JCAP, 2022",
+      "programme": "Ultralight / wave (fuzzy) dark matter",
+      "claim": "stellar-kinematic heating in ultra-faint dwarfs excludes the canonical 1e-22 eV band"
+    },
+    {
+      "ref": "Asaka & Shaposhnikov, Phys. Lett. B, 2005",
+      "programme": "keV sterile neutrinos / warm dark matter",
+      "claim": "the nuMSM links dark matter, neutrino masses and the baryon asymmetry via three right-handed neutrinos"
+    },
+    {
+      "ref": "Bulbul et al., ApJ, 2014",
+      "programme": "keV sterile neutrinos / warm dark matter",
+      "claim": "reports a 3.5 keV X-ray line in galaxy clusters"
+    },
+    {
+      "ref": "Boyarsky et al., PRL, 2014",
+      "programme": "keV sterile neutrinos / warm dark matter",
+      "claim": "reports a 3.5 keV X-ray line in M31"
+    },
+    {
+      "ref": "Rudakovskyi & Iakubovskyi, MNRAS 483, 4080, 2019",
+      "programme": "keV sterile neutrinos / warm dark matter",
+      "claim": "reionisation data mildly favour a 7 keV sterile neutrino over cold dark matter"
+    },
+    {
+      "ref": "Dessert, Rodd & Safdi, Science, 2020",
+      "programme": "keV sterile neutrinos / warm dark matter",
+      "claim": "blank-sky XMM-Newton analysis finds no line at the required strength"
+    },
+    {
+      "ref": "Milgrom, ApJ, 1983",
+      "programme": "Modified gravity without dark matter (MOND and relativistic descendants)",
+      "claim": "predicts rotation-curve amplitudes from the baryons alone"
+    },
+    {
+      "ref": "McGaugh, Lelli & Schombert, PRL, 2016",
+      "programme": "Modified gravity without dark matter (MOND and relativistic descendants)",
+      "claim": "codifies the galaxy-scale regularity as the radial acceleration relation"
+    },
+    {
+      "ref": "Bekenstein, PRD, 2004",
+      "programme": "Modified gravity without dark matter (MOND and relativistic descendants)",
+      "claim": "the TeVeS relativistic completion was damaged by the GW170817 speed constraint"
+    },
+    {
+      "ref": "Skordis & Zlosnik, PRL, 2021",
+      "programme": "Modified gravity without dark matter (MOND and relativistic descendants)",
+      "claim": "AeST is a live but heavily engineered relativistic completion"
+    },
+    {
+      "ref": "Chae, ApJ, 2023-2024",
+      "programme": "Modified gravity without dark matter (MOND and relativistic descendants)",
+      "claim": "reports MOND-like acceleration excesses in Gaia wide binaries"
+    },
+    {
+      "ref": "\"Wide Binaries from Gaia DR3: testing GR vs MOND with realistic triple modelling\", arXiv:2504.07569, 2025",
+      "programme": "Modified gravity without dark matter (MOND and relativistic descendants)",
+      "claim": "modelling hidden triples yields Newtonian behaviour and excludes MOND at high confidence"
+    }
+  ]
+}

@@ -1,0 +1,194 @@
+{
+  "schema": "normalised-run/1",
+  "id": "rwvp",
+  "case": "case-a-pilot",
+  "programme_count": 7,
+  "programmes": [
+    {
+      "position": 1,
+      "label": "Weak-scale WIMPs (thermal freeze-out, tested by direct, indirect and collider searches)",
+      "verdict": "not stated",
+      "verdict_note": "",
+      "principal_problem": "not stated"
+    },
+    {
+      "position": 2,
+      "label": "Axions and ultralight bosons (wave dark matter)",
+      "verdict": "not stated",
+      "verdict_note": "",
+      "principal_problem": "not stated"
+    },
+    {
+      "position": 3,
+      "label": "Hidden sectors and sub-GeV dark matter (freeze-in, dark photons, asymmetric dark matter)",
+      "verdict": "not stated",
+      "verdict_note": "",
+      "principal_problem": "not stated"
+    },
+    {
+      "position": 4,
+      "label": "Non-minimal cold dark matter: self-interacting and dissipative dark matter",
+      "verdict": "not stated",
+      "verdict_note": "",
+      "principal_problem": "not stated"
+    },
+    {
+      "position": 5,
+      "label": "Sterile neutrinos / keV warm dark matter",
+      "verdict": "not stated",
+      "verdict_note": "",
+      "principal_problem": "not stated"
+    },
+    {
+      "position": 6,
+      "label": "Primordial black holes / macroscopic dark matter",
+      "verdict": "not stated",
+      "verdict_note": "",
+      "principal_problem": "not stated"
+    },
+    {
+      "position": 7,
+      "label": "Modified gravity (MOND, RelMOND, emergent gravity)",
+      "verdict": "not stated",
+      "verdict_note": "",
+      "principal_problem": "not stated"
+    }
+  ],
+  "ranking": [
+    "Axions and ultralight bosons (wave dark matter)",
+    "Hidden sectors and sub-GeV dark matter (freeze-in, dark photons, asymmetric dark matter)",
+    "Non-minimal cold dark matter: self-interacting and dissipative dark matter",
+    "Weak-scale WIMPs (thermal freeze-out, tested by direct, indirect and collider searches)",
+    "Primordial black holes / macroscopic dark matter",
+    "Sterile neutrinos / keV warm dark matter",
+    "Modified gravity (MOND, RelMOND, emergent gravity)"
+  ],
+  "source_count": 25,
+  "sources": [
+    {
+      "ref": "Aghanim et al., Planck 2018 cosmology, A&A 641, A6, 2020",
+      "programme": "general",
+      "claim": "a cold collisionless component at about 0.12 in units of h squared is required by CMB, BAO and lensing"
+    },
+    {
+      "ref": "LZ collaboration, \"Dark Matter Search Results from 4.2 Tonne-Years of Exposure of the LUX-ZEPLIN Experiment\", Phys. Rev. Lett., 2025",
+      "programme": "Weak-scale WIMPs (thermal freeze-out, tested by direct, indirect and collider searches)",
+      "claim": "sets world-leading spin-independent limits near 1e-48 cm2 at 40 GeV using novel beta-decay tagging"
+    },
+    {
+      "ref": "XENON, \"WIMP Dark Matter Search Using a 3.1 Tonne-Year Exposure of XENONnT\", Phys. Rev. Lett., November 2025",
+      "programme": "Weak-scale WIMPs (thermal freeze-out, tested by direct, indirect and collider searches)",
+      "claim": "finds no excess, consistent with the other xenon results"
+    },
+    {
+      "ref": "PandaX-4T, Phys. Rev. Lett. 135, 211001, 2025",
+      "programme": "Weak-scale WIMPs (thermal freeze-out, tested by direct, indirect and collider searches)",
+      "claim": "a light-WIMP search with 259 days covers the low-mass end"
+    },
+    {
+      "ref": "XENONnT ionisation-only analysis, arXiv:2601.11296, January 2026",
+      "programme": "Weak-scale WIMPs (thermal freeze-out, tested by direct, indirect and collider searches)",
+      "claim": "7.83 tonne-years exclude cross sections above 6e-45 cm2 at 5 GeV and approach coherent neutrino scattering"
+    },
+    {
+      "ref": "Billard et al.; O'Hare, Phys. Rev. Lett., 2021",
+      "programme": "Weak-scale WIMPs (thermal freeze-out, tested by direct, indirect and collider searches)",
+      "claim": "define the neutrino fog as an irreducible background"
+    },
+    {
+      "ref": "ADMX collaboration, Phys. Rev. Lett. 134, 111002, 2025",
+      "programme": "Axions and ultralight bosons (wave dark matter)",
+      "claim": "excludes DFSZ axions between 3.27 and 3.34 micro-eV"
+    },
+    {
+      "ref": "arXiv:2504.07279, 2025",
+      "programme": "Axions and ultralight bosons (wave dark matter)",
+      "claim": "searches 1.1 to 1.3 GHz at extended KSVZ sensitivity"
+    },
+    {
+      "ref": "Liu, Gong & Zhou, arXiv:2606.06969, 2026",
+      "programme": "Axions and ultralight bosons (wave dark matter)",
+      "claim": "Lyman-alpha forest analyses of pure and mixed fuzzy dark matter push the boson mass above 1e-21 eV"
+    },
+    {
+      "ref": "Rogers & Peiris, Phys. Rev. Lett. 126, 071302, 2021",
+      "programme": "Axions and ultralight bosons (wave dark matter)",
+      "claim": "an earlier Lyman-alpha bound on the ultralight mass"
+    },
+    {
+      "ref": "Phys. Rev. D 113, 063541, 2026",
+      "programme": "Axions and ultralight bosons (wave dark matter)",
+      "claim": "ultralight dark matter affects supermassive black hole binaries and the nanohertz gravitational-wave background"
+    },
+    {
+      "ref": "Science Bulletin 71(6), 1349, 2026",
+      "programme": "Non-minimal cold dark matter: self-interacting and dissipative dark matter",
+      "claim": "a velocity-dependent, mass-segregated model claims a unified account of dwarf cores and small-scale lenses"
+    },
+    {
+      "ref": "Roberts et al., JCAP 05, 003, 2026",
+      "programme": "Non-minimal cold dark matter: self-interacting and dissipative dark matter",
+      "claim": "ultra-strong self-interaction is invoked for the Little Red Dots and early black hole masses"
+    },
+    {
+      "ref": "arXiv:2607.05504, 2026",
+      "programme": "Non-minimal cold dark matter: self-interacting and dissipative dark matter",
+      "claim": "a new implementation in AREPO adds velocity-dependent and inelastic cross sections"
+    },
+    {
+      "ref": "Bulbul et al., 2014",
+      "programme": "Sterile neutrinos / keV warm dark matter",
+      "claim": "reports the 3.5 keV X-ray line"
+    },
+    {
+      "ref": "Dessert, Rodd & Safdi, Science, 2020",
+      "programme": "Sterile neutrinos / keV warm dark matter",
+      "claim": "a blank-sky Milky Way halo analysis damages the line claim"
+    },
+    {
+      "ref": "arXiv:2607.17338, 2026",
+      "programme": "Primordial black holes / macroscopic dark matter",
+      "claim": "fast radio burst microlensing constrains halo-dressed primordial black holes"
+    },
+    {
+      "ref": "Lavalle et al., JCAP 06, 092, 2026",
+      "programme": "Primordial black holes / macroscopic dark matter",
+      "claim": "CMB constraints follow from dark matter clustering around primordial black holes"
+    },
+    {
+      "ref": "arXiv:2607.14253, 2026",
+      "programme": "Primordial black holes / macroscopic dark matter",
+      "claim": "if they coexist with particle dark matter they are limited to about 1 per cent of the abundance"
+    },
+    {
+      "ref": "Veermae et al., arXiv:2601.06024, 2026",
+      "programme": "Primordial black holes / macroscopic dark matter",
+      "claim": "frames the situation as constraints, potential evidence and prospects"
+    },
+    {
+      "ref": "arXiv:2604.26005, 2026",
+      "programme": "Primordial black holes / macroscopic dark matter",
+      "claim": "formation mechanisms for asteroid-mass holes are derived from supersymmetry"
+    },
+    {
+      "ref": "Skordis & Zlosnik, Phys. Rev. Lett. 127, 161302, 2021",
+      "programme": "Modified gravity (MOND, RelMOND, emergent gravity)",
+      "claim": "relativistic completions can fit the CMB and matter power spectra"
+    },
+    {
+      "ref": "Gallardo et al., Phys. Rev. Lett., 2026",
+      "programme": "Modified gravity (MOND, RelMOND, emergent gravity)",
+      "claim": "a test using CMB and structure data over 30 to 230 Mpc reports failure for MOND while dark matter passes"
+    },
+    {
+      "ref": "arXiv:2605.10857, 2026",
+      "programme": "Modified gravity (MOND, RelMOND, emergent gravity)",
+      "claim": "no modified-gravity model matches the Milky Way radial and vertical fields simultaneously"
+    },
+    {
+      "ref": "Julio et al., 2025",
+      "programme": "Modified gravity (MOND, RelMOND, emergent gravity)",
+      "claim": "low-mass dwarfs from the EDGE simulation programme come out against MOND"
+    }
+  ]
+}

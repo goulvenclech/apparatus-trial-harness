@@ -1,0 +1,192 @@
+{
+  "schema": "normalised-run/1",
+  "id": "r2s8",
+  "case": "case-a-pilot",
+  "programme_count": 8,
+  "programmes": [
+    {
+      "position": 1,
+      "label": "Heavy thermal relics (WIMPs, including SUSY neutralinos)",
+      "verdict": "not stated",
+      "verdict_note": "",
+      "principal_problem": "not stated"
+    },
+    {
+      "position": 2,
+      "label": "QCD axions and axion-like particles",
+      "verdict": "not stated",
+      "verdict_note": "",
+      "principal_problem": "not stated"
+    },
+    {
+      "position": 3,
+      "label": "Light / hidden dark sectors (sub-GeV thermal relics, freeze-in, dark photons)",
+      "verdict": "not stated",
+      "verdict_note": "",
+      "principal_problem": "not stated"
+    },
+    {
+      "position": 4,
+      "label": "Self-interacting / non-minimal cold dark matter",
+      "verdict": "not stated",
+      "verdict_note": "",
+      "principal_problem": "not stated"
+    },
+    {
+      "position": 5,
+      "label": "keV sterile neutrinos / warm dark matter",
+      "verdict": "not stated",
+      "verdict_note": "",
+      "principal_problem": "not stated"
+    },
+    {
+      "position": 6,
+      "label": "Ultralight / fuzzy dark matter (wave dark matter)",
+      "verdict": "not stated",
+      "verdict_note": "",
+      "principal_problem": "not stated"
+    },
+    {
+      "position": 7,
+      "label": "Primordial black holes and macroscopic dark matter",
+      "verdict": "not stated",
+      "verdict_note": "",
+      "principal_problem": "not stated"
+    },
+    {
+      "position": 8,
+      "label": "Modified gravity without dark matter (MOND and relativistic extensions)",
+      "verdict": "not stated",
+      "verdict_note": "",
+      "principal_problem": "not stated"
+    }
+  ],
+  "ranking": [
+    "QCD axions and axion-like particles",
+    "Light / hidden dark sectors (sub-GeV thermal relics, freeze-in, dark photons)",
+    "Heavy thermal relics (WIMPs, including SUSY neutralinos)",
+    "Self-interacting / non-minimal cold dark matter",
+    "keV sterile neutrinos / warm dark matter",
+    "Ultralight / fuzzy dark matter (wave dark matter)",
+    "Primordial black holes and macroscopic dark matter",
+    "Modified gravity without dark matter (MOND and relativistic extensions)"
+  ],
+  "source_count": 23,
+  "sources": [
+    {
+      "ref": "LZ Collaboration, Phys. Rev. Lett., 2025; arXiv:2410.17036",
+      "programme": "Heavy thermal relics (WIMPs, including SUSY neutralinos)",
+      "claim": "a 4.2 tonne-year analysis finds no excess and sets a limit of 2.2e-48 cm2 at 90 per cent confidence"
+    },
+    {
+      "ref": "XENON Collaboration, Phys. Rev. Lett., November 2025",
+      "programme": "Heavy thermal relics (WIMPs, including SUSY neutralinos)",
+      "claim": "a 3.1 tonne-year blind analysis is similarly null"
+    },
+    {
+      "ref": "\"The Dark Matters at ICRC 2025\", arXiv:2510.17473",
+      "programme": "Heavy thermal relics (WIMPs, including SUSY neutralinos)",
+      "claim": "XENONnT sees coherent neutrino scattering from solar boron-8 at 2.73 sigma, PandaX-4T at 2.64 sigma"
+    },
+    {
+      "ref": "CERN dark-matter workshop report, summarised by Tech Times, 23 July 2026",
+      "programme": "Heavy thermal relics (WIMPs, including SUSY neutralinos)",
+      "claim": "LZ's December 2025 result gives 417 live days, limits down to 3 GeV and a first solar-neutrino detection"
+    },
+    {
+      "ref": "CERN dark-matter workshop report, summarised by Tech Times, 23 July 2026",
+      "programme": "Heavy thermal relics (WIMPs, including SUSY neutralinos)",
+      "claim": "wino dark matter is excluded while the higgsino survives below the neutrino fog"
+    },
+    {
+      "ref": "XENONnT ionisation-only search, arXiv:2601.11296, January 2026",
+      "programme": "Heavy thermal relics (WIMPs, including SUSY neutralinos)",
+      "claim": "7.83 tonne-years push to 6.0e-45 cm2 at 5 GeV, approaching the coherent neutrino scattering wall"
+    },
+    {
+      "ref": "ADMX Collaboration, Phys. Rev. Lett. 134, 111002, 2025; arXiv:2408.15227",
+      "programme": "QCD axions and axion-like particles",
+      "claim": "excludes DFSZ axions between 3.27 and 3.34 micro-eV assuming a halo density of 0.45 GeV per cm3"
+    },
+    {
+      "ref": "Phys. Rev. Lett. 135, 191001, 2025",
+      "programme": "QCD axions and axion-like particles",
+      "claim": "reports a search from 1.1 to 1.3 GHz"
+    },
+    {
+      "ref": "HAYSTAC Phase II, arXiv:2409.08998",
+      "programme": "QCD axions and axion-like particles",
+      "claim": "one of the haloscopes attacking adjacent mass decades"
+    },
+    {
+      "ref": "arXiv:2601.11296",
+      "programme": "QCD axions and axion-like particles",
+      "claim": "xenon detectors also constrain solar axions, axion-like particles and dark photons"
+    },
+    {
+      "ref": "arXiv:2601.11296",
+      "programme": "Light / hidden dark sectors (sub-GeV thermal relics, freeze-in, dark photons)",
+      "claim": "an ionisation-only analysis sets improved limits on dark matter-electron scattering and dark photons"
+    },
+    {
+      "ref": "Dessert, Rodd & Safdi, Science, 2020",
+      "programme": "keV sterile neutrinos / warm dark matter",
+      "claim": "the 3.5 keV line did not survive deep blank-sky analyses"
+    },
+    {
+      "ref": "Nadler et al., \"Warm, not Fuzzy: Generalized Ultralight Dark Matter Limits from Milky Way Satellites\", arXiv:2605.15371, May 2026",
+      "programme": "Ultralight / fuzzy dark matter (wave dark matter)",
+      "claim": "derives a mass above 6e-18 eV from the satellite population for generalised ultralight dark matter"
+    },
+    {
+      "ref": "Liu, Gong & Zhou, arXiv:2606.06969, June 2026",
+      "programme": "Ultralight / fuzzy dark matter (wave dark matter)",
+      "claim": "Lyman-alpha flux power spectra at redshift 4 to 5 constrain pure and mixed models"
+    },
+    {
+      "ref": "Shanghai Astronomical Observatory team, Phys. Rev. D, July 2026",
+      "programme": "Ultralight / fuzzy dark matter (wave dark matter)",
+      "claim": "pulsar timing arrays are now an independent probe"
+    },
+    {
+      "ref": "\"Primordial black holes: constraints, potential evidence and prospects\", arXiv:2601.06024, 2026",
+      "programme": "Primordial black holes and macroscopic dark matter",
+      "claim": "maps a parameter space closed almost everywhere by microlensing, evaporation, CMB and dynamical bounds"
+    },
+    {
+      "ref": "arXiv:2604.26005, April 2026",
+      "programme": "Primordial black holes and macroscopic dark matter",
+      "claim": "work continues on formation mechanisms for the surviving asteroid-mass window"
+    },
+    {
+      "ref": "arXiv:2607.17338, July 2026",
+      "programme": "Primordial black holes and macroscopic dark matter",
+      "claim": "fast radio burst microlensing is a new probe"
+    },
+    {
+      "ref": "arXiv:2607.14253, 2026",
+      "programme": "Primordial black holes and macroscopic dark matter",
+      "claim": "a monochromatic population can supply at most about 1 per cent of the dark matter across a wide mass range"
+    },
+    {
+      "ref": "Chae, arXiv:2607.14450, July 2026",
+      "programme": "Modified gravity without dark matter (MOND and relativistic extensions)",
+      "claim": "reports a low-acceleration anomaly after revised quality control and multiple-star modelling"
+    },
+    {
+      "ref": "\"A Quality Framework for Testing Gravity with Wide Binaries: No Evidence for MOND\", arXiv:2602.24035, February 2026",
+      "programme": "Modified gravity without dark matter (MOND and relativistic extensions)",
+      "claim": "argues undetected close binaries, chance alignments and projection effects manufacture MOND-like signals"
+    },
+    {
+      "ref": "arXiv:2605.10857, 2026",
+      "programme": "Modified gravity without dark matter (MOND and relativistic extensions)",
+      "claim": "a study of Milky Way dynamics favours dark matter over modified gravity"
+    },
+    {
+      "ref": "Keith Cooper, three-part survey, Physics World, August 2025",
+      "programme": "Modified gravity without dark matter (MOND and relativistic extensions)",
+      "claim": "galactic scaling successes are real but no relativistic version reproduces CMB, lensing and structure growth"
+    }
+  ]
+}

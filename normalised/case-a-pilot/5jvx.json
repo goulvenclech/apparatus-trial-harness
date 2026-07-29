@@ -1,0 +1,161 @@
+{
+  "schema": "normalised-run/1",
+  "id": "5jvx",
+  "case": "case-a-pilot",
+  "programme_count": 6,
+  "programmes": [
+    {
+      "position": 1,
+      "label": "Weak-scale WIMPs (SUSY neutralino, thermal relic)",
+      "verdict": "fragile",
+      "verdict_note": "",
+      "principal_problem": "successive relocations patch each null result without common gain"
+    },
+    {
+      "position": 2,
+      "label": "Axions and axion-like particles (including ultralight/fuzzy dark matter)",
+      "verdict": "defensible with reservations",
+      "verdict_note": "full coverage of the plausible band is a multi-decade project",
+      "principal_problem": "none"
+    },
+    {
+      "position": 3,
+      "label": "Hidden/dark sectors: light dark matter, dark photons, SIDM, FIMPs, asymmetric dark matter",
+      "verdict": "defensible with reservations",
+      "verdict_note": "watch for enough dials to fit almost any small-scale observation",
+      "principal_problem": "none"
+    },
+    {
+      "position": 4,
+      "label": "keV sterile neutrinos / warm dark matter",
+      "verdict": "fragile",
+      "verdict_note": "",
+      "principal_problem": "symmetry-group elaborations continue with no distinctive testable prediction"
+    },
+    {
+      "position": 5,
+      "label": "Primordial black holes / macroscopic dark matter",
+      "verdict": "defensible with reservations",
+      "verdict_note": "fragile as a solution to the whole dark matter problem",
+      "principal_problem": "the surviving window requires a tuned inflationary power-spectrum feature"
+    },
+    {
+      "position": 6,
+      "label": "Modified gravity / no dark matter (MOND, RelMOND/AeST, emergent gravity)",
+      "verdict": "fragile",
+      "verdict_note": "",
+      "principal_problem": "core evidence is one instrument family, one discipline and one theoretical frame"
+    }
+  ],
+  "ranking": [
+    "Axions and axion-like particles (including ultralight/fuzzy dark matter)",
+    "Hidden/dark sectors: light dark matter, dark photons, SIDM, FIMPs, asymmetric dark matter",
+    "Primordial black holes / macroscopic dark matter",
+    "Modified gravity / no dark matter (MOND, RelMOND/AeST, emergent gravity)",
+    "Weak-scale WIMPs (SUSY neutralino, thermal relic)",
+    "keV sterile neutrinos / warm dark matter"
+  ],
+  "source_count": 20,
+  "sources": [
+    {
+      "ref": "LZ Collaboration, 2024, SURF/LBNL",
+      "programme": "Weak-scale WIMPs (SUSY neutralino, thermal relic)",
+      "claim": "a 280-day combined exposure finds no dark matter interactions and sets the world-leading limit"
+    },
+    {
+      "ref": "LZ, December 2025 analysis",
+      "programme": "Weak-scale WIMPs (SUSY neutralino, thermal relic)",
+      "claim": "417 live days find no WIMPs between 3 and 9 GeV and reach the neutrino fog"
+    },
+    {
+      "ref": "Phys. Rev. Lett. 135, 191001, 2025",
+      "programme": "Axions and axion-like particles (including ultralight/fuzzy dark matter)",
+      "claim": "ADMX searches 1.10 to 1.31 GHz to extended KSVZ sensitivity"
+    },
+    {
+      "ref": "Irsic et al., 2017",
+      "programme": "Axions and axion-like particles (including ultralight/fuzzy dark matter)",
+      "claim": "excludes the mass range where ultralight dark matter would solve small-scale structure problems"
+    },
+    {
+      "ref": "Rogers & Peiris, Phys. Rev. Lett., 2021",
+      "programme": "Axions and axion-like particles (including ultralight/fuzzy dark matter)",
+      "claim": "excludes the mass range where ultralight dark matter would solve small-scale structure problems"
+    },
+    {
+      "ref": "Dalal & Kravtsov, 2022",
+      "programme": "Axions and axion-like particles (including ultralight/fuzzy dark matter)",
+      "claim": "excludes the mass range where ultralight dark matter would solve small-scale structure problems"
+    },
+    {
+      "ref": "Arido, Fischer & Garny, A&A 694, A297, 2025",
+      "programme": "Hidden/dark sectors: light dark matter, dark photons, SIDM, FIMPs, asymmetric dark matter",
+      "claim": "implements the angular dependence of self-interaction, which shifts dark matter-galaxy offsets in merging clusters"
+    },
+    {
+      "ref": "Dessert, Rodd & Safdi, Science, 2020",
+      "programme": "keV sterile neutrinos / warm dark matter",
+      "claim": "the 3.5 keV line does not survive blank-sky and halo re-analyses"
+    },
+    {
+      "ref": "Kakoti & Das, PTEP 2025, 123B12",
+      "programme": "keV sterile neutrinos / warm dark matter",
+      "claim": "embeds a keV sterile neutrino in a left-right symmetric model with modular symmetry and a double seesaw"
+    },
+    {
+      "ref": "Phys. Rev. D 112, 123019, 2025",
+      "programme": "Primordial black holes / macroscopic dark matter",
+      "claim": "intergalactic medium temperatures from Lyman-alpha thermal broadening constrain heating by light primordial black holes"
+    },
+    {
+      "ref": "Milgrom, 1983",
+      "programme": "Modified gravity / no dark matter (MOND, RelMOND/AeST, emergent gravity)",
+      "claim": "predicted the radial acceleration and baryonic Tully-Fisher relations decades before their confirmation"
+    },
+    {
+      "ref": "Famaey & McGaugh, Living Reviews in Relativity, 2012",
+      "programme": "Modified gravity / no dark matter (MOND, RelMOND/AeST, emergent gravity)",
+      "claim": "documents the galaxy-scale predictive record"
+    },
+    {
+      "ref": "Phys. Rev. D 111, 123042, 2025",
+      "programme": "Modified gravity / no dark matter (MOND, RelMOND/AeST, emergent gravity)",
+      "claim": "MOND fails in galaxy clusters, and lensing mass profiles are used to test relativistic versions"
+    },
+    {
+      "ref": "Chae, 2026",
+      "programme": "Modified gravity / no dark matter (MOND, RelMOND/AeST, emergent gravity)",
+      "claim": "argues the null result reflects 61 binaries in the MOND regime and that the statistic used can bias the data"
+    },
+    {
+      "ref": "Cookson et al., 2026",
+      "programme": "Modified gravity / no dark matter (MOND, RelMOND/AeST, emergent gravity)",
+      "claim": "reports a null wide-binary result"
+    },
+    {
+      "ref": "Chae, 2023",
+      "programme": "Modified gravity / no dark matter (MOND, RelMOND/AeST, emergent gravity)",
+      "claim": "a wide-binary sample re-examined in the dispute"
+    },
+    {
+      "ref": "Banik et al., 2024",
+      "programme": "Modified gravity / no dark matter (MOND, RelMOND/AeST, emergent gravity)",
+      "claim": "a wide-binary sample re-examined in the dispute"
+    },
+    {
+      "ref": "Pittordis et al., 2025",
+      "programme": "Modified gravity / no dark matter (MOND, RelMOND/AeST, emergent gravity)",
+      "claim": "a wide-binary sample re-examined in the dispute"
+    },
+    {
+      "ref": "Open Journal of Astrophysics",
+      "programme": "Modified gravity / no dark matter (MOND, RelMOND/AeST, emergent gravity)",
+      "claim": "updated Gaia DR3 tests of general relativity against MOND with realistic triple-star modelling"
+    },
+    {
+      "ref": "Skordis & Zlosnik, Phys. Rev. Lett., 2021",
+      "programme": "Modified gravity / no dark matter (MOND, RelMOND/AeST, emergent gravity)",
+      "claim": "the AeST relativistic completion is engineered to reproduce the CMB peaks after the fact"
+    }
+  ]
+}

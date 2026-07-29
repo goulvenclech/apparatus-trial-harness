@@ -1,0 +1,242 @@
+{
+  "schema": "normalised-run/1",
+  "id": "nxhs",
+  "case": "case-a-pilot",
+  "programme_count": 8,
+  "programmes": [
+    {
+      "position": 1,
+      "label": "WIMPs / weak-scale thermal relics",
+      "verdict": "not stated",
+      "verdict_note": "",
+      "principal_problem": "not stated"
+    },
+    {
+      "position": 2,
+      "label": "QCD axions and axion-like particles",
+      "verdict": "not stated",
+      "verdict_note": "",
+      "principal_problem": "not stated"
+    },
+    {
+      "position": 3,
+      "label": "Light / hidden-sector dark matter (sub-GeV, dark photons, freeze-in)",
+      "verdict": "not stated",
+      "verdict_note": "",
+      "principal_problem": "not stated"
+    },
+    {
+      "position": 4,
+      "label": "Non-minimal dark matter: self-interacting (SIDM) and related dark sectors",
+      "verdict": "not stated",
+      "verdict_note": "",
+      "principal_problem": "not stated"
+    },
+    {
+      "position": 5,
+      "label": "Primordial black holes",
+      "verdict": "not stated",
+      "verdict_note": "",
+      "principal_problem": "not stated"
+    },
+    {
+      "position": 6,
+      "label": "Ultralight / fuzzy dark matter (around 1e-22 eV)",
+      "verdict": "not stated",
+      "verdict_note": "",
+      "principal_problem": "not stated"
+    },
+    {
+      "position": 7,
+      "label": "keV sterile neutrinos / warm dark matter",
+      "verdict": "not stated",
+      "verdict_note": "",
+      "principal_problem": "not stated"
+    },
+    {
+      "position": 8,
+      "label": "Modified gravity without dark matter (MOND, TeVeS/AeST, emergent gravity)",
+      "verdict": "not stated",
+      "verdict_note": "",
+      "principal_problem": "not stated"
+    }
+  ],
+  "ranking": [
+    "QCD axions and axion-like particles",
+    "Light / hidden-sector dark matter (sub-GeV, dark photons, freeze-in)",
+    "Non-minimal dark matter: self-interacting (SIDM) and related dark sectors",
+    "WIMPs / weak-scale thermal relics",
+    "Primordial black holes",
+    "Ultralight / fuzzy dark matter (around 1e-22 eV)",
+    "keV sterile neutrinos / warm dark matter",
+    "Modified gravity without dark matter (MOND, TeVeS/AeST, emergent gravity)"
+  ],
+  "source_count": 33,
+  "sources": [
+    {
+      "ref": "LZ Collaboration, \"Dark Matter Search Results from 4.2 Tonne-Years of Exposure of the LUX-ZEPLIN Experiment\", Phys. Rev. Lett., July 2025",
+      "programme": "WIMPs / weak-scale thermal relics",
+      "claim": "4.2 tonne-years, 220 of the live days new, set the strictest spin-independent limits near 1e-48 cm2"
+    },
+    {
+      "ref": "XENON Collaboration, arXiv:2601.11296, January 2026",
+      "programme": "WIMPs / weak-scale thermal relics",
+      "claim": "an ionisation-only search over 579 days excludes cross sections above 6.0e-45 cm2 at 5 GeV"
+    },
+    {
+      "ref": "XENONnT, \"First Search for Light Dark Matter in the Neutrino Fog\", news item, 19 February 2026",
+      "programme": "WIMPs / weak-scale thermal relics",
+      "claim": "the collaboration reports having reached the neutrino fog, following its first solar-neutrino detection"
+    },
+    {
+      "ref": "ADMX, Phys. Rev. Lett. 127, 261803, 2021",
+      "programme": "QCD axions and axion-like particles",
+      "claim": "cavity haloscopes reach DFSZ-level sensitivity in narrow bands"
+    },
+    {
+      "ref": "ADMX, arXiv:2408.15227",
+      "programme": "QCD axions and axion-like particles",
+      "claim": "a DFSZ-capable run extends the covered band"
+    },
+    {
+      "ref": "HAYSTAC Phase II, Phys. Rev. Lett. 134, 151006, 2025",
+      "programme": "QCD axions and axion-like particles",
+      "claim": "reaches DFSZ-level sensitivity in narrow bands"
+    },
+    {
+      "ref": "CAPP MAX, Phys. Rev. X 14, 031023, 2024",
+      "programme": "QCD axions and axion-like particles",
+      "claim": "scanned over 1 GHz of the mass range"
+    },
+    {
+      "ref": "CERN Courier, \"In pursuit of the post-inflation axion\", January 2026",
+      "programme": "QCD axions and axion-like particles",
+      "claim": "a MADMAX prototype near 19 GHz set world-best dark-photon limits between 78.62 and 83.95 micro-eV"
+    },
+    {
+      "ref": "CADEx, JCAP 11 (2022) 044",
+      "programme": "QCD axions and axion-like particles",
+      "claim": "millimetre-wave detectors target the post-inflation band"
+    },
+    {
+      "ref": "arXiv:2601.11296",
+      "programme": "Light / hidden-sector dark matter (sub-GeV, dark photons, freeze-in)",
+      "claim": "xenon ionisation-only data are reinterpreted as sub-GeV limits"
+    },
+    {
+      "ref": "TASEH, Phys. Rev. D 113, 052013, 2026",
+      "programme": "Light / hidden-sector dark matter (sub-GeV, dark photons, freeze-in)",
+      "claim": "haloscope data get a dedicated dark-photon analysis rather than a naive rescaling"
+    },
+    {
+      "ref": "Physics Briefing Book, arXiv:2511.03883, 2025",
+      "programme": "Light / hidden-sector dark matter (sub-GeV, dark photons, freeze-in)",
+      "claim": "dark-sector searches were a formal input to the 2026 European Strategy update"
+    },
+    {
+      "ref": "arXiv:2411.08565, 2024",
+      "programme": "Non-minimal dark matter: self-interacting (SIDM) and related dark sectors",
+      "claim": "an over-concentrated subhalo is claimed in the strong lens SDSS J0946+1006"
+    },
+    {
+      "ref": "Li et al., \"The 'Little Dark Dot'\", ApJ 994, 201, 2025",
+      "programme": "Non-minimal dark matter: self-interacting (SIDM) and related dark sectors",
+      "claim": "an over-concentrated subhalo is claimed in the same strong lens"
+    },
+    {
+      "ref": "Meneghetti et al., Science 369, 1347, 2020",
+      "programme": "Non-minimal dark matter: self-interacting (SIDM) and related dark sectors",
+      "claim": "reports an excess of small-scale lenses in clusters"
+    },
+    {
+      "ref": "arXiv:2601.16818, 2026",
+      "programme": "Non-minimal dark matter: self-interacting (SIDM) and related dark sectors",
+      "claim": "flux-ratio anomalies in cusp quasar lenses are interpreted as physics beyond cold dark matter"
+    },
+    {
+      "ref": "ScienceDaily summary of 2026 work",
+      "programme": "Non-minimal dark matter: self-interacting (SIDM) and related dark sectors",
+      "claim": "new methods for simulating gravothermal core collapse were reported in January 2026"
+    },
+    {
+      "ref": "\"Possible evidence of self-interacting dark matter, or not\", Astronomy & Astrophysics, July 2026",
+      "programme": "Non-minimal dark matter: self-interacting (SIDM) and related dark sectors",
+      "claim": "the interpretation of large cores in a cluster is contested"
+    },
+    {
+      "ref": "arXiv:2607.17338, July 2026",
+      "programme": "Primordial black holes",
+      "claim": "fast radio burst microlensing constrains dark-matter-dressed primordial black holes"
+    },
+    {
+      "ref": "Lavalle et al., JCAP 06 (2026) 092",
+      "programme": "Primordial black holes",
+      "claim": "CMB limits on coexistence allow a monochromatic population at most about 1 per cent of dark matter"
+    },
+    {
+      "ref": "arXiv:2607.14253, 2026",
+      "programme": "Primordial black holes",
+      "claim": "supports the same limit on coexistence with particle dark matter"
+    },
+    {
+      "ref": "arXiv:2604.26005, 2026",
+      "programme": "Primordial black holes",
+      "claim": "model-building derives asteroid-mass primordial black holes from supersymmetry"
+    },
+    {
+      "ref": "Veermae et al., arXiv:2601.06024, 2026",
+      "programme": "Primordial black holes",
+      "claim": "reviews constraints, potential evidence and prospects"
+    },
+    {
+      "ref": "arXiv:2606.06969, 2026",
+      "programme": "Ultralight / fuzzy dark matter (around 1e-22 eV)",
+      "claim": "Lyman-alpha forest data constrain pure and mixed ultralight dark matter"
+    },
+    {
+      "ref": "Rogers & Peiris, Phys. Rev. Lett. 126, 071302, 2021",
+      "programme": "Ultralight / fuzzy dark matter (around 1e-22 eV)",
+      "claim": "earlier Lyman-alpha forest bound on the ultralight mass"
+    },
+    {
+      "ref": "arXiv:2308.14640",
+      "programme": "Ultralight / fuzzy dark matter (around 1e-22 eV)",
+      "claim": "galaxy-galaxy strong lensing adds bounds"
+    },
+    {
+      "ref": "A&A 704, A346, 2025",
+      "programme": "Ultralight / fuzzy dark matter (around 1e-22 eV)",
+      "claim": "eROSITA cluster counts limit intermediate-mass ultralight axions to under one per cent of the energy density"
+    },
+    {
+      "ref": "Nadler et al., Phys. Rev. Lett. 126, 091101, 2021",
+      "programme": "keV sterile neutrinos / warm dark matter",
+      "claim": "Milky Way satellite counts push thermal-relic masses above several keV"
+    },
+    {
+      "ref": "Chae and collaborators, arXiv:2507.13177, 2025",
+      "programme": "Modified gravity without dark matter (MOND, TeVeS/AeST, emergent gravity)",
+      "claim": "reports a low-acceleration anomaly in wide binaries"
+    },
+    {
+      "ref": "Pittordis & Sutherland, MNRAS 480, 1778, 2018",
+      "programme": "Modified gravity without dark matter (MOND, TeVeS/AeST, emergent gravity)",
+      "claim": "Gaia analyses reach Newtonian conclusions"
+    },
+    {
+      "ref": "Pittordis & Sutherland, 2019",
+      "programme": "Modified gravity without dark matter (MOND, TeVeS/AeST, emergent gravity)",
+      "claim": "Gaia analyses reach Newtonian conclusions"
+    },
+    {
+      "ref": "Clowe et al., 2004",
+      "programme": "Modified gravity without dark matter (MOND, TeVeS/AeST, emergent gravity)",
+      "claim": "merging-cluster lensing remains adverse to modified gravity"
+    },
+    {
+      "ref": "Markevitch et al., 2004",
+      "programme": "Modified gravity without dark matter (MOND, TeVeS/AeST, emergent gravity)",
+      "claim": "merging-cluster lensing remains adverse to modified gravity"
+    }
+  ]
+}

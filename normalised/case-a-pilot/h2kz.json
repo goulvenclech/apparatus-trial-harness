@@ -1,0 +1,252 @@
+{
+  "schema": "normalised-run/1",
+  "id": "h2kz",
+  "case": "case-a-pilot",
+  "programme_count": 8,
+  "programmes": [
+    {
+      "position": 1,
+      "label": "WIMPs / weak-scale thermal freeze-out",
+      "verdict": "fragile",
+      "verdict_note": "",
+      "principal_problem": "serial relocation patches each exclusion without common gain"
+    },
+    {
+      "position": 2,
+      "label": "QCD axions and axion-like particles",
+      "verdict": "defensible with reservations",
+      "verdict_note": "the scanned fraction of the plausible mass range remains small",
+      "principal_problem": "none"
+    },
+    {
+      "position": 3,
+      "label": "Light / hidden dark sectors (sub-GeV, freeze-in, dark photons)",
+      "verdict": "defensible with reservations",
+      "verdict_note": "watch for portal-hopping outpacing exclusion",
+      "principal_problem": "none"
+    },
+    {
+      "position": 4,
+      "label": "Self-interacting / structured dark matter (SIDM, dark atoms)",
+      "verdict": "defensible with reservations",
+      "verdict_note": "it modifies an underlying candidate and the feedback degeneracy is unbroken",
+      "principal_problem": "none"
+    },
+    {
+      "position": 5,
+      "label": "Primordial black holes",
+      "verdict": "fragile",
+      "verdict_note": "",
+      "principal_problem": "the surviving window is chased downward with no corroborated prediction"
+    },
+    {
+      "position": 6,
+      "label": "keV sterile neutrinos / warm dark matter",
+      "verdict": "fragile",
+      "verdict_note": "",
+      "principal_problem": "the sharp X-ray line prediction failed and survival depends on a hidden corner"
+    },
+    {
+      "position": 7,
+      "label": "Modified gravity (MOND and relativistic descendants)",
+      "verdict": "fragile",
+      "verdict_note": "",
+      "principal_problem": "corroboration confined to one observable family within one theoretical frame"
+    },
+    {
+      "position": 8,
+      "label": "Fuzzy / ultralight dark matter (mass around 1e-22 eV)",
+      "verdict": "fragile",
+      "verdict_note": "",
+      "principal_problem": "mass shifts and mixed fractions added for each anomaly"
+    }
+  ],
+  "ranking": [
+    "QCD axions and axion-like particles",
+    "Light / hidden dark sectors (sub-GeV, freeze-in, dark photons)",
+    "Self-interacting / structured dark matter (SIDM, dark atoms)",
+    "WIMPs / weak-scale thermal freeze-out",
+    "Primordial black holes",
+    "keV sterile neutrinos / warm dark matter",
+    "Modified gravity (MOND and relativistic descendants)",
+    "Fuzzy / ultralight dark matter (mass around 1e-22 eV)"
+  ],
+  "source_count": 35,
+  "sources": [
+    {
+      "ref": "Planck 2018 results VI",
+      "programme": "general",
+      "claim": "the CMB acoustic peak structure is part of the shared evidential core"
+    },
+    {
+      "ref": "DESI DR2 BAO, 2025",
+      "programme": "general",
+      "claim": "tightens the CMB and baryon acoustic oscillation constraints"
+    },
+    {
+      "ref": "Clowe et al., \"A Direct Empirical Proof of the Existence of Dark Matter\", ApJ, 2006",
+      "programme": "general",
+      "claim": "the lensing-gas offset in merging clusters is part of the shared evidential core"
+    },
+    {
+      "ref": "LZ Collaboration, Phys. Rev. Lett., July 2025",
+      "programme": "WIMPs / weak-scale thermal freeze-out",
+      "claim": "a 4.2 tonne-year analysis sets world-leading spin-independent limits"
+    },
+    {
+      "ref": "LZ, low-mass follow-up, December 2025",
+      "programme": "WIMPs / weak-scale thermal freeze-out",
+      "claim": "417 live days find no WIMPs between 3 and 9 GeV and detect solar neutrinos"
+    },
+    {
+      "ref": "XENONnT, Phys. Rev. Lett., 2025",
+      "programme": "WIMPs / weak-scale thermal freeze-out",
+      "claim": "a 3.1 tonne-year search finds no excess"
+    },
+    {
+      "ref": "XENONnT light dark matter search, Phys. Rev. Lett. 134, 111802, 2025",
+      "programme": "WIMPs / weak-scale thermal freeze-out",
+      "claim": "excludes cross sections above about 2.5e-45 cm2 at 6 GeV"
+    },
+    {
+      "ref": "O'Hare, Phys. Rev. Lett., 2021",
+      "programme": "WIMPs / weak-scale thermal freeze-out",
+      "claim": "defines the irreducible solar and atmospheric neutrino background"
+    },
+    {
+      "ref": "XENON, announcement, February 2026",
+      "programme": "WIMPs / weak-scale thermal freeze-out",
+      "claim": "announces reaching the neutrino fog"
+    },
+    {
+      "ref": "Peccei & Quinn, 1977",
+      "programme": "QCD axions and axion-like particles",
+      "claim": "motivation is external to cosmology, in the strong-CP problem"
+    },
+    {
+      "ref": "Weinberg and Wilczek, 1978",
+      "programme": "QCD axions and axion-like particles",
+      "claim": "motivation is external to cosmology, in the strong-CP problem"
+    },
+    {
+      "ref": "Preskill, Wise & Wilczek, 1983",
+      "programme": "QCD axions and axion-like particles",
+      "claim": "the abundance follows from the misalignment mechanism"
+    },
+    {
+      "ref": "Phys. Rev. Lett. 134, 111002, 2025",
+      "programme": "QCD axions and axion-like particles",
+      "claim": "ADMX excludes DFSZ-coupling axions in a narrow band near 3.3 micro-eV"
+    },
+    {
+      "ref": "Phys. Rev. Lett. 135, 191001, 2025",
+      "programme": "QCD axions and axion-like particles",
+      "claim": "ADMX covers 1.10 to 1.31 GHz at extended KSVZ sensitivity"
+    },
+    {
+      "ref": "Snowmass 2021 Cosmic Frontier reports (CF1-CF3), 2022",
+      "programme": "Light / hidden dark sectors (sub-GeV, freeze-in, dark photons)",
+      "claim": "consolidates hidden sectors as a coherent programme with benchmark milestones"
+    },
+    {
+      "ref": "Nadler et al., \"SIDM Concerto\", ApJ 991:69, 2025",
+      "programme": "Self-interacting / structured dark matter (SIDM, dark atoms)",
+      "claim": "velocity-dependent self-interaction predicts cores above 1e11 solar masses and collapse in smaller haloes"
+    },
+    {
+      "ref": "A&A, 2025 (stellar cores in ultra-faint dwarfs)",
+      "programme": "Self-interacting / structured dark matter (SIDM, dark atoms)",
+      "claim": "central densities agree with the models but the observed scatter is too large for simple ones"
+    },
+    {
+      "ref": "Green, JCAP 04, 023, 2025",
+      "programme": "Primordial black holes",
+      "claim": "microlensing bounds are sensitive to assumed halo density and velocity distributions"
+    },
+    {
+      "ref": "A&A, 2025 (synthesis of cosmic radiation backgrounds)",
+      "programme": "Primordial black holes",
+      "claim": "combined microlensing, merger-rate and accretion limits leave the candidate heavily constrained"
+    },
+    {
+      "ref": "Tamta, Raj & Sharma, 2025",
+      "programme": "Primordial black holes",
+      "claim": "X-ray pulsar microlensing is a new probe of the asteroid-mass window"
+    },
+    {
+      "ref": "Bulbul et al., 2014",
+      "programme": "keV sterile neutrinos / warm dark matter",
+      "claim": "claims a 3.5 keV X-ray line in clusters"
+    },
+    {
+      "ref": "Boyarsky et al., 2014",
+      "programme": "keV sterile neutrinos / warm dark matter",
+      "claim": "claims a 3.5 keV X-ray line in M31"
+    },
+    {
+      "ref": "Dessert, Rodd & Safdi, Science, 2020",
+      "programme": "keV sterile neutrinos / warm dark matter",
+      "claim": "blank-sky and halo analyses find no corresponding signal"
+    },
+    {
+      "ref": "Nadler et al., 2021",
+      "programme": "keV sterile neutrinos / warm dark matter",
+      "claim": "the Milky Way satellite census pushes thermal-relic masses above about 6 keV"
+    },
+    {
+      "ref": "Asaka & Shaposhnikov, 2005",
+      "programme": "keV sterile neutrinos / warm dark matter",
+      "claim": "the nuMSM unifies neutrino masses, baryogenesis and dark matter"
+    },
+    {
+      "ref": "Milgrom, 1983",
+      "programme": "Modified gravity (MOND and relativistic descendants)",
+      "claim": "fixed the acceleration scale near 1.2e-10 m/s2 in advance"
+    },
+    {
+      "ref": "McGaugh, Lelli & Schombert, Phys. Rev. Lett., 2016",
+      "programme": "Modified gravity (MOND and relativistic descendants)",
+      "claim": "the radial acceleration and baryonic Tully-Fisher relations came out as predicted regularities"
+    },
+    {
+      "ref": "Hernandez et al., 2012",
+      "programme": "Modified gravity (MOND and relativistic descendants)",
+      "claim": "proposed the wide-binary test"
+    },
+    {
+      "ref": "Pittordis & Sutherland, Open Journal of Astrophysics, 2023",
+      "programme": "Modified gravity (MOND and relativistic descendants)",
+      "claim": "finds Gaia data favouring general relativity"
+    },
+    {
+      "ref": "Chae, arXiv:2607.14450, 2026",
+      "programme": "Modified gravity (MOND and relativistic descendants)",
+      "claim": "reports confirmation of a low-acceleration anomaly and blames low statistics for the contrary null"
+    },
+    {
+      "ref": "Cookson et al., 2026",
+      "programme": "Modified gravity (MOND and relativistic descendants)",
+      "claim": "reports a contemporaneous null with 61 binaries in the MOND regime"
+    },
+    {
+      "ref": "Skordis & Zlosnik, Phys. Rev. Lett., 2021",
+      "programme": "Modified gravity (MOND and relativistic descendants)",
+      "claim": "AeST reproduces some CMB structure but has open stability and structure-formation problems"
+    },
+    {
+      "ref": "arXiv:2507.00705, 2025",
+      "programme": "Fuzzy / ultralight dark matter (mass around 1e-22 eV)",
+      "claim": "reviews constraints from halo mass functions, Lyman-alpha, density profiles, stellar dynamics and black-hole spins"
+    },
+    {
+      "ref": "A&A, 2025 (eROSITA cluster number counts)",
+      "programme": "Fuzzy / ultralight dark matter (mass around 1e-22 eV)",
+      "claim": "pushes the viable mass upward, away from the motivating range"
+    },
+    {
+      "ref": "DESI DR2, 2025",
+      "programme": "general",
+      "claim": "baryon acoustic oscillation hints of evolving dark energy put the shared background cosmology under test"
+    }
+  ]
+}

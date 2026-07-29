@@ -1,0 +1,247 @@
+{
+  "schema": "normalised-run/1",
+  "id": "3mvm",
+  "case": "case-a-pilot",
+  "programme_count": 7,
+  "programmes": [
+    {
+      "position": 1,
+      "label": "Weak-scale WIMPs (thermal freeze-out; neutralinos, Higgs-portal singlets)",
+      "verdict": "not stated",
+      "verdict_note": "",
+      "principal_problem": "not stated"
+    },
+    {
+      "position": 2,
+      "label": "Axions, axion-like particles and other ultralight bosons",
+      "verdict": "not stated",
+      "verdict_note": "",
+      "principal_problem": "not stated"
+    },
+    {
+      "position": 3,
+      "label": "Light / hidden-sector dark matter (sub-GeV, dark photons, freeze-in, asymmetric dark matter)",
+      "verdict": "not stated",
+      "verdict_note": "",
+      "principal_problem": "not stated"
+    },
+    {
+      "position": 4,
+      "label": "keV-scale sterile neutrinos / warm dark matter",
+      "verdict": "not stated",
+      "verdict_note": "",
+      "principal_problem": "not stated"
+    },
+    {
+      "position": 5,
+      "label": "Primordial black holes",
+      "verdict": "not stated",
+      "verdict_note": "",
+      "principal_problem": "not stated"
+    },
+    {
+      "position": 6,
+      "label": "Non-minimal dark sectors with astrophysical signatures (self-interacting, dissipative, atomic dark matter)",
+      "verdict": "not stated",
+      "verdict_note": "",
+      "principal_problem": "not stated"
+    },
+    {
+      "position": 7,
+      "label": "Modified gravity / no dark matter (MOND and relativistic completions)",
+      "verdict": "not stated",
+      "verdict_note": "",
+      "principal_problem": "not stated"
+    },
+    {
+      "position": null,
+      "label": "Fuzzy dark matter at about 1e-22 eV",
+      "verdict": "not stated",
+      "verdict_note": "",
+      "principal_problem": "not stated"
+    }
+  ],
+  "ranking": [
+    "Axions, axion-like particles and other ultralight bosons",
+    "Light / hidden-sector dark matter (sub-GeV, dark photons, freeze-in, asymmetric dark matter)",
+    "Non-minimal dark sectors with astrophysical signatures (self-interacting, dissipative, atomic dark matter)",
+    "Weak-scale WIMPs (thermal freeze-out; neutralinos, Higgs-portal singlets)",
+    "Primordial black holes",
+    "keV-scale sterile neutrinos / warm dark matter",
+    "Fuzzy dark matter at about 1e-22 eV",
+    "Modified gravity / no dark matter (MOND and relativistic completions)"
+  ],
+  "source_count": 34,
+  "sources": [
+    {
+      "ref": "LZ collaboration, announced via Lawrence Berkeley National Laboratory, December 2025",
+      "programme": "Weak-scale WIMPs (thermal freeze-out; neutralinos, Higgs-portal singlets)",
+      "claim": "417 live days, the largest dataset collected, find no WIMPs between 3 and 9 GeV and set leading low-mass limits"
+    },
+    {
+      "ref": "LZ, Physical Review Letters, 2025",
+      "programme": "Weak-scale WIMPs (thermal freeze-out; neutralinos, Higgs-portal singlets)",
+      "claim": "an earlier 280-day analysis"
+    },
+    {
+      "ref": "XENON collaboration, \"First Search for Light Dark Matter in the Neutrino Fog\", 2025",
+      "programme": "Weak-scale WIMPs (thermal freeze-out; neutralinos, Higgs-portal singlets)",
+      "claim": "covers 3 to 12 GeV with a 3.51 tonne-year exposure and finds no significant excess"
+    },
+    {
+      "ref": "XENONnT, arXiv:2502.18005",
+      "programme": "Weak-scale WIMPs (thermal freeze-out; neutralinos, Higgs-portal singlets)",
+      "claim": "a 3.1 tonne-year high-mass search"
+    },
+    {
+      "ref": "PandaX-4T, Phys. Rev. Lett. 134, 011805, 2025",
+      "programme": "Weak-scale WIMPs (thermal freeze-out; neutralinos, Higgs-portal singlets)",
+      "claim": "a 1.54 tonne-year result"
+    },
+    {
+      "ref": "Blanco-Mas, Coloma, Herrera et al., JHEP, 2025",
+      "programme": "Weak-scale WIMPs (thermal freeze-out; neutralinos, Higgs-portal singlets)",
+      "claim": "PandaX-4T and XENONnT report coherent neutrino scattering from solar boron-8 at 2.6 and 2.7 sigma"
+    },
+    {
+      "ref": "XENONnT, announcement, February 2026",
+      "programme": "Weak-scale WIMPs (thermal freeze-out; neutralinos, Higgs-portal singlets)",
+      "claim": "announces having entered the neutrino fog"
+    },
+    {
+      "ref": "O'Hare, Phys. Rev. Lett., 2021",
+      "programme": "Weak-scale WIMPs (thermal freeze-out; neutralinos, Higgs-portal singlets)",
+      "claim": "defines the neutrino fog, below which exposure buys sensitivity only as the square root or worse"
+    },
+    {
+      "ref": "Ackermann et al., Phys. Rev. Lett., 2015",
+      "programme": "Weak-scale WIMPs (thermal freeze-out; neutralinos, Higgs-portal singlets)",
+      "claim": "Fermi-LAT dwarf-galaxy limits exclude the canonical thermal cross section below roughly 100 GeV in some channels"
+    },
+    {
+      "ref": "ADMX, Phys. Rev. Lett. 135, 191001, 2025",
+      "programme": "Axions, axion-like particles and other ultralight bosons",
+      "claim": "publishes a search from 1.1 to 1.3 GHz with a dilution refrigerator and near-quantum-limited amplifiers"
+    },
+    {
+      "ref": "ADMX, Phys. Rev. Lett. 124, 101303, 2020",
+      "programme": "Axions, axion-like particles and other ultralight bosons",
+      "claim": "earlier searches covering 2.7 to 4.2 micro-eV at DFSZ sensitivity"
+    },
+    {
+      "ref": "ADMX, Phys. Rev. Lett. 127, 261803, 2021",
+      "programme": "Axions, axion-like particles and other ultralight bosons",
+      "claim": "earlier searches covering 2.7 to 4.2 micro-eV at DFSZ sensitivity"
+    },
+    {
+      "ref": "Eberhardt & Ferreira, \"Ultralight fuzzy dark matter review\", arXiv:2507.00705, 2025",
+      "programme": "Fuzzy dark matter at about 1e-22 eV",
+      "claim": "constraints come from halo mass functions, the Lyman-alpha forest, density profiles, stellar dynamics and black hole spins"
+    },
+    {
+      "ref": "arXiv:2606.06969",
+      "programme": "Fuzzy dark matter at about 1e-22 eV",
+      "claim": "recent Lyman-alpha forest additions cover pure and mixed models"
+    },
+    {
+      "ref": "arXiv:2605.17211",
+      "programme": "Fuzzy dark matter at about 1e-22 eV",
+      "claim": "dwarf-galaxy kinematics such as Leo II add constraints"
+    },
+    {
+      "ref": "arXiv:2505.22463, 2025",
+      "programme": "keV-scale sterile neutrinos / warm dark matter",
+      "claim": "the 3.5 keV line, matching a 7.1 keV sterile neutrino, is now widely regarded as debatable at best"
+    },
+    {
+      "ref": "Audard et al., ApJL 994, L28, 2025",
+      "programme": "keV-scale sterile neutrinos / warm dark matter",
+      "claim": "XRISM constrains unidentified X-ray lines in a stacked spectrum of ten galaxy clusters"
+    },
+    {
+      "ref": "arXiv:2505.22463",
+      "programme": "keV-scale sterile neutrinos / warm dark matter",
+      "claim": "active theory work opens new parameter space"
+    },
+    {
+      "ref": "conformal Majoron models, arXiv:2602.11085",
+      "programme": "keV-scale sterile neutrinos / warm dark matter",
+      "claim": "active theory work opens new parameter space"
+    },
+    {
+      "ref": "Boyarsky, Drewes, Lasserre, Mertens & Ruchayskiy, Prog. Part. Nucl. Phys., 2019",
+      "programme": "keV-scale sterile neutrinos / warm dark matter",
+      "claim": "the review baseline for the programme"
+    },
+    {
+      "ref": "Phys. Rev. D 112, 123019, 2025",
+      "programme": "Primordial black holes",
+      "claim": "intergalactic medium thermal evolution from Lyman-alpha line widths limits energy injection by Hawking radiation"
+    },
+    {
+      "ref": "Carr & Kuhnel, Ann. Rev. Nucl. Part. Sci., 2020",
+      "programme": "Primordial black holes",
+      "claim": "reviews the constraints leaving the asteroid-mass window"
+    },
+    {
+      "ref": "Green & Kavanagh, J. Phys. G 48, 043001, 2021",
+      "programme": "Primordial black holes",
+      "claim": "reviews the constraints leaving the asteroid-mass window"
+    },
+    {
+      "ref": "A&A 694, A297, 2025",
+      "programme": "Non-minimal dark sectors with astrophysical signatures (self-interacting, dissipative, atomic dark matter)",
+      "claim": "treats small- and large-angle scattering and dark matter-galaxy offsets in cluster mergers"
+    },
+    {
+      "ref": "A&A, November 2025",
+      "programme": "Non-minimal dark sectors with astrophysical signatures (self-interacting, dissipative, atomic dark matter)",
+      "claim": "on accurately simulating core-collapse self-interacting haloes"
+    },
+    {
+      "ref": "arXiv:2511.13220, 2025",
+      "programme": "Non-minimal dark sectors with astrophysical signatures (self-interacting, dissipative, atomic dark matter)",
+      "claim": "LISA measurements of massive black hole merger histories could distinguish self-interaction from cold dark matter"
+    },
+    {
+      "ref": "McGaugh, Lelli & Schombert, Phys. Rev. Lett., 2016",
+      "programme": "Modified gravity / no dark matter (MOND and relativistic completions)",
+      "claim": "galaxies obey a tight radial acceleration relation with a scale near 1.2e-10 m/s2"
+    },
+    {
+      "ref": "Milgrom, 1983",
+      "programme": "Modified gravity / no dark matter (MOND and relativistic completions)",
+      "claim": "posits that scale as a new constant marking where standard gravity breaks down"
+    },
+    {
+      "ref": "Chae, arXiv:2601.21728, January 2026",
+      "programme": "Modified gravity / no dark matter (MOND and relativistic completions)",
+      "claim": "reports a low-acceleration anomaly from 36 wide binaries with accurate three-dimensional velocities"
+    },
+    {
+      "ref": "Physics World, January 2024",
+      "programme": "Modified gravity / no dark matter (MOND and relativistic completions)",
+      "claim": "covers the earlier Gaia DR3 wide-binary analyses"
+    },
+    {
+      "ref": "Banik et al., arXiv:2210.07781",
+      "programme": "Modified gravity / no dark matter (MOND and relativistic completions)",
+      "claim": "attributes the effect to contamination by unresolved triple systems and eccentricity modelling"
+    },
+    {
+      "ref": "arXiv:2507.13177, 2025",
+      "programme": "Modified gravity / no dark matter (MOND and relativistic completions)",
+      "claim": "part of the contested wide-binary literature"
+    },
+    {
+      "ref": "Clowe et al., ApJ, 2006",
+      "programme": "Modified gravity / no dark matter (MOND and relativistic completions)",
+      "claim": "the Bullet Cluster shows lensing mass displaced from the gas"
+    },
+    {
+      "ref": "Skordis & Zlosnik, Phys. Rev. Lett., 2021",
+      "programme": "Modified gravity / no dark matter (MOND and relativistic completions)",
+      "claim": "relativistic MOND reproduces the CMB and matter power spectra using tuned free functions"
+    }
+  ]
+}

@@ -1,0 +1,189 @@
+{
+  "schema": "normalised-run/1",
+  "id": "jfzs",
+  "case": "case-a-pilot",
+  "programme_count": 7,
+  "programmes": [
+    {
+      "position": 1,
+      "label": "Heavy thermal relics / WIMPs (neutralinos, Higgs- and Z-portal singlets)",
+      "verdict": "fragile",
+      "verdict_note": "",
+      "principal_problem": "the weak-scale prediction serially relaxed as each exclusion arrived"
+    },
+    {
+      "position": 2,
+      "label": "Axions and ultralight bosons (QCD axion, ALPs, dark photons, fuzzy dark matter)",
+      "verdict": "defensible with reservations",
+      "verdict_note": "the parameter space is vast enough that non-detection is never decisive",
+      "principal_problem": "none"
+    },
+    {
+      "position": 3,
+      "label": "Structured cold dark sectors (self-interacting dark matter, dark atoms, velocity-dependent cross-sections)",
+      "verdict": "defensible with reservations",
+      "verdict_note": "watch for per-system cross-sections becoming a fitting parameter",
+      "principal_problem": "none"
+    },
+    {
+      "position": 4,
+      "label": "MOND and modified gravity / inertia",
+      "verdict": "inconclusive-by-balance",
+      "verdict_note": "trending fragile as a complete replacement",
+      "principal_problem": "not stated"
+    },
+    {
+      "position": 5,
+      "label": "Primordial black holes",
+      "verdict": "defensible with reservations",
+      "verdict_note": "fragile as an explanation of all the dark matter",
+      "principal_problem": "not stated"
+    },
+    {
+      "position": 6,
+      "label": "keV sterile neutrinos / warm dark matter",
+      "verdict": "fragile",
+      "verdict_note": "",
+      "principal_problem": "the driving anomaly dissolved and the response was parameter retreat"
+    },
+    {
+      "position": 7,
+      "label": "Gravitationally-coupled-only candidates (WIMPzillas, Planckian relics, purely gravitational production)",
+      "verdict": "fragile",
+      "verdict_note": "",
+      "principal_problem": "internally consistent but essentially untestable by design"
+    }
+  ],
+  "ranking": [
+    "Axions and ultralight bosons (QCD axion, ALPs, dark photons, fuzzy dark matter)",
+    "Structured cold dark sectors (self-interacting dark matter, dark atoms, velocity-dependent cross-sections)",
+    "Heavy thermal relics / WIMPs (neutralinos, Higgs- and Z-portal singlets)",
+    "MOND and modified gravity / inertia",
+    "Primordial black holes",
+    "keV sterile neutrinos / warm dark matter",
+    "Gravitationally-coupled-only candidates (WIMPzillas, Planckian relics, purely gravitational production)"
+  ],
+  "source_count": 24,
+  "sources": [
+    {
+      "ref": "LUX-ZEPLIN collaboration, Phys. Rev. Lett., 2025",
+      "programme": "Heavy thermal relics / WIMPs (neutralinos, Higgs- and Z-portal singlets)",
+      "claim": "a 4.2 tonne-year result sets spin-independent limits near 2e-48 cm2 around 40 GeV"
+    },
+    {
+      "ref": "LZ, low-mass analysis, December 2025",
+      "programme": "Heavy thermal relics / WIMPs (neutralinos, Higgs- and Z-portal singlets)",
+      "claim": "excludes WIMPs between about 3 and 9 GeV and reports a first detection of solar neutrinos"
+    },
+    {
+      "ref": "Aalbers et al., \"XLZD Design Book\", EPJ C, 2025",
+      "programme": "Heavy thermal relics / WIMPs (neutralinos, Higgs- and Z-portal singlets)",
+      "claim": "specifies a 60 to 80 tonne liquid-xenon observatory intended to reach the neutrino fog"
+    },
+    {
+      "ref": "Bartels et al. and Macias et al., Nature Astronomy, 2018",
+      "programme": "Heavy thermal relics / WIMPs (neutralinos, Higgs- and Z-portal singlets)",
+      "claim": "favour a stellar-bulge and millisecond-pulsar origin for the Galactic Centre excess"
+    },
+    {
+      "ref": "Phys. Rev. D 111, 043033, 2025",
+      "programme": "Heavy thermal relics / WIMPs (neutralinos, Higgs- and Z-portal singlets)",
+      "claim": "a machine-learning study of millisecond pulsars continues the Galactic Centre debate"
+    },
+    {
+      "ref": "Phys. Rev. Lett. 135, 161005, 2025",
+      "programme": "Heavy thermal relics / WIMPs (neutralinos, Higgs- and Z-portal singlets)",
+      "claim": "a simulation-based morphology analysis continues the Galactic Centre debate"
+    },
+    {
+      "ref": "ADMX, Phys. Rev. Lett. 134, 111002, 2025",
+      "programme": "Axions and ultralight bosons (QCD axion, ALPs, dark photons, fuzzy dark matter)",
+      "claim": "reaches DFSZ sensitivity in narrow windows with bounds around 3.3 micro-eV"
+    },
+    {
+      "ref": "ADMX, Phys. Rev. Lett. 135, 191001, 2025",
+      "programme": "Axions and ultralight bosons (QCD axion, ALPs, dark photons, fuzzy dark matter)",
+      "claim": "reaches extended-KSVZ sensitivity over 1.10 to 1.31 GHz"
+    },
+    {
+      "ref": "Taiwan Axion Search, Phys. Rev. D 113, 052013, 2026",
+      "programme": "Axions and ultralight bosons (QCD axion, ALPs, dark photons, fuzzy dark matter)",
+      "claim": "dark-photon reanalyses cover complementary mass decades with different systematics"
+    },
+    {
+      "ref": "Hui, ARA&A, 2021",
+      "programme": "Axions and ultralight bosons (QCD axion, ALPs, dark photons, fuzzy dark matter)",
+      "claim": "the ultralight end is squeezed, with masses pushed above about 1e-21 eV"
+    },
+    {
+      "ref": "Eberhardt & Ferreira, fuzzy dark matter review, 2025",
+      "programme": "Axions and ultralight bosons (QCD axion, ALPs, dark photons, fuzzy dark matter)",
+      "claim": "reviews the constraints squeezing the ultralight mass range"
+    },
+    {
+      "ref": "Tulin & Yu, Physics Reports 730, 2018",
+      "programme": "Structured cold dark sectors (self-interacting dark matter, dark atoms, velocity-dependent cross-sections)",
+      "claim": "reviews the self-interacting dark matter programme"
+    },
+    {
+      "ref": "Adhikari et al., \"Astrophysical Tests of Dark Matter Self-Interactions\", arXiv:2207.10638, updated 2025",
+      "programme": "Structured cold dark sectors (self-interacting dark matter, dark atoms, velocity-dependent cross-sections)",
+      "claim": "acknowledges degeneracy with baryonic feedback and gravitational effects"
+    },
+    {
+      "ref": "Skordis & Zlosnik, Phys. Rev. Lett., 2021",
+      "programme": "MOND and modified gravity / inertia",
+      "claim": "AeST reproduces the CMB only by adding a dust-like dark field"
+    },
+    {
+      "ref": "Desmond, Hees & Famaey, MNRAS 530, 1781, 2024",
+      "programme": "MOND and modified gravity / inertia",
+      "claim": "find tension between the radial acceleration relation, the Cassini quadrupole and wide-binary kinematics"
+    },
+    {
+      "ref": "C3PO differential-radial-velocity test, arXiv:2512.19652, December 2025",
+      "programme": "MOND and modified gravity / inertia",
+      "claim": "new precision work is designed to break the wide-binary deadlock"
+    },
+    {
+      "ref": "Tamta, Raj & Sharma, 2025",
+      "programme": "Primordial black holes",
+      "claim": "X-ray pulsar microlensing attacks the surviving asteroid-mass window"
+    },
+    {
+      "ref": "arXiv:2607.17338, 2026",
+      "programme": "Primordial black holes",
+      "claim": "fast radio burst lensing attacks the surviving asteroid-mass window"
+    },
+    {
+      "ref": "arXiv:2512.20037, 2025",
+      "programme": "Primordial black holes",
+      "claim": "Event Horizon Telescope photon-ring microlensing attacks the surviving window"
+    },
+    {
+      "ref": "Green, JCAP 04, 023, 2025",
+      "programme": "Primordial black holes",
+      "claim": "microlensing bounds are sensitive to the assumed halo density and velocity distribution"
+    },
+    {
+      "ref": "Dessert, Rodd & Safdi, Science, 2020",
+      "programme": "keV sterile neutrinos / warm dark matter",
+      "claim": "the 3.5 keV line fails blank-sky and stacked-limit tests"
+    },
+    {
+      "ref": "\"Was there a 3.5 keV line?\", arXiv:2309.03254",
+      "programme": "keV sterile neutrinos / warm dark matter",
+      "claim": "reviews the collapse of the 3.5 keV line claim"
+    },
+    {
+      "ref": "Verlinde, emergent gravity, 2016",
+      "programme": "general",
+      "claim": "an alternative receiving little instrumental attention relative to its plausibility"
+    },
+    {
+      "ref": "Jacobs, Starkman & Lynn, MNRAS, 2015",
+      "programme": "general",
+      "claim": "macroscopic composite dark matter is an alternative receiving little instrumental attention"
+    }
+  ]
+}

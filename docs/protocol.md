@@ -1,6 +1,6 @@
 # Protocol
 
-Applies to every case. Task cores, answer keys and boundary calls live in the `cases` folder.
+Applies to every case. Task cores, answer keys and boundary calls live in the `cases/` folder.
 
 ## Arms
 
@@ -18,19 +18,15 @@ Names the domain, not the programmes: that is the real condition of use, and nam
 
 The coverage requirement and the ranking request belong to the core, so all three arms carry them. Without them the bare arm, which has no format constraint, would produce coverage and an implicit ordering not comparable with B and C.
 
-## What stays out of B
+## Arm B
 
 Breaking the assessment into five axes is not presentation — it is the conclusion drawn from the literature, the apparatus's thesis. A placebo built on five criteria would contain the active ingredient, so B is continuous prose. The closed vocabulary of eight pathologies is out for the same reason: a taxonomy is content.
 
 What stays in, because mechanical scoring needs it: the verdict field, the principal-problem field (free text in B), the closing lines.
 
+B represents the prior toolkit, not a straw man: Popperian and Lakatosian notions belong in it. The bar for C is therefore high, and a small gap would mean the margin over a careful request is thin, not that the apparatus is useless. Freeze B's text before the first run and publish it.
+
 Declared concession: the five-level verdict scale distinguishes *inconclusive-by-evidence* from *inconclusive-by-balance*, which is substantive epistemology. It is kept because scoring requires a common scale.
-
-## Writing B
-
-Any B drafted by Claude is drafted by the apparatus's co-designer — the protocol's most exploitable degree of freedom. Rewrite it under the rule « the prompt I would have written before this work », or have a fresh session draft it from a neutral question and edit minimally. Freeze it before the first run and publish it.
-
-B represents the prior toolkit, not a straw man: Popperian and Lakatosian notions belong in it. The bar for C is therefore high, and a small gap would mean the margin over a careful request is thin, not that the apparatus is useless.
 
 ## System prompt
 
@@ -39,7 +35,7 @@ Identical across arms.
 ```
 You are a research assistant with web search available. Today's date is {DATE}.
 
-Answer in English. State the sources behind your factual claims, with enough detail to identify them: author or organisation, title, venue, year.
+Answer in British English. State the sources behind your factual claims, with enough detail to identify them: author or organisation, title, venue, year.
 
 Write for a reader who is not a specialist in the field but is comfortable with technical material. Be concise — no preamble, no restating the question.
 ```
@@ -56,24 +52,34 @@ Fix and log: dated model string, never an alias; `max_uses` identical across arm
 
 B's scaffolding and the SKILL.md text for C both go in the user message at the same position, system prompt held identical. Arm C therefore tests the skill's content, not its triggering — check triggering separately on the first product run.
 
-## Transferability
-
 The product runs check that the direction of the B→C gap matches the API. Reversed or vanished means research mode already does part of the apparatus's work — the most interesting result available.
+
+## Normalisation
+
+Extract mechanically from each raw run into a fixed schema: programmes identified, their order, verdict per programme (« not stated » where the arm imposed none), principal problem, sources cited, number of programmes treated.
+
+This is the blinding mechanism, not just extraction. Arm C's axis headings, arm B's closing lines and arm A's free prose are each recognisable on sight, so the schema must render all three identically.
+
+Raw JSON stays in `runs/`, where the arm is visible. Normalised records go to `normalised/`, one file per run, named by an opaque identifier that does not encode the arm, written in shuffled order. The identifier → arm mapping goes in a single key file kept outside `normalised/`.
 
 ## Scoring
 
-Extract mechanically from each output: programmes identified, their order, verdict per programme, principal problem, sources cited, number of programmes treated. Normalise, shuffle, score blind to arm.
+Two passes.
 
-## Metrics
+**Blind, per run.** Score from `normalised/` alone, one record at a time, without opening the key.
 
 - *Source verifiability* (priority): references that (i) exist and (ii) say what they are made to say. No expertise needed, verification certain, failure disqualifying.
 - *Coverage*: answer-key programmes identified. Read alongside the programme count, since breadth and depth trade off.
 - *Fabrication*: programmes invented or wrongly described.
 - *Discrimination*: pairs correctly ordered, over the intersection with the answer key.
-- *Stability*: modal agreement across runs on list, order and verdicts.
 
-## Declared limitations
+**After unblinding.** Open the key, group runs by arm, aggregate. No fresh judgement is made on any run here — the per-run scores are already fixed — so unblinding cannot bias this pass.
 
-The effect cannot be split between the breakdown into axes and the particular choice of axes — within the apparatus these are two descriptions of one contribution, not two factors.
+- Per-arm rates for the four metrics above, and the A→B and B→C gaps.
+- *Stability*: modal agreement across the runs of one arm on list, order and verdicts. Necessarily post-unblinding, since it requires grouping runs by arm.
 
-The search index shifts daily, so exact reproduction is impossible even with a pinned model.
+## Thresholds — fix before the first run
+
+Minimum modal agreement on ordering and on verdict per programme; floor rates for verifiable sources and for coverage. If B equals C on discrimination and coverage, say so.
+
+Committed in advance: the effect cannot be split between the breakdown into axes and the particular choice of axes — within the apparatus these are two descriptions of one contribution, not two factors.

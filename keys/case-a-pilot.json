@@ -1,0 +1,134 @@
+{
+  "schema": "normalisation-key/1",
+  "campaign": "case-a-pilot",
+  "generated": "2026-07-29",
+  "shuffle": {
+    "method": "Fisher-Yates over the run files sorted by name, mulberry32 seeded with sha256(seed)[0:8]",
+    "seed": "case-a-pilot-normalisation-2026-07-29"
+  },
+  "extraction": {
+    "schema": "normalised-run/1",
+    "records": "normalised/case-a-pilot/<id>.json, written in the shuffled order above",
+    "input": "the final assistant text blocks of response.content only; thinking, tool-use, search-result and code-execution blocks are not the answer and were ignored",
+    "rules": [
+      "programmes: one entry per unit the run treats as a research programme in its own right, in order of presentation; programme_count counts those, an item ranked but never treated carries position null and is not counted",
+      "label: the run's own name, stripped of markdown, numbering and evaluative adjectives, head term plus at most three of its own parenthetical exemplars; never canonicalised onto a common vocabulary, never merged or split",
+      "verdict: one of the five scale values, or 'not stated' where the run gives none; a qualified or split verdict records its headline term, the qualification going to verdict_note in neutral prose",
+      "principal_problem: a short neutral noun phrase of at most fifteen words in the extractor's uniform prose; 'none' where the run says none, 'not stated' where it gives no such field; a closed-vocabulary label is never recorded on its own but expanded from the run's own reasoning for that programme",
+      "ranking: the labels of the final ranking, best to worst; where a run gives no separate ranked list but numbers its programmes and anchors that numbering as best to worst, the presentation order is the ranking",
+      "sources: every reference offered in support of a factual claim, in order of first appearance; a mention counts when it identifies a specific work — a title, a venue, an arXiv id, or an author or organisation plus a single publication year; bare instrument or collaboration names, bodies of work given only as a span of years, and series or data releases named without a year do not count",
+      "ref: as the run gave it, in the fixed form 'Author/Organisation, \"Title\", Venue, Year', keeping only the parts supplied; nothing added, nothing corrected, since existence and fidelity are what gets scored downstream",
+      "claim: the proposition the reference is made to support, in neutral uniform prose of at most twenty words, present tense, no evaluative adjectives",
+      "carried over: nothing else — no axis headings or axis text, no closing lines, no section structure, no arm-specific vocabulary, no verbatim quotation from the answer"
+    ],
+    "residual_leak": "a record whose verdicts are all 'not stated' is necessarily the bare arm, since the protocol mandates that value where the arm imposed no verdict field; blinding therefore separates the bare arm from the other two, and the B-to-C contrast stays blind",
+    "extractor": "Claude Opus 5, working from the raw runs with the arm visible, applying the rules above uniformly and in shuffled order"
+  },
+  "records": [
+    {
+      "id": "vg8m",
+      "arm": "b",
+      "index": 3,
+      "run": "runs/case-a-pilot/arm-b-3.json",
+      "sha256": "2c77938b6b5433043d31888ef7a322a986688a8da208d6f6d39e5110bd53b3e9"
+    },
+    {
+      "id": "tv6n",
+      "arm": "c",
+      "index": 5,
+      "run": "runs/case-a-pilot/arm-c-5.json",
+      "sha256": "75968d464b51dc6b5df2b0d00012521afba3cd2f6ecf4df588f58e295e430de4"
+    },
+    {
+      "id": "277k",
+      "arm": "a",
+      "index": 4,
+      "run": "runs/case-a-pilot/arm-a-4.json",
+      "sha256": "792bfd797356281803b6dae978f54dcbcd3c1c7c1f9ecc3536538c72a2a38066"
+    },
+    {
+      "id": "2kqp",
+      "arm": "b",
+      "index": 4,
+      "run": "runs/case-a-pilot/arm-b-4.json",
+      "sha256": "03a21fa48d79b1ad5beefc7472318ba25da75a972ccf30e28d398a6ba5daecad"
+    },
+    {
+      "id": "jfzs",
+      "arm": "c",
+      "index": 1,
+      "run": "runs/case-a-pilot/arm-c-1.json",
+      "sha256": "0d83c983b2e8616f35153c8fa7d42e26a1cd7dc0bdc6c2798b69a8fa5eef2818"
+    },
+    {
+      "id": "z9jq",
+      "arm": "b",
+      "index": 5,
+      "run": "runs/case-a-pilot/arm-b-5.json",
+      "sha256": "8a8b004b5debf5fe8fc025e348bf25d91475fbf47302c6bcdf7b74db011da3e4"
+    },
+    {
+      "id": "5jvx",
+      "arm": "c",
+      "index": 2,
+      "run": "runs/case-a-pilot/arm-c-2.json",
+      "sha256": "427eb6a54ae8161f0a69e76969db6fbeb8f69547c2c2fdcc849a6cca193f763a"
+    },
+    {
+      "id": "6vg9",
+      "arm": "c",
+      "index": 4,
+      "run": "runs/case-a-pilot/arm-c-4.json",
+      "sha256": "b7f9d828c498b2a8a48ce1d1e67e015bfe3e59032b0bb313fd64e94342cd0ae9"
+    },
+    {
+      "id": "h2kz",
+      "arm": "c",
+      "index": 3,
+      "run": "runs/case-a-pilot/arm-c-3.json",
+      "sha256": "e72d28f3e7da8362757eb1ab8d0ca905472dd21dd822702891f1db2165623e88"
+    },
+    {
+      "id": "nxhs",
+      "arm": "a",
+      "index": 2,
+      "run": "runs/case-a-pilot/arm-a-2.json",
+      "sha256": "2306bad651cbb993225dea40170057c0c83a17df4fd7b120dc19ee164756d244"
+    },
+    {
+      "id": "rwvp",
+      "arm": "a",
+      "index": 1,
+      "run": "runs/case-a-pilot/arm-a-1.json",
+      "sha256": "878d8458b3a638f6a698a37607107145f412a253ce7ad3f75170b5714bd06192"
+    },
+    {
+      "id": "htfh",
+      "arm": "b",
+      "index": 1,
+      "run": "runs/case-a-pilot/arm-b-1.json",
+      "sha256": "887d5c416e82a7bdf488f6ef0016b8a443da7741cc5818d3a8949fb16571856d"
+    },
+    {
+      "id": "r2s8",
+      "arm": "a",
+      "index": 5,
+      "run": "runs/case-a-pilot/arm-a-5.json",
+      "sha256": "5b46bbd1b14bf263013dc43b837d94e67a430e77e51b15d00bd90772a83351c8"
+    },
+    {
+      "id": "7nf2",
+      "arm": "b",
+      "index": 2,
+      "run": "runs/case-a-pilot/arm-b-2.json",
+      "sha256": "d7b40438065b8011d52cef4187dbab6dc44e7782b36c59ba5f4f43ce9e7af1ca"
+    },
+    {
+      "id": "3mvm",
+      "arm": "a",
+      "index": 3,
+      "run": "runs/case-a-pilot/arm-a-3.json",
+      "sha256": "3061b8229656dee9ac49d69c5438b2adf445f94f3d18ab4e25fb7c55b7c88e09"
+    }
+  ]
+}
