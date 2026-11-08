@@ -4,7 +4,7 @@ Work the ranking out carefully rather than going on reputation. Consider how goo
 
 For each programme, end with:
 
-**Verdict: [solid / defensible with reservations / fragile / inconclusive-by-evidence / inconclusive-by-balance]**
+**Verdict: [solid / defensible / fragile / inconclusive (evidence) / inconclusive (balance)]**
 **Principal problem (if fragile or worse):** name it in a few words; "none" otherwise.
 
 Strongest: ...
