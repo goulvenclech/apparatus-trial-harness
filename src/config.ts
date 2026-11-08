@@ -16,6 +16,9 @@ export interface RetryConfig {
   maxDelayMs: number;
 }
 
+export const EFFORT_LEVELS = ["low", "medium", "high", "xhigh", "max"] as const;
+export type Effort = (typeof EFFORT_LEVELS)[number];
+
 export interface Config {
   campaign: string;
   model: string;
@@ -23,9 +26,16 @@ export interface Config {
   runsPerArm: number;
   maxTokens: number;
   maxUses: number;
+  /** Requests a run may add after pause_turn before it is archived incomplete. */
+  maxContinuations: number;
   delayMs: number;
   userLocation: UserLocation;
   webSearchToolType: string;
+  /** Unset leaves effort at the model's API default, which differs between models. */
+  effort?: Effort;
+  blockedDomains?: string[];
+  // Billing only: the API documents identical output with or without caching.
+  promptCaching: boolean;
   /** Absolute path, resolved relative to the config file's directory. */
   promptsDir: string;
   /** Absolute path, resolved relative to the config file's directory. */
@@ -50,9 +60,13 @@ const TOP_LEVEL_KEYS = new Set([
   "runsPerArm",
   "maxTokens",
   "maxUses",
+  "maxContinuations",
   "delayMs",
   "userLocation",
   "webSearchToolType",
+  "effort",
+  "blockedDomains",
+  "promptCaching",
   "promptsDir",
   "outDir",
   "retry",
@@ -133,6 +147,52 @@ function parseUserLocation(raw: Record<string, unknown>, label: string): UserLoc
   return location;
 }
 
+function parseEffort(raw: Record<string, unknown>, label: string): Effort | undefined {
+  const value = raw["effort"];
+  if (value === undefined) return undefined;
+  const level = EFFORT_LEVELS.find((candidate) => candidate === value);
+  if (level === undefined) {
+    fail(label, `\`effort\` must be one of ${EFFORT_LEVELS.join(", ")} when present`);
+  }
+  return level;
+}
+
+// The API takes bare domains with an optional path, no scheme.
+const BLOCKED_DOMAIN_RE = /^[A-Za-z0-9-]+(\.[A-Za-z0-9-]+)+(\/\S*)?$/;
+
+function parseBlockedDomains(raw: Record<string, unknown>, label: string): string[] | undefined {
+  const value = raw["blockedDomains"];
+  if (value === undefined) return undefined;
+  if (!Array.isArray(value) || value.length === 0) {
+    fail(label, "`blockedDomains` must be a non-empty array when present");
+  }
+  return value.map((entry: unknown) => {
+    if (typeof entry !== "string" || !BLOCKED_DOMAIN_RE.test(entry)) {
+      fail(
+        label,
+        `\`blockedDomains\` entries must be bare domains with an optional path (got ${JSON.stringify(entry)})`,
+      );
+    }
+    return entry;
+  });
+}
+
+// A turn of ~50 searches takes ~100 loop steps: 10 continuations cover it
+// even if the server pauses every 10 steps.
+export const DEFAULT_MAX_CONTINUATIONS = 10;
+
+function parseMaxContinuations(raw: Record<string, unknown>, label: string): number {
+  if (raw["maxContinuations"] === undefined) return DEFAULT_MAX_CONTINUATIONS;
+  return requireInt(raw, "maxContinuations", label, { min: 0 });
+}
+
+function parsePromptCaching(raw: Record<string, unknown>, label: string): boolean {
+  const value = raw["promptCaching"];
+  if (value === undefined) return false;
+  if (typeof value !== "boolean") fail(label, "`promptCaching` must be a boolean when present");
+  return value;
+}
+
 function parseRetry(raw: Record<string, unknown>, label: string): RetryConfig {
   const value = raw["retry"];
   const retry: RetryConfig = { maxAttempts: 5, baseDelayMs: 2000, maxDelayMs: 60000 };
@@ -207,6 +267,9 @@ export function parseConfig(rawText: string, configDir: string, label: string): 
     );
   }
 
+  const effort = parseEffort(parsed, label);
+  const blockedDomains = parseBlockedDomains(parsed, label);
+
   return {
     campaign,
     model,
@@ -214,9 +277,13 @@ export function parseConfig(rawText: string, configDir: string, label: string): 
     runsPerArm: requireInt(parsed, "runsPerArm", label, { min: 1 }),
     maxTokens: requireInt(parsed, "maxTokens", label, { min: 1 }),
     maxUses: requireInt(parsed, "maxUses", label, { min: 1 }),
+    maxContinuations: parseMaxContinuations(parsed, label),
     delayMs: requireInt(parsed, "delayMs", label, { min: 0 }),
     userLocation: parseUserLocation(parsed, label),
     webSearchToolType,
+    ...(effort === undefined ? {} : { effort }),
+    ...(blockedDomains === undefined ? {} : { blockedDomains }),
+    promptCaching: parsePromptCaching(parsed, label),
     promptsDir: resolve(configDir, promptsDir),
     outDir: resolve(configDir, outDir),
     retry: parseRetry(parsed, label),

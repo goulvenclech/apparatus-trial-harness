@@ -1,10 +1,11 @@
 {
-  "campaign": "case-a-pilot",
-  "model": "claude-opus-5",
-  "campaignDate": "2026-07-29",
+  "campaign": "case-a-dark-matter",
+  "model": "claude-opus-5-5",
+  "campaignDate": "2026-11-08",
   "runsPerArm": 5,
   "maxTokens": 16000,
-  "maxUses": 8,
+  "maxUses": 50,
+  "maxContinuations": 10,
   "delayMs": 5000,
   "userLocation": {
     "type": "approximate",
@@ -12,5 +13,8 @@
     "country": "FR",
     "timezone": "Europe/Paris"
   },
-  "webSearchToolType": "web_search_20260318"
+  "webSearchToolType": "web_search_20260318",
+  "effort": "high",
+  "promptCaching": true,
+  "blockedDomains": ["github.com/goulvenclech", "goulven-clech.dev"]
 }

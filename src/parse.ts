@@ -45,3 +45,32 @@ export function summarizeResponse(response: unknown): RunSummary {
     queries: extractSearchQueries(response),
   };
 }
+
+// The answer is the trailing run of text blocks; earlier text is preamble.
+// Citations are listed in one format for every arm so they do not reveal it.
+export function extractFinalAnswer(response: unknown): string {
+  if (!isRecord(response) || !Array.isArray(response["content"])) return "";
+  const blocks: unknown[] = response["content"];
+  let start = blocks.length;
+  while (start > 0) {
+    const block = blocks[start - 1];
+    if (!isRecord(block) || block["type"] !== "text") break;
+    start--;
+  }
+
+  let text = "";
+  const cited: string[] = [];
+  for (const block of blocks.slice(start)) {
+    if (!isRecord(block)) continue;
+    if (typeof block["text"] === "string") text += block["text"];
+    const citations = block["citations"];
+    if (!Array.isArray(citations)) continue;
+    for (const citation of citations) {
+      if (!isRecord(citation) || typeof citation["url"] !== "string") continue;
+      const title = typeof citation["title"] === "string" ? citation["title"] : citation["url"];
+      const entry = `- ${title} — ${citation["url"]}`;
+      if (!cited.includes(entry)) cited.push(entry);
+    }
+  }
+  return cited.length === 0 ? text : `${text}\n\nCited search results:\n${cited.join("\n")}`;
+}

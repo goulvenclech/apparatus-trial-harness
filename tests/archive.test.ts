@@ -18,8 +18,8 @@ function makeRecord(arm: Arm, index: number): RunRecord {
       arm,
       index,
       timestamp: `2026-07-29T10:0${index % 10}:00.000Z`,
-      model_requested: "claude-opus-5",
-      model: "claude-opus-5",
+      model_requested: "claude-opus-5-5",
+      model: "claude-opus-5-5",
       request_id: "req_test",
       config_hash: "c".repeat(64),
       prompt_hashes: { system: "s".repeat(64), arm: "a".repeat(64) },
@@ -72,6 +72,46 @@ describe("rebuildIndex", () => {
       ["b", 1],
     ]);
     expect(lines[0]?.queries).toEqual(["q-a-2"]);
+  });
+
+  it("sums a continued turn over all its responses and marks it incomplete", async () => {
+    const record = makeRecord("c", 1);
+    const paused = {
+      content: [{ type: "server_tool_use", name: "web_search", input: { query: "q-paused" } }],
+      stop_reason: "pause_turn",
+      usage: { input_tokens: 5, output_tokens: 7, server_tool_use: { web_search_requests: 2 } },
+    };
+    await writeRunRecord(dir, {
+      ...record,
+      metadata: { ...record.metadata, paused_request_ids: ["req_paused"], incomplete: true },
+      paused_responses: [paused],
+    });
+    await rebuildIndex(dir);
+    expect(JSON.parse(await readFile(join(dir, "index.jsonl"), "utf8"))).toMatchObject({
+      stop_reason: "end_turn",
+      input_tokens: 15,
+      output_tokens: 27,
+      web_search_requests: 3,
+      queries: ["q-paused", "q-c-1"],
+      continuations: 1,
+      incomplete: true,
+    });
+  });
+
+  it("adds no continuation fields for a turn that never paused", async () => {
+    await writeRunRecord(dir, makeRecord("a", 1));
+    await rebuildIndex(dir);
+    const entry = JSON.parse(await readFile(join(dir, "index.jsonl"), "utf8"));
+    expect(Object.keys(entry)).toEqual([
+      "arm",
+      "index",
+      "timestamp",
+      "stop_reason",
+      "input_tokens",
+      "output_tokens",
+      "web_search_requests",
+      "queries",
+    ]);
   });
 
   it("writes an empty index for an empty campaign", async () => {

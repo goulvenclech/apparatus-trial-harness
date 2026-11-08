@@ -2,10 +2,16 @@ import Anthropic, { APIConnectionError, APIError, RateLimitError } from "@anthro
 import { existsSync, rmSync } from "node:fs";
 import { mkdir, open, readFile, rm } from "node:fs/promises";
 import { join } from "node:path";
-import { type Arm, type RunRecord, rebuildIndex, runFileName, writeRunRecord } from "./archive.js";
+import {
+  type Arm,
+  type RunRecord,
+  buildIndexEntry,
+  rebuildIndex,
+  runFileName,
+  writeRunRecord,
+} from "./archive.js";
 import { type Config, type RetryConfig, loadConfig } from "./config.js";
 import { sha256Hex } from "./hash.js";
-import { summarizeResponse } from "./parse.js";
 import { substituteDate } from "./template.js";
 
 export interface RunnerOptions {
@@ -151,7 +157,63 @@ function webSearchTool(config: Config): Anthropic.Messages.ToolUnion {
     name: "web_search",
     max_uses: config.maxUses,
     user_location: config.userLocation,
+    ...(config.blockedDomains === undefined ? {} : { blocked_domains: config.blockedDomains }),
   } as unknown as Anthropic.Messages.ToolUnion;
+}
+
+// A continuation resends the turn so far: the user message, then every paused
+// response as its own assistant message, in order, with the code-execution
+// container of the last one (Anthropic docs, server tools, "pause_turn").
+export function buildMessageParams(
+  config: Config,
+  system: string,
+  userText: string,
+  paused: readonly Anthropic.Messages.Message[] = [],
+): Anthropic.Messages.MessageCreateParamsNonStreaming {
+  const containerId = paused.at(-1)?.container?.id;
+  return {
+    model: config.model,
+    max_tokens: config.maxTokens,
+    system,
+    messages: [
+      { role: "user", content: userText },
+      ...paused.map((response) => ({ role: "assistant" as const, content: response.content })),
+    ],
+    tools: [webSearchTool(config)],
+    ...(containerId === undefined ? {} : { container: containerId }),
+    ...(config.effort === undefined ? {} : { output_config: { effort: config.effort } }),
+    // Top-level caching also makes the API cache each server tool result, so
+    // later steps of the search loop read the growing context from cache.
+    ...(config.promptCaching ? { cache_control: { type: "ephemeral" } } : {}),
+  };
+}
+
+export interface SentRequest {
+  message: Anthropic.Messages.Message;
+  requestId: string | null;
+}
+
+export interface Turn {
+  /** Every response of the turn, in order; all but the last ended in pause_turn. */
+  responses: SentRequest[];
+  /** False when the last allowed continuation still paused. */
+  complete: boolean;
+}
+
+export async function runTurn(
+  send: (params: Anthropic.Messages.MessageCreateParamsNonStreaming) => Promise<SentRequest>,
+  buildParams: (
+    paused: readonly Anthropic.Messages.Message[],
+  ) => Anthropic.Messages.MessageCreateParamsNonStreaming,
+  maxContinuations: number,
+): Promise<Turn> {
+  const responses: SentRequest[] = [];
+  for (;;) {
+    const sent = await send(buildParams(responses.map((response) => response.message)));
+    responses.push(sent);
+    if (sent.message.stop_reason !== "pause_turn") return { responses, complete: true };
+    if (responses.length > maxContinuations) return { responses, complete: false };
+  }
 }
 
 interface PromptFile {
@@ -241,25 +303,36 @@ export async function run(options: RunnerOptions): Promise<void> {
           }
 
           if (calls > 0 && config.delayMs > 0) await sleep(config.delayMs);
-          log(`${label}: calling ${config.model} (${calls + skips + 1}/${total})…`);
-
-          const { message, requestId } = await callWithBackoff(
-            async () => {
-              const { data, response } = await getClient()
-                .messages.create({
-                  model: config.model,
-                  max_tokens: config.maxTokens,
-                  system,
-                  messages: [{ role: "user", content: armFile.text }],
-                  tools: [webSearchTool(config)],
-                })
-                .withResponse();
-              return { message: data, requestId: response.headers.get("request-id") };
-            },
-            config.retry,
-            label,
+          log(
+            `${label}: calling ${config.model}, effort ${config.effort ?? "API default"} ` +
+              `(${calls + skips + 1}/${total})…`,
           );
-          calls++;
+
+          const turn = await runTurn(
+            (params) =>
+              callWithBackoff(
+                async () => {
+                  const { data, response } = await getClient()
+                    .messages.create(params)
+                    .withResponse();
+                  calls++;
+                  return { message: data, requestId: response.headers.get("request-id") };
+                },
+                config.retry,
+                label,
+              ),
+            (paused) => {
+              if (paused.length > 0) {
+                log(
+                  `${label}: pause_turn — continuing the turn (${paused.length}/${config.maxContinuations})…`,
+                );
+              }
+              return buildMessageParams(config, system, armFile.text, paused);
+            },
+            config.maxContinuations,
+          );
+          const final = turn.responses.at(-1) as SentRequest;
+          const paused = turn.responses.slice(0, -1);
 
           const record: RunRecord = {
             metadata: {
@@ -268,23 +341,32 @@ export async function run(options: RunnerOptions): Promise<void> {
               index,
               timestamp: new Date().toISOString(),
               model_requested: config.model,
-              model: typeof message.model === "string" ? message.model : null,
-              request_id: requestId,
+              model: typeof final.message.model === "string" ? final.message.model : null,
+              request_id: final.requestId,
               config_hash: configHash,
               prompt_hashes: { system: systemFile.hash, arm: armFile.hash },
+              ...(paused.length > 0
+                ? { paused_request_ids: paused.map((response) => response.requestId) }
+                : {}),
+              ...(turn.complete ? {} : { incomplete: true as const }),
             },
-            response: message,
+            response: final.message,
+            ...(paused.length > 0
+              ? { paused_responses: paused.map((response) => response.message) }
+              : {}),
           };
           await writeRunRecord(campaignDir, record);
 
-          const summary = summarizeResponse(message);
+          const summary = buildIndexEntry(record);
           log(
             `${label}: saved ${runFileName(arm, index)} — stop_reason=${summary.stop_reason ?? "null"} ` +
-              `searches=${summary.web_search_requests} in=${summary.input_tokens} out=${summary.output_tokens}`,
+              `requests=${turn.responses.length} searches=${summary.web_search_requests} ` +
+              `in=${summary.input_tokens} out=${summary.output_tokens}`,
           );
-          if (summary.stop_reason === "pause_turn") {
+          if (!turn.complete) {
             log(
-              `${label}: warning — pause_turn: the server-tool loop paused mid-turn; archived as-is (incomplete answer)`,
+              `${label}: warning — still paused after ${config.maxContinuations} continuation(s); ` +
+                "archived and indexed as incomplete",
             );
           } else if (summary.stop_reason === "refusal") {
             log(`${label}: warning — refusal: safety classifiers declined; archived as-is`);

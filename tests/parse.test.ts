@@ -2,7 +2,7 @@ import { readFile } from "node:fs/promises";
 import { join } from "node:path";
 import { describe, expect, it } from "vitest";
 import { buildIndexEntry, type RunRecord } from "../src/archive.js";
-import { extractSearchQueries, summarizeResponse } from "../src/parse.js";
+import { extractFinalAnswer, extractSearchQueries, summarizeResponse } from "../src/parse.js";
 
 async function loadFixture(name: string): Promise<unknown> {
   const raw = await readFile(join(import.meta.dirname, "fixtures", name), "utf8");
@@ -86,8 +86,8 @@ describe("buildIndexEntry", () => {
         arm: "b",
         index: 3,
         timestamp: "2026-07-29T10:00:00.000Z",
-        model_requested: "claude-opus-5",
-        model: "claude-opus-5",
+        model_requested: "claude-opus-5-5",
+        model: "claude-opus-5-5",
         request_id: "req_test",
         config_hash: "deadbeef",
         prompt_hashes: { system: "aa", arm: "bb" },
@@ -107,5 +107,39 @@ describe("buildIndexEntry", () => {
         "axion haloscope ADMX ORGAN parameter space 2025",
       ],
     });
+  });
+});
+
+describe("extractFinalAnswer", () => {
+  it("joins the trailing text blocks and drops preamble, thinking and tool blocks", () => {
+    const response = {
+      content: [
+        { type: "text", text: "Let me search." },
+        { type: "server_tool_use", name: "web_search", input: { query: "q" } },
+        { type: "web_search_tool_result", content: [] },
+        { type: "thinking", thinking: "" },
+        { type: "text", text: "Axions lead, " },
+        { type: "text", text: "WIMPs trail." },
+      ],
+    };
+    expect(extractFinalAnswer(response)).toBe("Axions lead, WIMPs trail.");
+  });
+
+  it("lists cited search results once, in a form shared by every arm", () => {
+    const cite = { type: "web_search_result_location", url: "https://a.org", title: "A" };
+    const response = {
+      content: [
+        { type: "text", text: "One.", citations: [cite] },
+        { type: "text", text: " Two.", citations: [cite] },
+      ],
+    };
+    expect(extractFinalAnswer(response)).toBe(
+      "One. Two.\n\nCited search results:\n- A — https://a.org",
+    );
+  });
+
+  it("returns an empty answer for a run that ends without text, and never throws", () => {
+    expect(extractFinalAnswer({ content: [{ type: "server_tool_use" }] })).toBe("");
+    expect(extractFinalAnswer(null)).toBe("");
   });
 });
