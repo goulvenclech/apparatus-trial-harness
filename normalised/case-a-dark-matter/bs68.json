@@ -1,0 +1,234 @@
+{
+  "schema": "normalised-run/2",
+  "id": "bs68",
+  "case": "case-a-dark-matter",
+  "programme_count": 7,
+  "programmes": [
+    {
+      "position": 1,
+      "label": "Cold dark matter as a substance (the standard cosmological model, ΛCDM)",
+      "verdict": "solid",
+      "verdict_note": "",
+      "principal_problem": "none"
+    },
+    {
+      "position": 2,
+      "label": "QCD axion (including the ultralight \"fuzzy\" end)",
+      "verdict": "defensible",
+      "verdict_note": "",
+      "principal_problem": "none"
+    },
+    {
+      "position": 3,
+      "label": "WIMPs (weakly interacting massive particles)",
+      "verdict": "defensible",
+      "verdict_note": "",
+      "principal_problem": "none"
+    },
+    {
+      "position": 4,
+      "label": "Light dark sectors and self-interacting dark matter",
+      "verdict": "inconclusive (evidence)",
+      "verdict_note": "",
+      "principal_problem": "no detection, with models flexible enough to fit almost any outcome"
+    },
+    {
+      "position": 5,
+      "label": "Primordial black holes",
+      "verdict": "inconclusive (evidence)",
+      "verdict_note": "",
+      "principal_problem": "survival only in a mass range current instruments can barely probe"
+    },
+    {
+      "position": 6,
+      "label": "Sterile neutrinos (keV-mass, \"warm\" dark matter)",
+      "verdict": "fragile",
+      "verdict_note": "",
+      "principal_problem": "flagship signal unconfirmed by high-resolution spectroscopy"
+    },
+    {
+      "position": 7,
+      "label": "MOND / modified gravity",
+      "verdict": "fragile",
+      "verdict_note": "",
+      "principal_problem": "failure to remove the need for unseen mass in clusters or the CMB"
+    }
+  ],
+  "ranking": [
+    "Cold dark matter as a substance (the standard cosmological model, ΛCDM)",
+    "QCD axion (including the ultralight \"fuzzy\" end)",
+    "WIMPs (weakly interacting massive particles)",
+    "Light dark sectors and self-interacting dark matter",
+    "Primordial black holes",
+    "Sterile neutrinos (keV-mass, \"warm\" dark matter)",
+    "MOND / modified gravity"
+  ],
+  "source_count": 33,
+  "sources": [
+    {
+      "ref": "ACT DR6 papers, 2025",
+      "programme": "Cold dark matter as a substance (the standard cosmological model, ΛCDM)",
+      "claim": "three independent CMB telescopes agree on a cold-dark-matter density separate from ordinary matter"
+    },
+    {
+      "ref": "Camphuis et al., SPT-3G D1, 2025",
+      "programme": "Cold dark matter as a substance (the standard cosmological model, ΛCDM)",
+      "claim": "three independent CMB telescopes agree on a cold-dark-matter density; the Hubble-constant discrepancy is 6.4 sigma"
+    },
+    {
+      "ref": "McGaugh, ApJ, 1999",
+      "programme": "Cold dark matter as a substance (the standard cosmological model, ΛCDM)",
+      "claim": "baryonic MOND-inspired models predicted a third CMB peak smaller than the second"
+    },
+    {
+      "ref": "McGaugh, ApJ, 2004",
+      "programme": "Cold dark matter as a substance (the standard cosmological model, ΛCDM)",
+      "claim": "baryonic MOND-inspired models predicted a third CMB peak smaller than the second"
+    },
+    {
+      "ref": "Phys. Rev. D 112, 043541, 2025",
+      "programme": "Cold dark matter as a substance (the standard cosmological model, ΛCDM)",
+      "claim": "DESI favours a low matter density, in 2-3 sigma tension with the CMB"
+    },
+    {
+      "ref": "ADMX Collaboration, PRL 135, 191001, 2025",
+      "programme": "QCD axion (including the ultralight \"fuzzy\" end)",
+      "claim": "ADMX searched 1.10-1.31 GHz reaching KSVZ but not DFSZ sensitivity"
+    },
+    {
+      "ref": "PRL 134, 151006, 2025",
+      "programme": "QCD axion (including the ultralight \"fuzzy\" end)",
+      "claim": "HAYSTAC used quantum squeezing to speed up its search"
+    },
+    {
+      "ref": "Ahn et al., arXiv:2602.05388, 2026",
+      "programme": "QCD axion (including the ultralight \"fuzzy\" end)",
+      "claim": "a CAPP candidate signal near 1.036 GHz did not persist on follow-up"
+    },
+    {
+      "ref": "CERN Courier, 2026",
+      "programme": "QCD axion (including the ultralight \"fuzzy\" end)",
+      "claim": "MADMAX and ALPHA target higher axion masses"
+    },
+    {
+      "ref": "arXiv:2507.00705, 2025",
+      "programme": "QCD axion (including the ultralight \"fuzzy\" end)",
+      "claim": "Lyman-alpha and dwarf-galaxy bounds near 1e-19 eV rule out the originally motivated fuzzy mass"
+    },
+    {
+      "ref": "LZ Collaboration, December 2025",
+      "programme": "WIMPs (weakly interacting massive particles)",
+      "claim": "LZ's 417 live days set the best limits and detected boron-8 solar neutrinos"
+    },
+    {
+      "ref": "Akerib et al., arXiv:2609.02823",
+      "programme": "WIMPs (weakly interacting massive particles)",
+      "claim": "LZ saw one 248 keV recoil, 3.4 sigma for the best model and 2.6 sigma overall"
+    },
+    {
+      "ref": "arXiv:2609.14799",
+      "programme": "WIMPs (weakly interacting massive particles)",
+      "claim": "theoretical explanations of the LZ event appeared within days"
+    },
+    {
+      "ref": "Totani, JCAP, 2025",
+      "programme": "WIMPs (weakly interacting massive particles)",
+      "claim": "Fermi-LAT data show a 20 GeV gamma-ray excess in the Milky Way halo"
+    },
+    {
+      "ref": "Stenhouse, Ghag & Deppisch, arXiv:2607.08552, 2026",
+      "programme": "WIMPs (weakly interacting massive particles)",
+      "claim": "a reanalysis reproduces the excess but finds it conflicts with dwarf limits for simple annihilation"
+    },
+    {
+      "ref": "arXiv:2512.12176",
+      "programme": "WIMPs (weakly interacting massive particles)",
+      "claim": "AMS-02 antiproton data make a dark-matter origin of the excess unlikely"
+    },
+    {
+      "ref": "Abazajian, Li & Macias, arXiv:2610.23713, 2026",
+      "programme": "WIMPs (weakly interacting massive particles)",
+      "claim": "a 420 GeV model linked to the LZ event fits only some background-emission models"
+    },
+    {
+      "ref": "ATLAS/CMS Run 2 review, arXiv:2409.19216",
+      "programme": "WIMPs (weakly interacting massive particles)",
+      "claim": "the LHC has reported no dark-matter signal in its searches"
+    },
+    {
+      "ref": "arXiv:2509.16319, 2025",
+      "programme": "Light dark sectors and self-interacting dark matter",
+      "claim": "SENSEI and DAMIC-M set strong limits on sub-GeV dark matter scattering off electrons"
+    },
+    {
+      "ref": "Minor et al., 2020",
+      "programme": "Light dark sectors and self-interacting dark matter",
+      "claim": "SDSS J0946+1006 contains an unexpectedly dense lensing subhalo"
+    },
+    {
+      "ref": "Mróz et al., Nature 632, 749, 2024",
+      "programme": "Primordial black holes",
+      "claim": "20 years of OGLE microlensing rule out stellar-mass black holes as the dominant dark matter"
+    },
+    {
+      "ref": "arXiv:2509.05400",
+      "programme": "Primordial black holes",
+      "claim": "the OGLE exclusion of stellar-mass black holes is contested"
+    },
+    {
+      "ref": "Mróz et al., ApJL, 2024",
+      "programme": "Primordial black holes",
+      "claim": "planetary-mass black holes are excluded as the dominant dark matter"
+    },
+    {
+      "ref": "Profumo, Phys. Rev. D, 2026",
+      "programme": "Primordial black holes",
+      "claim": "the asteroid-mass window of 1e17 to 1e22 grams remains open"
+    },
+    {
+      "ref": "arXiv:2403.03839",
+      "programme": "Primordial black holes",
+      "claim": "the asteroid-mass window is narrower for realistic mass distributions"
+    },
+    {
+      "ref": "Audard et al., ApJL 994, L28, 2025",
+      "programme": "Sterile neutrinos (keV-mass, \"warm\" dark matter)",
+      "claim": "XRISM stacking of ten clusters over 3.75 megaseconds found no unidentified lines"
+    },
+    {
+      "ref": "Zadorozhna et al., arXiv:2610.01877",
+      "programme": "Sterile neutrinos (keV-mass, \"warm\" dark matter)",
+      "claim": "other XRISM data show an unexplained 3.531 keV residual, about 3 sigma locally, 2-2.5 overall"
+    },
+    {
+      "ref": "Famaey, Pizzuti & Saltas, PRD 111, 123042, 2025",
+      "programme": "MOND / modified gravity",
+      "claim": "MOND leaves residual cluster missing mass about ten times the inner hot-gas density"
+    },
+    {
+      "ref": "Hernandez, ApJL 1008, L46, 2026",
+      "programme": "MOND / modified gravity",
+      "claim": "a QUMOND variant can reproduce the Bullet Cluster lensing"
+    },
+    {
+      "ref": "Cookson et al., MNRAS 547, 2026",
+      "programme": "MOND / modified gravity",
+      "claim": "wide binaries show no gravitational anomaly"
+    },
+    {
+      "ref": "arXiv:2603.11015",
+      "programme": "MOND / modified gravity",
+      "claim": "a 3D-velocity reanalysis of 36 wide binaries finds no anomaly"
+    },
+    {
+      "ref": "arXiv:2610.28220",
+      "programme": "MOND / modified gravity",
+      "claim": "a 65-system wide-binary study finds no anomaly"
+    },
+    {
+      "ref": "Chae, arXiv:2607.14450",
+      "programme": "MOND / modified gravity",
+      "claim": "the null wide-binary results are disputed"
+    }
+  ]
+}

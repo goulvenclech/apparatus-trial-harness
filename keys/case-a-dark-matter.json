@@ -1,0 +1,118 @@
+{
+  "schema": "blind-key/1",
+  "campaign": "case-a-dark-matter",
+  "generated": "2026-11-08T19:39:13.777Z",
+  "shuffle": {
+    "method": "Fisher-Yates over the run files sorted by arm then index, mulberry32 seeded with sha256(seed)[0:8]; opaque ids drawn from the same generator after the shuffle",
+    "seed": "45c87657b263857fbb07ac14a5a5848a"
+  },
+  "normalised_schema": "normalised-run/2",
+  "input": "the trailing text blocks of response.content, concatenated; thinking, tool-use, search-result and code-execution blocks are not the answer and are left out",
+  "records": [
+    {
+      "id": "y8yz",
+      "arm": "a",
+      "index": 2,
+      "run": "arm-a-2.json",
+      "sha256": "453c0cb60cac6cf68590a072d2503f2ae98580365aa37992274960662088741a"
+    },
+    {
+      "id": "revp",
+      "arm": "c",
+      "index": 5,
+      "run": "arm-c-5.json",
+      "sha256": "01a18892de382894d7e6e7bb324895b7564a0f343bcf48caf71c42d04d9b8ce0"
+    },
+    {
+      "id": "wmqn",
+      "arm": "a",
+      "index": 4,
+      "run": "arm-a-4.json",
+      "sha256": "d25b1545f279df3680b92c4d98f81b85329eb64a0c9c8975797f2f596dda8239"
+    },
+    {
+      "id": "bs68",
+      "arm": "b",
+      "index": 1,
+      "run": "arm-b-1.json",
+      "sha256": "307ced50d5ed0358aa0ca64642c73acbf98a7b5aef4b9e0a72d2280e6ad51164"
+    },
+    {
+      "id": "q4n5",
+      "arm": "a",
+      "index": 1,
+      "run": "arm-a-1.json",
+      "sha256": "adc3409e9b8844dbcd3c2608ab7ac83f03fc51656af020bb5a44b26bb0f1156c"
+    },
+    {
+      "id": "q6ah",
+      "arm": "a",
+      "index": 5,
+      "run": "arm-a-5.json",
+      "sha256": "431e3f3369da833010d0167fa77b9b53cee26bb5542e906e37b1ce51db8366c3"
+    },
+    {
+      "id": "3hkv",
+      "arm": "c",
+      "index": 1,
+      "run": "arm-c-1.json",
+      "sha256": "72729fd69b840be1ccf7d70dbd33f555826a6045a1d13319e42a043578d1d62b"
+    },
+    {
+      "id": "4x5f",
+      "arm": "c",
+      "index": 4,
+      "run": "arm-c-4.json",
+      "sha256": "ec3dc122173913dd790fc526d4ac1e4ab2aa3734235f734b09c19478661d3c24"
+    },
+    {
+      "id": "9gtx",
+      "arm": "b",
+      "index": 4,
+      "run": "arm-b-4.json",
+      "sha256": "4cdb06ff8120db363d527441fa7cfe1865b09cd393390c4137cacdaaf6b24ef8"
+    },
+    {
+      "id": "a3m9",
+      "arm": "b",
+      "index": 2,
+      "run": "arm-b-2.json",
+      "sha256": "b41184446c89949ea45b3a5e944d9bfd7b9f073731b2e288e00a52cf525307b3"
+    },
+    {
+      "id": "4mn5",
+      "arm": "b",
+      "index": 3,
+      "run": "arm-b-3.json",
+      "sha256": "6d3ce012c639c5197d429bbcc5538fa95ac9ac2c6c8126479e8a7a941f074fa3"
+    },
+    {
+      "id": "txfx",
+      "arm": "a",
+      "index": 3,
+      "run": "arm-a-3.json",
+      "sha256": "421919af988fce425723c7ca36b255810cb205be0030f2935eb9088405bf6929"
+    },
+    {
+      "id": "pn4y",
+      "arm": "c",
+      "index": 2,
+      "run": "arm-c-2.json",
+      "sha256": "ae1503301babefba3fa57225cef7e3b67efb55506452566a46790c96df5c6b87"
+    },
+    {
+      "id": "jsea",
+      "arm": "c",
+      "index": 3,
+      "run": "arm-c-3.json",
+      "sha256": "1b8263fab3fb1d6d97dcb4acae44059e0f31d1836d289381968caebea8d8fe76"
+    },
+    {
+      "id": "m5mq",
+      "arm": "b",
+      "index": 5,
+      "run": "arm-b-5.json",
+      "sha256": "0959e576659d2f20863746c1db0401caf7d73f44e5b67de7612ae8487998c235"
+    }
+  ]
+}

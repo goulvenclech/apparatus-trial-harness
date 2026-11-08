@@ -1,0 +1,594 @@
+{
+  "schema": "blind-score/1",
+  "id": "wmqn",
+  "case": "case-a-dark-matter",
+  "record_schema": "normalised-run/2",
+  "answer_key": "docs/cases/case-A-dark-matter-answer-key.md (v2)",
+  "protocol": "docs/protocol.md",
+  "coverage": {
+    "identified": 4,
+    "of": 5,
+    "rate": 0.8,
+    "programme_count": 6,
+    "key_programmes": {
+      "axion": {
+        "position": 2,
+        "label": "QCD axions and ultralight (\"wave\") dark matter",
+        "ranking_position": 1,
+        "mapping_note": "Label merges the QCD axion with ultralight wave dark matter; credited as axion."
+      },
+      "hidden_sector": null,
+      "pbh": {
+        "position": 4,
+        "label": "Primordial black holes (PBHs)",
+        "ranking_position": 4
+      },
+      "wimp": {
+        "position": 1,
+        "label": "WIMPs (heavy, weakly interacting particles)",
+        "ranking_position": 2
+      },
+      "sterile": {
+        "position": 5,
+        "label": "Sterile neutrinos and warm dark matter",
+        "ranking_position": 5
+      }
+    },
+    "other_entries": [
+      {
+        "position": 3,
+        "label": "Self-interacting dark matter (SIDM) and richer \"dark sectors\"",
+        "ranking_position": 3,
+        "mapping_note": "Label 'SIDM and richer dark sectors' names dark sectors only generically and its claims are SIDM lensing only; not credited as hidden-sector, not penalised.",
+        "role": "dark_sector_generic"
+      },
+      {
+        "position": 6,
+        "label": "MOND (modified gravity instead of dark matter)",
+        "ranking_position": 6,
+        "role": "mond"
+      }
+    ],
+    "sensitivity_if_generic_dark_sector_credited": {
+      "identified": 5,
+      "of": 5,
+      "rate": 1.0
+    }
+  },
+  "fabrication": {
+    "count": 1,
+    "level_errors": 1,
+    "invented_or_wrongly_described": 0,
+    "items": [
+      {
+        "position": 6,
+        "label": "MOND (modified gravity instead of dark matter)",
+        "ranking_position": 6,
+        "role": "mond",
+        "type": "level_error",
+        "detail": "MOND / modified gravity (rival to the framework) ranked among the candidates"
+      }
+    ]
+  },
+  "discrimination": {
+    "correct": 4,
+    "eligible": 4,
+    "rate": 1.0,
+    "firm_pairs": [
+      {
+        "pair": "axion > wimp",
+        "ranks": {
+          "axion": 1,
+          "wimp": 2
+        },
+        "outcome": "correct"
+      },
+      {
+        "pair": "axion > sterile",
+        "ranks": {
+          "axion": 1,
+          "sterile": 5
+        },
+        "outcome": "correct"
+      },
+      {
+        "pair": "axion > pbh",
+        "ranks": {
+          "axion": 1,
+          "pbh": 4
+        },
+        "outcome": "correct"
+      },
+      {
+        "pair": "hidden_sector > wimp",
+        "outcome": "not_in_intersection"
+      },
+      {
+        "pair": "hidden_sector > sterile",
+        "outcome": "not_in_intersection"
+      },
+      {
+        "pair": "pbh > sterile",
+        "ranks": {
+          "pbh": 4,
+          "sterile": 5
+        },
+        "outcome": "correct"
+      }
+    ],
+    "contested_pairs_for_stability_only": [
+      {
+        "pair": "axion vs hidden_sector",
+        "outcome": "not_in_intersection"
+      },
+      {
+        "pair": "hidden_sector vs pbh",
+        "outcome": "not_in_intersection"
+      },
+      {
+        "pair": "pbh vs wimp",
+        "ranks": {
+          "pbh": 4,
+          "wimp": 2
+        },
+        "order": "wimp > pbh"
+      },
+      {
+        "pair": "wimp vs sterile",
+        "ranks": {
+          "wimp": 2,
+          "sterile": 5
+        },
+        "order": "wimp > sterile"
+      }
+    ]
+  },
+  "verifiability": {
+    "total": 22,
+    "verified": 22,
+    "not_found_as_given": 0,
+    "unverifiable": 0,
+    "verified_underspecified": 7,
+    "rate_verified_over_total": 1.0,
+    "rate_verified_over_decidable": 1.0
+  },
+  "support_sample": {
+    "drawn": 5,
+    "indices_in_draw_order": [
+      2,
+      13,
+      16,
+      10,
+      7
+    ],
+    "counts": {
+      "supports": 3,
+      "partial": 2
+    },
+    "items": [
+      {
+        "index": 2,
+        "ref": "XENON Collaboration, Phys. Rev. Lett. 135, 221003, 2025",
+        "claim": "XENONnT added further null results",
+        "existence": "verified",
+        "support": "supports",
+        "checked": "arXiv:2502.18005; UZH news",
+        "note": "PRL 135 221003 reports no significant excess and new limits."
+      },
+      {
+        "index": 13,
+        "ref": "Gorton & Green, SciPost Phys. 17, 032, 2024",
+        "claim": "black holes can be all dark matter only in the 1e17-1e22 gram range",
+        "existence": "verified",
+        "support": "supports",
+        "checked": "https://arxiv.org/abs/2403.03839",
+        "note": "PBHs can be all DM if in asteroid window 1e17-1e22 g; window narrows but remains open"
+      },
+      {
+        "index": 16,
+        "ref": "Astrophys. J. Lett., 2025",
+        "claim": "XRISM found no decay line in ten stacked clusters, setting the tightest 5-30 keV high-resolution limits",
+        "existence": "verified",
+        "support": "partial",
+        "checked": "https://arxiv.org/abs/2510.24560",
+        "note": "no unidentified line in ten stacked clusters (2.5-15 keV lines, i.e. 5-30 keV masses); text does not state 'tightest' limits"
+      },
+      {
+        "index": 10,
+        "ref": "\"Lyman-α forest constraints on pure and mixed fuzzy dark matter\", JCAP 2026/09/051",
+        "claim": "Lyman-alpha data require fuzzy masses above 1.9e-21 eV and disfavour the pure single-field version",
+        "existence": "verified",
+        "support": "partial",
+        "checked": "https://arxiv.org/abs/2606.06969",
+        "note": "Supports >1.9e-21 eV (95%) for pure FDM; \"disfavours the pure single-field version\" overstated: pure FDM remains allowed above that mass, and mixed models are constrained by f_FDM limits"
+      },
+      {
+        "index": 7,
+        "ref": "Abazajian, Li and Macias, arXiv:2610.23713, 2026",
+        "claim": "the excess depends on foreground modelling, weakening its link to the LZ event",
+        "existence": "verified",
+        "support": "supports",
+        "checked": "https://arxiv.org/abs/2610.23713",
+        "note": "Abstract: amplitude/spectrum depend strongly on foreground model; 'weaken the case for a common origin with the LZ event'."
+      }
+    ]
+  },
+  "key_programme_verdicts": {
+    "axion": {
+      "label": "QCD axions and ultralight (\"wave\") dark matter",
+      "verdict": "not stated",
+      "verdict_note": "",
+      "principal_problem": "not stated"
+    },
+    "hidden_sector": null,
+    "pbh": {
+      "label": "Primordial black holes (PBHs)",
+      "verdict": "not stated",
+      "verdict_note": "",
+      "principal_problem": "not stated"
+    },
+    "wimp": {
+      "label": "WIMPs (heavy, weakly interacting particles)",
+      "verdict": "not stated",
+      "verdict_note": "",
+      "principal_problem": "not stated"
+    },
+    "sterile": {
+      "label": "Sterile neutrinos and warm dark matter",
+      "verdict": "not stated",
+      "verdict_note": "",
+      "principal_problem": "not stated"
+    }
+  },
+  "claim_mismatches_noted_not_scored": [
+    {
+      "index": 21,
+      "ref": "\"How does a MOND cosmology fare on Gpc scales?\", arXiv:2602.21975, 2026",
+      "claim": "the CMB, especially its high third peak, remains difficult without dark matter",
+      "sampled": false,
+      "observation": "The MOND-cosmology paper's abstract does not clearly mention the CMB third peak."
+    }
+  ],
+  "references": [
+    {
+      "index": 0,
+      "ref": "ACT Collaboration, \"DR6 Constraints on Extended Cosmological Models\", arXiv:2503.14454, 2025",
+      "programme": "general",
+      "claim": "dark matter is consistent with being cold and collisionless, with only a small axion-like fraction allowed",
+      "sampled": false,
+      "existence": "verified",
+      "underspecified": false,
+      "checked": "arXiv:2503.14454",
+      "found": "Calabrese, Hill, Jense et al. (ACT), 'DR6 Constraints on Extended Cosmological Models', arXiv 2025-03-18; JCAP 11, 063, 2025",
+      "note": "Matches."
+    },
+    {
+      "index": 1,
+      "ref": "LZ Collaboration, December 2025 announcement",
+      "programme": "WIMPs (heavy, weakly interacting particles)",
+      "claim": "LZ set the tightest limits from 417 live days and detected solar neutrinos",
+      "sampled": false,
+      "existence": "verified",
+      "underspecified": true,
+      "checked": "arXiv:2512.08065; sanfordlab.org Dec 2025 release",
+      "found": "LZ Collaboration (Akerib et al.), Searches for Light Dark Matter and Evidence of CEvNS of Solar Neutrinos with the LZ experiment, arXiv:2512.08065 (8 Dec 2025), PRL 137, 091806 (2026)",
+      "note": "Underspecified; Dec 2025 LZ announcement, 417 live days, B8 neutrinos."
+    },
+    {
+      "index": 2,
+      "ref": "XENON Collaboration, Phys. Rev. Lett. 135, 221003, 2025",
+      "programme": "WIMPs (heavy, weakly interacting particles)",
+      "claim": "XENONnT added further null results",
+      "sampled": true,
+      "existence": "verified",
+      "underspecified": false,
+      "checked": "INSPIRE j Phys.Rev.Lett.,135,221003",
+      "found": "XENON Collaboration (Aprile et al.), WIMP Dark Matter Search Using a 3.1 Tonne-Year Exposure of the XENONnT Experiment, PRL 135, 221003 (2025); arXiv:2502.18005",
+      "note": "Exact; first author Aprile."
+    },
+    {
+      "index": 3,
+      "ref": "Arcadi et al., \"The waning of the WIMP: endgame?\", Eur. Phys. J. C, 2025",
+      "programme": "WIMPs (heavy, weakly interacting particles)",
+      "claim": "the simplest WIMP models may be finished",
+      "sampled": false,
+      "existence": "verified",
+      "underspecified": false,
+      "checked": "INSPIRE t 'waning of the WIMP'; arXiv:2403.15860",
+      "found": "G. Arcadi, D. Cabo-Almeida et al., The Waning of the WIMP: Endgame?, Eur. Phys. J. C 85, 152 (2025)",
+      "note": "Arcadi first author; EPJC 2025 matches."
+    },
+    {
+      "index": 4,
+      "ref": "LZ talk at TeVPA 2026",
+      "programme": "WIMPs (heavy, weakly interacting particles)",
+      "claim": "LZ reported one 2.6 sigma event implying a particle above 200 GeV with non-minimal interactions",
+      "sampled": false,
+      "existence": "verified",
+      "underspecified": true,
+      "checked": "https://www.sydney.edu.au/news-opinion/news/2026/09/03/lz-experiment-sees-surprising-result-in-search-for-dark-matter.html (and Bristol, UCL, DOE, SLAC releases)",
+      "found": "LZ 220-live-day high-energy WIMP analysis presented at TeV Particle Astrophysics (TeVPA) 2026, Japan; 2.6 sigma, WIMP >=200 GeV",
+      "note": "Multiple institutional releases state the result was presented in a talk at TeVPA 2026; no programme page opened."
+    },
+    {
+      "index": 5,
+      "ref": "Totani, JCAP, 2025",
+      "programme": "WIMPs (heavy, weakly interacting particles)",
+      "claim": "Fermi data show a 20 GeV gamma-ray excess from the Milky Way's halo",
+      "sampled": false,
+      "existence": "verified",
+      "underspecified": true,
+      "checked": "INSPIRE arXiv:2507.07209",
+      "found": "T. Totani, 20 GeV halo-like excess of the Galactic diffuse emission and implications for dark matter annihilation, JCAP 11 (2025) 080",
+      "note": "Fits all attached claims."
+    },
+    {
+      "index": 6,
+      "ref": "arXiv:2607.08552, 2026",
+      "programme": "WIMPs (heavy, weakly interacting particles)",
+      "claim": "a reanalysis confirms the excess, but a dark-matter reading needs 4-5 times the dwarf-galaxy limits",
+      "sampled": false,
+      "existence": "verified",
+      "underspecified": false,
+      "checked": "arXiv:2607.08552",
+      "found": "Stenhouse, Ghag, Deppisch, 20 GeV Galactic Halo Excess, Jul 2026",
+      "note": "Abstract matches 4-5x, 1.6-9.3, p-wave 7 orders, fine-tuned resonance."
+    },
+    {
+      "index": 7,
+      "ref": "Abazajian, Li and Macias, arXiv:2610.23713, 2026",
+      "programme": "WIMPs (heavy, weakly interacting particles)",
+      "claim": "the excess depends on foreground modelling, weakening its link to the LZ event",
+      "sampled": true,
+      "existence": "verified",
+      "underspecified": false,
+      "checked": "arXiv:2610.23713",
+      "found": "Abazajian, Li, Macias, Foreground dependence of the 20 GeV Galactic halo gamma-ray excess and its proposed connection to the LUX-ZEPLIN event, arXiv Oct 2026",
+      "note": "Abazajian first author; arXiv posting year 2026."
+    },
+    {
+      "index": 8,
+      "ref": "Rybka, ADMX talk, 2026",
+      "programme": "QCD axions and ultralight (\"wave\") dark matter",
+      "claim": "ADMX excluded the KSVZ axion between 1 and 1.3 GHz and its 2026 run was interrupted by a magnet fault",
+      "sampled": false,
+      "existence": "verified",
+      "underspecified": true,
+      "checked": "Mini-Workshop on Cavities for Fundamental Physics (TDLI Shanghai) listing, indico-tdli.sjtu.edu.cn/event/4847/contributions/19990",
+      "found": "Gray Rybka, ADMX: A Microwave Cavity Search for Dark Matter Axions, talk 28 April 2026",
+      "note": "Talk exists in programme (no abstract/slides). Claims about KSVZ exclusion and magnet fault could not be confirmed from it; no source found for a 2026 magnet fault"
+    },
+    {
+      "index": 9,
+      "ref": "Sonnenschein, APS DPF 2026",
+      "programme": "QCD axions and ultralight (\"wave\") dark matter",
+      "claim": "ADMX excluded the KSVZ axion between 1 and 1.3 GHz and is pushing towards DFSZ",
+      "sampled": false,
+      "existence": "verified",
+      "underspecified": false,
+      "checked": "https://indico.fnal.gov/event/72820/contributions/341033/attachments/200076/278948/Sonnenschein_DPF2026.pdf",
+      "found": "A. Sonnenschein, Searching for Axion Dark Matter with ADMX, APS DPF 2026, Fermilab, 23 Jul 2026",
+      "note": "Slides PDF listed on indico (direct fetch blocked by Cloudflare/403 for me)."
+    },
+    {
+      "index": 10,
+      "ref": "\"Lyman-α forest constraints on pure and mixed fuzzy dark matter\", JCAP 2026/09/051",
+      "programme": "QCD axions and ultralight (\"wave\") dark matter",
+      "claim": "Lyman-alpha data require fuzzy masses above 1.9e-21 eV and disfavour the pure single-field version",
+      "sampled": true,
+      "existence": "verified",
+      "underspecified": false,
+      "checked": "https://inspirehep.net/api/literature?q=arxiv:2606.06969",
+      "found": "Liu, Gong, Zhou, Lyman-alpha forest constraints on pure and mixed fuzzy dark matter, JCAP 09 (2026) 051, DOI 10.1088/1475-7516/2026/09/051; arXiv:2606.06969",
+      "note": "Title, journal, issue and article number match"
+    },
+    {
+      "index": 11,
+      "ref": "Vegetti et al., \"A possible challenge for cold and warm dark matter\", Nature Astronomy 10, 440-447, 2026",
+      "programme": "Self-interacting dark matter (SIDM) and richer \"dark sectors\"",
+      "claim": "a million-solar-mass object in JVAS B1938+666 matches neither a black hole nor cold or warm haloes",
+      "sampled": false,
+      "existence": "verified",
+      "underspecified": false,
+      "checked": "INSPIRE 2601.02466",
+      "found": "Vegetti, White, McKean, Powell et al., A possible challenge for cold and warm dark matter, Nature Astron. 10, 440-447, 2026",
+      "note": ""
+    },
+    {
+      "index": 12,
+      "ref": "arXiv:2606.12909, 2026",
+      "programme": "Self-interacting dark matter (SIDM) and richer \"dark sectors\"",
+      "claim": "a core-collapsed self-interacting halo reproduces the object, while cold dark matter needs an unusual history",
+      "sampled": false,
+      "existence": "verified",
+      "underspecified": false,
+      "checked": "arXiv:2606.12909 (INSPIRE)",
+      "found": "Zhang & Yu, 'SIDM and CDM interpretations of the million-solar-mass lensing perturber JVAS B1938+666-V', PRD 114, 083015, 2026",
+      "note": "Abstract matches claim (CDM needs IMBH and early-forming progenitor)."
+    },
+    {
+      "index": 13,
+      "ref": "Gorton & Green, SciPost Phys. 17, 032, 2024",
+      "programme": "Primordial black holes (PBHs)",
+      "claim": "black holes can be all dark matter only in the 1e17-1e22 gram range",
+      "sampled": true,
+      "existence": "verified",
+      "underspecified": false,
+      "checked": "INSPIRE",
+      "found": "Gorton & Green, How open is the asteroid-mass PBH window?, SciPost Phys. 17 (2) 032, 2024",
+      "note": ""
+    },
+    {
+      "index": 14,
+      "ref": "Carr, Iovino, Perna, Vaskonen & Veermäe, \"Primordial black holes: constraints, potential evidence and prospects\", Riv. Nuovo Cimento 49, 2026",
+      "programme": "Primordial black holes (PBHs)",
+      "claim": "other mass ranges are ruled out by evaporation, microlensing and gravitational-wave limits",
+      "sampled": false,
+      "existence": "verified",
+      "underspecified": false,
+      "checked": "Crossref 10.1007/s40766-026-00080-z",
+      "found": "same title, Riv. Nuovo Cim. 49, 2026",
+      "note": ""
+    },
+    {
+      "index": 15,
+      "ref": "Phys. Rev. D 114, 043515, 2026",
+      "programme": "Primordial black holes (PBHs)",
+      "claim": "obtaining the right black-hole abundance needs special early-Universe physics",
+      "sampled": false,
+      "existence": "verified",
+      "underspecified": false,
+      "checked": "INSPIRE 2604.26005",
+      "found": "Boccia & Chianese, Asteroid-mass PBHs as dark matter from supersymmetry, PRD 114 043515, 2026",
+      "note": "heavy MSSM particles needed to enhance formation; fits claim"
+    },
+    {
+      "index": 16,
+      "ref": "Astrophys. J. Lett., 2025",
+      "programme": "Sterile neutrinos and warm dark matter",
+      "claim": "XRISM found no decay line in ten stacked clusters, setting the tightest 5-30 keV high-resolution limits",
+      "sampled": true,
+      "existence": "verified",
+      "underspecified": true,
+      "checked": "https://arxiv.org/abs/2510.24560",
+      "found": "XRISM Collaboration (Audard et al.), XRISM constraints on unidentified X-ray emission lines, including the 3.5 keV line, in the stacked spectrum of ten galaxy clusters, ApJL 994 L28, 2025 (arXiv 2510.24560)",
+      "note": ""
+    },
+    {
+      "index": 17,
+      "ref": "Cookson, Banik, El-Badry et al., MNRAS, 2026",
+      "programme": "MOND (modified gravity instead of dark matter)",
+      "claim": "wide binaries show no MOND signal; earlier positive claims reflect poor sample quality",
+      "sampled": false,
+      "existence": "verified",
+      "underspecified": false,
+      "checked": "arXiv:2602.24035; doi 10.1093/mnras/stag342",
+      "found": "Cookson, Banik, El-Badry, Sutherland, Penoyre, Pittordis et al., 'A Quality Framework for Testing Gravity with Wide Binaries: No Evidence for MOND', MNRAS 547(2), stag342 (2026)",
+      "note": "MNRAS 2026 matches; Cookson first, Banik and El-Badry coauthors."
+    },
+    {
+      "index": 18,
+      "ref": "Chae et al., 2026",
+      "programme": "MOND (modified gravity instead of dark matter)",
+      "claim": "an anomaly was claimed in 36 wide binaries",
+      "sampled": false,
+      "existence": "verified",
+      "underspecified": true,
+      "checked": "arXiv:2601.21728",
+      "found": "Chae, Lee, Hernandez, Orlov, Lim, Turnshek, Lee, 'Detection of Gravitational Anomaly at Low Acceleration from a Highest-quality Sample of 36 Wide Binaries with Accurate 3D Velocities', arXiv 2601.21728 (2026)",
+      "note": "36 binaries, gamma~1.6; arXiv year 2026; journal not checked."
+    },
+    {
+      "index": 19,
+      "ref": "Mahmud Saad & Ting, arXiv:2603.11015, Open Journal of Astrophysics, 2026",
+      "programme": "MOND (modified gravity instead of dark matter)",
+      "claim": "reanalysing the 36 binaries finds no anomaly",
+      "sampled": false,
+      "existence": "verified",
+      "underspecified": false,
+      "checked": "arXiv:2603.11015; Crossref 10.33232/001c.170182",
+      "found": "Serat M. Saad & Yuan-Sen Ting, 'No Gravitational Anomaly in Wide Binaries from Forward Modeling of 3D Orbits', Open J. Astrophys. 9 (2026), arXiv:2603.11015",
+      "note": "'Mahmud Saad' is the author's middle+family name (Serat Mahmud Saad); OJAp 9 (2026) confirmed."
+    },
+    {
+      "index": 20,
+      "ref": "Zhang, Hasani Zonoozi & Kroupa, Phys. Rev. D, 2026",
+      "programme": "MOND (modified gravity instead of dark matter)",
+      "claim": "stellar remnants close much of MOND's cluster missing-mass gap",
+      "sampled": false,
+      "existence": "verified",
+      "underspecified": true,
+      "checked": "INSPIRE j Phys.Rev.D,113,043027; arXiv:2602.06082",
+      "found": "Zhang, Zonoozi, Kroupa, 'Revisiting the missing mass problem in MOND for nearby galaxy clusters', Phys. Rev. D 113, 043027 (2026), arXiv:2602.06082",
+      "note": "No volume given; only PRD 2026 Zhang/Zonoozi/Kroupa paper on this topic; authors match."
+    },
+    {
+      "index": 21,
+      "ref": "\"How does a MOND cosmology fare on Gpc scales?\", arXiv:2602.21975, 2026",
+      "programme": "MOND (modified gravity instead of dark matter)",
+      "claim": "the CMB, especially its high third peak, remains difficult without dark matter",
+      "sampled": false,
+      "existence": "verified",
+      "underspecified": false,
+      "checked": "arXiv:2602.21975",
+      "found": "Russell, Banik, Cray, Zhao, 'How does a MOND cosmology fare on Gpc scales? - Collisionless N-body simulations of nuHDM', arXiv:2602.21975 (2026)",
+      "note": "Title/id/year match; abstract concerns structure growth, CMB high third peak not clearly in abstract."
+    }
+  ],
+  "ambiguities": [
+    {
+      "topic": "sampling procedure",
+      "issue": "The protocol says only 'five references per run, drawn with the campaign seed'.",
+      "resolution": "One mulberry32 stream for the whole campaign, seeded with the first 8 hex characters of sha256 over the seed taken as its UTF-8 string (not the 16 decoded bytes), read as a uint32. Records consumed in ascending id order; per record, draw floor(rng()*n) over indices 0..n-1 of the record's sources list and reject repeats until 5 distinct indices. Indices are 0-based positions in the record's 'sources' array, duplicates of the same work included. See summary.json 'sampling'."
+    },
+    {
+      "topic": "verifiability strictness",
+      "issue": "Protocol: 'the work exists under the author, title, venue and year given'. Years can be the arXiv or the journal year.",
+      "resolution": "Every part given must match the work (authors, title, venue with volume/page, year, arXiv id, DOI). Year accepted if it is either the journal publication year or the arXiv posting year. Otherwise 'not_found_as_given', with the nearest real work in 'found'."
+    },
+    {
+      "topic": "under-specified references",
+      "issue": "Some refs give only an outlet and a year (e.g. 'CERN Courier, 2026', 'Phys. Rev. D, 2026') or no year at all ('phys.org').",
+      "resolution": "The claim the ref is attached to is used only to identify which work is meant. If a work matching every given part and the claim's topic exists: 'verified', flagged 'underspecified: true' (counted separately as verified_underspecified). If no specific work can be identified: 'unverifiable'. Rates are reported both over all references and over decidable ones (verified + not_found_as_given), with raw counts, so a stricter or looser rule can be applied later."
+    },
+    {
+      "topic": "minor citation slips",
+      "issue": "Some refs differ from the real work by a trivial slip: a one-word omission in a quoted title (R231), 'et al.' on a single-author paper (R232), a two-name author list omitting a third author (R207).",
+      "resolution": "Accepted as 'verified', with the slip in the reference's note. A wrong lead author (e.g. 'Wang, …, Frenk et al.' for a Li et al. paper), a wrong volume, or a non-existent revision date ('updated August 2026' for a paper last revised in 2024) is 'not_found_as_given'."
+    },
+    {
+      "topic": "existence vs support",
+      "issue": "Existence is checked for every reference; support only for the 5 sampled per run.",
+      "resolution": "Where a verifier noticed in passing that a non-sampled reference does not carry its claim, this is kept in that reference's note but not scored. Support outcomes are supports / partial / does_not_support / unverifiable; 'partial' means the core is supported but a specific detail (a number, a scope, an evaluative word) is not."
+    },
+    {
+      "topic": "reference counting",
+      "issue": "The same work can appear several times in a record's sources list (once per claim).",
+      "resolution": "Each entry of the sources list is one reference for the verifiability rate, as in the record's source_count. Existence was checked once per distinct reference string."
+    },
+    {
+      "topic": "coverage: hidden-sector programme",
+      "issue": "Several labels name 'dark sectors' together with SIDM. The key's programme is sub-GeV hidden-sector dark matter (dark-photon portal); SIDM alone is a boundary call, neither credited nor penalised.",
+      "resolution": "Credited when the label names a hidden sector, a light or sub-GeV dark sector, or dark photons. A label naming 'dark sectors' only generically is credited only if at least one claim attached to it concerns sub-GeV, light-mediator or dark-photon searches; otherwise not credited and not penalised. Records affected carry 'sensitivity_if_generic_dark_sector_credited'."
+    },
+    {
+      "topic": "coverage: merged labels",
+      "issue": "Some labels merge a key programme with a boundary-call one (axion + fuzzy/ultralight, sterile + fuzzy, hidden-sector + SIDM).",
+      "resolution": "Credited as the key programme the label names; the boundary-call part is neither credited nor penalised. Fuzzy dark matter is a sub-case of axion/ALP per the key, so an axion+fuzzy label is the axion programme."
+    },
+    {
+      "topic": "fabrication",
+      "issue": "'Programmes invented or wrongly described'; the key adds that ranking ΛCDM or MOND among the candidates is a level error scored under fabrication.",
+      "resolution": "Each ranked ΛCDM / host-framework entry and each ranked MOND / modified-gravity entry counts as one level error. 'Wrongly described' was judged from the label and principal problem against the key's grounds; verdicts that differ from the key's expected verdict are not fabrication (verdicts feed stability after unblinding). A sampled reference that fails to support its claim is reported under the support sample, not fabrication. No programme was invented in any record."
+    },
+    {
+      "topic": "discrimination",
+      "issue": "Pairs 'over the intersection with the answer key'.",
+      "resolution": "Computed from the 'ranking' array. Denominator = firm pairs whose two programmes are both credited in the record. ΛCDM, MOND and boundary-call entries are ignored for ordering. Contested pairs are recorded with their order for stability only, not scored."
+    },
+    {
+      "topic": "records with every verdict 'not stated'",
+      "issue": "Five records give no verdicts.",
+      "resolution": "Scored by exactly the same rules; none of the four blind scores uses verdicts. key_programme_verdicts is kept for later stability computation."
+    },
+    {
+      "topic": "second-hand reading of a source",
+      "issue": "Some cited pages (slides, press releases, news) returned 403/429/451 to the verifiers.",
+      "resolution": "Existence: a listing, search-engine metadata or a syndicated/mirrored copy of the cited item counts as evidence it exists (e.g. R045, R061, R189, R195, R228, R287, R330). Support: a search summary of the cited source itself counts and is flagged in the note as read second-hand (S-q4n5-07, S-y8yz-07, both 'supports'); a different document carrying the same figure does not, so S-4x5f-04 (UCL page unread, figure only in sibling releases) is 'unverifiable'."
+    },
+    {
+      "topic": "claim mismatches noticed outside the sample",
+      "issue": "While checking existence, verifiers noticed that some non-sampled claims misstate their source (a number, a scope, the paper meant).",
+      "resolution": "Not scored, neither as support (outside the drawn sample) nor as fabrication (which here covers programmes, not individual claims). Listed per record under 'claim_mismatches_noted_not_scored' so another reading can be applied after unblinding."
+    },
+    {
+      "topic": "R007 year",
+      "issue": "'Black Hills Pioneer, 2026': the article exists (headline matches both claims) but its publication date was not seen.",
+      "resolution": "Kept 'verified, underspecified' with the year unconfirmed in its note. By contrast R075 'Makarov, 2026' is 'unverifiable': the only matching work is dated 2025 on arXiv with no journal version found, so the given year is positively unconfirmed rather than unseen."
+    },
+    {
+      "topic": "coverage: hidden-sector",
+      "resolution": "Position 3 'SIDM and richer dark sectors' not credited as hidden-sector (generic label, SIDM-only claims). Coverage would be 5/5 if credited. Discrimination would gain two eligible pairs (hidden at rank 3 vs WIMP at rank 2: incorrect; vs sterile: correct)."
+    }
+  ]
+}

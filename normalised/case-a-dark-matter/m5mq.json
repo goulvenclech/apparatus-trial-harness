@@ -1,0 +1,279 @@
+{
+  "schema": "normalised-run/2",
+  "id": "m5mq",
+  "case": "case-a-dark-matter",
+  "programme_count": 7,
+  "programmes": [
+    {
+      "position": 1,
+      "label": "WIMPs (weakly interacting massive particles; heavy particles left over from the early Universe)",
+      "verdict": "defensible",
+      "verdict_note": "",
+      "principal_problem": "none"
+    },
+    {
+      "position": 2,
+      "label": "QCD axion (a very light particle proposed to solve a separate problem in particle physics)",
+      "verdict": "defensible",
+      "verdict_note": "",
+      "principal_problem": "none"
+    },
+    {
+      "position": 3,
+      "label": "Hidden-sector, self-interacting and sub-GeV dark matter",
+      "verdict": "inconclusive (evidence)",
+      "verdict_note": "",
+      "principal_problem": "hints confounded by ordinary-matter astrophysics, within a very flexible model space"
+    },
+    {
+      "position": 4,
+      "label": "Primordial black holes (black holes formed in the early Universe)",
+      "verdict": "inconclusive (evidence)",
+      "verdict_note": "",
+      "principal_problem": "a hard-to-probe surviving window and a finely tuned early-Universe feature"
+    },
+    {
+      "position": 5,
+      "label": "MOND / modified gravity",
+      "verdict": "fragile",
+      "verdict_note": "",
+      "principal_problem": "continued need for unseen mass in clusters and the CMB"
+    },
+    {
+      "position": 6,
+      "label": "Fuzzy (ultralight) dark matter",
+      "verdict": "fragile",
+      "verdict_note": "",
+      "principal_problem": "exclusion of the mass that motivated it"
+    },
+    {
+      "position": 7,
+      "label": "Sterile neutrinos and warm dark matter",
+      "verdict": "fragile",
+      "verdict_note": "",
+      "principal_problem": "failure of its key signal in a direct test that should have seen it"
+    }
+  ],
+  "ranking": [
+    "QCD axion (a very light particle proposed to solve a separate problem in particle physics)",
+    "WIMPs (weakly interacting massive particles; heavy particles left over from the early Universe)",
+    "Hidden-sector, self-interacting and sub-GeV dark matter",
+    "Primordial black holes (black holes formed in the early Universe)",
+    "MOND / modified gravity",
+    "Fuzzy (ultralight) dark matter",
+    "Sterile neutrinos and warm dark matter"
+  ],
+  "source_count": 42,
+  "sources": [
+    {
+      "ref": "Planck Collaboration, A&A 641, A6, 2020",
+      "programme": "general",
+      "claim": "the cosmic microwave background shows the gravitational case for dark matter"
+    },
+    {
+      "ref": "Clowe et al., ApJ 648, L109, 2006",
+      "programme": "general",
+      "claim": "lensing of merging clusters shows the gravitational case for dark matter"
+    },
+    {
+      "ref": "LZ Collaboration, Physical Review Letters, 2025",
+      "programme": "WIMPs (weakly interacting massive particles; heavy particles left over from the early Universe)",
+      "claim": "LZ published 4.2 tonne-year WIMP limits"
+    },
+    {
+      "ref": "Berkeley Lab news, July 2025",
+      "programme": "WIMPs (weakly interacting massive particles; heavy particles left over from the early Universe)",
+      "claim": "LZ published 4.2 tonne-year WIMP limits"
+    },
+    {
+      "ref": "Sanford Lab/SURF press release, Dec 2025",
+      "programme": "WIMPs (weakly interacting massive particles; heavy particles left over from the early Universe)",
+      "claim": "417 live days found no WIMPs down to about 3 GeV and detected boron-8 neutrinos at 4.5 sigma"
+    },
+    {
+      "ref": "LZ preprint, 2025",
+      "programme": "WIMPs (weakly interacting massive particles; heavy particles left over from the early Universe)",
+      "claim": "417 live days found no WIMPs down to about 3 GeV and detected boron-8 neutrinos at 4.5 sigma"
+    },
+    {
+      "ref": "Univ. Zurich news, Nov 2025",
+      "programme": "WIMPs (weakly interacting massive particles; heavy particles left over from the early Universe)",
+      "claim": "XENONnT published a 3.1 tonne-year WIMP search"
+    },
+    {
+      "ref": "PRL 136, 2026",
+      "programme": "WIMPs (weakly interacting massive particles; heavy particles left over from the early Universe)",
+      "claim": "XENONnT published a light-dark-matter search"
+    },
+    {
+      "ref": "PRL, 2025",
+      "programme": "WIMPs (weakly interacting massive particles; heavy particles left over from the early Universe)",
+      "claim": "the combined COSINE-100/ANAIS-112 analysis refuted the DAMA annual-modulation claim"
+    },
+    {
+      "ref": "APS Physics synopsis",
+      "programme": "WIMPs (weakly interacting massive particles; heavy particles left over from the early Universe)",
+      "claim": "the combined COSINE-100/ANAIS-112 analysis refuted the DAMA annual-modulation claim"
+    },
+    {
+      "ref": "Muru, Silk et al., PRL 135, 161005, 2025",
+      "programme": "WIMPs (weakly interacting massive particles; heavy particles left over from the early Universe)",
+      "claim": "an old millisecond-pulsar population explains the Galactic Centre excess as well as dark matter"
+    },
+    {
+      "ref": "Manconi, Eckner, Calore & Donato, arXiv:2511.03350, 2025",
+      "programme": "WIMPs (weakly interacting massive particles; heavy particles left over from the early Universe)",
+      "claim": "a star-like Galactic Centre excess leaves little room for WIMP annihilation"
+    },
+    {
+      "ref": "Totani, arXiv:2507.07209",
+      "programme": "WIMPs (weakly interacting massive particles; heavy particles left over from the early Universe)",
+      "claim": "a 20 GeV gamma-ray halo signal is claimed"
+    },
+    {
+      "ref": "Univ. Tokyo press release, Nov 2025",
+      "programme": "WIMPs (weakly interacting massive particles; heavy particles left over from the early Universe)",
+      "claim": "a 20 GeV gamma-ray halo signal is claimed"
+    },
+    {
+      "ref": "EarthSky, 2025",
+      "programme": "WIMPs (weakly interacting massive particles; heavy particles left over from the early Universe)",
+      "claim": "the halo claim met scepticism"
+    },
+    {
+      "ref": "Nomura & Totani, arXiv:2604.05016, 2026",
+      "programme": "WIMPs (weakly interacting massive particles; heavy particles left over from the early Universe)",
+      "claim": "a follow-up model concedes mild tension with dwarf-galaxy limits"
+    },
+    {
+      "ref": "Yorkshire Post, Sept 2026",
+      "programme": "WIMPs (weakly interacting massive particles; heavy particles left over from the early Universe)",
+      "claim": "XLZD is still choosing a host site, with Boulby the leading contender"
+    },
+    {
+      "ref": "Rep. Prog. Phys. 88, 106901, 2025",
+      "programme": "QCD axion (a very light particle proposed to solve a separate problem in particle physics)",
+      "claim": "the axion solves the strong-CP problem"
+    },
+    {
+      "ref": "PRL 134, 111002, 2025",
+      "programme": "QCD axion (a very light particle proposed to solve a separate problem in particle physics)",
+      "claim": "ADMX excluded the DFSZ axion between 3.27 and 3.34 micro-eV"
+    },
+    {
+      "ref": "PRL 134, 151006, 2025",
+      "programme": "QCD axion (a very light particle proposed to solve a separate problem in particle physics)",
+      "claim": "HAYSTAC Phase II ran a quantum-enhanced search"
+    },
+    {
+      "ref": "\"European Strategy Physics Briefing Book\", arXiv:2511.03883, 2025",
+      "programme": "QCD axion (a very light particle proposed to solve a separate problem in particle physics)",
+      "claim": "HAYSTAC and CAPP have run axion searches, CAPP above 1 GHz"
+    },
+    {
+      "ref": "Nishizawa et al., PTEP 2026, 073E02",
+      "programme": "QCD axion (a very light particle proposed to solve a separate problem in particle physics)",
+      "claim": "a new axion search method uses Earth's magnetic field"
+    },
+    {
+      "ref": "Jee, Park & Lee, arXiv:2605.00093, 2026",
+      "programme": "Hidden-sector, self-interacting and sub-GeV dark matter",
+      "claim": "double radio relics provide a new test of dark-matter self-interaction"
+    },
+    {
+      "ref": "ApJ 994, 201, 2025",
+      "programme": "Hidden-sector, self-interacting and sub-GeV dark matter",
+      "claim": "a dense dark object in SDSS J0946+1006 may point to self-interaction"
+    },
+    {
+      "ref": "ICRC 2025 summary, arXiv:2510.17473",
+      "programme": "Hidden-sector, self-interacting and sub-GeV dark matter",
+      "claim": "SENSEI, DAMIC-M, SuperCDMS and CRESST target dark matter below about 1 GeV"
+    },
+    {
+      "ref": "arXiv:2403.03839, revised 2026",
+      "programme": "Primordial black holes (black holes formed in the early Universe)",
+      "claim": "black holes can be all the dark matter only in the 1e17 to 1e22 gram window"
+    },
+    {
+      "ref": "PRD 112, 123019, 2025",
+      "programme": "Primordial black holes (black holes formed in the early Universe)",
+      "claim": "limits outside the asteroid-mass window continue to tighten"
+    },
+    {
+      "ref": "Vieira et al., arXiv:2603.17009, 2026",
+      "programme": "Primordial black holes (black holes formed in the early Universe)",
+      "claim": "S251112cm suggests a sub-solar merger with a false-alarm rate of about one per 6.2 years"
+    },
+    {
+      "ref": "Mistele et al., 2024",
+      "programme": "MOND / modified gravity",
+      "claim": "weak lensing shows flat rotation curves out to hundreds of kpc"
+    },
+    {
+      "ref": "Lelli et al., arXiv:2411.02499",
+      "programme": "MOND / modified gravity",
+      "claim": "weak lensing shows flat rotation curves out to hundreds of kpc"
+    },
+    {
+      "ref": "Famaey, Pizzuti & Saltas, PRD 111, 123042, 2025",
+      "programme": "MOND / modified gravity",
+      "claim": "MOND leaves leftover missing mass in clusters"
+    },
+    {
+      "ref": "PRD 113, 043027, 2026",
+      "programme": "MOND / modified gravity",
+      "claim": "stellar remnants account for most of the cluster mass gap"
+    },
+    {
+      "ref": "Chae et al., 2026",
+      "programme": "MOND / modified gravity",
+      "claim": "36 wide binaries show a gravity boost of about 1.6 relative to Newtonian"
+    },
+    {
+      "ref": "arXiv:2603.11015",
+      "programme": "MOND / modified gravity",
+      "claim": "reanalysing the same binaries gives a boost of 1.12, consistent with Newtonian gravity"
+    },
+    {
+      "ref": "arXiv:2602.24035",
+      "programme": "MOND / modified gravity",
+      "claim": "wide binaries show no MOND signal"
+    },
+    {
+      "ref": "Pittordis & Sutherland, arXiv:2504.07569",
+      "programme": "MOND / modified gravity",
+      "claim": "wide binaries show no MOND signal"
+    },
+    {
+      "ref": "Chae, arXiv:2607.14450",
+      "programme": "MOND / modified gravity",
+      "claim": "the null wide-binary analyses are rebutted"
+    },
+    {
+      "ref": "Skordis & Złośnik, PRL, 2021",
+      "programme": "MOND / modified gravity",
+      "claim": "fitting the CMB requires a relativistic extension such as AeST"
+    },
+    {
+      "ref": "Liu, Gong & Zhou, JCAP 09 (2026) 051",
+      "programme": "Fuzzy (ultralight) dark matter",
+      "claim": "the Lyman-alpha forest requires masses above 1.9e-21 eV"
+    },
+    {
+      "ref": "Dalal & Kravtsov, arXiv:2203.05750, 2022",
+      "programme": "Fuzzy (ultralight) dark matter",
+      "claim": "ultra-faint dwarf galaxies require masses of at least about 3e-19 eV"
+    },
+    {
+      "ref": "arXiv:2610.21722, 2026",
+      "programme": "Fuzzy (ultralight) dark matter",
+      "claim": "the reliability of the dwarf-galaxy mass limits is under examination"
+    },
+    {
+      "ref": "XRISM Collaboration, arXiv:2510.24560, 2025",
+      "programme": "Sterile neutrinos and warm dark matter",
+      "claim": "XRISM stacked 3.75 megaseconds on ten clusters and found no unidentified lines"
+    }
+  ]
+}

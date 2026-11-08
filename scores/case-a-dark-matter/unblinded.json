@@ -1,0 +1,2695 @@
+{
+ "schema": "unblinded/1",
+ "campaign": "case-a-dark-matter",
+ "protocol_sections": "docs/protocol.md L72 (after unblinding), L74-83 (thresholds)",
+ "stability_reading_of_record": "conditional with minimum support: a pair or programme counts only when at least 3 of the arm's 5 runs rank or rate it; otherwise 'insufficient data', excluded from the mean. Thresholds use >=. Decided by Goulven on 2026-11-08. The conditional and literal readings are kept as an appendix.",
+ "mapping": {
+  "3hkv": {
+   "arm": "c",
+   "run": "arm-c-1.json"
+  },
+  "4mn5": {
+   "arm": "b",
+   "run": "arm-b-3.json"
+  },
+  "4x5f": {
+   "arm": "c",
+   "run": "arm-c-4.json"
+  },
+  "9gtx": {
+   "arm": "b",
+   "run": "arm-b-4.json"
+  },
+  "a3m9": {
+   "arm": "b",
+   "run": "arm-b-2.json"
+  },
+  "bs68": {
+   "arm": "b",
+   "run": "arm-b-1.json"
+  },
+  "jsea": {
+   "arm": "c",
+   "run": "arm-c-3.json"
+  },
+  "m5mq": {
+   "arm": "b",
+   "run": "arm-b-5.json"
+  },
+  "pn4y": {
+   "arm": "c",
+   "run": "arm-c-2.json"
+  },
+  "q4n5": {
+   "arm": "a",
+   "run": "arm-a-1.json"
+  },
+  "q6ah": {
+   "arm": "a",
+   "run": "arm-a-5.json"
+  },
+  "revp": {
+   "arm": "c",
+   "run": "arm-c-5.json"
+  },
+  "txfx": {
+   "arm": "a",
+   "run": "arm-a-3.json"
+  },
+  "wmqn": {
+   "arm": "a",
+   "run": "arm-a-4.json"
+  },
+  "y8yz": {
+   "arm": "a",
+   "run": "arm-a-2.json"
+  }
+ },
+ "mapping_check": {
+  "shuffle_order_reproduced_from_seed": true,
+  "ids_reproduced_from_seed": true,
+  "run_file_sha256_matches_key": "15/15",
+  "blind_file_equals_final_answer_of_mapped_run": "15/15",
+  "arm_a_ids_are_the_five_all_not_stated_records": true
+ },
+ "inputs_sha256": {
+  "docs/cases/case-A-dark-matter-answer-key.md": "f835abc5defca1b8da46267f6bfb50c8c47dae58e03aa24e79f275585e626339",
+  "docs/protocol.md": "504426e7c465db84c56299cecf6a0df0ae997beadf9017f8548bc1b5b44f3588",
+  "keys/case-a-dark-matter.json": "0dcb1562948256f083c7d06037ce0343845ad2c305ef51faf5b610250bd050ce",
+  "normalised/case-a-dark-matter/3hkv.json": "c3414f146a01963fc4e77f5cf0143d2117261afd2153598e0554aff8861619cc",
+  "normalised/case-a-dark-matter/4mn5.json": "a7dd2ca542919331ab6fed0fed43c17fb0bea3b488f10f38b8ab94f5f695cb8b",
+  "normalised/case-a-dark-matter/4x5f.json": "e8c673ee73b59089efdfd536091cbd27c3b88200f3af9365658932475181a7d2",
+  "normalised/case-a-dark-matter/9gtx.json": "046e6845c8c8d0e4966d18bed9fba566a5a1162643ef8416f6e29b2c9dbde87d",
+  "normalised/case-a-dark-matter/a3m9.json": "302f09d402689b37f0d80f492104c5c94747ebdcf1cf26ead7d9930a0a83445f",
+  "normalised/case-a-dark-matter/bs68.json": "00a8dfe7821ce2fe8e06eed1f554c6f37fba3e1e80c0feb202db0b9760078faf",
+  "normalised/case-a-dark-matter/jsea.json": "5da4c9250d533e9fe5a0f5883ae7e86057ed984bd4d27c5aed47ed442e61ac17",
+  "normalised/case-a-dark-matter/m5mq.json": "3455c19bddb9e5ad43e0575f3462766fec5ec87763f268fa010935ad7a0602ff",
+  "normalised/case-a-dark-matter/pn4y.json": "21c41fe5584a6b22cdbc0f0150c4461180af83a4cfafd07af4dad132d08a1fd0",
+  "normalised/case-a-dark-matter/q4n5.json": "c8b2e8a59e496f8935bfd44d807f77924e128ff53e543b1d4688048cd32b36fc",
+  "normalised/case-a-dark-matter/q6ah.json": "56f3a78d2575b1696d6e6572ebdc0c93552697b4a98546f21fc03a10bb072981",
+  "normalised/case-a-dark-matter/revp.json": "1c3a9dda7a2f0979dfe5979d8dc9f1e2e6593d73e533fcd370142231bd6d1fc0",
+  "normalised/case-a-dark-matter/txfx.json": "88128c718421a4aab79b77c4c5476fb8c19ff4a31c595835e5ae001966d0a6b1",
+  "normalised/case-a-dark-matter/wmqn.json": "a57b4187f4ebbee497e29caf5769558eed59ce5cdd0816dd1441898e67f60796",
+  "normalised/case-a-dark-matter/y8yz.json": "8e1fe4dc05837719259045035f841545637433b5f6b49729dec43f55fc2eb164",
+  "scores/case-a-dark-matter/3hkv.json": "a00771b08f7d9f5eeca604d0b1ad19e3b4b66ce5e4dd5f468066361ddc505d8c",
+  "scores/case-a-dark-matter/4mn5.json": "715eb6acbbdd127816e533fa9ac3ea24a3b02debc4705729afe23162e9ffa1df",
+  "scores/case-a-dark-matter/4x5f.json": "994bf53d0055723b840931e6dae2299f9496d3f03c740ab5fcaa2f23c1002351",
+  "scores/case-a-dark-matter/9gtx.json": "645c6e7249dd86123137ea745bd1938644d0623a24277cd1b036587768f13976",
+  "scores/case-a-dark-matter/a3m9.json": "c7463e0664b1a95c15242c67cb222ddfe6bc22ec4474d366a1ea72afc8e3b3ba",
+  "scores/case-a-dark-matter/bs68.json": "27d0a7a2aad06342a35f1a58454289b1f35b6db7a65d7e54c117d1e7b34db4a3",
+  "scores/case-a-dark-matter/jsea.json": "c7bd93e97004554d27e47d8f13036a605155a7193e98d2d0d02c531f9e1804af",
+  "scores/case-a-dark-matter/m5mq.json": "bfc90bd1687cc45ee158c9ee829e00da87b5e0cfd401992f967c8dd9438d6b21",
+  "scores/case-a-dark-matter/pn4y.json": "042dc52e0f7d97d1af55ffebc125ed25151c8a5fdcd93cfbb465018f2175c638",
+  "scores/case-a-dark-matter/q4n5.json": "05e0f668520a6434137723e384c3bda4318f867b867ccc41801632a090a57a4b",
+  "scores/case-a-dark-matter/q6ah.json": "05bb0989d4e4789d91fd73135899ee3bc99bde00b62eab0ab4efb766c5a135bf",
+  "scores/case-a-dark-matter/revp.json": "d7b80e8cbca39976f1fbeab96a2f80a42712bdeff9d5284c3b90da94be8146c1",
+  "scores/case-a-dark-matter/summary.json": "64ed5e6cb122b7d69ebd483db4c6c41beecb8a8fd3508ec2f017a6609716ed36",
+  "scores/case-a-dark-matter/txfx.json": "f1bd127c3231bc1e445e513c885414dfe74f2bba374d9455058cf2f55ece4b58",
+  "scores/case-a-dark-matter/wmqn.json": "92bb3713ee6bad215573a5cc6d439ccb11fae37836c3071b6318b8ba1c64fe8f",
+  "scores/case-a-dark-matter/y8yz.json": "af64039ecb7b4b48ee9f05a10a83f7179a83fb2a9de0404b3930f59488405c8d"
+ },
+ "scorer_consistency": "discrimination recomputed from key-programme ranking positions equals the scorer's correct/eligible on all 15 records",
+ "main": {
+  "arms": {
+   "a": {
+    "ids": {
+     "q4n5": "arm-a-1.json",
+     "q6ah": "arm-a-5.json",
+     "txfx": "arm-a-3.json",
+     "wmqn": "arm-a-4.json",
+     "y8yz": "arm-a-2.json"
+    },
+    "sources": {
+     "references": 119,
+     "verified": 116,
+     "not_found_as_given": 0,
+     "unverifiable": 3,
+     "verified_underspecified": 50,
+     "rate_over_all": 0.9748,
+     "rate_over_decidable": 1.0,
+     "per_run_over_all": {
+      "q4n5": 0.9286,
+      "q6ah": 0.9565,
+      "txfx": 1.0,
+      "wmqn": 1.0,
+      "y8yz": 1.0
+     }
+    },
+    "support_sample": {
+     "drawn": 25,
+     "supports": 19,
+     "unverifiable": 1,
+     "partial": 5,
+     "supports_rate": 0.76,
+     "supports_or_partial_rate": 0.96
+    },
+    "coverage": {
+     "identified": 21,
+     "of": 25,
+     "rate": 0.84,
+     "per_run": {
+      "q4n5": 5,
+      "q6ah": 4,
+      "txfx": 4,
+      "wmqn": 4,
+      "y8yz": 4
+     },
+     "programme_count": {
+      "q4n5": 8,
+      "q6ah": 7,
+      "txfx": 6,
+      "wmqn": 6,
+      "y8yz": 6
+     },
+     "programme_count_mean": 6.6
+    },
+    "fabrication": {
+     "count": 5,
+     "level_errors": 5,
+     "invented_or_wrongly_described": 0,
+     "runs_ranking_mond": 5,
+     "runs_ranking_lcdm": 0,
+     "per_run": {
+      "q4n5": 1,
+      "q6ah": 1,
+      "txfx": 1,
+      "wmqn": 1,
+      "y8yz": 1
+     }
+    },
+    "discrimination": {
+     "correct": 21,
+     "eligible": 22,
+     "rate": 0.9545,
+     "per_pair": {
+      "axion > wimp": {
+       "correct": 5,
+       "eligible": 5,
+       "rate": 1.0
+      },
+      "axion > sterile": {
+       "correct": 5,
+       "eligible": 5,
+       "rate": 1.0
+      },
+      "axion > pbh": {
+       "correct": 5,
+       "eligible": 5,
+       "rate": 1.0
+      },
+      "hidden_sector > wimp": {
+       "correct": 0,
+       "eligible": 1,
+       "rate": 0.0
+      },
+      "hidden_sector > sterile": {
+       "correct": 1,
+       "eligible": 1,
+       "rate": 1.0
+      },
+      "pbh > sterile": {
+       "correct": 5,
+       "eligible": 5,
+       "rate": 1.0
+      }
+     },
+     "per_run": {
+      "q4n5": "5/6",
+      "q6ah": "4/4",
+      "txfx": "4/4",
+      "wmqn": "4/4",
+      "y8yz": "4/4"
+     }
+    },
+    "ordering_stability": {
+     "of_record": {
+      "reading": "conditional, pairs ranked by at least 3 of 5 runs; others 'insufficient data', excluded",
+      "mean": 1.0,
+      "included": 6,
+      "excluded": 4,
+      "insufficient_data": [
+       "hidden_sector / wimp",
+       "hidden_sector / sterile",
+       "axion / hidden_sector",
+       "hidden_sector / pbh"
+      ],
+      "lowest": {
+       "pair": "axion / wimp",
+       "share": 1.0
+      }
+     },
+     "conditional": {
+      "reading": "share over the runs ranking both programmes, averaged over pairs ranked by at least one run",
+      "mean": 1.0,
+      "pairs_averaged": 10,
+      "lowest": {
+       "pair": "axion / wimp",
+       "share": 1.0
+      }
+     },
+     "literal": {
+      "reading": "share over all 5 runs, averaged over all 10 key pairs (unranked pair = not following)",
+      "mean": 0.68,
+      "lowest": {
+       "pair": "hidden_sector / wimp",
+       "share": 0.2
+      },
+      "per_pair": {
+       "axion / wimp": 1.0,
+       "axion / sterile": 1.0,
+       "axion / pbh": 1.0,
+       "hidden_sector / wimp": 0.2,
+       "hidden_sector / sterile": 0.2,
+       "pbh / sterile": 1.0,
+       "axion / hidden_sector": 0.2,
+       "hidden_sector / pbh": 0.2,
+       "pbh / wimp": 1.0,
+       "wimp / sterile": 1.0
+      }
+     },
+     "per_pair": {
+      "axion / wimp": {
+       "runs": 5,
+       "majority": "axion > wimp",
+       "counts": {
+        "axion > wimp": 5
+       },
+       "share": 1.0,
+       "firm": true
+      },
+      "axion / sterile": {
+       "runs": 5,
+       "majority": "axion > sterile",
+       "counts": {
+        "axion > sterile": 5
+       },
+       "share": 1.0,
+       "firm": true
+      },
+      "axion / pbh": {
+       "runs": 5,
+       "majority": "axion > pbh",
+       "counts": {
+        "axion > pbh": 5
+       },
+       "share": 1.0,
+       "firm": true
+      },
+      "hidden_sector / wimp": {
+       "runs": 1,
+       "majority": "wimp > hidden_sector",
+       "counts": {
+        "wimp > hidden_sector": 1
+       },
+       "share": 1.0,
+       "firm": true
+      },
+      "hidden_sector / sterile": {
+       "runs": 1,
+       "majority": "hidden_sector > sterile",
+       "counts": {
+        "hidden_sector > sterile": 1
+       },
+       "share": 1.0,
+       "firm": true
+      },
+      "pbh / sterile": {
+       "runs": 5,
+       "majority": "pbh > sterile",
+       "counts": {
+        "pbh > sterile": 5
+       },
+       "share": 1.0,
+       "firm": true
+      },
+      "axion / hidden_sector": {
+       "runs": 1,
+       "majority": "axion > hidden_sector",
+       "counts": {
+        "axion > hidden_sector": 1
+       },
+       "share": 1.0,
+       "firm": false
+      },
+      "hidden_sector / pbh": {
+       "runs": 1,
+       "majority": "hidden_sector > pbh",
+       "counts": {
+        "hidden_sector > pbh": 1
+       },
+       "share": 1.0,
+       "firm": false
+      },
+      "pbh / wimp": {
+       "runs": 5,
+       "majority": "wimp > pbh",
+       "counts": {
+        "wimp > pbh": 5
+       },
+       "share": 1.0,
+       "firm": false
+      },
+      "wimp / sterile": {
+       "runs": 5,
+       "majority": "wimp > sterile",
+       "counts": {
+        "wimp > sterile": 5
+       },
+       "share": 1.0,
+       "firm": false
+      }
+     }
+    },
+    "verdict_stability": {
+     "of_record": {
+      "reading": "conditional, programmes given a verdict by at least 3 of 5 runs; others 'insufficient data', excluded",
+      "mean": null,
+      "included": 0,
+      "excluded": 5,
+      "insufficient_data": [
+       "axion",
+       "hidden_sector",
+       "pbh",
+       "wimp",
+       "sterile"
+      ],
+      "lowest": null
+     },
+     "conditional": {
+      "reading": "share over the runs giving a verdict for the programme, averaged over programmes given by at least one run",
+      "mean": null,
+      "programmes_averaged": 0,
+      "lowest": null
+     },
+     "literal": {
+      "reading": "share over all 5 runs, averaged over all 5 key programmes (missing programme = not modal)",
+      "mean": null,
+      "lowest": null,
+      "per_programme": null
+     },
+     "per_programme": {
+      "axion": {
+       "runs": 5,
+       "modal": null,
+       "share": null,
+       "counts": {
+        "not stated": 5
+       }
+      },
+      "hidden_sector": {
+       "runs": 1,
+       "modal": null,
+       "share": null,
+       "counts": {
+        "not stated": 1
+       }
+      },
+      "pbh": {
+       "runs": 5,
+       "modal": null,
+       "share": null,
+       "counts": {
+        "not stated": 5
+       }
+      },
+      "wimp": {
+       "runs": 5,
+       "modal": null,
+       "share": null,
+       "counts": {
+        "not stated": 5
+       }
+      },
+      "sterile": {
+       "runs": 5,
+       "modal": null,
+       "share": null,
+       "counts": {
+        "not stated": 5
+       }
+      }
+     }
+    }
+   },
+   "b": {
+    "ids": {
+     "4mn5": "arm-b-3.json",
+     "9gtx": "arm-b-4.json",
+     "a3m9": "arm-b-2.json",
+     "bs68": "arm-b-1.json",
+     "m5mq": "arm-b-5.json"
+    },
+    "sources": {
+     "references": 163,
+     "verified": 159,
+     "not_found_as_given": 3,
+     "unverifiable": 1,
+     "verified_underspecified": 48,
+     "rate_over_all": 0.9755,
+     "rate_over_decidable": 0.9815,
+     "per_run_over_all": {
+      "4mn5": 1.0,
+      "9gtx": 0.9429,
+      "a3m9": 1.0,
+      "bs68": 1.0,
+      "m5mq": 0.9524
+     }
+    },
+    "support_sample": {
+     "drawn": 25,
+     "supports": 21,
+     "partial": 4,
+     "supports_rate": 0.84,
+     "supports_or_partial_rate": 1.0
+    },
+    "coverage": {
+     "identified": 23,
+     "of": 25,
+     "rate": 0.92,
+     "per_run": {
+      "4mn5": 5,
+      "9gtx": 4,
+      "a3m9": 4,
+      "bs68": 5,
+      "m5mq": 5
+     },
+     "programme_count": {
+      "4mn5": 7,
+      "9gtx": 8,
+      "a3m9": 8,
+      "bs68": 7,
+      "m5mq": 7
+     },
+     "programme_count_mean": 7.4
+    },
+    "fabrication": {
+     "count": 8,
+     "level_errors": 8,
+     "invented_or_wrongly_described": 0,
+     "runs_ranking_mond": 5,
+     "runs_ranking_lcdm": 3,
+     "per_run": {
+      "4mn5": 1,
+      "9gtx": 2,
+      "a3m9": 2,
+      "bs68": 2,
+      "m5mq": 1
+     }
+    },
+    "discrimination": {
+     "correct": 22,
+     "eligible": 26,
+     "rate": 0.8462,
+     "per_pair": {
+      "axion > wimp": {
+       "correct": 5,
+       "eligible": 5,
+       "rate": 1.0
+      },
+      "axion > sterile": {
+       "correct": 5,
+       "eligible": 5,
+       "rate": 1.0
+      },
+      "axion > pbh": {
+       "correct": 5,
+       "eligible": 5,
+       "rate": 1.0
+      },
+      "hidden_sector > wimp": {
+       "correct": 0,
+       "eligible": 3,
+       "rate": 0.0
+      },
+      "hidden_sector > sterile": {
+       "correct": 3,
+       "eligible": 3,
+       "rate": 1.0
+      },
+      "pbh > sterile": {
+       "correct": 4,
+       "eligible": 5,
+       "rate": 0.8
+      }
+     },
+     "per_run": {
+      "4mn5": "5/6",
+      "9gtx": "4/4",
+      "a3m9": "3/4",
+      "bs68": "5/6",
+      "m5mq": "5/6"
+     }
+    },
+    "ordering_stability": {
+     "of_record": {
+      "reading": "conditional, pairs ranked by at least 3 of 5 runs; others 'insufficient data', excluded",
+      "mean": 0.98,
+      "included": 10,
+      "excluded": 0,
+      "insufficient_data": [],
+      "lowest": {
+       "pair": "pbh / sterile",
+       "share": 0.8
+      }
+     },
+     "conditional": {
+      "reading": "share over the runs ranking both programmes, averaged over pairs ranked by at least one run",
+      "mean": 0.98,
+      "pairs_averaged": 10,
+      "lowest": {
+       "pair": "pbh / sterile",
+       "share": 0.8
+      }
+     },
+     "literal": {
+      "reading": "share over all 5 runs, averaged over all 10 key pairs (unranked pair = not following)",
+      "mean": 0.82,
+      "lowest": {
+       "pair": "hidden_sector / wimp",
+       "share": 0.6
+      },
+      "per_pair": {
+       "axion / wimp": 1.0,
+       "axion / sterile": 1.0,
+       "axion / pbh": 1.0,
+       "hidden_sector / wimp": 0.6,
+       "hidden_sector / sterile": 0.6,
+       "pbh / sterile": 0.8,
+       "axion / hidden_sector": 0.6,
+       "hidden_sector / pbh": 0.6,
+       "pbh / wimp": 1.0,
+       "wimp / sterile": 1.0
+      }
+     },
+     "per_pair": {
+      "axion / wimp": {
+       "runs": 5,
+       "majority": "axion > wimp",
+       "counts": {
+        "axion > wimp": 5
+       },
+       "share": 1.0,
+       "firm": true
+      },
+      "axion / sterile": {
+       "runs": 5,
+       "majority": "axion > sterile",
+       "counts": {
+        "axion > sterile": 5
+       },
+       "share": 1.0,
+       "firm": true
+      },
+      "axion / pbh": {
+       "runs": 5,
+       "majority": "axion > pbh",
+       "counts": {
+        "axion > pbh": 5
+       },
+       "share": 1.0,
+       "firm": true
+      },
+      "hidden_sector / wimp": {
+       "runs": 3,
+       "majority": "wimp > hidden_sector",
+       "counts": {
+        "wimp > hidden_sector": 3
+       },
+       "share": 1.0,
+       "firm": true
+      },
+      "hidden_sector / sterile": {
+       "runs": 3,
+       "majority": "hidden_sector > sterile",
+       "counts": {
+        "hidden_sector > sterile": 3
+       },
+       "share": 1.0,
+       "firm": true
+      },
+      "pbh / sterile": {
+       "runs": 5,
+       "majority": "pbh > sterile",
+       "counts": {
+        "pbh > sterile": 4,
+        "sterile > pbh": 1
+       },
+       "share": 0.8,
+       "firm": true
+      },
+      "axion / hidden_sector": {
+       "runs": 3,
+       "majority": "axion > hidden_sector",
+       "counts": {
+        "axion > hidden_sector": 3
+       },
+       "share": 1.0,
+       "firm": false
+      },
+      "hidden_sector / pbh": {
+       "runs": 3,
+       "majority": "hidden_sector > pbh",
+       "counts": {
+        "hidden_sector > pbh": 3
+       },
+       "share": 1.0,
+       "firm": false
+      },
+      "pbh / wimp": {
+       "runs": 5,
+       "majority": "wimp > pbh",
+       "counts": {
+        "wimp > pbh": 5
+       },
+       "share": 1.0,
+       "firm": false
+      },
+      "wimp / sterile": {
+       "runs": 5,
+       "majority": "wimp > sterile",
+       "counts": {
+        "wimp > sterile": 5
+       },
+       "share": 1.0,
+       "firm": false
+      }
+     }
+    },
+    "verdict_stability": {
+     "of_record": {
+      "reading": "conditional, programmes given a verdict by at least 3 of 5 runs; others 'insufficient data', excluded",
+      "mean": 0.84,
+      "included": 5,
+      "excluded": 0,
+      "insufficient_data": [],
+      "lowest": {
+       "programme": "pbh",
+       "share": 0.6
+      }
+     },
+     "conditional": {
+      "reading": "share over the runs giving a verdict for the programme, averaged over programmes given by at least one run",
+      "mean": 0.84,
+      "programmes_averaged": 5,
+      "lowest": {
+       "programme": "pbh",
+       "share": 0.6
+      }
+     },
+     "literal": {
+      "reading": "share over all 5 runs, averaged over all 5 key programmes (missing programme = not modal)",
+      "mean": 0.76,
+      "lowest": {
+       "programme": "hidden_sector",
+       "share": 0.6
+      },
+      "per_programme": {
+       "axion": 1.0,
+       "hidden_sector": 0.6,
+       "pbh": 0.6,
+       "wimp": 0.6,
+       "sterile": 1.0
+      }
+     },
+     "per_programme": {
+      "axion": {
+       "runs": 5,
+       "modal": "defensible",
+       "counts": {
+        "defensible": 5
+       },
+       "share": 1.0
+      },
+      "hidden_sector": {
+       "runs": 3,
+       "modal": "inconclusive (evidence)",
+       "counts": {
+        "inconclusive (evidence)": 3
+       },
+       "share": 1.0
+      },
+      "pbh": {
+       "runs": 5,
+       "modal": "fragile",
+       "counts": {
+        "fragile": 3,
+        "inconclusive (evidence)": 2
+       },
+       "share": 0.6
+      },
+      "wimp": {
+       "runs": 5,
+       "modal": "defensible",
+       "counts": {
+        "defensible": 3,
+        "fragile": 2
+       },
+       "share": 0.6
+      },
+      "sterile": {
+       "runs": 5,
+       "modal": "fragile",
+       "counts": {
+        "fragile": 5
+       },
+       "share": 1.0
+      }
+     }
+    }
+   },
+   "c": {
+    "ids": {
+     "3hkv": "arm-c-1.json",
+     "4x5f": "arm-c-4.json",
+     "jsea": "arm-c-3.json",
+     "pn4y": "arm-c-2.json",
+     "revp": "arm-c-5.json"
+    },
+    "sources": {
+     "references": 136,
+     "verified": 132,
+     "not_found_as_given": 1,
+     "unverifiable": 3,
+     "verified_underspecified": 45,
+     "rate_over_all": 0.9706,
+     "rate_over_decidable": 0.9925,
+     "per_run_over_all": {
+      "3hkv": 0.9615,
+      "4x5f": 0.9259,
+      "jsea": 0.9697,
+      "pn4y": 1.0,
+      "revp": 1.0
+     }
+    },
+    "support_sample": {
+     "drawn": 25,
+     "partial": 5,
+     "supports": 17,
+     "does_not_support": 2,
+     "unverifiable": 1,
+     "supports_rate": 0.68,
+     "supports_or_partial_rate": 0.88
+    },
+    "coverage": {
+     "identified": 20,
+     "of": 25,
+     "rate": 0.8,
+     "per_run": {
+      "3hkv": 4,
+      "4x5f": 4,
+      "jsea": 4,
+      "pn4y": 4,
+      "revp": 4
+     },
+     "programme_count": {
+      "3hkv": 6,
+      "4x5f": 6,
+      "jsea": 5,
+      "pn4y": 6,
+      "revp": 6
+     },
+     "programme_count_mean": 5.8
+    },
+    "fabrication": {
+     "count": 7,
+     "level_errors": 7,
+     "invented_or_wrongly_described": 0,
+     "runs_ranking_mond": 5,
+     "runs_ranking_lcdm": 2,
+     "per_run": {
+      "3hkv": 1,
+      "4x5f": 2,
+      "jsea": 1,
+      "pn4y": 1,
+      "revp": 2
+     }
+    },
+    "discrimination": {
+     "correct": 19,
+     "eligible": 20,
+     "rate": 0.95,
+     "per_pair": {
+      "axion > wimp": {
+       "correct": 5,
+       "eligible": 5,
+       "rate": 1.0
+      },
+      "axion > sterile": {
+       "correct": 5,
+       "eligible": 5,
+       "rate": 1.0
+      },
+      "axion > pbh": {
+       "correct": 5,
+       "eligible": 5,
+       "rate": 1.0
+      },
+      "hidden_sector > wimp": {
+       "correct": 0,
+       "eligible": 0,
+       "rate": null
+      },
+      "hidden_sector > sterile": {
+       "correct": 0,
+       "eligible": 0,
+       "rate": null
+      },
+      "pbh > sterile": {
+       "correct": 4,
+       "eligible": 5,
+       "rate": 0.8
+      }
+     },
+     "per_run": {
+      "3hkv": "4/4",
+      "4x5f": "4/4",
+      "jsea": "4/4",
+      "pn4y": "3/4",
+      "revp": "4/4"
+     }
+    },
+    "ordering_stability": {
+     "of_record": {
+      "reading": "conditional, pairs ranked by at least 3 of 5 runs; others 'insufficient data', excluded",
+      "mean": 0.9,
+      "included": 6,
+      "excluded": 4,
+      "insufficient_data": [
+       "hidden_sector / wimp",
+       "hidden_sector / sterile",
+       "axion / hidden_sector",
+       "hidden_sector / pbh"
+      ],
+      "lowest": {
+       "pair": "pbh / wimp",
+       "share": 0.6
+      }
+     },
+     "conditional": {
+      "reading": "share over the runs ranking both programmes, averaged over pairs ranked by at least one run",
+      "mean": 0.9,
+      "pairs_averaged": 6,
+      "lowest": {
+       "pair": "pbh / wimp",
+       "share": 0.6
+      }
+     },
+     "literal": {
+      "reading": "share over all 5 runs, averaged over all 10 key pairs (unranked pair = not following)",
+      "mean": 0.54,
+      "lowest": {
+       "pair": "hidden_sector / wimp",
+       "share": 0.0
+      },
+      "per_pair": {
+       "axion / wimp": 1.0,
+       "axion / sterile": 1.0,
+       "axion / pbh": 1.0,
+       "hidden_sector / wimp": 0.0,
+       "hidden_sector / sterile": 0.0,
+       "pbh / sterile": 0.8,
+       "axion / hidden_sector": 0.0,
+       "hidden_sector / pbh": 0.0,
+       "pbh / wimp": 0.6,
+       "wimp / sterile": 1.0
+      }
+     },
+     "per_pair": {
+      "axion / wimp": {
+       "runs": 5,
+       "majority": "axion > wimp",
+       "counts": {
+        "axion > wimp": 5
+       },
+       "share": 1.0,
+       "firm": true
+      },
+      "axion / sterile": {
+       "runs": 5,
+       "majority": "axion > sterile",
+       "counts": {
+        "axion > sterile": 5
+       },
+       "share": 1.0,
+       "firm": true
+      },
+      "axion / pbh": {
+       "runs": 5,
+       "majority": "axion > pbh",
+       "counts": {
+        "axion > pbh": 5
+       },
+       "share": 1.0,
+       "firm": true
+      },
+      "hidden_sector / wimp": {
+       "runs": 0,
+       "majority": null,
+       "share": null
+      },
+      "hidden_sector / sterile": {
+       "runs": 0,
+       "majority": null,
+       "share": null
+      },
+      "pbh / sterile": {
+       "runs": 5,
+       "majority": "pbh > sterile",
+       "counts": {
+        "pbh > sterile": 4,
+        "sterile > pbh": 1
+       },
+       "share": 0.8,
+       "firm": true
+      },
+      "axion / hidden_sector": {
+       "runs": 0,
+       "majority": null,
+       "share": null
+      },
+      "hidden_sector / pbh": {
+       "runs": 0,
+       "majority": null,
+       "share": null
+      },
+      "pbh / wimp": {
+       "runs": 5,
+       "majority": "pbh > wimp",
+       "counts": {
+        "pbh > wimp": 3,
+        "wimp > pbh": 2
+       },
+       "share": 0.6,
+       "firm": false
+      },
+      "wimp / sterile": {
+       "runs": 5,
+       "majority": "wimp > sterile",
+       "counts": {
+        "wimp > sterile": 5
+       },
+       "share": 1.0,
+       "firm": false
+      }
+     }
+    },
+    "verdict_stability": {
+     "of_record": {
+      "reading": "conditional, programmes given a verdict by at least 3 of 5 runs; others 'insufficient data', excluded",
+      "mean": 0.9,
+      "included": 4,
+      "excluded": 1,
+      "insufficient_data": [
+       "hidden_sector"
+      ],
+      "lowest": {
+       "programme": "pbh",
+       "share": 0.8
+      }
+     },
+     "conditional": {
+      "reading": "share over the runs giving a verdict for the programme, averaged over programmes given by at least one run",
+      "mean": 0.9,
+      "programmes_averaged": 4,
+      "lowest": {
+       "programme": "pbh",
+       "share": 0.8
+      }
+     },
+     "literal": {
+      "reading": "share over all 5 runs, averaged over all 5 key programmes (missing programme = not modal)",
+      "mean": 0.72,
+      "lowest": {
+       "programme": "hidden_sector",
+       "share": 0.0
+      },
+      "per_programme": {
+       "axion": 1.0,
+       "hidden_sector": 0.0,
+       "pbh": 0.8,
+       "wimp": 0.8,
+       "sterile": 1.0
+      }
+     },
+     "per_programme": {
+      "axion": {
+       "runs": 5,
+       "modal": "defensible",
+       "counts": {
+        "defensible": 5
+       },
+       "share": 1.0
+      },
+      "hidden_sector": {
+       "runs": 0,
+       "modal": null,
+       "share": null,
+       "counts": {}
+      },
+      "pbh": {
+       "runs": 5,
+       "modal": "defensible",
+       "counts": {
+        "defensible": 4,
+        "fragile": 1
+       },
+       "share": 0.8
+      },
+      "wimp": {
+       "runs": 5,
+       "modal": "fragile",
+       "counts": {
+        "fragile": 4,
+        "defensible": 1
+       },
+       "share": 0.8
+      },
+      "sterile": {
+       "runs": 5,
+       "modal": "fragile",
+       "counts": {
+        "fragile": 5
+       },
+       "share": 1.0
+      }
+     }
+    }
+   }
+  },
+  "thresholds": {
+   "of_record": {
+    "a": {
+     "ordering_stability": {
+      "value": 1.0,
+      "threshold": 0.8,
+      "result": "pass"
+     },
+     "verdict_stability": {
+      "value": null,
+      "threshold": 0.8,
+      "result": "not applicable (no verdicts)"
+     },
+     "verifiable_sources": {
+      "value": 0.9748,
+      "threshold": 0.95,
+      "result": "pass"
+     },
+     "coverage": {
+      "value": 0.84,
+      "threshold": 0.8,
+      "result": "pass"
+     }
+    },
+    "b": {
+     "ordering_stability": {
+      "value": 0.98,
+      "threshold": 0.8,
+      "result": "pass"
+     },
+     "verdict_stability": {
+      "value": 0.84,
+      "threshold": 0.8,
+      "result": "pass"
+     },
+     "verifiable_sources": {
+      "value": 0.9755,
+      "threshold": 0.95,
+      "result": "pass"
+     },
+     "coverage": {
+      "value": 0.92,
+      "threshold": 0.8,
+      "result": "pass"
+     }
+    },
+    "c": {
+     "ordering_stability": {
+      "value": 0.9,
+      "threshold": 0.8,
+      "result": "pass"
+     },
+     "verdict_stability": {
+      "value": 0.9,
+      "threshold": 0.8,
+      "result": "pass"
+     },
+     "verifiable_sources": {
+      "value": 0.9706,
+      "threshold": 0.95,
+      "result": "pass"
+     },
+     "coverage": {
+      "value": 0.8,
+      "threshold": 0.8,
+      "result": "pass"
+     }
+    }
+   },
+   "conditional": {
+    "a": {
+     "ordering_stability": {
+      "value": 1.0,
+      "threshold": 0.8,
+      "result": "pass"
+     },
+     "verdict_stability": {
+      "value": null,
+      "threshold": 0.8,
+      "result": "not applicable (no verdicts)"
+     },
+     "verifiable_sources": {
+      "value": 0.9748,
+      "threshold": 0.95,
+      "result": "pass"
+     },
+     "coverage": {
+      "value": 0.84,
+      "threshold": 0.8,
+      "result": "pass"
+     }
+    },
+    "b": {
+     "ordering_stability": {
+      "value": 0.98,
+      "threshold": 0.8,
+      "result": "pass"
+     },
+     "verdict_stability": {
+      "value": 0.84,
+      "threshold": 0.8,
+      "result": "pass"
+     },
+     "verifiable_sources": {
+      "value": 0.9755,
+      "threshold": 0.95,
+      "result": "pass"
+     },
+     "coverage": {
+      "value": 0.92,
+      "threshold": 0.8,
+      "result": "pass"
+     }
+    },
+    "c": {
+     "ordering_stability": {
+      "value": 0.9,
+      "threshold": 0.8,
+      "result": "pass"
+     },
+     "verdict_stability": {
+      "value": 0.9,
+      "threshold": 0.8,
+      "result": "pass"
+     },
+     "verifiable_sources": {
+      "value": 0.9706,
+      "threshold": 0.95,
+      "result": "pass"
+     },
+     "coverage": {
+      "value": 0.8,
+      "threshold": 0.8,
+      "result": "pass"
+     }
+    }
+   },
+   "literal": {
+    "a": {
+     "ordering_stability": {
+      "value": 0.68,
+      "threshold": 0.8,
+      "result": "fail"
+     },
+     "verdict_stability": {
+      "value": null,
+      "threshold": 0.8,
+      "result": "not applicable (no verdicts)"
+     },
+     "verifiable_sources": {
+      "value": 0.9748,
+      "threshold": 0.95,
+      "result": "pass"
+     },
+     "coverage": {
+      "value": 0.84,
+      "threshold": 0.8,
+      "result": "pass"
+     }
+    },
+    "b": {
+     "ordering_stability": {
+      "value": 0.82,
+      "threshold": 0.8,
+      "result": "pass"
+     },
+     "verdict_stability": {
+      "value": 0.76,
+      "threshold": 0.8,
+      "result": "fail"
+     },
+     "verifiable_sources": {
+      "value": 0.9755,
+      "threshold": 0.95,
+      "result": "pass"
+     },
+     "coverage": {
+      "value": 0.92,
+      "threshold": 0.8,
+      "result": "pass"
+     }
+    },
+    "c": {
+     "ordering_stability": {
+      "value": 0.54,
+      "threshold": 0.8,
+      "result": "fail"
+     },
+     "verdict_stability": {
+      "value": 0.72,
+      "threshold": 0.8,
+      "result": "fail"
+     },
+     "verifiable_sources": {
+      "value": 0.9706,
+      "threshold": 0.95,
+      "result": "pass"
+     },
+     "coverage": {
+      "value": 0.8,
+      "threshold": 0.8,
+      "result": "pass"
+     }
+    }
+   }
+  },
+  "gaps": {
+   "A->B": {
+    "sources_rate_over_all": 0.0007,
+    "sources_rate_over_decidable": -0.0185,
+    "support_supports_rate": 0.08,
+    "coverage": 0.08,
+    "fabrication_count": 3,
+    "discrimination": -0.1083,
+    "ordering_stability_of_record": -0.02,
+    "verdict_stability_of_record": null,
+    "ordering_stability_conditional": -0.02,
+    "ordering_stability_literal": 0.14,
+    "verdict_stability_conditional": null,
+    "verdict_stability_literal": null,
+    "discrimination_on_shared_pairs": {
+     "a": {
+      "correct": 21,
+      "eligible": 22,
+      "rate": 0.9545
+     },
+     "b": {
+      "correct": 22,
+      "eligible": 26,
+      "rate": 0.8462
+     },
+     "pairs": [
+      "axion > wimp",
+      "axion > sterile",
+      "axion > pbh",
+      "hidden_sector > wimp",
+      "hidden_sector > sterile",
+      "pbh > sterile"
+     ]
+    },
+    "discrimination_per_pair": {
+     "axion > wimp": {
+      "a": "5/5",
+      "b": "5/5"
+     },
+     "axion > sterile": {
+      "a": "5/5",
+      "b": "5/5"
+     },
+     "axion > pbh": {
+      "a": "5/5",
+      "b": "5/5"
+     },
+     "hidden_sector > wimp": {
+      "a": "0/1",
+      "b": "0/3"
+     },
+     "hidden_sector > sterile": {
+      "a": "1/1",
+      "b": "3/3"
+     },
+     "pbh > sterile": {
+      "a": "5/5",
+      "b": "4/5"
+     }
+    }
+   },
+   "B->C": {
+    "sources_rate_over_all": -0.0049,
+    "sources_rate_over_decidable": 0.011,
+    "support_supports_rate": -0.16,
+    "coverage": -0.12,
+    "fabrication_count": -1,
+    "discrimination": 0.1038,
+    "ordering_stability_of_record": -0.08,
+    "verdict_stability_of_record": 0.06,
+    "ordering_stability_conditional": -0.08,
+    "ordering_stability_literal": -0.28,
+    "verdict_stability_conditional": 0.06,
+    "verdict_stability_literal": -0.04,
+    "discrimination_on_shared_pairs": {
+     "b": {
+      "correct": 19,
+      "eligible": 20,
+      "rate": 0.95
+     },
+     "c": {
+      "correct": 19,
+      "eligible": 20,
+      "rate": 0.95
+     },
+     "pairs": [
+      "axion > wimp",
+      "axion > sterile",
+      "axion > pbh",
+      "pbh > sterile"
+     ]
+    },
+    "discrimination_per_pair": {
+     "axion > wimp": {
+      "b": "5/5",
+      "c": "5/5"
+     },
+     "axion > sterile": {
+      "b": "5/5",
+      "c": "5/5"
+     },
+     "axion > pbh": {
+      "b": "5/5",
+      "c": "5/5"
+     },
+     "hidden_sector > wimp": {
+      "b": "0/3",
+      "c": "0/0"
+     },
+     "hidden_sector > sterile": {
+      "b": "3/3",
+      "c": "0/0"
+     },
+     "pbh > sterile": {
+      "b": "4/5",
+      "c": "4/5"
+     }
+    }
+   }
+  }
+ },
+ "sensitivity_hidden_sector_credited_q6ah_txfx_wmqn": {
+  "arms": {
+   "a": {
+    "ids": {
+     "q4n5": "arm-a-1.json",
+     "q6ah": "arm-a-5.json",
+     "txfx": "arm-a-3.json",
+     "wmqn": "arm-a-4.json",
+     "y8yz": "arm-a-2.json"
+    },
+    "sources": {
+     "references": 119,
+     "verified": 116,
+     "not_found_as_given": 0,
+     "unverifiable": 3,
+     "verified_underspecified": 50,
+     "rate_over_all": 0.9748,
+     "rate_over_decidable": 1.0,
+     "per_run_over_all": {
+      "q4n5": 0.9286,
+      "q6ah": 0.9565,
+      "txfx": 1.0,
+      "wmqn": 1.0,
+      "y8yz": 1.0
+     }
+    },
+    "support_sample": {
+     "drawn": 25,
+     "supports": 19,
+     "unverifiable": 1,
+     "partial": 5,
+     "supports_rate": 0.76,
+     "supports_or_partial_rate": 0.96
+    },
+    "coverage": {
+     "identified": 24,
+     "of": 25,
+     "rate": 0.96,
+     "per_run": {
+      "q4n5": 5,
+      "q6ah": 5,
+      "txfx": 5,
+      "wmqn": 5,
+      "y8yz": 4
+     },
+     "programme_count": {
+      "q4n5": 8,
+      "q6ah": 7,
+      "txfx": 6,
+      "wmqn": 6,
+      "y8yz": 6
+     },
+     "programme_count_mean": 6.6
+    },
+    "fabrication": {
+     "count": 5,
+     "level_errors": 5,
+     "invented_or_wrongly_described": 0,
+     "runs_ranking_mond": 5,
+     "runs_ranking_lcdm": 0,
+     "per_run": {
+      "q4n5": 1,
+      "q6ah": 1,
+      "txfx": 1,
+      "wmqn": 1,
+      "y8yz": 1
+     }
+    },
+    "discrimination": {
+     "correct": 24,
+     "eligible": 28,
+     "rate": 0.8571,
+     "per_pair": {
+      "axion > wimp": {
+       "correct": 5,
+       "eligible": 5,
+       "rate": 1.0
+      },
+      "axion > sterile": {
+       "correct": 5,
+       "eligible": 5,
+       "rate": 1.0
+      },
+      "axion > pbh": {
+       "correct": 5,
+       "eligible": 5,
+       "rate": 1.0
+      },
+      "hidden_sector > wimp": {
+       "correct": 0,
+       "eligible": 4,
+       "rate": 0.0
+      },
+      "hidden_sector > sterile": {
+       "correct": 4,
+       "eligible": 4,
+       "rate": 1.0
+      },
+      "pbh > sterile": {
+       "correct": 5,
+       "eligible": 5,
+       "rate": 1.0
+      }
+     },
+     "per_run": {
+      "q4n5": "5/6",
+      "q6ah": "5/6",
+      "txfx": "5/6",
+      "wmqn": "5/6",
+      "y8yz": "4/4"
+     }
+    },
+    "ordering_stability": {
+     "of_record": {
+      "reading": "conditional, pairs ranked by at least 3 of 5 runs; others 'insufficient data', excluded",
+      "mean": 1.0,
+      "included": 10,
+      "excluded": 0,
+      "insufficient_data": [],
+      "lowest": {
+       "pair": "axion / wimp",
+       "share": 1.0
+      }
+     },
+     "conditional": {
+      "reading": "share over the runs ranking both programmes, averaged over pairs ranked by at least one run",
+      "mean": 1.0,
+      "pairs_averaged": 10,
+      "lowest": {
+       "pair": "axion / wimp",
+       "share": 1.0
+      }
+     },
+     "literal": {
+      "reading": "share over all 5 runs, averaged over all 10 key pairs (unranked pair = not following)",
+      "mean": 0.92,
+      "lowest": {
+       "pair": "hidden_sector / wimp",
+       "share": 0.8
+      },
+      "per_pair": {
+       "axion / wimp": 1.0,
+       "axion / sterile": 1.0,
+       "axion / pbh": 1.0,
+       "hidden_sector / wimp": 0.8,
+       "hidden_sector / sterile": 0.8,
+       "pbh / sterile": 1.0,
+       "axion / hidden_sector": 0.8,
+       "hidden_sector / pbh": 0.8,
+       "pbh / wimp": 1.0,
+       "wimp / sterile": 1.0
+      }
+     },
+     "per_pair": {
+      "axion / wimp": {
+       "runs": 5,
+       "majority": "axion > wimp",
+       "counts": {
+        "axion > wimp": 5
+       },
+       "share": 1.0,
+       "firm": true
+      },
+      "axion / sterile": {
+       "runs": 5,
+       "majority": "axion > sterile",
+       "counts": {
+        "axion > sterile": 5
+       },
+       "share": 1.0,
+       "firm": true
+      },
+      "axion / pbh": {
+       "runs": 5,
+       "majority": "axion > pbh",
+       "counts": {
+        "axion > pbh": 5
+       },
+       "share": 1.0,
+       "firm": true
+      },
+      "hidden_sector / wimp": {
+       "runs": 4,
+       "majority": "wimp > hidden_sector",
+       "counts": {
+        "wimp > hidden_sector": 4
+       },
+       "share": 1.0,
+       "firm": true
+      },
+      "hidden_sector / sterile": {
+       "runs": 4,
+       "majority": "hidden_sector > sterile",
+       "counts": {
+        "hidden_sector > sterile": 4
+       },
+       "share": 1.0,
+       "firm": true
+      },
+      "pbh / sterile": {
+       "runs": 5,
+       "majority": "pbh > sterile",
+       "counts": {
+        "pbh > sterile": 5
+       },
+       "share": 1.0,
+       "firm": true
+      },
+      "axion / hidden_sector": {
+       "runs": 4,
+       "majority": "axion > hidden_sector",
+       "counts": {
+        "axion > hidden_sector": 4
+       },
+       "share": 1.0,
+       "firm": false
+      },
+      "hidden_sector / pbh": {
+       "runs": 4,
+       "majority": "hidden_sector > pbh",
+       "counts": {
+        "hidden_sector > pbh": 4
+       },
+       "share": 1.0,
+       "firm": false
+      },
+      "pbh / wimp": {
+       "runs": 5,
+       "majority": "wimp > pbh",
+       "counts": {
+        "wimp > pbh": 5
+       },
+       "share": 1.0,
+       "firm": false
+      },
+      "wimp / sterile": {
+       "runs": 5,
+       "majority": "wimp > sterile",
+       "counts": {
+        "wimp > sterile": 5
+       },
+       "share": 1.0,
+       "firm": false
+      }
+     }
+    },
+    "verdict_stability": {
+     "of_record": {
+      "reading": "conditional, programmes given a verdict by at least 3 of 5 runs; others 'insufficient data', excluded",
+      "mean": null,
+      "included": 0,
+      "excluded": 5,
+      "insufficient_data": [
+       "axion",
+       "hidden_sector",
+       "pbh",
+       "wimp",
+       "sterile"
+      ],
+      "lowest": null
+     },
+     "conditional": {
+      "reading": "share over the runs giving a verdict for the programme, averaged over programmes given by at least one run",
+      "mean": null,
+      "programmes_averaged": 0,
+      "lowest": null
+     },
+     "literal": {
+      "reading": "share over all 5 runs, averaged over all 5 key programmes (missing programme = not modal)",
+      "mean": null,
+      "lowest": null,
+      "per_programme": null
+     },
+     "per_programme": {
+      "axion": {
+       "runs": 5,
+       "modal": null,
+       "share": null,
+       "counts": {
+        "not stated": 5
+       }
+      },
+      "hidden_sector": {
+       "runs": 4,
+       "modal": null,
+       "share": null,
+       "counts": {
+        "not stated": 4
+       }
+      },
+      "pbh": {
+       "runs": 5,
+       "modal": null,
+       "share": null,
+       "counts": {
+        "not stated": 5
+       }
+      },
+      "wimp": {
+       "runs": 5,
+       "modal": null,
+       "share": null,
+       "counts": {
+        "not stated": 5
+       }
+      },
+      "sterile": {
+       "runs": 5,
+       "modal": null,
+       "share": null,
+       "counts": {
+        "not stated": 5
+       }
+      }
+     }
+    }
+   },
+   "b": {
+    "ids": {
+     "4mn5": "arm-b-3.json",
+     "9gtx": "arm-b-4.json",
+     "a3m9": "arm-b-2.json",
+     "bs68": "arm-b-1.json",
+     "m5mq": "arm-b-5.json"
+    },
+    "sources": {
+     "references": 163,
+     "verified": 159,
+     "not_found_as_given": 3,
+     "unverifiable": 1,
+     "verified_underspecified": 48,
+     "rate_over_all": 0.9755,
+     "rate_over_decidable": 0.9815,
+     "per_run_over_all": {
+      "4mn5": 1.0,
+      "9gtx": 0.9429,
+      "a3m9": 1.0,
+      "bs68": 1.0,
+      "m5mq": 0.9524
+     }
+    },
+    "support_sample": {
+     "drawn": 25,
+     "supports": 21,
+     "partial": 4,
+     "supports_rate": 0.84,
+     "supports_or_partial_rate": 1.0
+    },
+    "coverage": {
+     "identified": 23,
+     "of": 25,
+     "rate": 0.92,
+     "per_run": {
+      "4mn5": 5,
+      "9gtx": 4,
+      "a3m9": 4,
+      "bs68": 5,
+      "m5mq": 5
+     },
+     "programme_count": {
+      "4mn5": 7,
+      "9gtx": 8,
+      "a3m9": 8,
+      "bs68": 7,
+      "m5mq": 7
+     },
+     "programme_count_mean": 7.4
+    },
+    "fabrication": {
+     "count": 8,
+     "level_errors": 8,
+     "invented_or_wrongly_described": 0,
+     "runs_ranking_mond": 5,
+     "runs_ranking_lcdm": 3,
+     "per_run": {
+      "4mn5": 1,
+      "9gtx": 2,
+      "a3m9": 2,
+      "bs68": 2,
+      "m5mq": 1
+     }
+    },
+    "discrimination": {
+     "correct": 22,
+     "eligible": 26,
+     "rate": 0.8462,
+     "per_pair": {
+      "axion > wimp": {
+       "correct": 5,
+       "eligible": 5,
+       "rate": 1.0
+      },
+      "axion > sterile": {
+       "correct": 5,
+       "eligible": 5,
+       "rate": 1.0
+      },
+      "axion > pbh": {
+       "correct": 5,
+       "eligible": 5,
+       "rate": 1.0
+      },
+      "hidden_sector > wimp": {
+       "correct": 0,
+       "eligible": 3,
+       "rate": 0.0
+      },
+      "hidden_sector > sterile": {
+       "correct": 3,
+       "eligible": 3,
+       "rate": 1.0
+      },
+      "pbh > sterile": {
+       "correct": 4,
+       "eligible": 5,
+       "rate": 0.8
+      }
+     },
+     "per_run": {
+      "4mn5": "5/6",
+      "9gtx": "4/4",
+      "a3m9": "3/4",
+      "bs68": "5/6",
+      "m5mq": "5/6"
+     }
+    },
+    "ordering_stability": {
+     "of_record": {
+      "reading": "conditional, pairs ranked by at least 3 of 5 runs; others 'insufficient data', excluded",
+      "mean": 0.98,
+      "included": 10,
+      "excluded": 0,
+      "insufficient_data": [],
+      "lowest": {
+       "pair": "pbh / sterile",
+       "share": 0.8
+      }
+     },
+     "conditional": {
+      "reading": "share over the runs ranking both programmes, averaged over pairs ranked by at least one run",
+      "mean": 0.98,
+      "pairs_averaged": 10,
+      "lowest": {
+       "pair": "pbh / sterile",
+       "share": 0.8
+      }
+     },
+     "literal": {
+      "reading": "share over all 5 runs, averaged over all 10 key pairs (unranked pair = not following)",
+      "mean": 0.82,
+      "lowest": {
+       "pair": "hidden_sector / wimp",
+       "share": 0.6
+      },
+      "per_pair": {
+       "axion / wimp": 1.0,
+       "axion / sterile": 1.0,
+       "axion / pbh": 1.0,
+       "hidden_sector / wimp": 0.6,
+       "hidden_sector / sterile": 0.6,
+       "pbh / sterile": 0.8,
+       "axion / hidden_sector": 0.6,
+       "hidden_sector / pbh": 0.6,
+       "pbh / wimp": 1.0,
+       "wimp / sterile": 1.0
+      }
+     },
+     "per_pair": {
+      "axion / wimp": {
+       "runs": 5,
+       "majority": "axion > wimp",
+       "counts": {
+        "axion > wimp": 5
+       },
+       "share": 1.0,
+       "firm": true
+      },
+      "axion / sterile": {
+       "runs": 5,
+       "majority": "axion > sterile",
+       "counts": {
+        "axion > sterile": 5
+       },
+       "share": 1.0,
+       "firm": true
+      },
+      "axion / pbh": {
+       "runs": 5,
+       "majority": "axion > pbh",
+       "counts": {
+        "axion > pbh": 5
+       },
+       "share": 1.0,
+       "firm": true
+      },
+      "hidden_sector / wimp": {
+       "runs": 3,
+       "majority": "wimp > hidden_sector",
+       "counts": {
+        "wimp > hidden_sector": 3
+       },
+       "share": 1.0,
+       "firm": true
+      },
+      "hidden_sector / sterile": {
+       "runs": 3,
+       "majority": "hidden_sector > sterile",
+       "counts": {
+        "hidden_sector > sterile": 3
+       },
+       "share": 1.0,
+       "firm": true
+      },
+      "pbh / sterile": {
+       "runs": 5,
+       "majority": "pbh > sterile",
+       "counts": {
+        "pbh > sterile": 4,
+        "sterile > pbh": 1
+       },
+       "share": 0.8,
+       "firm": true
+      },
+      "axion / hidden_sector": {
+       "runs": 3,
+       "majority": "axion > hidden_sector",
+       "counts": {
+        "axion > hidden_sector": 3
+       },
+       "share": 1.0,
+       "firm": false
+      },
+      "hidden_sector / pbh": {
+       "runs": 3,
+       "majority": "hidden_sector > pbh",
+       "counts": {
+        "hidden_sector > pbh": 3
+       },
+       "share": 1.0,
+       "firm": false
+      },
+      "pbh / wimp": {
+       "runs": 5,
+       "majority": "wimp > pbh",
+       "counts": {
+        "wimp > pbh": 5
+       },
+       "share": 1.0,
+       "firm": false
+      },
+      "wimp / sterile": {
+       "runs": 5,
+       "majority": "wimp > sterile",
+       "counts": {
+        "wimp > sterile": 5
+       },
+       "share": 1.0,
+       "firm": false
+      }
+     }
+    },
+    "verdict_stability": {
+     "of_record": {
+      "reading": "conditional, programmes given a verdict by at least 3 of 5 runs; others 'insufficient data', excluded",
+      "mean": 0.84,
+      "included": 5,
+      "excluded": 0,
+      "insufficient_data": [],
+      "lowest": {
+       "programme": "pbh",
+       "share": 0.6
+      }
+     },
+     "conditional": {
+      "reading": "share over the runs giving a verdict for the programme, averaged over programmes given by at least one run",
+      "mean": 0.84,
+      "programmes_averaged": 5,
+      "lowest": {
+       "programme": "pbh",
+       "share": 0.6
+      }
+     },
+     "literal": {
+      "reading": "share over all 5 runs, averaged over all 5 key programmes (missing programme = not modal)",
+      "mean": 0.76,
+      "lowest": {
+       "programme": "hidden_sector",
+       "share": 0.6
+      },
+      "per_programme": {
+       "axion": 1.0,
+       "hidden_sector": 0.6,
+       "pbh": 0.6,
+       "wimp": 0.6,
+       "sterile": 1.0
+      }
+     },
+     "per_programme": {
+      "axion": {
+       "runs": 5,
+       "modal": "defensible",
+       "counts": {
+        "defensible": 5
+       },
+       "share": 1.0
+      },
+      "hidden_sector": {
+       "runs": 3,
+       "modal": "inconclusive (evidence)",
+       "counts": {
+        "inconclusive (evidence)": 3
+       },
+       "share": 1.0
+      },
+      "pbh": {
+       "runs": 5,
+       "modal": "fragile",
+       "counts": {
+        "fragile": 3,
+        "inconclusive (evidence)": 2
+       },
+       "share": 0.6
+      },
+      "wimp": {
+       "runs": 5,
+       "modal": "defensible",
+       "counts": {
+        "defensible": 3,
+        "fragile": 2
+       },
+       "share": 0.6
+      },
+      "sterile": {
+       "runs": 5,
+       "modal": "fragile",
+       "counts": {
+        "fragile": 5
+       },
+       "share": 1.0
+      }
+     }
+    }
+   },
+   "c": {
+    "ids": {
+     "3hkv": "arm-c-1.json",
+     "4x5f": "arm-c-4.json",
+     "jsea": "arm-c-3.json",
+     "pn4y": "arm-c-2.json",
+     "revp": "arm-c-5.json"
+    },
+    "sources": {
+     "references": 136,
+     "verified": 132,
+     "not_found_as_given": 1,
+     "unverifiable": 3,
+     "verified_underspecified": 45,
+     "rate_over_all": 0.9706,
+     "rate_over_decidable": 0.9925,
+     "per_run_over_all": {
+      "3hkv": 0.9615,
+      "4x5f": 0.9259,
+      "jsea": 0.9697,
+      "pn4y": 1.0,
+      "revp": 1.0
+     }
+    },
+    "support_sample": {
+     "drawn": 25,
+     "partial": 5,
+     "supports": 17,
+     "does_not_support": 2,
+     "unverifiable": 1,
+     "supports_rate": 0.68,
+     "supports_or_partial_rate": 0.88
+    },
+    "coverage": {
+     "identified": 20,
+     "of": 25,
+     "rate": 0.8,
+     "per_run": {
+      "3hkv": 4,
+      "4x5f": 4,
+      "jsea": 4,
+      "pn4y": 4,
+      "revp": 4
+     },
+     "programme_count": {
+      "3hkv": 6,
+      "4x5f": 6,
+      "jsea": 5,
+      "pn4y": 6,
+      "revp": 6
+     },
+     "programme_count_mean": 5.8
+    },
+    "fabrication": {
+     "count": 7,
+     "level_errors": 7,
+     "invented_or_wrongly_described": 0,
+     "runs_ranking_mond": 5,
+     "runs_ranking_lcdm": 2,
+     "per_run": {
+      "3hkv": 1,
+      "4x5f": 2,
+      "jsea": 1,
+      "pn4y": 1,
+      "revp": 2
+     }
+    },
+    "discrimination": {
+     "correct": 19,
+     "eligible": 20,
+     "rate": 0.95,
+     "per_pair": {
+      "axion > wimp": {
+       "correct": 5,
+       "eligible": 5,
+       "rate": 1.0
+      },
+      "axion > sterile": {
+       "correct": 5,
+       "eligible": 5,
+       "rate": 1.0
+      },
+      "axion > pbh": {
+       "correct": 5,
+       "eligible": 5,
+       "rate": 1.0
+      },
+      "hidden_sector > wimp": {
+       "correct": 0,
+       "eligible": 0,
+       "rate": null
+      },
+      "hidden_sector > sterile": {
+       "correct": 0,
+       "eligible": 0,
+       "rate": null
+      },
+      "pbh > sterile": {
+       "correct": 4,
+       "eligible": 5,
+       "rate": 0.8
+      }
+     },
+     "per_run": {
+      "3hkv": "4/4",
+      "4x5f": "4/4",
+      "jsea": "4/4",
+      "pn4y": "3/4",
+      "revp": "4/4"
+     }
+    },
+    "ordering_stability": {
+     "of_record": {
+      "reading": "conditional, pairs ranked by at least 3 of 5 runs; others 'insufficient data', excluded",
+      "mean": 0.9,
+      "included": 6,
+      "excluded": 4,
+      "insufficient_data": [
+       "hidden_sector / wimp",
+       "hidden_sector / sterile",
+       "axion / hidden_sector",
+       "hidden_sector / pbh"
+      ],
+      "lowest": {
+       "pair": "pbh / wimp",
+       "share": 0.6
+      }
+     },
+     "conditional": {
+      "reading": "share over the runs ranking both programmes, averaged over pairs ranked by at least one run",
+      "mean": 0.9,
+      "pairs_averaged": 6,
+      "lowest": {
+       "pair": "pbh / wimp",
+       "share": 0.6
+      }
+     },
+     "literal": {
+      "reading": "share over all 5 runs, averaged over all 10 key pairs (unranked pair = not following)",
+      "mean": 0.54,
+      "lowest": {
+       "pair": "hidden_sector / wimp",
+       "share": 0.0
+      },
+      "per_pair": {
+       "axion / wimp": 1.0,
+       "axion / sterile": 1.0,
+       "axion / pbh": 1.0,
+       "hidden_sector / wimp": 0.0,
+       "hidden_sector / sterile": 0.0,
+       "pbh / sterile": 0.8,
+       "axion / hidden_sector": 0.0,
+       "hidden_sector / pbh": 0.0,
+       "pbh / wimp": 0.6,
+       "wimp / sterile": 1.0
+      }
+     },
+     "per_pair": {
+      "axion / wimp": {
+       "runs": 5,
+       "majority": "axion > wimp",
+       "counts": {
+        "axion > wimp": 5
+       },
+       "share": 1.0,
+       "firm": true
+      },
+      "axion / sterile": {
+       "runs": 5,
+       "majority": "axion > sterile",
+       "counts": {
+        "axion > sterile": 5
+       },
+       "share": 1.0,
+       "firm": true
+      },
+      "axion / pbh": {
+       "runs": 5,
+       "majority": "axion > pbh",
+       "counts": {
+        "axion > pbh": 5
+       },
+       "share": 1.0,
+       "firm": true
+      },
+      "hidden_sector / wimp": {
+       "runs": 0,
+       "majority": null,
+       "share": null
+      },
+      "hidden_sector / sterile": {
+       "runs": 0,
+       "majority": null,
+       "share": null
+      },
+      "pbh / sterile": {
+       "runs": 5,
+       "majority": "pbh > sterile",
+       "counts": {
+        "pbh > sterile": 4,
+        "sterile > pbh": 1
+       },
+       "share": 0.8,
+       "firm": true
+      },
+      "axion / hidden_sector": {
+       "runs": 0,
+       "majority": null,
+       "share": null
+      },
+      "hidden_sector / pbh": {
+       "runs": 0,
+       "majority": null,
+       "share": null
+      },
+      "pbh / wimp": {
+       "runs": 5,
+       "majority": "pbh > wimp",
+       "counts": {
+        "pbh > wimp": 3,
+        "wimp > pbh": 2
+       },
+       "share": 0.6,
+       "firm": false
+      },
+      "wimp / sterile": {
+       "runs": 5,
+       "majority": "wimp > sterile",
+       "counts": {
+        "wimp > sterile": 5
+       },
+       "share": 1.0,
+       "firm": false
+      }
+     }
+    },
+    "verdict_stability": {
+     "of_record": {
+      "reading": "conditional, programmes given a verdict by at least 3 of 5 runs; others 'insufficient data', excluded",
+      "mean": 0.9,
+      "included": 4,
+      "excluded": 1,
+      "insufficient_data": [
+       "hidden_sector"
+      ],
+      "lowest": {
+       "programme": "pbh",
+       "share": 0.8
+      }
+     },
+     "conditional": {
+      "reading": "share over the runs giving a verdict for the programme, averaged over programmes given by at least one run",
+      "mean": 0.9,
+      "programmes_averaged": 4,
+      "lowest": {
+       "programme": "pbh",
+       "share": 0.8
+      }
+     },
+     "literal": {
+      "reading": "share over all 5 runs, averaged over all 5 key programmes (missing programme = not modal)",
+      "mean": 0.72,
+      "lowest": {
+       "programme": "hidden_sector",
+       "share": 0.0
+      },
+      "per_programme": {
+       "axion": 1.0,
+       "hidden_sector": 0.0,
+       "pbh": 0.8,
+       "wimp": 0.8,
+       "sterile": 1.0
+      }
+     },
+     "per_programme": {
+      "axion": {
+       "runs": 5,
+       "modal": "defensible",
+       "counts": {
+        "defensible": 5
+       },
+       "share": 1.0
+      },
+      "hidden_sector": {
+       "runs": 0,
+       "modal": null,
+       "share": null,
+       "counts": {}
+      },
+      "pbh": {
+       "runs": 5,
+       "modal": "defensible",
+       "counts": {
+        "defensible": 4,
+        "fragile": 1
+       },
+       "share": 0.8
+      },
+      "wimp": {
+       "runs": 5,
+       "modal": "fragile",
+       "counts": {
+        "fragile": 4,
+        "defensible": 1
+       },
+       "share": 0.8
+      },
+      "sterile": {
+       "runs": 5,
+       "modal": "fragile",
+       "counts": {
+        "fragile": 5
+       },
+       "share": 1.0
+      }
+     }
+    }
+   }
+  },
+  "thresholds": {
+   "of_record": {
+    "a": {
+     "ordering_stability": {
+      "value": 1.0,
+      "threshold": 0.8,
+      "result": "pass"
+     },
+     "verdict_stability": {
+      "value": null,
+      "threshold": 0.8,
+      "result": "not applicable (no verdicts)"
+     },
+     "verifiable_sources": {
+      "value": 0.9748,
+      "threshold": 0.95,
+      "result": "pass"
+     },
+     "coverage": {
+      "value": 0.96,
+      "threshold": 0.8,
+      "result": "pass"
+     }
+    },
+    "b": {
+     "ordering_stability": {
+      "value": 0.98,
+      "threshold": 0.8,
+      "result": "pass"
+     },
+     "verdict_stability": {
+      "value": 0.84,
+      "threshold": 0.8,
+      "result": "pass"
+     },
+     "verifiable_sources": {
+      "value": 0.9755,
+      "threshold": 0.95,
+      "result": "pass"
+     },
+     "coverage": {
+      "value": 0.92,
+      "threshold": 0.8,
+      "result": "pass"
+     }
+    },
+    "c": {
+     "ordering_stability": {
+      "value": 0.9,
+      "threshold": 0.8,
+      "result": "pass"
+     },
+     "verdict_stability": {
+      "value": 0.9,
+      "threshold": 0.8,
+      "result": "pass"
+     },
+     "verifiable_sources": {
+      "value": 0.9706,
+      "threshold": 0.95,
+      "result": "pass"
+     },
+     "coverage": {
+      "value": 0.8,
+      "threshold": 0.8,
+      "result": "pass"
+     }
+    }
+   },
+   "conditional": {
+    "a": {
+     "ordering_stability": {
+      "value": 1.0,
+      "threshold": 0.8,
+      "result": "pass"
+     },
+     "verdict_stability": {
+      "value": null,
+      "threshold": 0.8,
+      "result": "not applicable (no verdicts)"
+     },
+     "verifiable_sources": {
+      "value": 0.9748,
+      "threshold": 0.95,
+      "result": "pass"
+     },
+     "coverage": {
+      "value": 0.96,
+      "threshold": 0.8,
+      "result": "pass"
+     }
+    },
+    "b": {
+     "ordering_stability": {
+      "value": 0.98,
+      "threshold": 0.8,
+      "result": "pass"
+     },
+     "verdict_stability": {
+      "value": 0.84,
+      "threshold": 0.8,
+      "result": "pass"
+     },
+     "verifiable_sources": {
+      "value": 0.9755,
+      "threshold": 0.95,
+      "result": "pass"
+     },
+     "coverage": {
+      "value": 0.92,
+      "threshold": 0.8,
+      "result": "pass"
+     }
+    },
+    "c": {
+     "ordering_stability": {
+      "value": 0.9,
+      "threshold": 0.8,
+      "result": "pass"
+     },
+     "verdict_stability": {
+      "value": 0.9,
+      "threshold": 0.8,
+      "result": "pass"
+     },
+     "verifiable_sources": {
+      "value": 0.9706,
+      "threshold": 0.95,
+      "result": "pass"
+     },
+     "coverage": {
+      "value": 0.8,
+      "threshold": 0.8,
+      "result": "pass"
+     }
+    }
+   },
+   "literal": {
+    "a": {
+     "ordering_stability": {
+      "value": 0.92,
+      "threshold": 0.8,
+      "result": "pass"
+     },
+     "verdict_stability": {
+      "value": null,
+      "threshold": 0.8,
+      "result": "not applicable (no verdicts)"
+     },
+     "verifiable_sources": {
+      "value": 0.9748,
+      "threshold": 0.95,
+      "result": "pass"
+     },
+     "coverage": {
+      "value": 0.96,
+      "threshold": 0.8,
+      "result": "pass"
+     }
+    },
+    "b": {
+     "ordering_stability": {
+      "value": 0.82,
+      "threshold": 0.8,
+      "result": "pass"
+     },
+     "verdict_stability": {
+      "value": 0.76,
+      "threshold": 0.8,
+      "result": "fail"
+     },
+     "verifiable_sources": {
+      "value": 0.9755,
+      "threshold": 0.95,
+      "result": "pass"
+     },
+     "coverage": {
+      "value": 0.92,
+      "threshold": 0.8,
+      "result": "pass"
+     }
+    },
+    "c": {
+     "ordering_stability": {
+      "value": 0.54,
+      "threshold": 0.8,
+      "result": "fail"
+     },
+     "verdict_stability": {
+      "value": 0.72,
+      "threshold": 0.8,
+      "result": "fail"
+     },
+     "verifiable_sources": {
+      "value": 0.9706,
+      "threshold": 0.95,
+      "result": "pass"
+     },
+     "coverage": {
+      "value": 0.8,
+      "threshold": 0.8,
+      "result": "pass"
+     }
+    }
+   }
+  },
+  "gaps": {
+   "A->B": {
+    "sources_rate_over_all": 0.0007,
+    "sources_rate_over_decidable": -0.0185,
+    "support_supports_rate": 0.08,
+    "coverage": -0.04,
+    "fabrication_count": 3,
+    "discrimination": -0.0109,
+    "ordering_stability_of_record": -0.02,
+    "verdict_stability_of_record": null,
+    "ordering_stability_conditional": -0.02,
+    "ordering_stability_literal": -0.1,
+    "verdict_stability_conditional": null,
+    "verdict_stability_literal": null,
+    "discrimination_on_shared_pairs": {
+     "a": {
+      "correct": 24,
+      "eligible": 28,
+      "rate": 0.8571
+     },
+     "b": {
+      "correct": 22,
+      "eligible": 26,
+      "rate": 0.8462
+     },
+     "pairs": [
+      "axion > wimp",
+      "axion > sterile",
+      "axion > pbh",
+      "hidden_sector > wimp",
+      "hidden_sector > sterile",
+      "pbh > sterile"
+     ]
+    },
+    "discrimination_per_pair": {
+     "axion > wimp": {
+      "a": "5/5",
+      "b": "5/5"
+     },
+     "axion > sterile": {
+      "a": "5/5",
+      "b": "5/5"
+     },
+     "axion > pbh": {
+      "a": "5/5",
+      "b": "5/5"
+     },
+     "hidden_sector > wimp": {
+      "a": "0/4",
+      "b": "0/3"
+     },
+     "hidden_sector > sterile": {
+      "a": "4/4",
+      "b": "3/3"
+     },
+     "pbh > sterile": {
+      "a": "5/5",
+      "b": "4/5"
+     }
+    }
+   },
+   "B->C": {
+    "sources_rate_over_all": -0.0049,
+    "sources_rate_over_decidable": 0.011,
+    "support_supports_rate": -0.16,
+    "coverage": -0.12,
+    "fabrication_count": -1,
+    "discrimination": 0.1038,
+    "ordering_stability_of_record": -0.08,
+    "verdict_stability_of_record": 0.06,
+    "ordering_stability_conditional": -0.08,
+    "ordering_stability_literal": -0.28,
+    "verdict_stability_conditional": 0.06,
+    "verdict_stability_literal": -0.04,
+    "discrimination_on_shared_pairs": {
+     "b": {
+      "correct": 19,
+      "eligible": 20,
+      "rate": 0.95
+     },
+     "c": {
+      "correct": 19,
+      "eligible": 20,
+      "rate": 0.95
+     },
+     "pairs": [
+      "axion > wimp",
+      "axion > sterile",
+      "axion > pbh",
+      "pbh > sterile"
+     ]
+    },
+    "discrimination_per_pair": {
+     "axion > wimp": {
+      "b": "5/5",
+      "c": "5/5"
+     },
+     "axion > sterile": {
+      "b": "5/5",
+      "c": "5/5"
+     },
+     "axion > pbh": {
+      "b": "5/5",
+      "c": "5/5"
+     },
+     "hidden_sector > wimp": {
+      "b": "0/3",
+      "c": "0/0"
+     },
+     "hidden_sector > sterile": {
+      "b": "3/3",
+      "c": "0/0"
+     },
+     "pbh > sterile": {
+      "b": "4/5",
+      "c": "4/5"
+     }
+    }
+   }
+  }
+ }
+}

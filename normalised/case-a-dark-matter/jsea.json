@@ -1,0 +1,218 @@
+{
+  "schema": "normalised-run/2",
+  "id": "jsea",
+  "case": "case-a-dark-matter",
+  "programme_count": 5,
+  "programmes": [
+    {
+      "position": 1,
+      "label": "WIMPs (weakly interacting massive particles)",
+      "verdict": "fragile",
+      "verdict_note": "",
+      "principal_problem": "successive model variants each absorbing a different null result or excess"
+    },
+    {
+      "position": 2,
+      "label": "QCD axion (plus ultralight \"fuzzy\"/wave dark matter)",
+      "verdict": "defensible",
+      "verdict_note": "stagnant",
+      "principal_problem": "not stated"
+    },
+    {
+      "position": 3,
+      "label": "Primordial black holes (PBHs)",
+      "verdict": "defensible",
+      "verdict_note": "stagnant; low confidence",
+      "principal_problem": "not stated"
+    },
+    {
+      "position": 4,
+      "label": "Modified gravity: MOND and its relativistic version, AeST",
+      "verdict": "fragile",
+      "verdict_note": "",
+      "principal_problem": "accumulating degrees of freedom: interpolating function, external field effect, cluster component, extra fields"
+    },
+    {
+      "position": 5,
+      "label": "Sterile neutrinos (warm dark matter)",
+      "verdict": "fragile",
+      "verdict_note": "",
+      "principal_problem": "a lepton-asymmetry parameter added to the production mechanism to survive constraints"
+    }
+  ],
+  "ranking": [
+    "QCD axion (plus ultralight \"fuzzy\"/wave dark matter)",
+    "Primordial black holes (PBHs)",
+    "WIMPs (weakly interacting massive particles)",
+    "Modified gravity: MOND and its relativistic version, AeST",
+    "Sterile neutrinos (warm dark matter)"
+  ],
+  "source_count": 33,
+  "sources": [
+    {
+      "ref": "Planck Collaboration, A&A, 2020",
+      "programme": "general",
+      "claim": "the cosmic microwave background points to cold, non-baryonic mass"
+    },
+    {
+      "ref": "Clowe et al., ApJL, 2006",
+      "programme": "general",
+      "claim": "gravitational lensing, including the Bullet Cluster, points to cold, non-baryonic mass"
+    },
+    {
+      "ref": "Imperial College London press release, December 2025",
+      "programme": "WIMPs (weakly interacting massive particles)",
+      "claim": "LZ's 417 live days found no WIMPs and set record limits above 5 GeV"
+    },
+    {
+      "ref": "JHEP, 2025",
+      "programme": "WIMPs (weakly interacting massive particles)",
+      "claim": "XENONnT and PandaX-4T detect solar neutrinos, an unshieldable background for future detectors"
+    },
+    {
+      "ref": "UKRI news, September 2026",
+      "programme": "WIMPs (weakly interacting massive particles)",
+      "claim": "LZ reported one unexplained 248 keV nuclear recoil at 2.6 sigma"
+    },
+    {
+      "ref": "arXiv:2609.04175, 2026",
+      "programme": "WIMPs (weakly interacting massive particles)",
+      "claim": "the absence of low-energy events pushes interpretations towards inelastic scattering such as the higgsino"
+    },
+    {
+      "ref": "Totani, JCAP, November 2025",
+      "programme": "WIMPs (weakly interacting massive particles)",
+      "claim": "a 20 GeV gamma-ray excess appears in the Milky Way's halo"
+    },
+    {
+      "ref": "EarthSky, 2025",
+      "programme": "WIMPs (weakly interacting massive particles)",
+      "claim": "other researchers are sceptical of the halo excess"
+    },
+    {
+      "ref": "arXiv:2609.01583",
+      "programme": "WIMPs (weakly interacting massive particles)",
+      "claim": "separate models were fitted to the single LZ event within days"
+    },
+    {
+      "ref": "arXiv:2609.04181",
+      "programme": "WIMPs (weakly interacting massive particles)",
+      "claim": "separate models were fitted to the single LZ event within days"
+    },
+    {
+      "ref": "arXiv:2609.09015",
+      "programme": "WIMPs (weakly interacting massive particles)",
+      "claim": "separate models were fitted to the single LZ event within days"
+    },
+    {
+      "ref": "PRL, 2022",
+      "programme": "WIMPs (weakly interacting massive particles)",
+      "claim": "XENONnT tested and excluded the 2020 XENON1T excess"
+    },
+    {
+      "ref": "PRL 134, 111002, 2025",
+      "programme": "QCD axion (plus ultralight \"fuzzy\"/wave dark matter)",
+      "claim": "ADMX reached DFSZ sensitivity near 3.3 micro-eV"
+    },
+    {
+      "ref": "ADMX Collaboration, Physical Review, November 2025",
+      "programme": "QCD axion (plus ultralight \"fuzzy\"/wave dark matter)",
+      "claim": "ADMX extended its search to 1.1-1.3 GHz"
+    },
+    {
+      "ref": "arXiv:2504.10607, 2025",
+      "programme": "QCD axion (plus ultralight \"fuzzy\"/wave dark matter)",
+      "claim": "axion exploration is only just beginning"
+    },
+    {
+      "ref": "CERN Courier, 2026",
+      "programme": "QCD axion (plus ultralight \"fuzzy\"/wave dark matter)",
+      "claim": "MADMAX and ALPHA target higher axion masses"
+    },
+    {
+      "ref": "JCAP 2026/09/051",
+      "programme": "QCD axion (plus ultralight \"fuzzy\"/wave dark matter)",
+      "claim": "Lyman-alpha data set a lower mass limit of about 1.9e-21 eV, disfavouring 1e-22 eV"
+    },
+    {
+      "ref": "Bird et al., PRL, 2016",
+      "programme": "Primordial black holes (PBHs)",
+      "claim": "the black holes LIGO detects were suggested to be the dark matter"
+    },
+    {
+      "ref": "PRD 113, 063010, 2026",
+      "programme": "Primordial black holes (PBHs)",
+      "claim": "gravitational-wave data cap 5-80 solar-mass black holes at about 0.1-1% of dark matter"
+    },
+    {
+      "ref": "Gorton & Green, arXiv:2403.03839, updated August 2026",
+      "programme": "Primordial black holes (PBHs)",
+      "claim": "the asteroid-mass window is narrower for realistic mass spectra"
+    },
+    {
+      "ref": "Green, \"Non-particle dark matter\", arXiv:2502.11966, 2025",
+      "programme": "Primordial black holes (PBHs)",
+      "claim": "the asteroid-mass window is narrower for realistic mass spectra"
+    },
+    {
+      "ref": "Lelli, McGaugh et al., ApJ, 2017",
+      "programme": "Modified gravity: MOND and its relativistic version, AeST",
+      "claim": "the baryonic Tully-Fisher and radial acceleration relations confirm MOND's advance predictions"
+    },
+    {
+      "ref": "Brouwer et al., A&A, 2021",
+      "programme": "Modified gravity: MOND and its relativistic version, AeST",
+      "claim": "the radial acceleration relation also appears in weak lensing"
+    },
+    {
+      "ref": "Famaey, Pizzuti & Saltas, PRD 111, 2025",
+      "programme": "Modified gravity: MOND and its relativistic version, AeST",
+      "claim": "clusters keep a residual missing mass about ten times the inner hot gas"
+    },
+    {
+      "ref": "Vokrouhlický, Nesvorný & Tremaine, ApJ 968, 2024",
+      "programme": "Modified gravity: MOND and its relativistic version, AeST",
+      "claim": "small bodies in the outer Solar System disfavour MOND"
+    },
+    {
+      "ref": "Pittordis et al., OJAp, 2025",
+      "programme": "Modified gravity: MOND and its relativistic version, AeST",
+      "claim": "wide binaries follow Newtonian gravity"
+    },
+    {
+      "ref": "Mahmud Saad & Ting, arXiv:2603.11015, 2026",
+      "programme": "Modified gravity: MOND and its relativistic version, AeST",
+      "claim": "the 2D wide-binary signal is attributed to sample-quality problems"
+    },
+    {
+      "ref": "Skordis & Złośnik, PRL, 2021",
+      "programme": "Modified gravity: MOND and its relativistic version, AeST",
+      "claim": "AeST fits the CMB and large-scale matter distribution using extra fields"
+    },
+    {
+      "ref": "Abazajian, Phys. Rep., 2017",
+      "programme": "Sterile neutrinos (warm dark matter)",
+      "claim": "Dodelson-Widrow production is excluded as all of dark matter by X-ray and Lyman-alpha data"
+    },
+    {
+      "ref": "Bulbul et al., ApJ, 2014",
+      "programme": "Sterile neutrinos (warm dark matter)",
+      "claim": "a 3.5 keV X-ray line was claimed as a signal"
+    },
+    {
+      "ref": "Boyarsky et al., PRL, 2014",
+      "programme": "Sterile neutrinos (warm dark matter)",
+      "claim": "a 3.5 keV X-ray line was claimed as a signal"
+    },
+    {
+      "ref": "Dessert, Rodd & Safdi, Science, 2020",
+      "programme": "Sterile neutrinos (warm dark matter)",
+      "claim": "blank-sky observations challenge the 3.5 keV line"
+    },
+    {
+      "ref": "ApJL, 2025",
+      "programme": "Sterile neutrinos (warm dark matter)",
+      "claim": "XRISM found no unidentified lines in ten stacked clusters, with limits 3-4 times tighter than Hitomi"
+    }
+  ]
+}

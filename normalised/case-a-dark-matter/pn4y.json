@@ -1,0 +1,181 @@
+{
+  "schema": "normalised-run/2",
+  "id": "pn4y",
+  "case": "case-a-dark-matter",
+  "programme_count": 6,
+  "programmes": [
+    {
+      "position": 1,
+      "label": "WIMPs (weakly interacting massive particles, created thermally in the early universe)",
+      "verdict": "fragile",
+      "verdict_note": "",
+      "principal_problem": "growing free parameters and special annihilation assumptions to reconcile the gamma-ray halo signal"
+    },
+    {
+      "position": 2,
+      "label": "QCD axion (and axion-like particles)",
+      "verdict": "defensible",
+      "verdict_note": "stagnant",
+      "principal_problem": "none"
+    },
+    {
+      "position": 3,
+      "label": "Self-interacting dark matter (SIDM)",
+      "verdict": "inconclusive (balance)",
+      "verdict_note": "",
+      "principal_problem": "not stated"
+    },
+    {
+      "position": 4,
+      "label": "MOND and relativistic MOND (AeST)",
+      "verdict": "fragile",
+      "verdict_note": "",
+      "principal_problem": "a different fix for each anomaly at cluster and cosmological scales"
+    },
+    {
+      "position": 5,
+      "label": "Light alternatives: sterile neutrinos (warm dark matter) and fuzzy dark matter",
+      "verdict": "fragile",
+      "verdict_note": "",
+      "principal_problem": "shift to partial-fraction models with added free parameters as motivating ranges are excluded"
+    },
+    {
+      "position": 6,
+      "label": "Primordial black holes (PBHs)",
+      "verdict": "fragile",
+      "verdict_note": "",
+      "principal_problem": "broader mass distributions and a tuned primordial power-spectrum spike to keep it viable"
+    }
+  ],
+  "ranking": [
+    "QCD axion (and axion-like particles)",
+    "Self-interacting dark matter (SIDM)",
+    "WIMPs (weakly interacting massive particles, created thermally in the early universe)",
+    "MOND and relativistic MOND (AeST)",
+    "Light alternatives: sterile neutrinos (warm dark matter) and fuzzy dark matter",
+    "Primordial black holes (PBHs)"
+  ],
+  "source_count": 24,
+  "sources": [
+    {
+      "ref": "Louis et al., ACT DR6, JCAP, 2025",
+      "programme": "general",
+      "claim": "the cosmic microwave background, combined with Planck and DESI, points to the missing gravity"
+    },
+    {
+      "ref": "LZ Collaboration, PRL 135, 011802, 2025",
+      "programme": "WIMPs (weakly interacting massive particles, created thermally in the early universe)",
+      "claim": "LZ's 4.2 tonne-years found no signal, improving limits fourfold or more above 9 GeV"
+    },
+    {
+      "ref": "XENONnT, 2025",
+      "programme": "WIMPs (weakly interacting massive particles, created thermally in the early universe)",
+      "claim": "XENONnT has reported only null results"
+    },
+    {
+      "ref": "XENONnT, July 2026",
+      "programme": "WIMPs (weakly interacting massive particles, created thermally in the early universe)",
+      "claim": "XENONnT has reported further null results"
+    },
+    {
+      "ref": "\"XLZD Design Book\", EPJC 85, 1192, 2025",
+      "programme": "WIMPs (weakly interacting massive particles, created thermally in the early universe)",
+      "claim": "the next-generation xenon detector XLZD has a published design"
+    },
+    {
+      "ref": "Totani, JCAP, Nov 2025",
+      "programme": "WIMPs (weakly interacting massive particles, created thermally in the early universe)",
+      "claim": "Fermi data show a 20 GeV gamma-ray halo attributed to WIMPs"
+    },
+    {
+      "ref": "EarthSky, 2025",
+      "programme": "WIMPs (weakly interacting massive particles, created thermally in the early universe)",
+      "claim": "other scientists were openly sceptical of the halo claim"
+    },
+    {
+      "ref": "arXiv:2607.08552, 2026",
+      "programme": "WIMPs (weakly interacting massive particles, created thermally in the early universe)",
+      "claim": "the halo claim is in 1.6-9.3-fold tension with dwarf limits; full removal needs a fine-tuned resonance"
+    },
+    {
+      "ref": "PRL 134, 2025",
+      "programme": "QCD axion (and axion-like particles)",
+      "claim": "ADMX excluded the DFSZ axion near 3.3 micro-eV"
+    },
+    {
+      "ref": "PRL 135, 191001, 2025",
+      "programme": "QCD axion (and axion-like particles)",
+      "claim": "ADMX excluded the DFSZ axion between 1.1 and 1.3 GHz"
+    },
+    {
+      "ref": "Ivanov et al., JCAP, June 2026",
+      "programme": "QCD axion (and axion-like particles)",
+      "claim": "closed dielectric haloscopes are a new detector concept"
+    },
+    {
+      "ref": "ApJ 994, 201, 2025",
+      "programme": "Self-interacting dark matter (SIDM)",
+      "claim": "a collapsed halo fits the compact dark object in SDSS J0946+1006 only if massive enough to host a galaxy"
+    },
+    {
+      "ref": "McGaugh, Lelli & Schombert, PRL, 2016",
+      "programme": "MOND and relativistic MOND (AeST)",
+      "claim": "MOND's predicted baryonic Tully-Fisher and radial acceleration relations were confirmed"
+    },
+    {
+      "ref": "Banik et al., MNRAS, 2024",
+      "programme": "MOND and relativistic MOND (AeST)",
+      "claim": "wide binaries prefer Newtonian gravity at 19 sigma"
+    },
+    {
+      "ref": "Pittordis, Sutherland & Shepherd, arXiv:2504.07569, 2025",
+      "programme": "MOND and relativistic MOND (AeST)",
+      "claim": "wide binaries favour Newtonian gravity, though MOND cannot yet be fully ruled out"
+    },
+    {
+      "ref": "Zhang, Kroupa et al., PRD, 2026",
+      "programme": "MOND and relativistic MOND (AeST)",
+      "claim": "MOND's missing cluster mass is attributed to unseen neutron stars and stellar black holes"
+    },
+    {
+      "ref": "Skordis & Złośnik, PRL, 2021",
+      "programme": "MOND and relativistic MOND (AeST)",
+      "claim": "AeST fits the CMB by adding a field that behaves like dust cosmologically"
+    },
+    {
+      "ref": "arXiv:2510.24560, 2025",
+      "programme": "Light alternatives: sterile neutrinos (warm dark matter) and fuzzy dark matter",
+      "claim": "XRISM finds no unidentified lines in ten clusters, with a limit still five times above the XMM detection"
+    },
+    {
+      "ref": "Bulbul et al., 2014",
+      "programme": "Light alternatives: sterile neutrinos (warm dark matter) and fuzzy dark matter",
+      "claim": "XMM-Newton data showed a 3.5 keV line"
+    },
+    {
+      "ref": "Dessert, Rodd & Safdi, Science, 2020",
+      "programme": "Light alternatives: sterile neutrinos (warm dark matter) and fuzzy dark matter",
+      "claim": "the 3.5 keV line is inconsistent with blank-sky data"
+    },
+    {
+      "ref": "Liu, Gong & Zhou, JCAP, 2026",
+      "programme": "Light alternatives: sterile neutrinos (warm dark matter) and fuzzy dark matter",
+      "claim": "the Lyman-alpha forest requires fuzzy dark matter above 1.9e-21 eV if it is all the dark matter"
+    },
+    {
+      "ref": "Mróz et al., Nature 632, 749, 2024",
+      "programme": "Primordial black holes (PBHs)",
+      "claim": "20 years of OGLE data found 13 events where over 500 were expected for black-hole dark matter"
+    },
+    {
+      "ref": "Hawkins, arXiv:2509.05400, 2025",
+      "programme": "Primordial black holes (PBHs)",
+      "claim": "OGLE's reliability is disputed"
+    },
+    {
+      "ref": "arXiv:2605.15749, 2026",
+      "programme": "Primordial black holes (PBHs)",
+      "claim": "LIGO-Virgo-KAGRA O4a data limit 0.5-90 solar-mass black holes to 1%-0.01% of dark matter"
+    }
+  ]
+}

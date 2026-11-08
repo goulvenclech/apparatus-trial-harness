@@ -1,0 +1,206 @@
+{
+  "schema": "normalised-run/2",
+  "id": "txfx",
+  "case": "case-a-dark-matter",
+  "programme_count": 6,
+  "programmes": [
+    {
+      "position": 1,
+      "label": "WIMPs (heavy particles left over from the early universe)",
+      "verdict": "not stated",
+      "verdict_note": "",
+      "principal_problem": "not stated"
+    },
+    {
+      "position": 2,
+      "label": "Axions and other ultralight \"wave\" dark matter",
+      "verdict": "not stated",
+      "verdict_note": "",
+      "principal_problem": "not stated"
+    },
+    {
+      "position": 3,
+      "label": "Self-interacting or more complex dark sectors",
+      "verdict": "not stated",
+      "verdict_note": "",
+      "principal_problem": "not stated"
+    },
+    {
+      "position": 4,
+      "label": "Primordial black holes",
+      "verdict": "not stated",
+      "verdict_note": "",
+      "principal_problem": "not stated"
+    },
+    {
+      "position": 5,
+      "label": "Sterile neutrinos (keV-mass, warm dark matter)",
+      "verdict": "not stated",
+      "verdict_note": "",
+      "principal_problem": "not stated"
+    },
+    {
+      "position": 6,
+      "label": "Modified gravity (MOND and relativistic versions)",
+      "verdict": "not stated",
+      "verdict_note": "",
+      "principal_problem": "not stated"
+    }
+  ],
+  "ranking": [
+    "Axions and other ultralight \"wave\" dark matter",
+    "WIMPs (heavy particles left over from the early universe)",
+    "Self-interacting or more complex dark sectors",
+    "Primordial black holes",
+    "Sterile neutrinos (keV-mass, warm dark matter)",
+    "Modified gravity (MOND and relativistic versions)"
+  ],
+  "source_count": 29,
+  "sources": [
+    {
+      "ref": "LZ Collaboration, Aalbers et al., Phys. Rev. Lett. 135, 011802, 2025",
+      "programme": "WIMPs (heavy particles left over from the early universe)",
+      "claim": "LZ found no WIMPs above 9 GeV, with a 40 GeV limit of 2.2e-48 cm2"
+    },
+    {
+      "ref": "LZ, December 2025",
+      "programme": "WIMPs (heavy particles left over from the early universe)",
+      "claim": "LZ detected boron-8 solar neutrinos at 4.5 sigma"
+    },
+    {
+      "ref": "Aprile et al., PRL, 2026",
+      "programme": "WIMPs (heavy particles left over from the early universe)",
+      "claim": "XENONnT's light dark matter search found no excess"
+    },
+    {
+      "ref": "D. Garisto, \"The search for dark matter has been blown wide open\", MIT Technology Review, June 2026",
+      "programme": "WIMPs (heavy particles left over from the early universe)",
+      "claim": "the next xenon detector of this type may be the last"
+    },
+    {
+      "ref": "S. Eriksen, TeVPA 2026, 1 September 2026",
+      "programme": "WIMPs (heavy particles left over from the early universe)",
+      "claim": "LZ saw one 248 keV nuclear-recoil event in 2.84 tonne-years with a widened energy window"
+    },
+    {
+      "ref": "arXiv:2609.02823",
+      "programme": "WIMPs (heavy particles left over from the early universe)",
+      "claim": "LZ saw one 248 keV nuclear-recoil event in 2.84 tonne-years with a widened energy window"
+    },
+    {
+      "ref": "CNN, 14 September 2026",
+      "programme": "WIMPs (heavy particles left over from the early universe)",
+      "claim": "the chance that a known background caused the event is roughly 0.5%"
+    },
+    {
+      "ref": "University of Sheffield via phys.org, 2026",
+      "programme": "WIMPs (heavy particles left over from the early universe)",
+      "claim": "a dark-matter origin implies a particle of at least 200 GeV with non-minimal interactions"
+    },
+    {
+      "ref": "Al Jazeera, September 2026",
+      "programme": "WIMPs (heavy particles left over from the early universe)",
+      "claim": "the collaboration does not claim to have seen dark matter"
+    },
+    {
+      "ref": "T. Totani, JCAP 2025/11/080",
+      "programme": "WIMPs (heavy particles left over from the early universe)",
+      "claim": "a 20 GeV halo excess fits 0.5-0.8 TeV annihilation at rates above dwarf-galaxy limits"
+    },
+    {
+      "ref": "Stenhouse, Ghag & Deppisch, arXiv:2607.08552, 2026",
+      "programme": "WIMPs (heavy particles left over from the early universe)",
+      "claim": "a reanalysis confirms the excess with a factor of 4-5 tension with dwarf limits"
+    },
+    {
+      "ref": "G. Rybka, ADMX talk, 2026",
+      "programme": "Axions and other ultralight \"wave\" dark matter",
+      "claim": "ADMX excluded the KSVZ axion between 1 and 1.3 GHz and the field entered a discovery phase"
+    },
+    {
+      "ref": "PRL 137, 021803, July 2026",
+      "programme": "Axions and other ultralight \"wave\" dark matter",
+      "claim": "a haloscope candidate near 1.036 GHz was excluded at close to DFSZ sensitivity"
+    },
+    {
+      "ref": "XENONnT, 2026",
+      "programme": "Axions and other ultralight \"wave\" dark matter",
+      "claim": "XENONnT set record limits on axion-like particles and dark photons"
+    },
+    {
+      "ref": "arXiv:2606.06969, 2026",
+      "programme": "Axions and other ultralight \"wave\" dark matter",
+      "claim": "the Lyman-alpha forest gives a fuzzy dark matter lower mass limit of 1.9e-21 eV"
+    },
+    {
+      "ref": "Nat. Astron. 10, 440-447, 2026",
+      "programme": "Self-interacting or more complex dark sectors",
+      "claim": "a million-solar-mass dark object fits neither cold nor warm haloes nor a point mass"
+    },
+    {
+      "ref": "Li et al., ApJ 994, 201, 2025",
+      "programme": "Self-interacting or more complex dark sectors",
+      "claim": "a core-collapse halo fits the J0946+1006 perturber but needs about 1e11 solar masses"
+    },
+    {
+      "ref": "arXiv:2602.21295",
+      "programme": "Primordial black holes",
+      "claim": "the sub-solar merger candidate S251112cm is compelling if validated"
+    },
+    {
+      "ref": "ApJ, 2026",
+      "programme": "Primordial black holes",
+      "claim": "the sub-solar merger candidate S251112cm is compelling if validated"
+    },
+    {
+      "ref": "Vieira et al., arXiv:2603.17009",
+      "programme": "Primordial black holes",
+      "claim": "the sub-solar merger candidate S251112cm is compelling if validated"
+    },
+    {
+      "ref": "arXiv:2601.06024, 2026",
+      "programme": "Primordial black holes",
+      "claim": "most black-hole mass ranges are already ruled out"
+    },
+    {
+      "ref": "Phys. Rev. D, 2026",
+      "programme": "Primordial black holes",
+      "claim": "the asteroid-mass window remains the main place black holes could be all dark matter"
+    },
+    {
+      "ref": "ApJL, 2025",
+      "programme": "Sterile neutrinos (keV-mass, warm dark matter)",
+      "claim": "XRISM stacked 3.75 megaseconds on ten clusters and found no unexplained lines"
+    },
+    {
+      "ref": "JHEP 02(2025)213",
+      "programme": "Sterile neutrinos (keV-mass, warm dark matter)",
+      "claim": "X-ray limits rule out most of the standard sterile-neutrino parameter space"
+    },
+    {
+      "ref": "Banik et al., MNRAS, 2024",
+      "programme": "Modified gravity (MOND and relativistic versions)",
+      "claim": "wide binaries prefer Newtonian gravity over MOND at 19 sigma"
+    },
+    {
+      "ref": "Pittordis, Sutherland et al., Open J. Astrophys., 2025",
+      "programme": "Modified gravity (MOND and relativistic versions)",
+      "claim": "Newtonian gravity fits wide binaries significantly better, though triple-star contamination needs work"
+    },
+    {
+      "ref": "Pasquini et al., A&A, 2026",
+      "programme": "Modified gravity (MOND and relativistic versions)",
+      "claim": "12 of 26 very wide binaries were hidden close binaries"
+    },
+    {
+      "ref": "Vokrouhlický, Nesvorný & Tremaine, 2024",
+      "programme": "Modified gravity (MOND and relativistic versions)",
+      "claim": "MOND fails to reproduce long-period comet orbits"
+    },
+    {
+      "ref": "Zhang, Hasani Zonoozi & Kroupa, PRD, 2026",
+      "programme": "Modified gravity (MOND and relativistic versions)",
+      "claim": "stellar remnants supply the unseen cluster mass under MOND"
+    }
+  ]
+}

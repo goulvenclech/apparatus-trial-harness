@@ -1,0 +1,196 @@
+{
+  "schema": "normalised-run/2",
+  "id": "4x5f",
+  "case": "case-a-dark-matter",
+  "programme_count": 6,
+  "programmes": [
+    {
+      "position": 1,
+      "label": "CDM as a component (ΛCDM, particle identity left open)",
+      "verdict": "solid",
+      "verdict_note": "",
+      "principal_problem": "not stated"
+    },
+    {
+      "position": 2,
+      "label": "QCD axion and axion-like particles (ALPs)",
+      "verdict": "defensible",
+      "verdict_note": "stagnant",
+      "principal_problem": "not stated"
+    },
+    {
+      "position": 3,
+      "label": "WIMPs",
+      "verdict": "defensible",
+      "verdict_note": "stagnant; close to fragile",
+      "principal_problem": "not stated"
+    },
+    {
+      "position": 4,
+      "label": "Primordial black holes",
+      "verdict": "defensible",
+      "verdict_note": "stagnant; low confidence",
+      "principal_problem": "not stated"
+    },
+    {
+      "position": 5,
+      "label": "Sterile neutrinos (keV-mass warm dark matter)",
+      "verdict": "fragile",
+      "verdict_note": "",
+      "principal_problem": "reliance on tuned production mechanisms after the 3.5 keV line failed a higher-resolution test"
+    },
+    {
+      "position": 6,
+      "label": "MOND / relativistic MOND",
+      "verdict": "fragile",
+      "verdict_note": "",
+      "principal_problem": "successive add-ons beyond galaxies: stellar remnants for clusters, extra fields for the CMB"
+    }
+  ],
+  "ranking": [
+    "CDM as a component (ΛCDM, particle identity left open)",
+    "QCD axion and axion-like particles (ALPs)",
+    "WIMPs",
+    "Primordial black holes",
+    "Sterile neutrinos (keV-mass warm dark matter)",
+    "MOND / relativistic MOND"
+  ],
+  "source_count": 27,
+  "sources": [
+    {
+      "ref": "Pantos & Perivolaropoulos, \"Status of the S8 tension: a 2026 review\", Physics of the Dark Universe, 2026",
+      "programme": "CDM as a component (ΛCDM, particle identity left open)",
+      "claim": "Dark Energy Survey Year 6 shows a 2.4-2.7 sigma S8 tension, other surveys less"
+    },
+    {
+      "ref": "Carosi et al., PRL, 2025",
+      "programme": "QCD axion and axion-like particles (ALPs)",
+      "claim": "ADMX excluded the KSVZ axion at nominal dark-matter density between 1.1 and 1.3 GHz"
+    },
+    {
+      "ref": "CERN Courier, Jan 2026",
+      "programme": "QCD axion and axion-like particles (ALPs)",
+      "claim": "MADMAX and the ALPHA plasma haloscope target higher masses favoured by post-inflation scenarios"
+    },
+    {
+      "ref": "LZ Collaboration, PRL, 2025",
+      "programme": "WIMPs",
+      "claim": "LZ's 4.2 tonne-year search found no signal"
+    },
+    {
+      "ref": "UCL news, Dec 2025",
+      "programme": "WIMPs",
+      "claim": "LZ detected solar boron-8 neutrinos at 4.5 sigma"
+    },
+    {
+      "ref": "arXiv:2604.06002, 2026",
+      "programme": "WIMPs",
+      "claim": "XENONnT reports diminishing returns for light dark matter searches"
+    },
+    {
+      "ref": "Totani, JCAP, 2025",
+      "programme": "WIMPs",
+      "claim": "a 20 GeV gamma-ray halo excess needs an annihilation rate above dwarf-galaxy limits"
+    },
+    {
+      "ref": "Stenhouse, Ghag & Deppisch, arXiv:2607.08552, 2026",
+      "programme": "WIMPs",
+      "claim": "a reanalysis confirms the halo excess and fits it with p-wave annihilation"
+    },
+    {
+      "ref": "LZ, arXiv:2609.02823, 2026",
+      "programme": "WIMPs",
+      "claim": "a single nuclear recoil of about 248 keV appeared in an extended energy window"
+    },
+    {
+      "ref": "Space.com, 2 Sep 2026",
+      "programme": "WIMPs",
+      "claim": "there is about a 0.5% chance that known backgrounds explain the event"
+    },
+    {
+      "ref": "\"XLZD Design Book\", EPJC, 2025",
+      "programme": "WIMPs",
+      "claim": "the next-generation xenon detector has been designed"
+    },
+    {
+      "ref": "arXiv:2609.01590",
+      "programme": "WIMPs",
+      "claim": "a single 1.1 TeV higgsino fits both the recoil event and the gamma-ray excess"
+    },
+    {
+      "ref": "\"Primordial black holes: constraints, potential evidence and prospects\", La Rivista del Nuovo Cimento, 2026",
+      "programme": "Primordial black holes",
+      "claim": "constraints on primordial black holes now cover the whole mass range"
+    },
+    {
+      "ref": "\"Asteroid-mass PBHs as dark matter from supersymmetry\", PRD, 2026",
+      "programme": "Primordial black holes",
+      "claim": "models aim to populate the remaining asteroid-mass window"
+    },
+    {
+      "ref": "XRISM Collaboration, ApJL, 2025",
+      "programme": "Sterile neutrinos (keV-mass warm dark matter)",
+      "claim": "XRISM found no definitive 3.5 keV line and set the tightest limits in the 5-30 keV range"
+    },
+    {
+      "ref": "arXiv:2609.10672, 2026",
+      "programme": "MOND / relativistic MOND",
+      "claim": "AeST reproduces the Planck CMB spectrum"
+    },
+    {
+      "ref": "Skordis & Złośnik, PRL, 2021",
+      "programme": "MOND / relativistic MOND",
+      "claim": "AeST reproduces the Planck CMB spectrum"
+    },
+    {
+      "ref": "Zhang, Kroupa et al., PRD, 2026",
+      "programme": "MOND / relativistic MOND",
+      "claim": "missing cluster mass, including in the Bullet Cluster, is attributed to neutron stars and stellar black holes"
+    },
+    {
+      "ref": "arXiv:2605.10022",
+      "programme": "MOND / relativistic MOND",
+      "claim": "missing cluster mass, including in the Bullet Cluster, is attributed to neutron stars and stellar black holes"
+    },
+    {
+      "ref": "Banik et al., MNRAS, 2024",
+      "programme": "MOND / relativistic MOND",
+      "claim": "wide binaries are consistent with ordinary Newtonian gravity"
+    },
+    {
+      "ref": "Pittordis & Sutherland, 2025",
+      "programme": "MOND / relativistic MOND",
+      "claim": "wide binaries are consistent with ordinary Newtonian gravity"
+    },
+    {
+      "ref": "arXiv:2603.11015",
+      "programme": "MOND / relativistic MOND",
+      "claim": "a forward-modelling study finds wide binaries consistent with Newtonian gravity"
+    },
+    {
+      "ref": "Makarov, 2026",
+      "programme": "MOND / relativistic MOND",
+      "claim": "wide binaries are consistent with ordinary Newtonian gravity"
+    },
+    {
+      "ref": "arXiv:2608.24556",
+      "programme": "MOND / relativistic MOND",
+      "claim": "an estimator study excludes the MOND wide-binary prediction and pre-registers its Gaia DR4 method"
+    },
+    {
+      "ref": "JCAP, 2026",
+      "programme": "general",
+      "claim": "Lyman-alpha data require ultralight dark matter masses above 1.9e-21 eV"
+    },
+    {
+      "ref": "arXiv:2509.02781",
+      "programme": "general",
+      "claim": "dwarf-galaxy kinematics are claimed to push the ultralight mass bound to 3e-19 eV"
+    },
+    {
+      "ref": "Li et al., ApJ, 2025",
+      "programme": "general",
+      "claim": "evidence for self-interacting dark matter rests on single-lens claims"
+    }
+  ]
+}

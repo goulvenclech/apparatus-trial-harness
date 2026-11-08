@@ -13,3 +13,6 @@ runs/**/.lock
 
 # NOTE: runs/ is deliberately NOT ignored — the archived runs are the
 # experiment's primary data and belong in version control.
+
+# Blind export: regenerated from runs/ and the seed in keys/ by `npm run blind`
+blind/

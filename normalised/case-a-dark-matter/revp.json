@@ -1,0 +1,191 @@
+{
+  "schema": "normalised-run/2",
+  "id": "revp",
+  "case": "case-a-dark-matter",
+  "programme_count": 6,
+  "programmes": [
+    {
+      "position": 1,
+      "label": "ΛCDM's cold dark matter as a mass component (candidate-agnostic)",
+      "verdict": "solid",
+      "verdict_note": "",
+      "principal_problem": "not stated"
+    },
+    {
+      "position": 2,
+      "label": "QCD axions (wave-like dark matter)",
+      "verdict": "defensible",
+      "verdict_note": "stagnant",
+      "principal_problem": "not stated"
+    },
+    {
+      "position": 3,
+      "label": "Primordial black holes (PBHs)",
+      "verdict": "defensible",
+      "verdict_note": "stagnant; lower confidence than the axion",
+      "principal_problem": "not stated"
+    },
+    {
+      "position": 4,
+      "label": "WIMPs (weakly interacting massive particles)",
+      "verdict": "fragile",
+      "verdict_note": "",
+      "principal_problem": "a separate model-building fix for each anomaly since null LHC results"
+    },
+    {
+      "position": 5,
+      "label": "MOND and relativistic extensions",
+      "verdict": "fragile",
+      "verdict_note": "",
+      "principal_problem": "separate fixes for clusters and for the CMB at scales beyond galaxies"
+    },
+    {
+      "position": 6,
+      "label": "Sterile neutrinos / warm dark matter",
+      "verdict": "fragile",
+      "verdict_note": "",
+      "principal_problem": "survival by tuning the production mechanism after its main predicted signal was refuted"
+    }
+  ],
+  "ranking": [
+    "ΛCDM's cold dark matter as a mass component (candidate-agnostic)",
+    "QCD axions (wave-like dark matter)",
+    "Primordial black holes (PBHs)",
+    "WIMPs (weakly interacting massive particles)",
+    "MOND and relativistic extensions",
+    "Sterile neutrinos / warm dark matter"
+  ],
+  "source_count": 26,
+  "sources": [
+    {
+      "ref": "Physical Review Letters, 2026, DOI 10.1103/rk8v-rcm3",
+      "programme": "ΛCDM's cold dark matter as a mass component (candidate-agnostic)",
+      "claim": "a kinematic Sunyaev-Zel'dovich test matched standard gravity plus dark matter, not MOND"
+    },
+    {
+      "ref": "Wright et al., KiDS-Legacy, 2025",
+      "programme": "ΛCDM's cold dark matter as a mass component (candidate-agnostic)",
+      "claim": "KiDS-Legacy agrees with the CMB on S8 to within 0.9 sigma"
+    },
+    {
+      "ref": "\"Status of the S8 Tension: A 2026 Review\", arXiv:2602.12238",
+      "programme": "ΛCDM's cold dark matter as a mass component (candidate-agnostic)",
+      "claim": "the S8 tension has largely eased, though DES Year 6 still shows 2.4-2.7 sigma"
+    },
+    {
+      "ref": "Skordis & Złośnik, PRL, 2021",
+      "programme": "ΛCDM's cold dark matter as a mass component (candidate-agnostic)",
+      "claim": "AeST fits the CMB only with an extra field that behaves like dark matter"
+    },
+    {
+      "ref": "Carosi et al., ADMX, PRL, 2025, arXiv:2504.07279",
+      "programme": "QCD axions (wave-like dark matter)",
+      "claim": "ADMX excluded the KSVZ axion as all local dark matter between 1.1 and 1.3 GHz"
+    },
+    {
+      "ref": "\"Lyman-α forest constraints on pure and mixed fuzzy dark matter\", JCAP 2026(09)051",
+      "programme": "QCD axions (wave-like dark matter)",
+      "claim": "Lyman-alpha data disfavour the original 1e-22 eV fuzzy mass, prompting mixed-fraction models"
+    },
+    {
+      "ref": "La Rivista del Nuovo Cimento, March 2026",
+      "programme": "Primordial black holes (PBHs)",
+      "claim": "black holes are excluded as most dark matter at nearly all masses except the asteroid window"
+    },
+    {
+      "ref": "Profumo, arXiv:2606.12775, 2026",
+      "programme": "Primordial black holes (PBHs)",
+      "claim": "black holes in the 1e17-1e22 gram window are not more fine-tuned than particle candidates"
+    },
+    {
+      "ref": "LZ, PRL, 2025",
+      "programme": "WIMPs (weakly interacting massive particles)",
+      "claim": "LZ reported a null 4.2 tonne-year result"
+    },
+    {
+      "ref": "LZ, December 2025",
+      "programme": "WIMPs (weakly interacting massive particles)",
+      "claim": "LZ reported a null 417-live-day analysis"
+    },
+    {
+      "ref": "XENONnT, PRL 135, 221003, 2025",
+      "programme": "WIMPs (weakly interacting massive particles)",
+      "claim": "XENONnT reported a null 3.1 tonne-year result"
+    },
+    {
+      "ref": "Berkeley Lab news release, 1 September 2026",
+      "programme": "WIMPs (weakly interacting massive particles)",
+      "claim": "LZ event LZ230616 has 3.4 sigma local, 2.6 sigma global significance and implies at least 200 GeV"
+    },
+    {
+      "ref": "arXiv:2609.01592",
+      "programme": "WIMPs (weakly interacting massive particles)",
+      "claim": "LZ event LZ230616 has 3.4 sigma local and 2.6 sigma global significance"
+    },
+    {
+      "ref": "Totani, JCAP 11 (2025) 080",
+      "programme": "WIMPs (weakly interacting massive particles)",
+      "claim": "a 20 GeV gamma-ray halo excess in Fermi data points to roughly 500-800 GeV particles"
+    },
+    {
+      "ref": "Stenhouse, Ghag & Deppisch, arXiv:2607.08552",
+      "programme": "WIMPs (weakly interacting massive particles)",
+      "claim": "a dark-matter reading needs an annihilation rate about 4-5 times the dwarf-galaxy limit"
+    },
+    {
+      "ref": "Black Hills Pioneer, 2026",
+      "programme": "WIMPs (weakly interacting massive particles)",
+      "claim": "the US Department of Energy paused XLZD funding and favours extending LZ"
+    },
+    {
+      "ref": "Phys. Rev. D, 2025",
+      "programme": "MOND and relativistic extensions",
+      "claim": "MOND leaves a residual missing-mass problem in galaxy clusters"
+    },
+    {
+      "ref": "A&A, 2024",
+      "programme": "MOND and relativistic extensions",
+      "claim": "MOND leaves a residual missing-mass problem in galaxy clusters"
+    },
+    {
+      "ref": "Zhang, Kroupa et al., Phys. Rev. D 114, 023001, 2026",
+      "programme": "MOND and relativistic extensions",
+      "claim": "stellar remnants from a particular initial-mass function are proposed to fix the Bullet Cluster"
+    },
+    {
+      "ref": "Chae et al., 2026",
+      "programme": "MOND and relativistic extensions",
+      "claim": "36 wide binaries show gravity about 60% stronger than Newtonian at low accelerations"
+    },
+    {
+      "ref": "Saad & Ting, Open Journal of Astrophysics, 2026",
+      "programme": "MOND and relativistic extensions",
+      "claim": "the same 36 wide binaries are consistent with Newtonian gravity"
+    },
+    {
+      "ref": "Milgrom, 1983",
+      "programme": "MOND and relativistic extensions",
+      "claim": "MOND predicted the baryonic Tully-Fisher and radial-acceleration relations, later confirmed"
+    },
+    {
+      "ref": "Banik et al., 2024",
+      "programme": "MOND and relativistic extensions",
+      "claim": "some MOND proponents published negative wide-binary results"
+    },
+    {
+      "ref": "Dessert, Rodd & Safdi, Science, 2020",
+      "programme": "Sterile neutrinos / warm dark matter",
+      "claim": "the 3.5 keV line is inconsistent with blank-sky observations"
+    },
+    {
+      "ref": "XRISM Collaboration, ApJL 994, L28, 2025",
+      "programme": "Sterile neutrinos / warm dark matter",
+      "claim": "XRISM found no line, with an upper limit 3-4 times below Hitomi's"
+    },
+    {
+      "ref": "arXiv:2610.01877",
+      "programme": "Sterile neutrinos / warm dark matter",
+      "claim": "archival XRISM data show a weak, unconfirmed residual"
+    }
+  ]
+}

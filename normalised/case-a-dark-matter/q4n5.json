@@ -1,0 +1,217 @@
+{
+  "schema": "normalised-run/2",
+  "id": "q4n5",
+  "case": "case-a-dark-matter",
+  "programme_count": 8,
+  "programmes": [
+    {
+      "position": 1,
+      "label": "WIMPs (heavy, weakly interacting particles)",
+      "verdict": "not stated",
+      "verdict_note": "",
+      "principal_problem": "not stated"
+    },
+    {
+      "position": 2,
+      "label": "The QCD axion",
+      "verdict": "not stated",
+      "verdict_note": "",
+      "principal_problem": "not stated"
+    },
+    {
+      "position": 3,
+      "label": "Light (sub-GeV) dark sectors",
+      "verdict": "not stated",
+      "verdict_note": "",
+      "principal_problem": "not stated"
+    },
+    {
+      "position": 4,
+      "label": "Self-interacting dark matter (SIDM)",
+      "verdict": "not stated",
+      "verdict_note": "",
+      "principal_problem": "not stated"
+    },
+    {
+      "position": 5,
+      "label": "Primordial black holes",
+      "verdict": "not stated",
+      "verdict_note": "",
+      "principal_problem": "not stated"
+    },
+    {
+      "position": 6,
+      "label": "Ultralight (\"fuzzy\") dark matter",
+      "verdict": "not stated",
+      "verdict_note": "",
+      "principal_problem": "not stated"
+    },
+    {
+      "position": 7,
+      "label": "Sterile neutrinos and the 3.5 keV line",
+      "verdict": "not stated",
+      "verdict_note": "",
+      "principal_problem": "not stated"
+    },
+    {
+      "position": 8,
+      "label": "MOND (modified gravity instead of dark matter)",
+      "verdict": "not stated",
+      "verdict_note": "",
+      "principal_problem": "not stated"
+    }
+  ],
+  "ranking": [
+    "The QCD axion",
+    "WIMPs (heavy, weakly interacting particles)",
+    "Self-interacting dark matter (SIDM)",
+    "Light (sub-GeV) dark sectors",
+    "Primordial black holes",
+    "Ultralight (\"fuzzy\") dark matter",
+    "Sterile neutrinos and the 3.5 keV line",
+    "MOND (modified gravity instead of dark matter)"
+  ],
+  "source_count": 28,
+  "sources": [
+    {
+      "ref": "LZ Collaboration / Berkeley Lab and Brown University press releases, December 2025",
+      "programme": "WIMPs (heavy, weakly interacting particles)",
+      "claim": "LZ's 417-day dataset found no WIMPs and detected boron-8 solar neutrinos for the first time"
+    },
+    {
+      "ref": "XENON Collaboration, Physical Review Letters, 2025-26",
+      "programme": "WIMPs (heavy, weakly interacting particles)",
+      "claim": "XENONnT has reported no excess"
+    },
+    {
+      "ref": "LZ Collaboration, arXiv:2609.02823, presented at TeVPA, September 2026",
+      "programme": "WIMPs (heavy, weakly interacting particles)",
+      "claim": "LZ saw one 248 keV event at 2.6 sigma overall, implying a mass of at least 200 GeV"
+    },
+    {
+      "ref": "Totani, JCAP, 2025",
+      "programme": "WIMPs (heavy, weakly interacting particles)",
+      "claim": "Fermi data show a halo of excess gamma rays at about 20 GeV"
+    },
+    {
+      "ref": "Stenhouse, Ghag & Deppisch, arXiv:2607.08552, 2026",
+      "programme": "WIMPs (heavy, weakly interacting particles)",
+      "claim": "a reanalysis confirmed the excess but found it in tension with dwarf-galaxy limits"
+    },
+    {
+      "ref": "Abazajian, Li & Macias, arXiv:2610.23713, 2026",
+      "programme": "WIMPs (heavy, weakly interacting particles)",
+      "claim": "testing 281 diffuse-emission models argues against dark matter for the whole excess and weakens the LZ link"
+    },
+    {
+      "ref": "Rybka, TDLI talk",
+      "programme": "The QCD axion",
+      "claim": "ADMX has ruled out the KSVZ axion at 1-1.3 GHz with no surviving candidates"
+    },
+    {
+      "ref": "Sonnenschein, APS DPF 2026",
+      "programme": "The QCD axion",
+      "claim": "ADMX has ruled out the KSVZ axion at 1-1.3 GHz and its 2026-27 run is under way"
+    },
+    {
+      "ref": "PRL 134, 151006, 2025",
+      "programme": "The QCD axion",
+      "claim": "HAYSTAC reports further null results"
+    },
+    {
+      "ref": "CERN Courier, January 2026",
+      "programme": "The QCD axion",
+      "claim": "ALPHA and MADMAX target heavier axions"
+    },
+    {
+      "ref": "MADMAX prototype, PRL",
+      "programme": "The QCD axion",
+      "claim": "MADMAX ran a prototype axion search"
+    },
+    {
+      "ref": "PRL, 2026",
+      "programme": "Light (sub-GeV) dark sectors",
+      "claim": "XENONnT set leading limits on axion-like particles, dark photons and 5 GeV particles above 6e-45 cm2"
+    },
+    {
+      "ref": "\"The search for dark matter has blown wide open\", MIT Technology Review, June 2026",
+      "programme": "Light (sub-GeV) dark sectors",
+      "claim": "the dark-matter search field is broadening fast"
+    },
+    {
+      "ref": "Yu et al., PRL 136, 2026",
+      "programme": "Self-interacting dark matter (SIDM)",
+      "claim": "collapsed dense self-interacting clumps could explain odd features in lenses, stellar streams and satellites"
+    },
+    {
+      "ref": "arXiv:2610.40766, October 2026",
+      "programme": "Self-interacting dark matter (SIDM)",
+      "claim": "29 quadruply imaged quasars disfavour cold dark matter by Bayes factors near 24:1 and 13:1"
+    },
+    {
+      "ref": "Carr, Iovino, Perna, Vaskonen & Veermäe, Rivista del Nuovo Cimento 49, 2026",
+      "programme": "Primordial black holes",
+      "claim": "the asteroid-mass window closes if the holes formed with a broad mass spread"
+    },
+    {
+      "ref": "LIGO–Virgo–KAGRA, November 2025",
+      "programme": "Primordial black holes",
+      "claim": "candidate merger S251112cm involves at least one object lighter than the Sun"
+    },
+    {
+      "ref": "draft paper, October 2026",
+      "programme": "Primordial black holes",
+      "claim": "newer sub-solar searches show outliers but no confident detection"
+    },
+    {
+      "ref": "JCAP 2026/09/051",
+      "programme": "Ultralight (\"fuzzy\") dark matter",
+      "claim": "pure fuzzy dark matter needs masses above about 2e-21 eV from the Lyman-alpha forest"
+    },
+    {
+      "ref": "Phys. Rev. D 113, 023055, 2026",
+      "programme": "Ultralight (\"fuzzy\") dark matter",
+      "claim": "dwarf-galaxy star motions disfavour masses below about 5e-21 eV"
+    },
+    {
+      "ref": "Dessert, Rodd & Safdi, Science, 2020",
+      "programme": "Sterile neutrinos and the 3.5 keV line",
+      "claim": "the 3.5 keV line is inconsistent with blank-sky observations"
+    },
+    {
+      "ref": "arXiv:2510.24560, 2025",
+      "programme": "Sterile neutrinos and the 3.5 keV line",
+      "claim": "XRISM found no unidentified lines in ten clusters, though its limit is five times too weak"
+    },
+    {
+      "ref": "McGaugh et al., 2026",
+      "programme": "MOND (modified gravity instead of dark matter)",
+      "claim": "MOND still fits galaxies and galaxy groups well"
+    },
+    {
+      "ref": "Tian et al., 2026",
+      "programme": "MOND (modified gravity instead of dark matter)",
+      "claim": "MOND still fits galaxies and galaxy groups well"
+    },
+    {
+      "ref": "Scholarpedia",
+      "programme": "MOND (modified gravity instead of dark matter)",
+      "claim": "MOND still fits galaxies and galaxy groups well"
+    },
+    {
+      "ref": "Cookson, Banik, El-Badry et al., MNRAS, 2026",
+      "programme": "MOND (modified gravity instead of dark matter)",
+      "claim": "a quality-controlled wide-binary study found no gravity boost"
+    },
+    {
+      "ref": "Chae, arXiv:2607.14450, 2026",
+      "programme": "MOND (modified gravity instead of dark matter)",
+      "claim": "the null wide-binary result is disputed"
+    },
+    {
+      "ref": "arXiv:2603.11015",
+      "programme": "MOND (modified gravity instead of dark matter)",
+      "claim": "3D wide-binary analyses also find no gravity boost"
+    }
+  ]
+}

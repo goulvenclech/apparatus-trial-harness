@@ -1,0 +1,1068 @@
+{
+  "schema": "blind-score-summary/1",
+  "case": "case-a-dark-matter",
+  "scored_on": "2026-11-08",
+  "scorer": "blind Claude session; read only normalised/case-a-dark-matter, docs/protocol.md, the answer key v2 and normalised/case-a-pilot (shape only)",
+  "answer_key": "docs/cases/case-A-dark-matter-answer-key.md (v2)",
+  "sampling": {
+    "campaign_seed": "45c87657b263857fbb07ac14a5a5848a",
+    "procedure": [
+      "digest = sha256 over the seed string as UTF-8 (hex)",
+      "state = uint32 parsed from digest[0:8]",
+      "rng = mulberry32(state); one stream for the whole campaign",
+      "records taken in ascending id order (3hkv, 4mn5, ..., y8yz)",
+      "per record, n = len(sources) (== source_count); repeat i = floor(rng()*n), skip if already drawn, until 5 distinct indices",
+      "indices are 0-based positions in the record's sources array, duplicates of a work included"
+    ],
+    "sha256_of_seed": "10cae4ec7f1f843183cdc05684c3a19b296d839382848953dc956e278d3977b8",
+    "uint32_state": 281732332,
+    "test_vector_first_five_outputs": [
+      0.6339197715278715,
+      0.8643918398302048,
+      0.8973192570265383,
+      0.23974407091736794,
+      0.6595334969460964
+    ],
+    "cross_checked": "Node (Math.imul) and a Python reimplementation give identical outputs",
+    "draws": {
+      "3hkv": [
+        16,
+        22,
+        23,
+        6,
+        17
+      ],
+      "4mn5": [
+        21,
+        30,
+        10,
+        23,
+        0
+      ],
+      "4x5f": [
+        1,
+        5,
+        4,
+        25,
+        26
+      ],
+      "9gtx": [
+        25,
+        14,
+        30,
+        24,
+        31
+      ],
+      "a3m9": [
+        13,
+        15,
+        14,
+        7,
+        17
+      ],
+      "bs68": [
+        4,
+        7,
+        23,
+        3,
+        21
+      ],
+      "jsea": [
+        3,
+        23,
+        5,
+        9,
+        17
+      ],
+      "m5mq": [
+        1,
+        21,
+        24,
+        35,
+        3
+      ],
+      "pn4y": [
+        22,
+        2,
+        11,
+        5,
+        19
+      ],
+      "q4n5": [
+        25,
+        8,
+        1,
+        17,
+        7
+      ],
+      "q6ah": [
+        2,
+        14,
+        18,
+        21,
+        10
+      ],
+      "revp": [
+        23,
+        18,
+        17,
+        2,
+        24
+      ],
+      "txfx": [
+        16,
+        22,
+        12,
+        8,
+        18
+      ],
+      "wmqn": [
+        2,
+        13,
+        16,
+        10,
+        7
+      ],
+      "y8yz": [
+        7,
+        9,
+        14,
+        16,
+        10
+      ]
+    },
+    "script_node": "// Reproducible draw of 5 references per run for case-a-dark-matter scoring.\n// Usage: node sample.mjs <normalised-dir> <seed-hex>\nimport { createHash } from \"node:crypto\";\nimport { readdirSync, readFileSync } from \"node:fs\";\nimport { join } from \"node:path\";\n\nconst [dir, seed] = process.argv.slice(2);\n\nfunction mulberry32(a) {\n  return function () {\n    a |= 0;\n    a = (a + 0x6d2b79f5) | 0;\n    let t = Math.imul(a ^ (a >>> 15), 1 | a);\n    t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;\n    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;\n  };\n}\n\n// sha256 over the seed as an ASCII/UTF-8 string, first 8 hex chars read as uint32.\nconst digest = createHash(\"sha256\").update(seed, \"utf8\").digest(\"hex\");\nconst state = parseInt(digest.slice(0, 8), 16) >>> 0;\n\nconst testRng = mulberry32(state);\nconst testVector = Array.from({ length: 5 }, () => testRng());\n\n// One stream for the whole campaign, records consumed in ascending id order.\nconst rng = mulberry32(state);\nconst ids = readdirSync(dir)\n  .filter((f) => f.endsWith(\".json\"))\n  .map((f) => f.slice(0, -5))\n  .sort();\n\nconst draws = {};\nfor (const id of ids) {\n  const record = JSON.parse(readFileSync(join(dir, `${id}.json`), \"utf8\"));\n  const n = record.sources.length;\n  if (n !== record.source_count) throw new Error(`${id}: source_count mismatch`);\n  const picked = [];\n  // Rejection of duplicates: draw floor(rng()*n) until 5 distinct indices.\n  while (picked.length < Math.min(5, n)) {\n    const i = Math.floor(rng() * n);\n    if (!picked.includes(i)) picked.push(i);\n  }\n  draws[id] = { n, indices_in_draw_order: picked };\n}\n\nconsole.log(\n  JSON.stringify(\n    { sha256_of_seed: digest, uint32_state: state, first_five_outputs: testVector, draws },\n    null,\n    2,\n  ),\n);\n"
+  },
+  "totals_across_records_raw_counts_only": {
+    "references": 418,
+    "verified": 407,
+    "not_found_as_given": 4,
+    "unverifiable": 7,
+    "distinct_reference_strings_checked": 337,
+    "sampled_references": 75
+  },
+  "records": [
+    {
+      "id": "3hkv",
+      "coverage": {
+        "identified": 4,
+        "of": 5,
+        "rate": 0.8,
+        "programme_count": 6
+      },
+      "coverage_if_generic_dark_sector_credited": null,
+      "fabrication": {
+        "count": 1,
+        "level_errors": 1,
+        "invented_or_wrongly_described": 0
+      },
+      "discrimination": {
+        "correct": 4,
+        "eligible": 4,
+        "rate": 1.0
+      },
+      "discrimination_incorrect_pairs": [],
+      "verifiability": {
+        "total": 26,
+        "verified": 25,
+        "not_found_as_given": 0,
+        "unverifiable": 1,
+        "verified_underspecified": 9,
+        "rate_verified_over_total": 0.9615,
+        "rate_verified_over_decidable": 1.0
+      },
+      "not_found_as_given": [],
+      "unverifiable": [
+        {
+          "index": 19,
+          "ref": "phys.org"
+        }
+      ],
+      "claim_mismatches_noted_not_scored": [],
+      "support_sample": {
+        "indices_in_draw_order": [
+          16,
+          22,
+          23,
+          6,
+          17
+        ],
+        "counts": {
+          "partial": 2,
+          "supports": 2,
+          "does_not_support": 1
+        }
+      }
+    },
+    {
+      "id": "4mn5",
+      "coverage": {
+        "identified": 5,
+        "of": 5,
+        "rate": 1.0,
+        "programme_count": 7
+      },
+      "coverage_if_generic_dark_sector_credited": null,
+      "fabrication": {
+        "count": 1,
+        "level_errors": 1,
+        "invented_or_wrongly_described": 0
+      },
+      "discrimination": {
+        "correct": 5,
+        "eligible": 6,
+        "rate": 0.8333
+      },
+      "discrimination_incorrect_pairs": [
+        "hidden_sector > wimp"
+      ],
+      "verifiability": {
+        "total": 31,
+        "verified": 31,
+        "not_found_as_given": 0,
+        "unverifiable": 0,
+        "verified_underspecified": 13,
+        "rate_verified_over_total": 1.0,
+        "rate_verified_over_decidable": 1.0
+      },
+      "not_found_as_given": [],
+      "unverifiable": [],
+      "claim_mismatches_noted_not_scored": [],
+      "support_sample": {
+        "indices_in_draw_order": [
+          21,
+          30,
+          10,
+          23,
+          0
+        ],
+        "counts": {
+          "supports": 5
+        }
+      }
+    },
+    {
+      "id": "4x5f",
+      "coverage": {
+        "identified": 4,
+        "of": 5,
+        "rate": 0.8,
+        "programme_count": 6
+      },
+      "coverage_if_generic_dark_sector_credited": null,
+      "fabrication": {
+        "count": 2,
+        "level_errors": 2,
+        "invented_or_wrongly_described": 0
+      },
+      "discrimination": {
+        "correct": 4,
+        "eligible": 4,
+        "rate": 1.0
+      },
+      "discrimination_incorrect_pairs": [],
+      "verifiability": {
+        "total": 27,
+        "verified": 25,
+        "not_found_as_given": 0,
+        "unverifiable": 2,
+        "verified_underspecified": 9,
+        "rate_verified_over_total": 0.9259,
+        "rate_verified_over_decidable": 1.0
+      },
+      "not_found_as_given": [],
+      "unverifiable": [
+        {
+          "index": 9,
+          "ref": "Space.com, 2 Sep 2026"
+        },
+        {
+          "index": 22,
+          "ref": "Makarov, 2026"
+        }
+      ],
+      "claim_mismatches_noted_not_scored": [
+        {
+          "index": 18,
+          "ref": "arXiv:2605.10022"
+        }
+      ],
+      "support_sample": {
+        "indices_in_draw_order": [
+          1,
+          5,
+          4,
+          25,
+          26
+        ],
+        "counts": {
+          "supports": 3,
+          "unverifiable": 1,
+          "does_not_support": 1
+        }
+      }
+    },
+    {
+      "id": "9gtx",
+      "coverage": {
+        "identified": 4,
+        "of": 5,
+        "rate": 0.8,
+        "programme_count": 8
+      },
+      "coverage_if_generic_dark_sector_credited": null,
+      "fabrication": {
+        "count": 2,
+        "level_errors": 2,
+        "invented_or_wrongly_described": 0
+      },
+      "discrimination": {
+        "correct": 4,
+        "eligible": 4,
+        "rate": 1.0
+      },
+      "discrimination_incorrect_pairs": [],
+      "verifiability": {
+        "total": 35,
+        "verified": 33,
+        "not_found_as_given": 1,
+        "unverifiable": 1,
+        "verified_underspecified": 7,
+        "rate_verified_over_total": 0.9429,
+        "rate_verified_over_decidable": 0.9706
+      },
+      "not_found_as_given": [
+        {
+          "index": 16,
+          "ref": "Wang, …, Frenk et al., ApJ 994, 201, 2025"
+        }
+      ],
+      "unverifiable": [
+        {
+          "index": 6,
+          "ref": "Identification of Dark Matter conference talk, 2026"
+        }
+      ],
+      "claim_mismatches_noted_not_scored": [
+        {
+          "index": 29,
+          "ref": "Mróz et al., Nature 632, 749, 2024"
+        }
+      ],
+      "support_sample": {
+        "indices_in_draw_order": [
+          25,
+          14,
+          30,
+          24,
+          31
+        ],
+        "counts": {
+          "partial": 1,
+          "supports": 4
+        }
+      }
+    },
+    {
+      "id": "a3m9",
+      "coverage": {
+        "identified": 4,
+        "of": 5,
+        "rate": 0.8,
+        "programme_count": 8
+      },
+      "coverage_if_generic_dark_sector_credited": null,
+      "fabrication": {
+        "count": 2,
+        "level_errors": 2,
+        "invented_or_wrongly_described": 0
+      },
+      "discrimination": {
+        "correct": 3,
+        "eligible": 4,
+        "rate": 0.75
+      },
+      "discrimination_incorrect_pairs": [
+        "pbh > sterile"
+      ],
+      "verifiability": {
+        "total": 22,
+        "verified": 22,
+        "not_found_as_given": 0,
+        "unverifiable": 0,
+        "verified_underspecified": 8,
+        "rate_verified_over_total": 1.0,
+        "rate_verified_over_decidable": 1.0
+      },
+      "not_found_as_given": [],
+      "unverifiable": [],
+      "claim_mismatches_noted_not_scored": [
+        {
+          "index": 19,
+          "ref": "Liu, Gong & Zhou, JCAP 09, 051, 2026"
+        }
+      ],
+      "support_sample": {
+        "indices_in_draw_order": [
+          13,
+          15,
+          14,
+          7,
+          17
+        ],
+        "counts": {
+          "supports": 4,
+          "partial": 1
+        }
+      }
+    },
+    {
+      "id": "bs68",
+      "coverage": {
+        "identified": 5,
+        "of": 5,
+        "rate": 1.0,
+        "programme_count": 7
+      },
+      "coverage_if_generic_dark_sector_credited": null,
+      "fabrication": {
+        "count": 2,
+        "level_errors": 2,
+        "invented_or_wrongly_described": 0
+      },
+      "discrimination": {
+        "correct": 5,
+        "eligible": 6,
+        "rate": 0.8333
+      },
+      "discrimination_incorrect_pairs": [
+        "hidden_sector > wimp"
+      ],
+      "verifiability": {
+        "total": 33,
+        "verified": 33,
+        "not_found_as_given": 0,
+        "unverifiable": 0,
+        "verified_underspecified": 6,
+        "rate_verified_over_total": 1.0,
+        "rate_verified_over_decidable": 1.0
+      },
+      "not_found_as_given": [],
+      "unverifiable": [],
+      "claim_mismatches_noted_not_scored": [],
+      "support_sample": {
+        "indices_in_draw_order": [
+          4,
+          7,
+          23,
+          3,
+          21
+        ],
+        "counts": {
+          "supports": 5
+        }
+      }
+    },
+    {
+      "id": "jsea",
+      "coverage": {
+        "identified": 4,
+        "of": 5,
+        "rate": 0.8,
+        "programme_count": 5
+      },
+      "coverage_if_generic_dark_sector_credited": null,
+      "fabrication": {
+        "count": 1,
+        "level_errors": 1,
+        "invented_or_wrongly_described": 0
+      },
+      "discrimination": {
+        "correct": 4,
+        "eligible": 4,
+        "rate": 1.0
+      },
+      "discrimination_incorrect_pairs": [],
+      "verifiability": {
+        "total": 33,
+        "verified": 32,
+        "not_found_as_given": 1,
+        "unverifiable": 0,
+        "verified_underspecified": 9,
+        "rate_verified_over_total": 0.9697,
+        "rate_verified_over_decidable": 0.9697
+      },
+      "not_found_as_given": [
+        {
+          "index": 19,
+          "ref": "Gorton & Green, arXiv:2403.03839, updated August 2026"
+        }
+      ],
+      "unverifiable": [],
+      "claim_mismatches_noted_not_scored": [],
+      "support_sample": {
+        "indices_in_draw_order": [
+          3,
+          23,
+          5,
+          9,
+          17
+        ],
+        "counts": {
+          "supports": 5
+        }
+      }
+    },
+    {
+      "id": "m5mq",
+      "coverage": {
+        "identified": 5,
+        "of": 5,
+        "rate": 1.0,
+        "programme_count": 7
+      },
+      "coverage_if_generic_dark_sector_credited": null,
+      "fabrication": {
+        "count": 1,
+        "level_errors": 1,
+        "invented_or_wrongly_described": 0
+      },
+      "discrimination": {
+        "correct": 5,
+        "eligible": 6,
+        "rate": 0.8333
+      },
+      "discrimination_incorrect_pairs": [
+        "hidden_sector > wimp"
+      ],
+      "verifiability": {
+        "total": 42,
+        "verified": 40,
+        "not_found_as_given": 2,
+        "unverifiable": 0,
+        "verified_underspecified": 14,
+        "rate_verified_over_total": 0.9524,
+        "rate_verified_over_decidable": 0.9524
+      },
+      "not_found_as_given": [
+        {
+          "index": 7,
+          "ref": "PRL 136, 2026"
+        },
+        {
+          "index": 25,
+          "ref": "arXiv:2403.03839, revised 2026"
+        }
+      ],
+      "unverifiable": [],
+      "claim_mismatches_noted_not_scored": [
+        {
+          "index": 33,
+          "ref": "arXiv:2603.11015"
+        }
+      ],
+      "support_sample": {
+        "indices_in_draw_order": [
+          1,
+          21,
+          24,
+          35,
+          3
+        ],
+        "counts": {
+          "supports": 3,
+          "partial": 2
+        }
+      }
+    },
+    {
+      "id": "pn4y",
+      "coverage": {
+        "identified": 4,
+        "of": 5,
+        "rate": 0.8,
+        "programme_count": 6
+      },
+      "coverage_if_generic_dark_sector_credited": null,
+      "fabrication": {
+        "count": 1,
+        "level_errors": 1,
+        "invented_or_wrongly_described": 0
+      },
+      "discrimination": {
+        "correct": 3,
+        "eligible": 4,
+        "rate": 0.75
+      },
+      "discrimination_incorrect_pairs": [
+        "pbh > sterile"
+      ],
+      "verifiability": {
+        "total": 24,
+        "verified": 24,
+        "not_found_as_given": 0,
+        "unverifiable": 0,
+        "verified_underspecified": 8,
+        "rate_verified_over_total": 1.0,
+        "rate_verified_over_decidable": 1.0
+      },
+      "not_found_as_given": [],
+      "unverifiable": [],
+      "claim_mismatches_noted_not_scored": [],
+      "support_sample": {
+        "indices_in_draw_order": [
+          22,
+          2,
+          11,
+          5,
+          19
+        ],
+        "counts": {
+          "supports": 3,
+          "partial": 2
+        }
+      }
+    },
+    {
+      "id": "q4n5",
+      "coverage": {
+        "identified": 5,
+        "of": 5,
+        "rate": 1.0,
+        "programme_count": 8
+      },
+      "coverage_if_generic_dark_sector_credited": null,
+      "fabrication": {
+        "count": 1,
+        "level_errors": 1,
+        "invented_or_wrongly_described": 0
+      },
+      "discrimination": {
+        "correct": 5,
+        "eligible": 6,
+        "rate": 0.8333
+      },
+      "discrimination_incorrect_pairs": [
+        "hidden_sector > wimp"
+      ],
+      "verifiability": {
+        "total": 28,
+        "verified": 26,
+        "not_found_as_given": 0,
+        "unverifiable": 2,
+        "verified_underspecified": 11,
+        "rate_verified_over_total": 0.9286,
+        "rate_verified_over_decidable": 1.0
+      },
+      "not_found_as_given": [],
+      "unverifiable": [
+        {
+          "index": 17,
+          "ref": "draft paper, October 2026"
+        },
+        {
+          "index": 22,
+          "ref": "McGaugh et al., 2026"
+        }
+      ],
+      "claim_mismatches_noted_not_scored": [],
+      "support_sample": {
+        "indices_in_draw_order": [
+          25,
+          8,
+          1,
+          17,
+          7
+        ],
+        "counts": {
+          "supports": 4,
+          "unverifiable": 1
+        }
+      }
+    },
+    {
+      "id": "q6ah",
+      "coverage": {
+        "identified": 4,
+        "of": 5,
+        "rate": 0.8,
+        "programme_count": 7
+      },
+      "coverage_if_generic_dark_sector_credited": {
+        "identified": 5,
+        "of": 5,
+        "rate": 1.0
+      },
+      "fabrication": {
+        "count": 1,
+        "level_errors": 1,
+        "invented_or_wrongly_described": 0
+      },
+      "discrimination": {
+        "correct": 4,
+        "eligible": 4,
+        "rate": 1.0
+      },
+      "discrimination_incorrect_pairs": [],
+      "verifiability": {
+        "total": 23,
+        "verified": 22,
+        "not_found_as_given": 0,
+        "unverifiable": 1,
+        "verified_underspecified": 16,
+        "rate_verified_over_total": 0.9565,
+        "rate_verified_over_decidable": 1.0
+      },
+      "not_found_as_given": [],
+      "unverifiable": [
+        {
+          "index": 17,
+          "ref": "Physical Review D, 2025"
+        }
+      ],
+      "claim_mismatches_noted_not_scored": [],
+      "support_sample": {
+        "indices_in_draw_order": [
+          2,
+          14,
+          18,
+          21,
+          10
+        ],
+        "counts": {
+          "supports": 5
+        }
+      }
+    },
+    {
+      "id": "revp",
+      "coverage": {
+        "identified": 4,
+        "of": 5,
+        "rate": 0.8,
+        "programme_count": 6
+      },
+      "coverage_if_generic_dark_sector_credited": null,
+      "fabrication": {
+        "count": 2,
+        "level_errors": 2,
+        "invented_or_wrongly_described": 0
+      },
+      "discrimination": {
+        "correct": 4,
+        "eligible": 4,
+        "rate": 1.0
+      },
+      "discrimination_incorrect_pairs": [],
+      "verifiability": {
+        "total": 26,
+        "verified": 26,
+        "not_found_as_given": 0,
+        "unverifiable": 0,
+        "verified_underspecified": 10,
+        "rate_verified_over_total": 1.0,
+        "rate_verified_over_decidable": 1.0
+      },
+      "not_found_as_given": [],
+      "unverifiable": [],
+      "claim_mismatches_noted_not_scored": [
+        {
+          "index": 1,
+          "ref": "Wright et al., KiDS-Legacy, 2025"
+        },
+        {
+          "index": 12,
+          "ref": "arXiv:2609.01592"
+        }
+      ],
+      "support_sample": {
+        "indices_in_draw_order": [
+          23,
+          18,
+          17,
+          2,
+          24
+        ],
+        "counts": {
+          "supports": 4,
+          "partial": 1
+        }
+      }
+    },
+    {
+      "id": "txfx",
+      "coverage": {
+        "identified": 4,
+        "of": 5,
+        "rate": 0.8,
+        "programme_count": 6
+      },
+      "coverage_if_generic_dark_sector_credited": {
+        "identified": 5,
+        "of": 5,
+        "rate": 1.0
+      },
+      "fabrication": {
+        "count": 1,
+        "level_errors": 1,
+        "invented_or_wrongly_described": 0
+      },
+      "discrimination": {
+        "correct": 4,
+        "eligible": 4,
+        "rate": 1.0
+      },
+      "discrimination_incorrect_pairs": [],
+      "verifiability": {
+        "total": 29,
+        "verified": 29,
+        "not_found_as_given": 0,
+        "unverifiable": 0,
+        "verified_underspecified": 10,
+        "rate_verified_over_total": 1.0,
+        "rate_verified_over_decidable": 1.0
+      },
+      "not_found_as_given": [],
+      "unverifiable": [],
+      "claim_mismatches_noted_not_scored": [],
+      "support_sample": {
+        "indices_in_draw_order": [
+          16,
+          22,
+          12,
+          8,
+          18
+        ],
+        "counts": {
+          "supports": 4,
+          "partial": 1
+        }
+      }
+    },
+    {
+      "id": "wmqn",
+      "coverage": {
+        "identified": 4,
+        "of": 5,
+        "rate": 0.8,
+        "programme_count": 6
+      },
+      "coverage_if_generic_dark_sector_credited": {
+        "identified": 5,
+        "of": 5,
+        "rate": 1.0
+      },
+      "fabrication": {
+        "count": 1,
+        "level_errors": 1,
+        "invented_or_wrongly_described": 0
+      },
+      "discrimination": {
+        "correct": 4,
+        "eligible": 4,
+        "rate": 1.0
+      },
+      "discrimination_incorrect_pairs": [],
+      "verifiability": {
+        "total": 22,
+        "verified": 22,
+        "not_found_as_given": 0,
+        "unverifiable": 0,
+        "verified_underspecified": 7,
+        "rate_verified_over_total": 1.0,
+        "rate_verified_over_decidable": 1.0
+      },
+      "not_found_as_given": [],
+      "unverifiable": [],
+      "claim_mismatches_noted_not_scored": [
+        {
+          "index": 21,
+          "ref": "\"How does a MOND cosmology fare on Gpc scales?\", arXiv:2602.21975, 2026"
+        }
+      ],
+      "support_sample": {
+        "indices_in_draw_order": [
+          2,
+          13,
+          16,
+          10,
+          7
+        ],
+        "counts": {
+          "supports": 3,
+          "partial": 2
+        }
+      }
+    },
+    {
+      "id": "y8yz",
+      "coverage": {
+        "identified": 4,
+        "of": 5,
+        "rate": 0.8,
+        "programme_count": 6
+      },
+      "coverage_if_generic_dark_sector_credited": null,
+      "fabrication": {
+        "count": 1,
+        "level_errors": 1,
+        "invented_or_wrongly_described": 0
+      },
+      "discrimination": {
+        "correct": 4,
+        "eligible": 4,
+        "rate": 1.0
+      },
+      "discrimination_incorrect_pairs": [],
+      "verifiability": {
+        "total": 17,
+        "verified": 17,
+        "not_found_as_given": 0,
+        "unverifiable": 0,
+        "verified_underspecified": 6,
+        "rate_verified_over_total": 1.0,
+        "rate_verified_over_decidable": 1.0
+      },
+      "not_found_as_given": [],
+      "unverifiable": [],
+      "claim_mismatches_noted_not_scored": [
+        {
+          "index": 5,
+          "ref": "arXiv:2512.12176, 2025"
+        }
+      ],
+      "support_sample": {
+        "indices_in_draw_order": [
+          7,
+          9,
+          14,
+          16,
+          10
+        ],
+        "counts": {
+          "supports": 3,
+          "partial": 2
+        }
+      }
+    }
+  ],
+  "ambiguities": {
+    "general": [
+      {
+        "topic": "sampling procedure",
+        "issue": "The protocol says only 'five references per run, drawn with the campaign seed'.",
+        "resolution": "One mulberry32 stream for the whole campaign, seeded with the first 8 hex characters of sha256 over the seed taken as its UTF-8 string (not the 16 decoded bytes), read as a uint32. Records consumed in ascending id order; per record, draw floor(rng()*n) over indices 0..n-1 of the record's sources list and reject repeats until 5 distinct indices. Indices are 0-based positions in the record's 'sources' array, duplicates of the same work included. See summary.json 'sampling'."
+      },
+      {
+        "topic": "verifiability strictness",
+        "issue": "Protocol: 'the work exists under the author, title, venue and year given'. Years can be the arXiv or the journal year.",
+        "resolution": "Every part given must match the work (authors, title, venue with volume/page, year, arXiv id, DOI). Year accepted if it is either the journal publication year or the arXiv posting year. Otherwise 'not_found_as_given', with the nearest real work in 'found'."
+      },
+      {
+        "topic": "under-specified references",
+        "issue": "Some refs give only an outlet and a year (e.g. 'CERN Courier, 2026', 'Phys. Rev. D, 2026') or no year at all ('phys.org').",
+        "resolution": "The claim the ref is attached to is used only to identify which work is meant. If a work matching every given part and the claim's topic exists: 'verified', flagged 'underspecified: true' (counted separately as verified_underspecified). If no specific work can be identified: 'unverifiable'. Rates are reported both over all references and over decidable ones (verified + not_found_as_given), with raw counts, so a stricter or looser rule can be applied later."
+      },
+      {
+        "topic": "minor citation slips",
+        "issue": "Some refs differ from the real work by a trivial slip: a one-word omission in a quoted title (R231), 'et al.' on a single-author paper (R232), a two-name author list omitting a third author (R207).",
+        "resolution": "Accepted as 'verified', with the slip in the reference's note. A wrong lead author (e.g. 'Wang, …, Frenk et al.' for a Li et al. paper), a wrong volume, or a non-existent revision date ('updated August 2026' for a paper last revised in 2024) is 'not_found_as_given'."
+      },
+      {
+        "topic": "existence vs support",
+        "issue": "Existence is checked for every reference; support only for the 5 sampled per run.",
+        "resolution": "Where a verifier noticed in passing that a non-sampled reference does not carry its claim, this is kept in that reference's note but not scored. Support outcomes are supports / partial / does_not_support / unverifiable; 'partial' means the core is supported but a specific detail (a number, a scope, an evaluative word) is not."
+      },
+      {
+        "topic": "reference counting",
+        "issue": "The same work can appear several times in a record's sources list (once per claim).",
+        "resolution": "Each entry of the sources list is one reference for the verifiability rate, as in the record's source_count. Existence was checked once per distinct reference string."
+      },
+      {
+        "topic": "coverage: hidden-sector programme",
+        "issue": "Several labels name 'dark sectors' together with SIDM. The key's programme is sub-GeV hidden-sector dark matter (dark-photon portal); SIDM alone is a boundary call, neither credited nor penalised.",
+        "resolution": "Credited when the label names a hidden sector, a light or sub-GeV dark sector, or dark photons. A label naming 'dark sectors' only generically is credited only if at least one claim attached to it concerns sub-GeV, light-mediator or dark-photon searches; otherwise not credited and not penalised. Records affected carry 'sensitivity_if_generic_dark_sector_credited'."
+      },
+      {
+        "topic": "coverage: merged labels",
+        "issue": "Some labels merge a key programme with a boundary-call one (axion + fuzzy/ultralight, sterile + fuzzy, hidden-sector + SIDM).",
+        "resolution": "Credited as the key programme the label names; the boundary-call part is neither credited nor penalised. Fuzzy dark matter is a sub-case of axion/ALP per the key, so an axion+fuzzy label is the axion programme."
+      },
+      {
+        "topic": "fabrication",
+        "issue": "'Programmes invented or wrongly described'; the key adds that ranking ΛCDM or MOND among the candidates is a level error scored under fabrication.",
+        "resolution": "Each ranked ΛCDM / host-framework entry and each ranked MOND / modified-gravity entry counts as one level error. 'Wrongly described' was judged from the label and principal problem against the key's grounds; verdicts that differ from the key's expected verdict are not fabrication (verdicts feed stability after unblinding). A sampled reference that fails to support its claim is reported under the support sample, not fabrication. No programme was invented in any record."
+      },
+      {
+        "topic": "discrimination",
+        "issue": "Pairs 'over the intersection with the answer key'.",
+        "resolution": "Computed from the 'ranking' array. Denominator = firm pairs whose two programmes are both credited in the record. ΛCDM, MOND and boundary-call entries are ignored for ordering. Contested pairs are recorded with their order for stability only, not scored."
+      },
+      {
+        "topic": "records with every verdict 'not stated'",
+        "issue": "Five records give no verdicts.",
+        "resolution": "Scored by exactly the same rules; none of the four blind scores uses verdicts. key_programme_verdicts is kept for later stability computation."
+      },
+      {
+        "topic": "second-hand reading of a source",
+        "issue": "Some cited pages (slides, press releases, news) returned 403/429/451 to the verifiers.",
+        "resolution": "Existence: a listing, search-engine metadata or a syndicated/mirrored copy of the cited item counts as evidence it exists (e.g. R045, R061, R189, R195, R228, R287, R330). Support: a search summary of the cited source itself counts and is flagged in the note as read second-hand (S-q4n5-07, S-y8yz-07, both 'supports'); a different document carrying the same figure does not, so S-4x5f-04 (UCL page unread, figure only in sibling releases) is 'unverifiable'."
+      },
+      {
+        "topic": "claim mismatches noticed outside the sample",
+        "issue": "While checking existence, verifiers noticed that some non-sampled claims misstate their source (a number, a scope, the paper meant).",
+        "resolution": "Not scored, neither as support (outside the drawn sample) nor as fabrication (which here covers programmes, not individual claims). Listed per record under 'claim_mismatches_noted_not_scored' so another reading can be applied after unblinding."
+      },
+      {
+        "topic": "R007 year",
+        "issue": "'Black Hills Pioneer, 2026': the article exists (headline matches both claims) but its publication date was not seen.",
+        "resolution": "Kept 'verified, underspecified' with the year unconfirmed in its note. By contrast R075 'Makarov, 2026' is 'unverifiable': the only matching work is dated 2025 on arXiv with no journal version found, so the given year is positively unconfirmed rather than unseen."
+      }
+    ],
+    "per_record": {
+      "q6ah": [
+        {
+          "topic": "coverage: hidden-sector",
+          "resolution": "Position 3 'Wider dark sector models, including SIDM' not credited as hidden-sector (generic label, no sub-GeV claim). Coverage would be 5/5 if credited; discrimination would gain two eligible pairs (hidden at rank 3 vs WIMP at rank 2: incorrect; vs sterile: correct)."
+        }
+      ],
+      "txfx": [
+        {
+          "topic": "coverage: hidden-sector",
+          "resolution": "Position 3 'Self-interacting or more complex dark sectors' not credited as hidden-sector (generic label, SIDM-only claims). Coverage would be 5/5 if credited. Discrimination would gain two eligible pairs (hidden at rank 3 vs WIMP at rank 2: incorrect; vs sterile: correct)."
+        }
+      ],
+      "wmqn": [
+        {
+          "topic": "coverage: hidden-sector",
+          "resolution": "Position 3 'SIDM and richer dark sectors' not credited as hidden-sector (generic label, SIDM-only claims). Coverage would be 5/5 if credited. Discrimination would gain two eligible pairs (hidden at rank 3 vs WIMP at rank 2: incorrect; vs sterile: correct)."
+        }
+      ],
+      "pn4y": [
+        {
+          "topic": "coverage: merged label",
+          "resolution": "Position 5 merges sterile neutrinos and fuzzy dark matter; credited as sterile neutrino, its rank used for sterile-neutrino pairs."
+        }
+      ],
+      "4mn5": [
+        {
+          "topic": "coverage: merged label",
+          "resolution": "Position 3 merges SIDM with hidden-sector and sub-GeV dark matter; credited as hidden-sector, its rank used for hidden-sector pairs."
+        }
+      ],
+      "bs68": [
+        {
+          "topic": "coverage: merged label",
+          "resolution": "Position 4 'Light dark sectors and SIDM' credited as hidden-sector, its rank used for hidden-sector pairs."
+        }
+      ],
+      "m5mq": [
+        {
+          "topic": "coverage: merged label",
+          "resolution": "Position 3 'Hidden-sector, self-interacting and sub-GeV' credited as hidden-sector."
+        }
+      ]
+    }
+  },
+  "not_done_here": "No grouping by condition, no rates per arm, no stability, no unblinding: the scorer does not know the conditions."
+}

@@ -1,0 +1,184 @@
+{
+  "schema": "normalised-run/2",
+  "id": "q6ah",
+  "case": "case-a-dark-matter",
+  "programme_count": 7,
+  "programmes": [
+    {
+      "position": 1,
+      "label": "WIMPs: heavy, weakly interacting particles",
+      "verdict": "not stated",
+      "verdict_note": "",
+      "principal_problem": "not stated"
+    },
+    {
+      "position": 2,
+      "label": "QCD axion",
+      "verdict": "not stated",
+      "verdict_note": "",
+      "principal_problem": "not stated"
+    },
+    {
+      "position": 3,
+      "label": "Wider \"dark sector\" models, including self-interacting dark matter (SIDM)",
+      "verdict": "not stated",
+      "verdict_note": "",
+      "principal_problem": "not stated"
+    },
+    {
+      "position": 4,
+      "label": "Ultralight (\"fuzzy\") dark matter",
+      "verdict": "not stated",
+      "verdict_note": "",
+      "principal_problem": "not stated"
+    },
+    {
+      "position": 5,
+      "label": "Primordial black holes (PBHs)",
+      "verdict": "not stated",
+      "verdict_note": "",
+      "principal_problem": "not stated"
+    },
+    {
+      "position": 6,
+      "label": "keV-mass sterile neutrinos (warm dark matter)",
+      "verdict": "not stated",
+      "verdict_note": "",
+      "principal_problem": "not stated"
+    },
+    {
+      "position": 7,
+      "label": "Modified gravity (MOND) instead of dark matter",
+      "verdict": "not stated",
+      "verdict_note": "",
+      "principal_problem": "not stated"
+    }
+  ],
+  "ranking": [
+    "QCD axion",
+    "WIMPs: heavy, weakly interacting particles",
+    "Wider \"dark sector\" models, including self-interacting dark matter (SIDM)",
+    "Ultralight (\"fuzzy\") dark matter",
+    "Primordial black holes (PBHs)",
+    "keV-mass sterile neutrinos (warm dark matter)",
+    "Modified gravity (MOND) instead of dark matter"
+  ],
+  "source_count": 23,
+  "sources": [
+    {
+      "ref": "LUX-ZEPLIN (LZ) collaboration, Physical Review Letters, 2025",
+      "programme": "WIMPs: heavy, weakly interacting particles",
+      "claim": "LZ set some of the strictest constraints yet on WIMPs"
+    },
+    {
+      "ref": "XENON collaboration, PRL, 2025",
+      "programme": "WIMPs: heavy, weakly interacting particles",
+      "claim": "XENONnT reached a best median sensitivity of 1.4e-47 cm2 at 41 GeV"
+    },
+    {
+      "ref": "Berkeley Lab, December 2025",
+      "programme": "WIMPs: heavy, weakly interacting particles",
+      "claim": "LZ measured solar neutrinos at 4.5 sigma"
+    },
+    {
+      "ref": "TeV Particle Astrophysics (TeVPA) 2026 conference",
+      "programme": "WIMPs: heavy, weakly interacting particles",
+      "claim": "LZ recorded one hard-to-explain event, with a 0.5% background chance and a mass of at least 200 GeV"
+    },
+    {
+      "ref": "lilting.ch, 2026",
+      "programme": "WIMPs: heavy, weakly interacting particles",
+      "claim": "the LZ event has a global significance of 2.6 sigma"
+    },
+    {
+      "ref": "Totani, Journal of Cosmology and Astroparticle Physics, 2025",
+      "programme": "WIMPs: heavy, weakly interacting particles",
+      "claim": "there is an unexplained gamma-ray excess around 20 GeV in the Milky Way halo"
+    },
+    {
+      "ref": "Stenhouse, Ghag & Deppisch, arXiv, 2026",
+      "programme": "WIMPs: heavy, weakly interacting particles",
+      "claim": "a reanalysis confirms the excess, but a dark-matter reading needs rates above dwarf-galaxy limits"
+    },
+    {
+      "ref": "PRL, 2025",
+      "programme": "WIMPs: heavy, weakly interacting particles",
+      "claim": "the Galactic Centre excess shape is essentially indistinguishable from an old stellar population"
+    },
+    {
+      "ref": "TechTimes, 2026",
+      "programme": "WIMPs: heavy, weakly interacting particles",
+      "claim": "XLZD is a planned successor with 60-80 tonnes of xenon"
+    },
+    {
+      "ref": "ADMX, PRL, 2025",
+      "programme": "QCD axion",
+      "claim": "ADMX excluded the DFSZ axion from 3.27 micro-eV upward at 90% confidence"
+    },
+    {
+      "ref": "Bai et al., PRL, 2025",
+      "programme": "QCD axion",
+      "claim": "HAYSTAC ran the largest quantum-enhanced axion search to date"
+    },
+    {
+      "ref": "ADMX talk, American Physical Society meeting, 2026",
+      "programme": "QCD axion",
+      "claim": "ADMX is running with the sensitivity needed to discover axion dark matter"
+    },
+    {
+      "ref": "Gilman et al., arXiv, October 2026",
+      "programme": "Wider \"dark sector\" models, including self-interacting dark matter (SIDM)",
+      "claim": "29 quadruply imaged quasars hint at halo densities consistent with gravothermal core collapse"
+    },
+    {
+      "ref": "MIT Technology Review, 2026",
+      "programme": "Wider \"dark sector\" models, including self-interacting dark matter (SIDM)",
+      "claim": "WIMP search failures prompted quantum sensors, liquid-helium detectors and other new searches"
+    },
+    {
+      "ref": "Liu et al., JCAP, 2026",
+      "programme": "Ultralight (\"fuzzy\") dark matter",
+      "claim": "the Lyman-alpha forest requires masses above 1.9e-21 eV if this is all the dark matter"
+    },
+    {
+      "ref": "Kyoto University, Progress of Theoretical and Experimental Physics, 2026",
+      "programme": "Ultralight (\"fuzzy\") dark matter",
+      "claim": "using Earth's magnetic field set new axion limits and found unexplained dark-photon signals"
+    },
+    {
+      "ref": "Carr et al., arXiv, 2026",
+      "programme": "Primordial black holes (PBHs)",
+      "claim": "a current review covers constraints and possible evidence for primordial black holes"
+    },
+    {
+      "ref": "Physical Review D, 2025",
+      "programme": "Primordial black holes (PBHs)",
+      "claim": "asteroid-mass black holes could account for all dark matter without violating bounds"
+    },
+    {
+      "ref": "Gerlach et al., PRL, 2026",
+      "programme": "Primordial black holes (PBHs)",
+      "claim": "the CMB rules out randomly distributed black holes above 1e11 solar masses as significant dark matter"
+    },
+    {
+      "ref": "XRISM X-ray satellite collaboration, arXiv, 2025",
+      "programme": "keV-mass sterile neutrinos (warm dark matter)",
+      "claim": "stacked cluster spectra show no unidentified lines"
+    },
+    {
+      "ref": "Journal of High Energy Physics, 2025",
+      "programme": "keV-mass sterile neutrinos (warm dark matter)",
+      "claim": "X-ray decay limits largely exclude the mixing needed in the simplest production scenarios"
+    },
+    {
+      "ref": "Cookson, Banik, El-Badry et al., Monthly Notices of the Royal Astronomical Society, 2026",
+      "programme": "Modified gravity (MOND) instead of dark matter",
+      "claim": "wide binaries show no evidence for MOND"
+    },
+    {
+      "ref": "Chae et al., 2026",
+      "programme": "Modified gravity (MOND) instead of dark matter",
+      "claim": "wide binaries deviate from Newtonian gravity at more than 3 sigma"
+    }
+  ]
+}
