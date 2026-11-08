@@ -110,8 +110,18 @@ describe("parseConfig", () => {
   it("accepts bare blocked domains with an optional path, rejects URLs and empty lists", () => {
     expect(parse().blockedDomains).toBeUndefined();
     expect(
-      parse({ blockedDomains: ["github.com/goulvenclech", "goulven-clech.dev"] }).blockedDomains,
-    ).toEqual(["github.com/goulvenclech", "goulven-clech.dev"]);
+      parse({
+        blockedDomains: [
+          "github.com/goulvenclech",
+          "raw.githubusercontent.com/goulvenclech",
+          "goulven-clech.dev",
+        ],
+      }).blockedDomains,
+    ).toEqual([
+      "github.com/goulvenclech",
+      "raw.githubusercontent.com/goulvenclech",
+      "goulven-clech.dev",
+    ]);
     expect(() => parse({ blockedDomains: ["https://goulven-clech.dev"] })).toThrow(
       /blockedDomains/,
     );

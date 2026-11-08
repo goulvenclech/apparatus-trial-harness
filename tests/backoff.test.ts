@@ -1,5 +1,6 @@
 import {
   APIConnectionError,
+  APIError,
   BadRequestError,
   InternalServerError,
   RateLimitError,
@@ -38,6 +39,16 @@ function badRequest(): BadRequestError {
   );
 }
 
+function streamError(type: "overloaded_error" | "api_error" | "invalid_request_error"): APIError {
+  return new APIError(
+    undefined,
+    { type: "error", error: { type } },
+    undefined,
+    new Headers(),
+    type,
+  );
+}
+
 describe("isRetryable", () => {
   it("retries 429, 5xx (incl. 529) and connection errors", () => {
     expect(isRetryable(rateLimit())).toBe(true);
@@ -49,6 +60,12 @@ describe("isRetryable", () => {
   it("fails loudly on other 4xx and on non-API errors", () => {
     expect(isRetryable(badRequest())).toBe(false);
     expect(isRetryable(new Error("not an API error"))).toBe(false);
+  });
+
+  it("retries server errors reported mid-stream, fails loudly on other stream errors", () => {
+    expect(isRetryable(streamError("overloaded_error"))).toBe(true);
+    expect(isRetryable(streamError("api_error"))).toBe(true);
+    expect(isRetryable(streamError("invalid_request_error"))).toBe(false);
   });
 });
 

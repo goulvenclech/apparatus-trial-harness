@@ -1,7 +1,13 @@
 import type Anthropic from "@anthropic-ai/sdk";
 import { describe, expect, it } from "vitest";
 import { parseConfig } from "../src/config.js";
-import { buildMessageParams, runTurn } from "../src/runner.js";
+import {
+  buildMessageParams,
+  buildRunRecord,
+  type RunIdentity,
+  runTurn,
+  sendStreaming,
+} from "../src/runner.js";
 
 const BASE = {
   campaign: "case-a",
@@ -81,8 +87,8 @@ function build(paused: readonly Anthropic.Messages.Message[]) {
 }
 
 function scripted(stopReasons: string[]) {
-  const sent: Anthropic.Messages.MessageCreateParamsNonStreaming[] = [];
-  const send = async (params: Anthropic.Messages.MessageCreateParamsNonStreaming) => {
+  const sent: Anthropic.Messages.MessageStreamParams[] = [];
+  const send = async (params: Anthropic.Messages.MessageStreamParams) => {
     const stopReason = stopReasons[sent.length] ?? "end_turn";
     sent.push(params);
     return { message: response(stopReason, `r${sent.length}`), requestId: `req_${sent.length}` };
@@ -134,5 +140,79 @@ describe("continuing a paused turn", () => {
     const { sent, send } = scripted(["pause_turn"]);
     expect((await runTurn(send, build, 0)).complete).toBe(false);
     expect(sent).toHaveLength(1);
+  });
+});
+
+describe("sendStreaming", () => {
+  it("returns the stream's final message and request id, sending the params unchanged", async () => {
+    const message = response("end_turn", "done");
+    const received: Anthropic.Messages.MessageStreamParams[] = [];
+    const client = {
+      messages: {
+        stream(params: Anthropic.Messages.MessageStreamParams) {
+          received.push(params);
+          return { finalMessage: async () => message, request_id: "req_stream" };
+        },
+      },
+    };
+    const params = build([]);
+    expect(await sendStreaming(client, params)).toEqual({ message, requestId: "req_stream" });
+    expect(received).toEqual([params]);
+  });
+
+  it("records a missing request id as null", async () => {
+    const client = {
+      messages: { stream: () => ({ finalMessage: async () => response("end_turn", "x") }) },
+    };
+    expect((await sendStreaming(client, build([]))).requestId).toBeNull();
+  });
+});
+
+const IDENTITY: RunIdentity = {
+  campaign: "case-a",
+  arm: "b",
+  index: 1,
+  timestamp: "2026-11-08T10:00:00.000Z",
+  model_requested: "claude-opus-5-5",
+  config_hash: "c",
+  prompt_hashes: { system: "s", arm: "a" },
+};
+
+function answered(stopReason: string, text: string) {
+  return { message: response(stopReason, text), requestId: `req_${text}` };
+}
+
+describe("buildRunRecord", () => {
+  it("archives a finished single-request turn without continuation or incomplete fields", () => {
+    const record = buildRunRecord(IDENTITY, {
+      responses: [answered("end_turn", "a")],
+      complete: true,
+    });
+    expect(record.metadata.request_id).toBe("req_a");
+    expect(record.metadata).not.toHaveProperty("incomplete");
+    expect(record.metadata).not.toHaveProperty("paused_request_ids");
+    expect(record).not.toHaveProperty("paused_responses");
+  });
+
+  it("archives the paused responses in order before the final one", () => {
+    const turn = {
+      responses: [answered("pause_turn", "p"), answered("end_turn", "f")],
+      complete: true,
+    };
+    const record = buildRunRecord(IDENTITY, turn);
+    expect(record.paused_responses).toEqual([turn.responses[0]?.message]);
+    expect(record.response).toBe(turn.responses[1]?.message);
+    expect(record.metadata.paused_request_ids).toEqual(["req_p"]);
+    expect(record.metadata).not.toHaveProperty("incomplete");
+  });
+
+  it("flags a turn still paused at the cap as incomplete", () => {
+    const turn = { responses: [answered("pause_turn", "p")], complete: false };
+    expect(buildRunRecord(IDENTITY, turn).metadata.incomplete).toBe(true);
+  });
+
+  it("flags a turn cut by max_tokens as incomplete", () => {
+    const turn = { responses: [answered("max_tokens", "m")], complete: true };
+    expect(buildRunRecord(IDENTITY, turn).metadata.incomplete).toBe(true);
   });
 });

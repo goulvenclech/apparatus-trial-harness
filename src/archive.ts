@@ -21,7 +21,7 @@ export interface RunMetadata {
   prompt_hashes: { system: string; arm: string };
   /** `request-id` of each paused request, in order, when the turn was continued. */
   paused_request_ids?: (string | null)[];
-  /** Set when the turn still paused after the last allowed continuation. */
+  /** Set when the turn ended cut short: still paused at the cap, or on max_tokens. */
   incomplete?: true;
 }
 

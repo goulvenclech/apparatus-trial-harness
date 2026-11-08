@@ -4,6 +4,7 @@ import { mkdir, open, readFile, rm } from "node:fs/promises";
 import { join } from "node:path";
 import {
   type Arm,
+  type RunMetadata,
   type RunRecord,
   buildIndexEntry,
   rebuildIndex,
@@ -35,6 +36,11 @@ export function isRetryable(error: unknown): boolean {
   if (error instanceof APIConnectionError) return true;
   if (error instanceof APIError && typeof error.status === "number") {
     return error.status >= 500;
+  }
+  // A streamed request reports a server failure as an error event after the
+  // HTTP 200, so the error carries a type and no status.
+  if (error instanceof APIError && error.status === undefined) {
+    return error.type === "overloaded_error" || error.type === "api_error";
   }
   return false;
 }
@@ -169,7 +175,7 @@ export function buildMessageParams(
   system: string,
   userText: string,
   paused: readonly Anthropic.Messages.Message[] = [],
-): Anthropic.Messages.MessageCreateParamsNonStreaming {
+): Anthropic.Messages.MessageStreamParams {
   const containerId = paused.at(-1)?.container?.id;
   return {
     model: config.model,
@@ -193,6 +199,25 @@ export interface SentRequest {
   requestId: string | null;
 }
 
+export interface StreamingClient {
+  messages: {
+    stream(params: Anthropic.Messages.MessageStreamParams): {
+      finalMessage(): Promise<Anthropic.Messages.Message>;
+      request_id?: string | null | undefined;
+    };
+  };
+}
+
+// Streaming is what lets maxTokens exceed the SDK's non-streaming limit.
+export async function sendStreaming(
+  client: StreamingClient,
+  params: Anthropic.Messages.MessageStreamParams,
+): Promise<SentRequest> {
+  const stream = client.messages.stream(params);
+  const message = await stream.finalMessage();
+  return { message, requestId: stream.request_id ?? null };
+}
+
 export interface Turn {
   /** Every response of the turn, in order; all but the last ended in pause_turn. */
   responses: SentRequest[];
@@ -201,10 +226,10 @@ export interface Turn {
 }
 
 export async function runTurn(
-  send: (params: Anthropic.Messages.MessageCreateParamsNonStreaming) => Promise<SentRequest>,
+  send: (params: Anthropic.Messages.MessageStreamParams) => Promise<SentRequest>,
   buildParams: (
     paused: readonly Anthropic.Messages.Message[],
-  ) => Anthropic.Messages.MessageCreateParamsNonStreaming,
+  ) => Anthropic.Messages.MessageStreamParams,
   maxContinuations: number,
 ): Promise<Turn> {
   const responses: SentRequest[] = [];
@@ -214,6 +239,31 @@ export async function runTurn(
     if (sent.message.stop_reason !== "pause_turn") return { responses, complete: true };
     if (responses.length > maxContinuations) return { responses, complete: false };
   }
+}
+
+export type RunIdentity = Omit<
+  RunMetadata,
+  "model" | "request_id" | "paused_request_ids" | "incomplete"
+>;
+
+// A turn cut short by the continuation cap or max_tokens has a partial answer.
+export function buildRunRecord(identity: RunIdentity, turn: Turn): RunRecord {
+  const final = turn.responses.at(-1) as SentRequest;
+  const paused = turn.responses.slice(0, -1);
+  const incomplete = !turn.complete || final.message.stop_reason === "max_tokens";
+  return {
+    metadata: {
+      ...identity,
+      model: typeof final.message.model === "string" ? final.message.model : null,
+      request_id: final.requestId,
+      ...(paused.length > 0
+        ? { paused_request_ids: paused.map((response) => response.requestId) }
+        : {}),
+      ...(incomplete ? { incomplete: true as const } : {}),
+    },
+    response: final.message,
+    ...(paused.length > 0 ? { paused_responses: paused.map((response) => response.message) } : {}),
+  };
 }
 
 interface PromptFile {
@@ -312,11 +362,9 @@ export async function run(options: RunnerOptions): Promise<void> {
             (params) =>
               callWithBackoff(
                 async () => {
-                  const { data, response } = await getClient()
-                    .messages.create(params)
-                    .withResponse();
+                  const sent = await sendStreaming(getClient(), params);
                   calls++;
-                  return { message: data, requestId: response.headers.get("request-id") };
+                  return sent;
                 },
                 config.retry,
                 label,
@@ -331,30 +379,18 @@ export async function run(options: RunnerOptions): Promise<void> {
             },
             config.maxContinuations,
           );
-          const final = turn.responses.at(-1) as SentRequest;
-          const paused = turn.responses.slice(0, -1);
-
-          const record: RunRecord = {
-            metadata: {
+          const record = buildRunRecord(
+            {
               campaign: config.campaign,
               arm,
               index,
               timestamp: new Date().toISOString(),
               model_requested: config.model,
-              model: typeof final.message.model === "string" ? final.message.model : null,
-              request_id: final.requestId,
               config_hash: configHash,
               prompt_hashes: { system: systemFile.hash, arm: armFile.hash },
-              ...(paused.length > 0
-                ? { paused_request_ids: paused.map((response) => response.requestId) }
-                : {}),
-              ...(turn.complete ? {} : { incomplete: true as const }),
             },
-            response: final.message,
-            ...(paused.length > 0
-              ? { paused_responses: paused.map((response) => response.message) }
-              : {}),
-          };
+            turn,
+          );
           await writeRunRecord(campaignDir, record);
 
           const summary = buildIndexEntry(record);
@@ -372,7 +408,8 @@ export async function run(options: RunnerOptions): Promise<void> {
             log(`${label}: warning — refusal: safety classifiers declined; archived as-is`);
           } else if (summary.stop_reason === "max_tokens") {
             log(
-              `${label}: warning — max_tokens: output truncated by the maxTokens cap; archived as-is`,
+              `${label}: warning — max_tokens: output cut by the maxTokens cap; ` +
+                "archived and indexed as incomplete",
             );
           }
         }
