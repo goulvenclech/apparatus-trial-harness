@@ -1,0 +1,267 @@
+{
+  "schema": "normalised-run/2",
+  "id": "t7hq",
+  "case": "case-a-dark-matter-2",
+  "programme_count": 13,
+  "programmes": [
+    {
+      "position": null,
+      "label": "Superfluid dark matter",
+      "verdict": "not stated",
+      "verdict_note": "",
+      "principal_problem": "not stated"
+    },
+    {
+      "position": null,
+      "label": "Verlinde's emergent gravity",
+      "verdict": "not stated",
+      "verdict_note": "",
+      "principal_problem": "not stated"
+    },
+    {
+      "position": null,
+      "label": "Sub-GeV \"dark sector\" particles and dark photons",
+      "verdict": "not stated",
+      "verdict_note": "",
+      "principal_problem": "not stated"
+    },
+    {
+      "position": null,
+      "label": "Mirror/atomic, asymmetric and macroscopic dark matter",
+      "verdict": "not stated",
+      "verdict_note": "",
+      "principal_problem": "not stated"
+    },
+    {
+      "position": null,
+      "label": "Dark matter that interacts only through gravity",
+      "verdict": "not stated",
+      "verdict_note": "",
+      "principal_problem": "not stated"
+    },
+    {
+      "position": 1,
+      "label": "Cold dark matter as a gravitating component (ΛCDM, identity left open)",
+      "verdict": "solid",
+      "verdict_note": "",
+      "principal_problem": "none"
+    },
+    {
+      "position": 2,
+      "label": "WIMPs (weakly interacting massive particles)",
+      "verdict": "fragile",
+      "verdict_note": "",
+      "principal_problem": "a separate move per null result: heavier masses, unusual couplings, co-annihilation"
+    },
+    {
+      "position": 3,
+      "label": "QCD axion and axion-like particles",
+      "verdict": "defensible",
+      "verdict_note": "stagnant",
+      "principal_problem": "not stated"
+    },
+    {
+      "position": 4,
+      "label": "Self-interacting dark matter (SIDM)",
+      "verdict": "defensible",
+      "verdict_note": "",
+      "principal_problem": "not stated"
+    },
+    {
+      "position": 5,
+      "label": "Primordial black holes (PBHs)",
+      "verdict": "defensible",
+      "verdict_note": "stagnant; at the low end",
+      "principal_problem": "not stated"
+    },
+    {
+      "position": 6,
+      "label": "MOND and relativistic versions (AeST)",
+      "verdict": "fragile",
+      "verdict_note": "",
+      "principal_problem": "changing explanations, over 40 years, for the unseen mass clusters require"
+    },
+    {
+      "position": 7,
+      "label": "Sterile neutrinos / warm dark matter",
+      "verdict": "fragile",
+      "verdict_note": "",
+      "principal_problem": "resonant production and warm-cold mixtures after its one signal was refuted"
+    },
+    {
+      "position": 8,
+      "label": "Fuzzy (ultralight wave) dark matter",
+      "verdict": "fragile",
+      "verdict_note": "",
+      "principal_problem": "mixed fractions and tidal heating suppression after the motivating mass was excluded"
+    }
+  ],
+  "ranking": [
+    "Cold dark matter as a gravitating component (ΛCDM, identity left open)",
+    "QCD axion and axion-like particles",
+    "Self-interacting dark matter (SIDM)",
+    "Primordial black holes (PBHs)",
+    "WIMPs (weakly interacting massive particles)",
+    "MOND and relativistic versions (AeST)",
+    "Sterile neutrinos / warm dark matter",
+    "Fuzzy (ultralight wave) dark matter"
+  ],
+  "source_count": 31,
+  "sources": [
+    {
+      "ref": "Berezhiani, Cintia, De Luca & Khoury, \"Superfluid Dark Matter\", arXiv:2505.23900, 2025",
+      "programme": "Superfluid dark matter",
+      "claim": "superfluid dark matter is a proposed programme"
+    },
+    {
+      "ref": "Lelli, McGaugh & Schombert, arXiv:1702.04355, 2017",
+      "programme": "Verlinde's emergent gravity",
+      "claim": "emergent gravity has been tested against galaxy data"
+    },
+    {
+      "ref": "Planck, 2018",
+      "programme": "Cold dark matter as a gravitating component (ΛCDM, identity left open)",
+      "claim": "cold dark matter predicted the CMB acoustic peaks and baryon acoustic oscillations"
+    },
+    {
+      "ref": "LZ Collaboration, Phys. Rev. Lett., 2025",
+      "programme": "WIMPs (weakly interacting massive particles)",
+      "claim": "LZ's 4.2 tonne-year run found no WIMPs"
+    },
+    {
+      "ref": "Berkeley Lab press release, 1 Sept 2026",
+      "programme": "WIMPs (weakly interacting massive particles)",
+      "claim": "LZ reported one unexplained 2.6 sigma event implying a mass above 200 GeV and non-standard interaction"
+    },
+    {
+      "ref": "phys.org, 2026",
+      "programme": "WIMPs (weakly interacting massive particles)",
+      "claim": "LZ reported one unexplained 2.6 sigma event implying a mass above 200 GeV and non-standard interaction"
+    },
+    {
+      "ref": "Totani, JCAP, 2025",
+      "programme": "WIMPs (weakly interacting massive particles)",
+      "claim": "a 20 GeV gamma-ray excess was reported in the Galactic halo"
+    },
+    {
+      "ref": "arXiv:2610.23713, 2026",
+      "programme": "WIMPs (weakly interacting massive particles)",
+      "claim": "the 20 GeV excess depends on foreground modelling, weakening a link to the LZ event"
+    },
+    {
+      "ref": "arXiv:2512.23039, 2025",
+      "programme": "WIMPs (weakly interacting massive particles)",
+      "claim": "the heavy higgsino and wino region is untested and within reach of DarkSide-20k and XLZD"
+    },
+    {
+      "ref": "ADMX, Phys. Rev. Lett. 134, 111002, 2025",
+      "programme": "QCD axion and axion-like particles",
+      "claim": "ADMX excludes KSVZ at 1-1.3 GHz and has DFSZ-level reach around 3.3 μeV"
+    },
+    {
+      "ref": "\"Extended Haloscope Search and Exclusion of a Candidate Signal near 1.036 GHz\", Phys. Rev. Lett. 137, 021803, 2026",
+      "programme": "QCD axion and axion-like particles",
+      "claim": "a haloscope candidate near 1.036 GHz was independently checked and excluded"
+    },
+    {
+      "ref": "CERN Courier, 2026",
+      "programme": "QCD axion and axion-like particles",
+      "claim": "MADMAX will be installed in 2026-29 and ALPHA starts in 2026"
+    },
+    {
+      "ref": "XENON Collaboration, Phys. Rev. Lett., 2026",
+      "programme": "QCD axion and axion-like particles",
+      "claim": "XENONnT set new limits on axion-like particles and dark photons"
+    },
+    {
+      "ref": "Li et al., ApJ 994, 201, 2025",
+      "programme": "Self-interacting dark matter (SIDM)",
+      "claim": "the lens SDSS J0946+1006 contains a compact dark perturber"
+    },
+    {
+      "ref": "\"…possible evidence of SIDM, or not\", A&A, 2026",
+      "programme": "Self-interacting dark matter (SIDM)",
+      "claim": "a study of the cluster AS1063 is equivocal about SIDM"
+    },
+    {
+      "ref": "García-Bellido et al., 2025",
+      "programme": "Primordial black holes (PBHs)",
+      "claim": "the exclusion of stellar-mass primordial black holes as all dark matter is contested"
+    },
+    {
+      "ref": "Gorton & Green, SciPost Phys. 17, 32, 2024",
+      "programme": "Primordial black holes (PBHs)",
+      "claim": "the asteroid-mass window of 1e17-1e22 g remains open"
+    },
+    {
+      "ref": "arXiv:2601.06024, 2026",
+      "programme": "Primordial black holes (PBHs)",
+      "claim": "the asteroid-mass window remains open for primordial black holes"
+    },
+    {
+      "ref": "McGaugh et al., ApJ, 2024",
+      "programme": "MOND and relativistic versions (AeST)",
+      "claim": "MOND is claimed to have predicted the early massive galaxies seen by JWST"
+    },
+    {
+      "ref": "Famaey, Pizzuti & Saltas, Phys. Rev. D 111, 123042, 2025",
+      "programme": "MOND and relativistic versions (AeST)",
+      "claim": "clusters still need extra unseen mass under MOND"
+    },
+    {
+      "ref": "Zhang, Zonoozi & Kroupa, Phys. Rev. D, 2026",
+      "programme": "MOND and relativistic versions (AeST)",
+      "claim": "stellar remnants are proposed for the unseen cluster mass under MOND"
+    },
+    {
+      "ref": "arXiv:2611.08702, 2026",
+      "programme": "MOND and relativistic versions (AeST)",
+      "claim": "a review covers the unseen cluster mass under MOND"
+    },
+    {
+      "ref": "Banik et al., MNRAS, 2024",
+      "programme": "MOND and relativistic versions (AeST)",
+      "claim": "wide binaries show a 19 sigma preference for Newtonian gravity"
+    },
+    {
+      "ref": "arXiv:2602.24035, 2026",
+      "programme": "MOND and relativistic versions (AeST)",
+      "claim": "a quality-controlled wide-binary study does not support MOND"
+    },
+    {
+      "ref": "Chae and Hernandez groups, MNRAS 537, 2025",
+      "programme": "MOND and relativistic versions (AeST)",
+      "claim": "two groups continue to claim a wide-binary anomaly"
+    },
+    {
+      "ref": "Skordis & Złośnik, Phys. Rev. Lett., 2021",
+      "programme": "MOND and relativistic versions (AeST)",
+      "claim": "AeST survives the neutron-star merger constraint by adding fields"
+    },
+    {
+      "ref": "\"XRISM constraints on unidentified X-ray emission lines…\", 2025",
+      "programme": "Sterile neutrinos / warm dark matter",
+      "claim": "the 3.5 keV line is not present across clusters and unlikely from sterile neutrino decay"
+    },
+    {
+      "ref": "Phys. Rev. D, arXiv:2409.18917, 2025",
+      "programme": "Sterile neutrinos / warm dark matter",
+      "claim": "satellite galaxy counts exclude thermal warm dark matter at or below 6.6 keV as all dark matter"
+    },
+    {
+      "ref": "\"Lyman-α forest constraints on pure and mixed fuzzy dark matter\", JCAP, 2026",
+      "programme": "Fuzzy (ultralight wave) dark matter",
+      "claim": "the Lyman-alpha forest requires a fuzzy dark matter mass above 1.9e-21 eV"
+    },
+    {
+      "ref": "May, Dalal & Kravtsov, arXiv:2509.02781, 2025",
+      "programme": "Fuzzy (ultralight wave) dark matter",
+      "claim": "dwarf-galaxy heating requires masses above 3e-19 eV, excluding the fuzzy range as all dark matter"
+    },
+    {
+      "ref": "arXiv:2507.01686, 2025",
+      "programme": "Fuzzy (ultralight wave) dark matter",
+      "claim": "tidal effects may suppress the dwarf-galaxy heating"
+    }
+  ]
+}

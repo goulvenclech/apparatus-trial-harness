@@ -1,0 +1,241 @@
+{
+  "schema": "normalised-run/2",
+  "id": "6hcn",
+  "case": "case-a-dark-matter-2",
+  "programme_count": 8,
+  "programmes": [
+    {
+      "position": null,
+      "label": "Baseline: cold dark matter of unknown identity (the standard ΛCDM cosmological model)",
+      "verdict": "solid",
+      "verdict_note": "",
+      "principal_problem": "none"
+    },
+    {
+      "position": 1,
+      "label": "WIMPs (weakly interacting massive particles)",
+      "verdict": "fragile",
+      "verdict_note": "",
+      "principal_problem": "failed headline predictions, with survival by moving to smaller interaction strengths"
+    },
+    {
+      "position": 2,
+      "label": "QCD axion",
+      "verdict": "defensible",
+      "verdict_note": "",
+      "principal_problem": "none"
+    },
+    {
+      "position": 3,
+      "label": "Self-interacting dark matter (SIDM)",
+      "verdict": "inconclusive (evidence)",
+      "verdict_note": "",
+      "principal_problem": "signatures hard to distinguish from ordinary-matter effects such as supernova feedback"
+    },
+    {
+      "position": 4,
+      "label": "Ultralight (\"fuzzy\") dark matter",
+      "verdict": "fragile",
+      "verdict_note": "",
+      "principal_problem": "the particle mass that motivated it is excluded"
+    },
+    {
+      "position": 5,
+      "label": "Primordial black holes (PBHs)",
+      "verdict": "inconclusive (evidence)",
+      "verdict_note": "",
+      "principal_problem": "viable only in a range not yet testable, and needs unusual early-universe physics"
+    },
+    {
+      "position": 6,
+      "label": "keV sterile neutrinos (warm dark matter)",
+      "verdict": "fragile",
+      "verdict_note": "",
+      "principal_problem": "its one positive signal, the 3.5 keV line, is unconfirmed"
+    },
+    {
+      "position": 7,
+      "label": "MOND and relativistic versions (no dark matter)",
+      "verdict": "fragile",
+      "verdict_note": "",
+      "principal_problem": "still needs unseen mass in clusters and cosmology"
+    }
+  ],
+  "ranking": [
+    "QCD axion",
+    "WIMPs (weakly interacting massive particles)",
+    "Self-interacting dark matter (SIDM)",
+    "Ultralight (\"fuzzy\") dark matter",
+    "Primordial black holes (PBHs)",
+    "keV sterile neutrinos (warm dark matter)",
+    "MOND and relativistic versions (no dark matter)"
+  ],
+  "source_count": 33,
+  "sources": [
+    {
+      "ref": "Louis et al., \"DR6 Power Spectra, Likelihoods and ΛCDM Parameters\", JCAP, 2025",
+      "programme": "Baseline: cold dark matter of unknown identity (the standard ΛCDM cosmological model)",
+      "claim": "ACT data agree closely with ΛCDM, independently of Planck"
+    },
+    {
+      "ref": "Schrabback et al., A&A, 2026",
+      "programme": "Baseline: cold dark matter of unknown identity (the standard ΛCDM cosmological model)",
+      "claim": "Euclid published its first dark matter map of a galaxy cluster"
+    },
+    {
+      "ref": "Natarajan, Chiang & Dutra, \"New Cold Dark Matter Crisis Revealed by Multiscale Cluster Lensing\", ApJ Letters, 2026",
+      "programme": "Baseline: cold dark matter of unknown identity (the standard ΛCDM cosmological model)",
+      "claim": "clusters match CDM in overall clump counts but hold more central clumps than simulations"
+    },
+    {
+      "ref": "LZ Collaboration, December 2025",
+      "programme": "WIMPs (weakly interacting massive particles)",
+      "claim": "LZ found no WIMPs in 417 live days and began detecting solar neutrinos"
+    },
+    {
+      "ref": "XENONnT, \"WIMP Dark Matter Search Using a 3.1 Tonne-Year Exposure\", PRL, 2025",
+      "programme": "WIMPs (weakly interacting massive particles)",
+      "claim": "XENONnT found no signal in 3.1 tonne-years"
+    },
+    {
+      "ref": "PandaX-4T, PRL, 2025",
+      "programme": "WIMPs (weakly interacting massive particles)",
+      "claim": "PandaX-4T found no signal in 1.54 tonne-years"
+    },
+    {
+      "ref": "COSINE-100, Science Advances, 2025",
+      "programme": "WIMPs (weakly interacting massive particles)",
+      "claim": "COSINE-100 sees no annual modulation with the DAMA crystal type"
+    },
+    {
+      "ref": "ANAIS-112, 2025",
+      "programme": "WIMPs (weakly interacting massive particles)",
+      "claim": "six years of ANAIS-112 data show no annual modulation"
+    },
+    {
+      "ref": "Totani, \"20 GeV halo-like excess…\", JCAP, 2025",
+      "programme": "WIMPs (weakly interacting massive particles)",
+      "claim": "a single author reported a 20 GeV gamma-ray excess from the Milky Way halo"
+    },
+    {
+      "ref": "Stenhouse, Ghag & Deppisch, arXiv:2607.08552, 2026",
+      "programme": "WIMPs (weakly interacting massive particles)",
+      "claim": "the halo excess was reproduced independently"
+    },
+    {
+      "ref": "Abazajian, Li & Macias, arXiv:2610.23713, 2026",
+      "programme": "WIMPs (weakly interacting massive particles)",
+      "claim": "the halo excess significance ranges from about 1 to 18 sigma depending on background modelling"
+    },
+    {
+      "ref": "arXiv:2512.12176",
+      "programme": "WIMPs (weakly interacting massive particles)",
+      "claim": "AMS-02 antiproton data constrain the halo excess"
+    },
+    {
+      "ref": "LZ, arXiv:2609.02823, 2026",
+      "programme": "WIMPs (weakly interacting massive particles)",
+      "claim": "LZ saw one nuclear recoil near 248 keV at 3.4 sigma local and 2.6 sigma global"
+    },
+    {
+      "ref": "ADMX, PRL, 2025",
+      "programme": "QCD axion",
+      "claim": "ADMX reached benchmark axion sensitivity over 1.10-1.31 GHz"
+    },
+    {
+      "ref": "HAYSTAC Phase II, PRL 134, 151006, 2025",
+      "programme": "QCD axion",
+      "claim": "HAYSTAC ran its widest search yet using quantum squeezing"
+    },
+    {
+      "ref": "Particle Data Group, \"Dark Matter\" review, 2025",
+      "programme": "Self-interacting dark matter (SIDM)",
+      "claim": "cluster collision limits lead SIDM models to make the interaction velocity-dependent"
+    },
+    {
+      "ref": "Diego, \"possible evidence… or not\", A&A, 2026",
+      "programme": "Self-interacting dark matter (SIDM)",
+      "claim": "evidence for SIDM in the cluster AS1063 is equivocal"
+    },
+    {
+      "ref": "A&A, 2025",
+      "programme": "Self-interacting dark matter (SIDM)",
+      "claim": "cores in ultra-faint dwarf galaxies are used to constrain SIDM models"
+    },
+    {
+      "ref": "JCAP, September 2026",
+      "programme": "Ultralight (\"fuzzy\") dark matter",
+      "claim": "Lyman-alpha forest data require an ultralight particle mass above 1.9e-21 eV"
+    },
+    {
+      "ref": "Mróz et al., ApJS, 2025",
+      "programme": "Primordial black holes (PBHs)",
+      "claim": "20 years of OGLE microlensing exclude compact objects over a wide mass range"
+    },
+    {
+      "ref": "\"The Asteroid Mass Window\", Springer, 2025",
+      "programme": "Primordial black holes (PBHs)",
+      "claim": "only the asteroid-mass window of about 1e17-1e23 g remains open"
+    },
+    {
+      "ref": "arXiv:2607.24951",
+      "programme": "Primordial black holes (PBHs)",
+      "claim": "a real astrophysical source for candidate S251112cm is considered unlikely"
+    },
+    {
+      "ref": "XRISM Collaboration, arXiv:2510.24560, 2025",
+      "programme": "keV sterile neutrinos (warm dark matter)",
+      "claim": "3.75 Ms of stacked observations of ten clusters show no unexplained lines"
+    },
+    {
+      "ref": "Bulbul et al., 2014",
+      "programme": "keV sterile neutrinos (warm dark matter)",
+      "claim": "a 3.5 keV X-ray line was claimed"
+    },
+    {
+      "ref": "Mistele, Lelli & McGaugh, 2024",
+      "programme": "MOND and relativistic versions (no dark matter)",
+      "claim": "weak lensing shows rotation curves staying flat out to about 1 Mpc"
+    },
+    {
+      "ref": "Chae et al., 2026",
+      "programme": "MOND and relativistic versions (no dark matter)",
+      "claim": "36 wide binaries indicate gravity about 1.6 times Newtonian"
+    },
+    {
+      "ref": "Saad & Ting, Open Journal of Astrophysics, 2026",
+      "programme": "MOND and relativistic versions (no dark matter)",
+      "claim": "a reanalysis of the same 36 binaries gives a Newtonian gravity value"
+    },
+    {
+      "ref": "arXiv:2610.28220",
+      "programme": "MOND and relativistic versions (no dark matter)",
+      "claim": "an independent 65-system wide-binary study finds no anomaly"
+    },
+    {
+      "ref": "Banik et al., MNRAS, 2024",
+      "programme": "MOND and relativistic versions (no dark matter)",
+      "claim": "wide binaries strongly favour Newtonian gravity"
+    },
+    {
+      "ref": "Hernandez & Kroupa, MNRAS, 2025",
+      "programme": "MOND and relativistic versions (no dark matter)",
+      "claim": "the wide-binary result favouring Newtonian gravity is disputed"
+    },
+    {
+      "ref": "Combes, arXiv:2611.08702, November 2026",
+      "programme": "MOND and relativistic versions (no dark matter)",
+      "claim": "dark baryons are proposed for the unseen mass MOND needs in cluster cores"
+    },
+    {
+      "ref": "Zhang, Hasani Zonoozi & Kroupa, PRD, 2026",
+      "programme": "MOND and relativistic versions (no dark matter)",
+      "claim": "stellar remnants are proposed for the unseen mass MOND needs in cluster cores"
+    },
+    {
+      "ref": "Skordis & Złośnik, 2021",
+      "programme": "MOND and relativistic versions (no dark matter)",
+      "claim": "AeST fits the CMB by adding a field that behaves like dark matter"
+    }
+  ]
+}

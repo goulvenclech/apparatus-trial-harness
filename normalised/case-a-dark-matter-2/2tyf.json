@@ -1,0 +1,234 @@
+{
+  "schema": "normalised-run/2",
+  "id": "2tyf",
+  "case": "case-a-dark-matter-2",
+  "programme_count": 7,
+  "programmes": [
+    {
+      "position": 1,
+      "label": "Cold dark matter as a generic framework (the \"CDM\" in ΛCDM)",
+      "verdict": "solid",
+      "verdict_note": "",
+      "principal_problem": "none"
+    },
+    {
+      "position": 2,
+      "label": "WIMPs (weak-scale thermal relics, including TeV higgsinos)",
+      "verdict": "defensible",
+      "verdict_note": "",
+      "principal_problem": "none"
+    },
+    {
+      "position": 3,
+      "label": "QCD axion (and ultralight bosons)",
+      "verdict": "defensible",
+      "verdict_note": "",
+      "principal_problem": "none"
+    },
+    {
+      "position": 4,
+      "label": "Self-interacting dark matter (SIDM)",
+      "verdict": "inconclusive (evidence)",
+      "verdict_note": "",
+      "principal_problem": "reliance on a few small-scale anomalies also explicable by normal matter or modelling systematics"
+    },
+    {
+      "position": 5,
+      "label": "Primordial black holes (PBHs)",
+      "verdict": "fragile",
+      "verdict_note": "",
+      "principal_problem": "the full-dark-matter role survives only in one hard-to-test mass range, with finely tuned formation"
+    },
+    {
+      "position": 6,
+      "label": "Sterile neutrinos (warm dark matter)",
+      "verdict": "fragile",
+      "verdict_note": "",
+      "principal_problem": "unconfirmed signature anomaly and an excluded simplest production mechanism"
+    },
+    {
+      "position": 7,
+      "label": "MOND and relativistic modified gravity",
+      "verdict": "fragile",
+      "verdict_note": "",
+      "principal_problem": "clusters and the CMB require unseen mass or purpose-built extra fields"
+    }
+  ],
+  "ranking": [
+    "Cold dark matter as a generic framework (the \"CDM\" in ΛCDM)",
+    "QCD axion (and ultralight bosons)",
+    "WIMPs (weak-scale thermal relics, including TeV higgsinos)",
+    "Self-interacting dark matter (SIDM)",
+    "Primordial black holes (PBHs)",
+    "Sterile neutrinos (warm dark matter)",
+    "MOND and relativistic modified gravity"
+  ],
+  "source_count": 33,
+  "sources": [
+    {
+      "ref": "Planck Collaboration, A&A, 2020",
+      "programme": "Cold dark matter as a generic framework (the \"CDM\" in ΛCDM)",
+      "claim": "the CMB acoustic peaks point to a cold, collisionless, non-baryonic component"
+    },
+    {
+      "ref": "Clowe et al., ApJL, 2006",
+      "programme": "Cold dark matter as a generic framework (the \"CDM\" in ΛCDM)",
+      "claim": "the separation of gas and mass in the Bullet Cluster points to a non-baryonic component"
+    },
+    {
+      "ref": "LZ Collaboration, PRL, 2025",
+      "programme": "WIMPs (weak-scale thermal relics, including TeV higgsinos)",
+      "claim": "LZ published a search with a 4.2 tonne-year exposure"
+    },
+    {
+      "ref": "LZ, PRL, 2026",
+      "programme": "WIMPs (weak-scale thermal relics, including TeV higgsinos)",
+      "claim": "LZ reports 4.5 sigma evidence for solar boron-8 neutrinos scattering off xenon nuclei"
+    },
+    {
+      "ref": "Tech Times, Aug 2026",
+      "programme": "WIMPs (weak-scale thermal relics, including TeV higgsinos)",
+      "claim": "XENONnT reportedly gained about 10% sensitivity at 5 GeV from 93% more exposure"
+    },
+    {
+      "ref": "arXiv:2609.14799",
+      "programme": "WIMPs (weak-scale thermal relics, including TeV higgsinos)",
+      "claim": "ordinary elastic scattering behind the 248 keV event would also give an unseen low-energy excess"
+    },
+    {
+      "ref": "Bose et al., arXiv:2609.07807",
+      "programme": "WIMPs (weak-scale thermal relics, including TeV higgsinos)",
+      "claim": "the simplest higgsino reading of the LZ event conflicts with Super-Kamiokande and IceCube limits"
+    },
+    {
+      "ref": "Totani, JCAP, 2025",
+      "programme": "WIMPs (weak-scale thermal relics, including TeV higgsinos)",
+      "claim": "Fermi data show a 20 GeV halo excess"
+    },
+    {
+      "ref": "arXiv:2607.08552",
+      "programme": "WIMPs (weak-scale thermal relics, including TeV higgsinos)",
+      "claim": "the annihilation rate needed for the halo excess is about 4-5 times above dwarf-galaxy limits"
+    },
+    {
+      "ref": "Abazajian, Li & Macias, arXiv:2610.23713, Oct 2026",
+      "programme": "WIMPs (weak-scale thermal relics, including TeV higgsinos)",
+      "claim": "the halo excess significance ranges from about 1 to 18 sigma depending on the foreground model"
+    },
+    {
+      "ref": "arXiv:2512.12176",
+      "programme": "WIMPs (weak-scale thermal relics, including TeV higgsinos)",
+      "claim": "AMS-02 antiproton data constrain the halo excess interpretation"
+    },
+    {
+      "ref": "Manconi et al., PRD, 2026",
+      "programme": "WIMPs (weak-scale thermal relics, including TeV higgsinos)",
+      "claim": "the Galactic Centre excess increasingly looks stellar in origin"
+    },
+    {
+      "ref": "arXiv:2512.23191",
+      "programme": "WIMPs (weak-scale thermal relics, including TeV higgsinos)",
+      "claim": "a joint COSINE-100 and ANAIS-112 analysis rejects the DAMA modulation claim at 4.7 sigma"
+    },
+    {
+      "ref": "ADMX, PRL 134, 111002, 2025",
+      "programme": "QCD axion (and ultralight bosons)",
+      "claim": "ADMX reached DFSZ benchmark sensitivity near 3.3 μeV"
+    },
+    {
+      "ref": "ADMX, PRL 135, 191001, 2025",
+      "programme": "QCD axion (and ultralight bosons)",
+      "claim": "ADMX excludes the KSVZ model over 1.10-1.31 GHz"
+    },
+    {
+      "ref": "IBS, arXiv:2602.05388, 2026",
+      "programme": "QCD axion (and ultralight bosons)",
+      "claim": "a candidate axion signal near 1.036 GHz did not survive follow-up"
+    },
+    {
+      "ref": "Rogers & Peiris, PRL, 2021",
+      "programme": "QCD axion (and ultralight bosons)",
+      "claim": "Lyman-alpha data push fuzzy dark matter above about 2e-20 eV"
+    },
+    {
+      "ref": "H.-B. Yu, PRL, 2026",
+      "programme": "Self-interacting dark matter (SIDM)",
+      "claim": "core-collapsed dense clumps could explain anomalies in lenses, stellar streams and satellite galaxies"
+    },
+    {
+      "ref": "arXiv:2610.40766, Nov 2026",
+      "programme": "Self-interacting dark matter (SIDM)",
+      "claim": "29 quadruply imaged quasars favour central collapse over CDM with Bayes factors of about 13-24"
+    },
+    {
+      "ref": "Mróz et al., Nature, 2024",
+      "programme": "Primordial black holes (PBHs)",
+      "claim": "twenty years of OGLE microlensing found 13 events where 258 were expected for 10 solar-mass black holes"
+    },
+    {
+      "ref": "Physics World",
+      "programme": "Primordial black holes (PBHs)",
+      "claim": "twenty years of OGLE microlensing found 13 events where 258 were expected for 10 solar-mass black holes"
+    },
+    {
+      "ref": "Filion et al., A&A, 2025",
+      "programme": "Primordial black holes (PBHs)",
+      "claim": "only the asteroid-mass range remains open for primordial black holes"
+    },
+    {
+      "ref": "Magaraggia et al., ApJ, 2026",
+      "programme": "Primordial black holes (PBHs)",
+      "claim": "a public alert for sub-solar-mass candidate S251112cm awaits an offline analysis"
+    },
+    {
+      "ref": "arXiv:2510.24560, 2025",
+      "programme": "Sterile neutrinos (warm dark matter)",
+      "claim": "XRISM stacking of ten clusters over 3.75 Ms finds no 3.5 keV line"
+    },
+    {
+      "ref": "Milgrom, 1983",
+      "programme": "MOND and relativistic modified gravity",
+      "claim": "MOND stated the galaxy-scale relations before they were measured"
+    },
+    {
+      "ref": "McGaugh, Lelli & Schombert, 2016",
+      "programme": "MOND and relativistic modified gravity",
+      "claim": "MOND stated the galaxy-scale relations before they were measured"
+    },
+    {
+      "ref": "Famaey, Pizzuti & Saltas, PRD, 2025",
+      "programme": "MOND and relativistic modified gravity",
+      "claim": "MOND has a long-known failure in galaxy clusters"
+    },
+    {
+      "ref": "Zhang, Zonoozi & Kroupa, PRD, 2026",
+      "programme": "MOND and relativistic modified gravity",
+      "claim": "stellar remnants could make up the MOND mass shortfall in clusters"
+    },
+    {
+      "ref": "arXiv:2611.08702",
+      "programme": "MOND and relativistic modified gravity",
+      "claim": "a 106-cluster study still finds substantial unexplained mass under MOND"
+    },
+    {
+      "ref": "Skordis & Zlosnik, PRL, 2021",
+      "programme": "MOND and relativistic modified gravity",
+      "claim": "the relativistic theory AeST fits Planck CMB data"
+    },
+    {
+      "ref": "Banik et al., MNRAS, 2024",
+      "programme": "MOND and relativistic modified gravity",
+      "claim": "wide binary stars disfavour MOND"
+    },
+    {
+      "ref": "arXiv:2602.24035, 2026",
+      "programme": "MOND and relativistic modified gravity",
+      "claim": "wide binary stars disfavour MOND"
+    },
+    {
+      "ref": "Chae, arXiv:2607.14450, 2026",
+      "programme": "MOND and relativistic modified gravity",
+      "claim": "wide binary stars favour MOND at more than 3 sigma"
+    }
+  ]
+}

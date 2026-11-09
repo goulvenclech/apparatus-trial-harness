@@ -1,0 +1,118 @@
+{
+  "schema": "blind-key/1",
+  "campaign": "case-a-dark-matter-2",
+  "generated": "2026-11-09T13:08:02.025Z",
+  "shuffle": {
+    "method": "Fisher-Yates over the run files sorted by arm then index, mulberry32 seeded with sha256(seed)[0:8]; opaque ids drawn from the same generator after the shuffle",
+    "seed": "1c429ef1185544d68b26e4bb435dac41"
+  },
+  "normalised_schema": "normalised-run/2",
+  "input": "the trailing text blocks of response.content, concatenated; thinking, tool-use, search-result and code-execution blocks are not the answer and are left out",
+  "records": [
+    {
+      "id": "scck",
+      "arm": "b",
+      "index": 4,
+      "run": "arm-b-4.json",
+      "sha256": "a22acf4d56651838a2cc8d80733f30c26162810aa0aca6308bb872b8ed27b010"
+    },
+    {
+      "id": "pcwk",
+      "arm": "a",
+      "index": 3,
+      "run": "arm-a-3.json",
+      "sha256": "f38bf438b2d5f0a1ecc890ead5536eea77f2e26ada1659302dbec19c9bb051b0"
+    },
+    {
+      "id": "65n9",
+      "arm": "a",
+      "index": 2,
+      "run": "arm-a-2.json",
+      "sha256": "23097713c93f9c452ae6fcdf5454946339abaec9c8dab8cf788f91346835bd8b"
+    },
+    {
+      "id": "f899",
+      "arm": "c",
+      "index": 5,
+      "run": "arm-c-5.json",
+      "sha256": "76b9eea0f8626a6dc33e5d54433e7dbf7847cd30af62d7522ca229b7761eea19"
+    },
+    {
+      "id": "s7rg",
+      "arm": "b",
+      "index": 3,
+      "run": "arm-b-3.json",
+      "sha256": "83dbeb47b9906f298a85e3c318619b043d6b723bbbb942a618245270820ddb91"
+    },
+    {
+      "id": "qczx",
+      "arm": "a",
+      "index": 5,
+      "run": "arm-a-5.json",
+      "sha256": "029bc461f31ef6acc50df04af19aecb42689a1e5ff1444bd3f164147f2644524"
+    },
+    {
+      "id": "9ams",
+      "arm": "b",
+      "index": 5,
+      "run": "arm-b-5.json",
+      "sha256": "bd53807ab8850c54cf25cf574b6b8deb70b530ead82b8faa825a9c2070e264f3"
+    },
+    {
+      "id": "49dk",
+      "arm": "a",
+      "index": 4,
+      "run": "arm-a-4.json",
+      "sha256": "4c9803880e0f9a62889cdf81eb13ea58bb46bdc7d4905a02263ecac4b2f5b4b6"
+    },
+    {
+      "id": "688p",
+      "arm": "a",
+      "index": 1,
+      "run": "arm-a-1.json",
+      "sha256": "28302fac7b4c82c9fd3046ca07272a9d8613c8b0b85c1d572c51ea1f58fbb13f"
+    },
+    {
+      "id": "3tsf",
+      "arm": "c",
+      "index": 3,
+      "run": "arm-c-3.json",
+      "sha256": "ad0bd3e4673d4b671a4e7be89f9dbdfe691a0fedf8142d18f33b8623e1c0d330"
+    },
+    {
+      "id": "t7hq",
+      "arm": "c",
+      "index": 4,
+      "run": "arm-c-4.json",
+      "sha256": "365de698cf1b017e933b7509077ca79261775f16f862cc0730b5e505dc90fe36"
+    },
+    {
+      "id": "bpg8",
+      "arm": "c",
+      "index": 1,
+      "run": "arm-c-1.json",
+      "sha256": "794988d3818de0290db9691f2bf7d0d555783811718556df4abce00e8ee247a6"
+    },
+    {
+      "id": "6hcn",
+      "arm": "b",
+      "index": 2,
+      "run": "arm-b-2.json",
+      "sha256": "dc4697352522ba4b1ce2bcd75bb3aa881fe37a0aa4e7d5f795a0837020bfb9b2"
+    },
+    {
+      "id": "an5x",
+      "arm": "c",
+      "index": 2,
+      "run": "arm-c-2.json",
+      "sha256": "5127af1805ab72c92309e01489b95698d7301b15cc62de18fcd17a169c669a7d"
+    },
+    {
+      "id": "2tyf",
+      "arm": "b",
+      "index": 1,
+      "run": "arm-b-1.json",
+      "sha256": "d8231d6cc6e51a7f72669a90fa28d51211ed26bbf77d4b862ef9045b4590d88a"
+    }
+  ]
+}

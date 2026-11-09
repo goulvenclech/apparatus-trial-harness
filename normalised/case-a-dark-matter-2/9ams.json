@@ -1,0 +1,217 @@
+{
+  "schema": "normalised-run/2",
+  "id": "9ams",
+  "case": "case-a-dark-matter-2",
+  "programme_count": 8,
+  "programmes": [
+    {
+      "position": 1,
+      "label": "Cold dark matter as a general idea (ΛCDM)",
+      "verdict": "solid",
+      "verdict_note": "",
+      "principal_problem": "none"
+    },
+    {
+      "position": 2,
+      "label": "QCD axion",
+      "verdict": "defensible",
+      "verdict_note": "",
+      "principal_problem": "none"
+    },
+    {
+      "position": 3,
+      "label": "WIMPs and other thermal relics",
+      "verdict": "defensible",
+      "verdict_note": "",
+      "principal_problem": "none"
+    },
+    {
+      "position": 4,
+      "label": "Self-interacting dark matter (SIDM)",
+      "verdict": "inconclusive (evidence)",
+      "verdict_note": "",
+      "principal_problem": "hints too few and model-dependent"
+    },
+    {
+      "position": 5,
+      "label": "Primordial black holes (PBHs)",
+      "verdict": "fragile",
+      "verdict_note": "",
+      "principal_problem": "limited to one hard-to-test mass window"
+    },
+    {
+      "position": 6,
+      "label": "Sterile neutrinos and warm dark matter",
+      "verdict": "fragile",
+      "verdict_note": "",
+      "principal_problem": "its one empirical hint is fading"
+    },
+    {
+      "position": 7,
+      "label": "Fuzzy (ultralight) dark matter",
+      "verdict": "fragile",
+      "verdict_note": "",
+      "principal_problem": "its original motivation is excluded"
+    },
+    {
+      "position": 8,
+      "label": "MOND and other modified-gravity theories",
+      "verdict": "fragile",
+      "verdict_note": "",
+      "principal_problem": "fails in clusters and cosmology"
+    }
+  ],
+  "ranking": [
+    "Cold dark matter as a general idea (ΛCDM)",
+    "QCD axion",
+    "WIMPs and other thermal relics",
+    "Self-interacting dark matter (SIDM)",
+    "Primordial black holes (PBHs)",
+    "Sterile neutrinos and warm dark matter",
+    "Fuzzy (ultralight) dark matter",
+    "MOND and other modified-gravity theories"
+  ],
+  "source_count": 28,
+  "sources": [
+    {
+      "ref": "Rihtaršič, Bradač et al., \"Mapping dark matter in the Bullet Cluster using JWST imaging and spectroscopy\", A&A, 2026",
+      "programme": "Cold dark matter as a general idea (ΛCDM)",
+      "claim": "a JWST mass map of the Bullet Cluster finds gas fractions varying with the dark matter-gas displacement"
+    },
+    {
+      "ref": "Vegetti, White, McKean et al., \"A possible challenge for cold and warm dark matter\", Nature Astronomy 10, 440-447, 2026",
+      "programme": "Cold dark matter as a general idea (ΛCDM)",
+      "claim": "a dark object of about a million solar masses apparently cannot be a cold or warm dark matter halo"
+    },
+    {
+      "ref": "Particle Data Group, \"Axions and other similar particles\", Review of Particle Physics, 2025",
+      "programme": "QCD axion",
+      "claim": "ADMX and CAPP reached DFSZ sensitivity over much of the 2.7-4.91 µeV mass range"
+    },
+    {
+      "ref": "A. Sonnenschein, APS Division of Particles and Fields talk, Fermilab, July 2026",
+      "programme": "QCD axion",
+      "claim": "ADMX is running with sensitivity needed for discovery and its 2026-27 run is under way"
+    },
+    {
+      "ref": "MADMAX Collaboration, Phys. Rev. Lett., 2025",
+      "programme": "QCD axion",
+      "claim": "MADMAX published its first prototype search at about 77-80 µeV"
+    },
+    {
+      "ref": "Imperial College press release, December 2025",
+      "programme": "WIMPs and other thermal relics",
+      "claim": "LZ set record limits above 5 GeV from 417 live days and saw solar neutrinos at 4.5 sigma"
+    },
+    {
+      "ref": "Brown University press release, December 2025",
+      "programme": "WIMPs and other thermal relics",
+      "claim": "LZ set record limits above 5 GeV from 417 live days and saw solar neutrinos at 4.5 sigma"
+    },
+    {
+      "ref": "LZ, paper submitted to Phys. Rev. Lett.",
+      "programme": "WIMPs and other thermal relics",
+      "claim": "a single high-energy LZ event at 2.6 sigma would imply a WIMP of at least 200 GeV"
+    },
+    {
+      "ref": "Totani, JCAP, 2025",
+      "programme": "WIMPs and other thermal relics",
+      "claim": "a 20 GeV gamma-ray halo excess has been proposed as linked to the LZ event"
+    },
+    {
+      "ref": "arXiv:2610.23713, 2026",
+      "programme": "WIMPs and other thermal relics",
+      "claim": "across 281 background models, smooth-halo annihilation does not explain the whole halo excess"
+    },
+    {
+      "ref": "Phys. Rev. Lett. 135, 161005, 2025",
+      "programme": "WIMPs and other thermal relics",
+      "claim": "old millisecond pulsars explain the Galactic Centre excess as well as dark matter does"
+    },
+    {
+      "ref": "COSINE-100 and ANAIS-112, Phys. Rev. Lett., 2025",
+      "programme": "WIMPs and other thermal relics",
+      "claim": "combined COSINE-100 and ANAIS-112 data refute the DAMA annual-modulation claim"
+    },
+    {
+      "ref": "ApJ, August 2026",
+      "programme": "Self-interacting dark matter (SIDM)",
+      "claim": "eleven cluster collisions limit the self-interaction cross-section to below 0.63 cm2/g at 95% confidence"
+    },
+    {
+      "ref": "Li, Frenk et al., ApJ 994, 201, 2025",
+      "programme": "Self-interacting dark matter (SIDM)",
+      "claim": "the Little Dark Dot lens is a claimed SIDM hint"
+    },
+    {
+      "ref": "\"Primordial black holes: constraints, potential evidence and prospects\", arXiv:2601.06024, 2026",
+      "programme": "Primordial black holes (PBHs)",
+      "claim": "most mass ranges are excluded for primordial black holes as all dark matter, except the asteroid window"
+    },
+    {
+      "ref": "Magaraggia et al., ApJ, 2026",
+      "programme": "Primordial black holes (PBHs)",
+      "claim": "a primordial origin is argued to be the most plausible explanation of candidate S251112cm"
+    },
+    {
+      "ref": "Bulbul et al., 2014",
+      "programme": "Sterile neutrinos and warm dark matter",
+      "claim": "XMM-Newton data showed a 3.5 keV line"
+    },
+    {
+      "ref": "XRISM team, arXiv:2510.24560, 2025",
+      "programme": "Sterile neutrinos and warm dark matter",
+      "claim": "3.75 Ms of ten clusters show no unexplained lines, with limits still above the XMM-Newton detection"
+    },
+    {
+      "ref": "JCAP 2026/09/051",
+      "programme": "Fuzzy (ultralight) dark matter",
+      "claim": "Lyman-alpha data require a pure fuzzy dark matter mass above 1.9e-21 eV"
+    },
+    {
+      "ref": "Milgrom, ApJ, 1983",
+      "programme": "MOND and other modified-gravity theories",
+      "claim": "MOND stated the baryonic Tully-Fisher relation before it was measured"
+    },
+    {
+      "ref": "Famaey et al., Phys. Rev. D 111, 123042, 2025",
+      "programme": "MOND and other modified-gravity theories",
+      "claim": "MOND has a long-known failure in galaxy clusters"
+    },
+    {
+      "ref": "arXiv:2611.08702, 2026",
+      "programme": "MOND and other modified-gravity theories",
+      "claim": "an analysis of 106 clusters finds leftover missing mass under MOND"
+    },
+    {
+      "ref": "Skordis & Złosnik, 2021",
+      "programme": "MOND and other modified-gravity theories",
+      "claim": "the relativistic version AeST can fit the CMB"
+    },
+    {
+      "ref": "Cookson, Banik, El-Badry et al., arXiv:2602.24035, 2026",
+      "programme": "MOND and other modified-gravity theories",
+      "claim": "wide binaries show no MOND boost and favour Newtonian gravity by a factor of about 1,500"
+    },
+    {
+      "ref": "arXiv:2607.14450",
+      "programme": "MOND and other modified-gravity theories",
+      "claim": "the Newtonian wide-binary sample has only 61 binaries in the MOND regime"
+    },
+    {
+      "ref": "Chae et al., 2026",
+      "programme": "MOND and other modified-gravity theories",
+      "claim": "36 wide binaries show a gravity boost of about 1.6"
+    },
+    {
+      "ref": "arXiv:2603.11015",
+      "programme": "MOND and other modified-gravity theories",
+      "claim": "a forward-modelling reanalysis of wide binaries finds no anomaly"
+    },
+    {
+      "ref": "arXiv:2610.28220",
+      "programme": "MOND and other modified-gravity theories",
+      "claim": "a forward-modelling reanalysis of wide binaries finds no anomaly"
+    }
+  ]
+}

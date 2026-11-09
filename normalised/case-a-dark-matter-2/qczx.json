@@ -1,0 +1,194 @@
+{
+  "schema": "normalised-run/2",
+  "id": "qczx",
+  "case": "case-a-dark-matter-2",
+  "programme_count": 7,
+  "programmes": [
+    {
+      "position": 1,
+      "label": "WIMPs (heavy particles that interact weakly with ordinary matter)",
+      "verdict": "not stated",
+      "verdict_note": "",
+      "principal_problem": "not stated"
+    },
+    {
+      "position": 2,
+      "label": "QCD axion (a very light particle proposed to solve a separate problem in particle physics)",
+      "verdict": "not stated",
+      "verdict_note": "",
+      "principal_problem": "not stated"
+    },
+    {
+      "position": 3,
+      "label": "Self-interacting dark matter (SIDM: particles that collide with each other)",
+      "verdict": "not stated",
+      "verdict_note": "",
+      "principal_problem": "not stated"
+    },
+    {
+      "position": 4,
+      "label": "Primordial black holes (black holes formed in the early universe)",
+      "verdict": "not stated",
+      "verdict_note": "",
+      "principal_problem": "not stated"
+    },
+    {
+      "position": 5,
+      "label": "Ultralight (\"fuzzy\") dark matter",
+      "verdict": "not stated",
+      "verdict_note": "",
+      "principal_problem": "not stated"
+    },
+    {
+      "position": 6,
+      "label": "Sterile neutrinos and warm dark matter",
+      "verdict": "not stated",
+      "verdict_note": "",
+      "principal_problem": "not stated"
+    },
+    {
+      "position": 7,
+      "label": "MOND (modified gravity instead of dark matter)",
+      "verdict": "not stated",
+      "verdict_note": "",
+      "principal_problem": "not stated"
+    }
+  ],
+  "ranking": [
+    "QCD axion (a very light particle proposed to solve a separate problem in particle physics)",
+    "WIMPs (heavy particles that interact weakly with ordinary matter)",
+    "Self-interacting dark matter (SIDM: particles that collide with each other)",
+    "Primordial black holes (black holes formed in the early universe)",
+    "Ultralight (\"fuzzy\") dark matter",
+    "Sterile neutrinos and warm dark matter",
+    "MOND (modified gravity instead of dark matter)"
+  ],
+  "source_count": 25,
+  "sources": [
+    {
+      "ref": "LZ Collaboration, \"Dark Matter Search Results from 4.2 Tonne-Years of Exposure\", Phys. Rev. Lett., 2025",
+      "programme": "WIMPs (heavy particles that interact weakly with ordinary matter)",
+      "claim": "LZ reported a best WIMP cross-section exclusion of 2.2e-48 cm2 at 90% confidence"
+    },
+    {
+      "ref": "Berkeley Lab news release, 2025",
+      "programme": "WIMPs (heavy particles that interact weakly with ordinary matter)",
+      "claim": "LZ observed a solar neutrino signal marking its first view of the neutrino fog"
+    },
+    {
+      "ref": "lz.lbl.gov, 2026",
+      "programme": "WIMPs (heavy particles that interact weakly with ordinary matter)",
+      "claim": "LZ reported one event consistent with a 248 keV nuclear recoil at 2.6 sigma global significance"
+    },
+    {
+      "ref": "UC Santa Barbara news, 2026",
+      "programme": "WIMPs (heavy particles that interact weakly with ordinary matter)",
+      "claim": "the LZ event matches neither known backgrounds nor the basic WIMP interaction LZ was built to find"
+    },
+    {
+      "ref": "arXiv:2609.07807, 2026",
+      "programme": "WIMPs (heavy particles that interact weakly with ordinary matter)",
+      "claim": "a 1 TeV Higgsino reading of the LZ event conflicts with Super-Kamiokande and IceCube neutrino data"
+    },
+    {
+      "ref": "Abazajian, Li & Macias, arXiv:2610.23713, 2026",
+      "programme": "WIMPs (heavy particles that interact weakly with ordinary matter)",
+      "claim": "a reanalysis disfavours smooth-halo annihilation for the full 20 GeV excess and a shared origin with LZ"
+    },
+    {
+      "ref": "Phys. Rev. D 114, 043053, 2026",
+      "programme": "WIMPs (heavy particles that interact weakly with ordinary matter)",
+      "claim": "the Galactic Centre excess is attributed to millisecond-pulsar-like sources rather than dark matter"
+    },
+    {
+      "ref": "XLZD Collaboration, Eur. Phys. J. C, 2025",
+      "programme": "WIMPs (heavy particles that interact weakly with ordinary matter)",
+      "claim": "the XLZD detector aims to cover WIMPs down to the neutrino fog"
+    },
+    {
+      "ref": "arXiv:2504.10607, review, 2025",
+      "programme": "QCD axion (a very light particle proposed to solve a separate problem in particle physics)",
+      "claim": "the axion explains the absence of strong CP violation and is a cold dark matter candidate"
+    },
+    {
+      "ref": "ADMX Collaboration, Phys. Rev. Lett. 135, 191001, 2025",
+      "programme": "QCD axion (a very light particle proposed to solve a separate problem in particle physics)",
+      "claim": "ADMX searched 1.10-1.31 GHz with QCD-axion sensitivity and found no signal"
+    },
+    {
+      "ref": "Hai-Bo Yu's group, Phys. Rev. Lett., 2026",
+      "programme": "Self-interacting dark matter (SIDM: particles that collide with each other)",
+      "claim": "dense SIDM clumps could account for anomalies in lenses, stellar streams and satellite galaxies"
+    },
+    {
+      "ref": "Natarajan et al., \"New Cold Dark Matter Crisis Revealed by Multiscale Cluster Lensing\", ApJ Letters 1001, L12, 2026",
+      "programme": "Self-interacting dark matter (SIDM: particles that collide with each other)",
+      "claim": "cluster lensing points to two dark matter types or a new particle in cluster cores"
+    },
+    {
+      "ref": "Carr, Iovino, Perna, Vaskonen & Veermäe, \"Primordial black holes: constraints, potential evidence and prospects\", La Rivista del Nuovo Cimento, 2026",
+      "programme": "Primordial black holes (black holes formed in the early universe)",
+      "claim": "a review catalogues the mass windows where primordial black holes could still be significant dark matter"
+    },
+    {
+      "ref": "Boccia & Chianese, Phys. Rev. D 114, 043515, 2026",
+      "programme": "Primordial black holes (black holes formed in the early universe)",
+      "claim": "asteroid-mass black holes could be all dark matter, assuming heavy supersymmetric particles"
+    },
+    {
+      "ref": "Reviews of Modern Physics, accepted 2026",
+      "programme": "Ultralight (\"fuzzy\") dark matter",
+      "claim": "the most studied model is a single ultralight spin-0 field forming all dark matter"
+    },
+    {
+      "ref": "Phys. Rev. D 113, 023055, 2026",
+      "programme": "Ultralight (\"fuzzy\") dark matter",
+      "claim": "dwarf galaxy stellar motions conflict with ultralight masses below about 5e-21 eV"
+    },
+    {
+      "ref": "arXiv:2606.06969",
+      "programme": "Ultralight (\"fuzzy\") dark matter",
+      "claim": "new Lyman-alpha forest constraints on ultralight dark matter were published in September 2026"
+    },
+    {
+      "ref": "JHEP 02 (2025) 213",
+      "programme": "Sterile neutrinos and warm dark matter",
+      "claim": "X-ray limits largely exclude the mixing required in the simplest sterile neutrino models"
+    },
+    {
+      "ref": "arXiv:2602.11085, 2026",
+      "programme": "Sterile neutrinos and warm dark matter",
+      "claim": "a sterile neutrino origin of the 3.5 keV line conflicts with a JWST strong-lensing limit"
+    },
+    {
+      "ref": "Cookson, Banik, El-Badry et al., \"A Quality Framework for Testing Gravity with Wide Binaries: No Evidence for MOND\", MNRAS, 2026",
+      "programme": "MOND (modified gravity instead of dark matter)",
+      "claim": "quality-controlled Gaia wide binaries are consistent with Newtonian gravity at all separations"
+    },
+    {
+      "ref": "Saad & Ting, Open Journal of Astrophysics, 2026",
+      "programme": "MOND (modified gravity instead of dark matter)",
+      "claim": "a reanalysis finds the binaries behind a claimed 3D anomaly consistent with Newtonian gravity"
+    },
+    {
+      "ref": "Chae, arXiv:2607.14450, 2026",
+      "programme": "MOND (modified gravity instead of dark matter)",
+      "claim": "a MOND-type gravitational anomaly in wide binaries is claimed as confirmed"
+    },
+    {
+      "ref": "Zhang et al., Phys. Rev. D, 2026",
+      "programme": "MOND (modified gravity instead of dark matter)",
+      "claim": "revised cluster masses agree with MOND if clusters hold unseen ordinary matter such as stellar remnants"
+    },
+    {
+      "ref": "phys.org",
+      "programme": "MOND (modified gravity instead of dark matter)",
+      "claim": "revised cluster masses agree with MOND if clusters hold unseen ordinary matter such as stellar remnants"
+    },
+    {
+      "ref": "Skordis & Złośnik, 2021",
+      "programme": "MOND (modified gravity instead of dark matter)",
+      "claim": "AeST is the main relativistic MOND attempt to reproduce the cosmic microwave background"
+    }
+  ]
+}

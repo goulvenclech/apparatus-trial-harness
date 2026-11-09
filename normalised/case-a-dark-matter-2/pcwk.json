@@ -1,0 +1,149 @@
+{
+  "schema": "normalised-run/2",
+  "id": "pcwk",
+  "case": "case-a-dark-matter-2",
+  "programme_count": 7,
+  "programmes": [
+    {
+      "position": 1,
+      "label": "WIMPs (weakly interacting massive particles)",
+      "verdict": "not stated",
+      "verdict_note": "",
+      "principal_problem": "not stated"
+    },
+    {
+      "position": 2,
+      "label": "QCD axion (and other very light, wave-like particles)",
+      "verdict": "not stated",
+      "verdict_note": "",
+      "principal_problem": "not stated"
+    },
+    {
+      "position": 3,
+      "label": "Self-interacting dark matter (SIDM) and other \"dark sector\" models",
+      "verdict": "not stated",
+      "verdict_note": "",
+      "principal_problem": "not stated"
+    },
+    {
+      "position": 4,
+      "label": "Primordial black holes (PBHs)",
+      "verdict": "not stated",
+      "verdict_note": "",
+      "principal_problem": "not stated"
+    },
+    {
+      "position": 5,
+      "label": "Sterile neutrinos / warm dark matter",
+      "verdict": "not stated",
+      "verdict_note": "",
+      "principal_problem": "not stated"
+    },
+    {
+      "position": 6,
+      "label": "\"Fuzzy\" (ultralight) dark matter",
+      "verdict": "not stated",
+      "verdict_note": "",
+      "principal_problem": "not stated"
+    },
+    {
+      "position": 7,
+      "label": "MOND (modified gravity instead of dark matter)",
+      "verdict": "not stated",
+      "verdict_note": "",
+      "principal_problem": "not stated"
+    }
+  ],
+  "ranking": [
+    "QCD axion (and other very light, wave-like particles)",
+    "WIMPs (weakly interacting massive particles)",
+    "Self-interacting dark matter (SIDM) and other \"dark sector\" models",
+    "Primordial black holes (PBHs)",
+    "Sterile neutrinos / warm dark matter",
+    "\"Fuzzy\" (ultralight) dark matter",
+    "MOND (modified gravity instead of dark matter)"
+  ],
+  "source_count": 16,
+  "sources": [
+    {
+      "ref": "LZ, December 2025",
+      "programme": "WIMPs (weakly interacting massive particles)",
+      "claim": "417 live days of LZ data found no WIMPs above 9 GeV, and boron-8 solar neutrinos were detected"
+    },
+    {
+      "ref": "XENON Collaboration, Phys. Rev. Lett., 2025",
+      "programme": "WIMPs (weakly interacting massive particles)",
+      "claim": "XENONnT improved its earlier limits by about a factor of two"
+    },
+    {
+      "ref": "LBNL press release, 1 September 2026",
+      "programme": "WIMPs (weakly interacting massive particles)",
+      "claim": "LZ recorded a single interaction that known backgrounds struggle to explain"
+    },
+    {
+      "ref": "The Daily Scout news summary, 2026",
+      "programme": "WIMPs (weakly interacting massive particles)",
+      "claim": "the background-only explanation of the LZ event is disfavoured at 2.6 sigma globally"
+    },
+    {
+      "ref": "Brown University, 2026",
+      "programme": "WIMPs (weakly interacting massive particles)",
+      "claim": "a particle behind the LZ event would likely have a mass of at least 200 GeV"
+    },
+    {
+      "ref": "Wikipedia, summary of a 2025 simulation study",
+      "programme": "WIMPs (weakly interacting massive particles)",
+      "claim": "WIMP annihilation and old fast-rotating pulsars remain equally plausible for the Galactic Centre excess"
+    },
+    {
+      "ref": "A. Sonnenschein, APS DPF meeting, July 2026",
+      "programme": "QCD axion (and other very light, wave-like particles)",
+      "claim": "ADMX is running with the sensitivity needed to discover axion dark matter"
+    },
+    {
+      "ref": "MIT Technology Review, June 2026",
+      "programme": "QCD axion (and other very light, wave-like particles)",
+      "claim": "slow mass scanning drives a push for quantum sensors, helium detectors and Jupiter searches"
+    },
+    {
+      "ref": "arXiv:2607.28564, 2026",
+      "programme": "Self-interacting dark matter (SIDM) and other \"dark sector\" models",
+      "claim": "small-scale structure constraints on SIDM are about to enter a new phase"
+    },
+    {
+      "ref": "arXiv:2606.12775, 2026",
+      "programme": "Primordial black holes (PBHs)",
+      "claim": "primordial black holes of 1e17-1e22 g could be all dark matter without violating constraints"
+    },
+    {
+      "ref": "XRISM, ApJ Letters, 2025",
+      "programme": "Sterile neutrinos / warm dark matter",
+      "claim": "XRISM found no definitive decay line and set the tightest sterile neutrino limits at 5-30 keV"
+    },
+    {
+      "ref": "JCAP 09 (2026) 051",
+      "programme": "\"Fuzzy\" (ultralight) dark matter",
+      "claim": "the Lyman-alpha forest requires a fuzzy dark matter mass above 1.9e-21 eV at 95% credibility"
+    },
+    {
+      "ref": "Famaey, Pizzuti & Saltas, Phys. Rev. D 111, 123042, 2025",
+      "programme": "MOND (modified gravity instead of dark matter)",
+      "claim": "MOND still needs unseen mass about ten times the hot gas density in cluster cores"
+    },
+    {
+      "ref": "Chae & Yoon, arXiv:2607.14450, 2026",
+      "programme": "MOND (modified gravity instead of dark matter)",
+      "claim": "the wide-binary anomaly appears at more than 3 sigma"
+    },
+    {
+      "ref": "Cookson et al., arXiv:2602.24035, 2026",
+      "programme": "MOND (modified gravity instead of dark matter)",
+      "claim": "wide binaries make Newtonian dynamics about 1500 times more likely than MOND"
+    },
+    {
+      "ref": "Planck Collaboration, \"Planck 2018 results VI\", A&A 641, A6, 2020",
+      "programme": "MOND (modified gravity instead of dark matter)",
+      "claim": "standard cold dark matter fits the cosmic microwave background closely"
+    }
+  ]
+}

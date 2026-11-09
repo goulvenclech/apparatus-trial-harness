@@ -1,0 +1,264 @@
+{
+  "schema": "normalised-run/2",
+  "id": "f899",
+  "case": "case-a-dark-matter-2",
+  "programme_count": 11,
+  "programmes": [
+    {
+      "position": 1,
+      "label": "Cold dark matter as a gravitational hypothesis (ΛCDM, whatever the particle turns out to be)",
+      "verdict": "solid",
+      "verdict_note": "",
+      "principal_problem": "none"
+    },
+    {
+      "position": 2,
+      "label": "WIMPs (weakly interacting massive particles left over from the hot early universe)",
+      "verdict": "fragile",
+      "verdict_note": "",
+      "principal_problem": "suppressed couplings, special mediators and inelastic scattering, each fitted to a separate anomaly"
+    },
+    {
+      "position": 3,
+      "label": "The QCD axion (a hypothetical light particle)",
+      "verdict": "defensible",
+      "verdict_note": "stagnant",
+      "principal_problem": "not stated"
+    },
+    {
+      "position": 4,
+      "label": "MOND and its relativistic versions (e.g. AeST)",
+      "verdict": "fragile",
+      "verdict_note": "",
+      "principal_problem": "separate additions for clusters, the CMB and wide binaries"
+    },
+    {
+      "position": 5,
+      "label": "Self-interacting dark matter (SIDM)",
+      "verdict": "defensible",
+      "verdict_note": "low confidence",
+      "principal_problem": "not stated"
+    },
+    {
+      "position": 6,
+      "label": "Primordial black holes (PBHs, formed in the early universe)",
+      "verdict": "defensible",
+      "verdict_note": "stagnant; low confidence",
+      "principal_problem": "not stated"
+    },
+    {
+      "position": 7,
+      "label": "Sterile neutrinos / warm dark matter",
+      "verdict": "fragile",
+      "verdict_note": "",
+      "principal_problem": "its one apparent confirmation, the 3.5 keV line, was not seen at high resolution"
+    },
+    {
+      "position": 8,
+      "label": "Fuzzy (ultralight) dark matter",
+      "verdict": "fragile",
+      "verdict_note": "",
+      "principal_problem": "original mass ruled out, with heavier versions indistinguishable from CDM"
+    },
+    {
+      "position": null,
+      "label": "Light dark matter (below ~1 GeV) in hidden sectors",
+      "verdict": "inconclusive (evidence)",
+      "verdict_note": "",
+      "principal_problem": "not stated"
+    },
+    {
+      "position": null,
+      "label": "Superfluid dark matter (Khoury et al.)",
+      "verdict": "inconclusive (evidence)",
+      "verdict_note": "",
+      "principal_problem": "not stated"
+    },
+    {
+      "position": 9,
+      "label": "Verlinde's emergent gravity",
+      "verdict": "fragile",
+      "verdict_note": "",
+      "principal_problem": "no cosmological formulation, leaving nothing to test beyond galaxy scales"
+    }
+  ],
+  "ranking": [
+    "Cold dark matter as a gravitational hypothesis (ΛCDM, whatever the particle turns out to be)",
+    "The QCD axion (a hypothetical light particle)",
+    "Self-interacting dark matter (SIDM)",
+    "Primordial black holes (PBHs, formed in the early universe)",
+    "MOND and its relativistic versions (e.g. AeST)",
+    "WIMPs (weakly interacting massive particles left over from the hot early universe)",
+    "Sterile neutrinos / warm dark matter",
+    "Fuzzy (ultralight) dark matter",
+    "Verlinde's emergent gravity"
+  ],
+  "source_count": 33,
+  "sources": [
+    {
+      "ref": "Natarajan et al., \"New Cold Dark Matter Crisis Revealed by Multiscale Cluster Lensing\", ApJ Letters, 2026",
+      "programme": "Cold dark matter as a gravitational hypothesis (ΛCDM, whatever the particle turns out to be)",
+      "claim": "in three clusters, dark matter clumps sit closer to the centre and are more numerous than simulated"
+    },
+    {
+      "ref": "Vegetti, White et al., \"A possible challenge for cold and warm dark matter\", Nature Astronomy 10, 2026",
+      "programme": "Cold dark matter as a gravitational hypothesis (ΛCDM, whatever the particle turns out to be)",
+      "claim": "a dark object of about a million solar masses is too concentrated for a cold or warm halo"
+    },
+    {
+      "ref": "LZ Collaboration, Dec 2025",
+      "programme": "WIMPs (weakly interacting massive particles left over from the hot early universe)",
+      "claim": "LZ found no WIMPs in 417 live days and detected neutrinos from the Sun's core"
+    },
+    {
+      "ref": "Imperial College London report, Dec 2025",
+      "programme": "WIMPs (weakly interacting massive particles left over from the hot early universe)",
+      "claim": "LZ found no WIMPs in 417 live days and detected neutrinos from the Sun's core"
+    },
+    {
+      "ref": "UT Austin report, Dec 2025",
+      "programme": "WIMPs (weakly interacting massive particles left over from the hot early universe)",
+      "claim": "LZ found no WIMPs in 417 live days and detected neutrinos from the Sun's core"
+    },
+    {
+      "ref": "XENONnT, PRL 135, 221003, 2025",
+      "programme": "WIMPs (weakly interacting massive particles left over from the hot early universe)",
+      "claim": "XENONnT found no excess"
+    },
+    {
+      "ref": "Totani, JCAP, 2025",
+      "programme": "WIMPs (weakly interacting massive particles left over from the hot early universe)",
+      "claim": "a gamma-ray excess near 20 GeV in the Milky Way halo was claimed in Fermi data"
+    },
+    {
+      "ref": "Stenhouse et al., arXiv:2607.08552",
+      "programme": "WIMPs (weakly interacting massive particles left over from the hot early universe)",
+      "claim": "the 20 GeV halo excess was reproduced independently"
+    },
+    {
+      "ref": "Abazajian, Li & Macias, arXiv:2610.23713, 2026",
+      "programme": "WIMPs (weakly interacting massive particles left over from the hot early universe)",
+      "claim": "excluding the Fermi-bubbles region drops the halo excess from 7.3 to 1.2 sigma"
+    },
+    {
+      "ref": "arXiv:2609.17412",
+      "programme": "WIMPs (weakly interacting massive particles left over from the hot early universe)",
+      "claim": "a single high-energy LZ event prompted more than a dozen dedicated models within weeks"
+    },
+    {
+      "ref": "\"The search for dark matter has been blown wide open\", MIT Technology Review, June 2026",
+      "programme": "WIMPs (weakly interacting massive particles left over from the hot early universe)",
+      "claim": "the dark matter field is widening its search beyond WIMPs"
+    },
+    {
+      "ref": "\"XLZD Design Book\", EPJC, 2025",
+      "programme": "WIMPs (weakly interacting massive particles left over from the hot early universe)",
+      "claim": "the planned XLZD detector would reach the minimal Higgsino and wino candidates"
+    },
+    {
+      "ref": "ADMX, SUSY 2025 talk",
+      "programme": "The QCD axion (a hypothetical light particle)",
+      "claim": "ADMX and CAPP excluded DFSZ-strength axions across 0.65-1.3 GHz"
+    },
+    {
+      "ref": "arXiv:2412.08699",
+      "programme": "The QCD axion (a hypothetical light particle)",
+      "claim": "recent early-universe simulations predict an axion mass of 40-180 µeV"
+    },
+    {
+      "ref": "Particle Data Group, review, 2026",
+      "programme": "The QCD axion (a hypothetical light particle)",
+      "claim": "the predicted axion mass range is about 45-300 µeV"
+    },
+    {
+      "ref": "Wang et al., Nature, 2026",
+      "programme": "The QCD axion (a hypothetical light particle)",
+      "claim": "networks of quantum sensors are a new detector type for the predicted axion range"
+    },
+    {
+      "ref": "Mistele et al., KiDS survey, 2024",
+      "programme": "MOND and its relativistic versions (e.g. AeST)",
+      "claim": "weak lensing shows rotation speeds staying flat out to hundreds of kiloparsecs"
+    },
+    {
+      "ref": "Combes, arXiv:2611.08702, PNAS (accepted), 2026",
+      "programme": "MOND and its relativistic versions (e.g. AeST)",
+      "claim": "MOND cuts the required unseen cluster mass by 4-10 times but leaves a residual"
+    },
+    {
+      "ref": "Famaey, arXiv:2605.10022",
+      "programme": "MOND and its relativistic versions (e.g. AeST)",
+      "claim": "the Bullet Cluster shows a residual mass under MOND that is mostly collisionless"
+    },
+    {
+      "ref": "Banik et al., MNRAS, 2024",
+      "programme": "MOND and its relativistic versions (e.g. AeST)",
+      "claim": "wide binary stars favour Newtonian gravity"
+    },
+    {
+      "ref": "Pittordis et al., arXiv:2504.07569",
+      "programme": "MOND and its relativistic versions (e.g. AeST)",
+      "claim": "wide binary stars favour Newtonian gravity"
+    },
+    {
+      "ref": "arXiv:2603.11015",
+      "programme": "MOND and its relativistic versions (e.g. AeST)",
+      "claim": "a 3D orbit analysis of wide binaries favours Newtonian gravity"
+    },
+    {
+      "ref": "Cookson et al., 2026",
+      "programme": "MOND and its relativistic versions (e.g. AeST)",
+      "claim": "the MOND-like wide-binary signal is traced to sample-quality problems"
+    },
+    {
+      "ref": "Hernandez & Kroupa, Universe, 2025",
+      "programme": "MOND and its relativistic versions (e.g. AeST)",
+      "claim": "dark matter is claimed to be falsified"
+    },
+    {
+      "ref": "arXiv:2611.09546",
+      "programme": "Self-interacting dark matter (SIDM)",
+      "claim": "gravothermal core collapse could explain both cored dwarfs and the ultra-dense objects of 2026"
+    },
+    {
+      "ref": "Mróz et al., \"No massive black holes in the Milky Way halo\", Nature 632, 2024",
+      "programme": "Primordial black holes (PBHs, formed in the early universe)",
+      "claim": "twenty years of OGLE microlensing exclude massive primordial black holes as the bulk of dark matter"
+    },
+    {
+      "ref": "arXiv:2406.03114",
+      "programme": "Primordial black holes (PBHs, formed in the early universe)",
+      "claim": "the asteroid-mass window for primordial black holes remains open"
+    },
+    {
+      "ref": "XRISM Collaboration, ApJ Letters, 2025",
+      "programme": "Sterile neutrinos / warm dark matter",
+      "claim": "XRISM found no 3.5 keV line in ten stacked clusters"
+    },
+    {
+      "ref": "arXiv:2610.01877",
+      "programme": "Sterile neutrinos / warm dark matter",
+      "claim": "a 3.531 keV residual in other XRISM data is unconfirmed"
+    },
+    {
+      "ref": "JCAP 2026/09/051",
+      "programme": "Fuzzy (ultralight) dark matter",
+      "claim": "Lyman-alpha forest data require an ultralight mass above 1.9e-21 eV"
+    },
+    {
+      "ref": "arXiv:2505.23900",
+      "programme": "Superfluid dark matter (Khoury et al.)",
+      "claim": "superfluid dark matter is reviewed as a hybrid of MOND and dark matter"
+    },
+    {
+      "ref": "Mistele, JCAP, 2021",
+      "programme": "Superfluid dark matter (Khoury et al.)",
+      "claim": "superfluid dark matter is constrained by data"
+    },
+    {
+      "ref": "Brouwer et al., MNRAS, 2017",
+      "programme": "Verlinde's emergent gravity",
+      "claim": "emergent gravity was tested with weak lensing"
+    }
+  ]
+}

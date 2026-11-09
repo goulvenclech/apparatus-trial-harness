@@ -1,0 +1,194 @@
+{
+  "schema": "normalised-run/2",
+  "id": "49dk",
+  "case": "case-a-dark-matter-2",
+  "programme_count": 7,
+  "programmes": [
+    {
+      "position": 1,
+      "label": "WIMPs (weakly interacting massive particles)",
+      "verdict": "not stated",
+      "verdict_note": "",
+      "principal_problem": "not stated"
+    },
+    {
+      "position": 2,
+      "label": "The QCD axion",
+      "verdict": "not stated",
+      "verdict_note": "",
+      "principal_problem": "not stated"
+    },
+    {
+      "position": 3,
+      "label": "Self-interacting dark matter (SIDM)",
+      "verdict": "not stated",
+      "verdict_note": "",
+      "principal_problem": "not stated"
+    },
+    {
+      "position": 4,
+      "label": "Ultralight (\"fuzzy\") dark matter",
+      "verdict": "not stated",
+      "verdict_note": "",
+      "principal_problem": "not stated"
+    },
+    {
+      "position": 5,
+      "label": "Primordial black holes (PBHs)",
+      "verdict": "not stated",
+      "verdict_note": "",
+      "principal_problem": "not stated"
+    },
+    {
+      "position": 6,
+      "label": "Sterile neutrinos / warm dark matter",
+      "verdict": "not stated",
+      "verdict_note": "",
+      "principal_problem": "not stated"
+    },
+    {
+      "position": 7,
+      "label": "MOND (modified Newtonian dynamics)",
+      "verdict": "not stated",
+      "verdict_note": "",
+      "principal_problem": "not stated"
+    }
+  ],
+  "ranking": [
+    "The QCD axion",
+    "WIMPs (weakly interacting massive particles)",
+    "Self-interacting dark matter (SIDM)",
+    "Ultralight (\"fuzzy\") dark matter",
+    "Primordial black holes (PBHs)",
+    "Sterile neutrinos / warm dark matter",
+    "MOND (modified Newtonian dynamics)"
+  ],
+  "source_count": 25,
+  "sources": [
+    {
+      "ref": "LUX-ZEPLIN (LZ) Collaboration, December 2025",
+      "programme": "WIMPs (weakly interacting massive particles)",
+      "claim": "417 live days of LZ data found no WIMPs at 3-9 GeV and set record limits above 5 GeV"
+    },
+    {
+      "ref": "Imperial College London, \"Dark matter search sets new limits and achieves neutrino breakthrough\"",
+      "programme": "WIMPs (weakly interacting massive particles)",
+      "claim": "417 live days of LZ data found no WIMPs at 3-9 GeV and set record limits above 5 GeV"
+    },
+    {
+      "ref": "\"The search for dark matter has been blown wide open\", MIT Technology Review, 2026",
+      "programme": "WIMPs (weakly interacting massive particles)",
+      "claim": "no WIMP dark matter has been observed so far"
+    },
+    {
+      "ref": "Wikipedia, \"Dark matter\", 2026",
+      "programme": "WIMPs (weakly interacting massive particles)",
+      "claim": "LHC searches through Run 3 found none of the superpartners behind the classic WIMP picture"
+    },
+    {
+      "ref": "LZ, TeV Particle Astrophysics conference, September 2026",
+      "programme": "WIMPs (weakly interacting massive particles)",
+      "claim": "LZ recorded a single event hard to explain by known backgrounds, at 2.6 sigma"
+    },
+    {
+      "ref": "Brown University news release, September 2026",
+      "programme": "WIMPs (weakly interacting massive particles)",
+      "claim": "LZ recorded a single event hard to explain by known backgrounds, at 2.6 sigma"
+    },
+    {
+      "ref": "University of Bristol release, 2026",
+      "programme": "WIMPs (weakly interacting massive particles)",
+      "claim": "a dark matter particle behind the LZ event would likely be heavier than 200 GeV"
+    },
+    {
+      "ref": "T. Totani, Journal of Cosmology and Astroparticle Physics (JCAP), 2025",
+      "programme": "WIMPs (weakly interacting massive particles)",
+      "claim": "excess gamma rays around the Milky Way fit a particle mass of about 0.5-0.8 TeV"
+    },
+    {
+      "ref": "arXiv:2512.12176, 2025",
+      "programme": "WIMPs (weakly interacting massive particles)",
+      "claim": "AMS-02 antiproton data indicate the halo excess is not a viable dark matter signal"
+    },
+    {
+      "ref": "arXiv:2607.08552, 2026",
+      "programme": "WIMPs (weakly interacting massive particles)",
+      "claim": "the halo excess exists but conflicts with dwarf-galaxy limits under a dark matter reading"
+    },
+    {
+      "ref": "Physical Review D, 2026",
+      "programme": "WIMPs (weakly interacting massive particles)",
+      "claim": "the Galactic Centre excess is increasingly attributed to millisecond-pulsar-like sources in the bulge"
+    },
+    {
+      "ref": "ADMX Collaboration, \"Search for Axion Dark Matter from 1.1 to 1.3 GHz\", 2025",
+      "programme": "The QCD axion",
+      "claim": "ADMX found no axion signal and DFSZ sensitivity at a satisfactory scan rate remains out of reach"
+    },
+    {
+      "ref": "A. Sonnenschein, APS DPF meeting, Fermilab, 2026",
+      "programme": "The QCD axion",
+      "claim": "ADMX is running with the sensitivity needed to discover axion dark matter"
+    },
+    {
+      "ref": "Gilman et al., \"JWST lensed quasar dark matter survey V\", arXiv, 2026",
+      "programme": "Self-interacting dark matter (SIDM)",
+      "claim": "29 quadruply lensed quasars favour SIDM core collapse over CDM with Bayes factors of 6-24"
+    },
+    {
+      "ref": "UC Riverside news release, April 2026",
+      "programme": "Self-interacting dark matter (SIDM)",
+      "claim": "SIDM could explain three astrophysical puzzles in very different environments"
+    },
+    {
+      "ref": "Astronomy & Astrophysics, 2026",
+      "programme": "Self-interacting dark matter (SIDM)",
+      "claim": "some studies favour SIDM while others disfavour it"
+    },
+    {
+      "ref": "JCAP, 2026",
+      "programme": "Ultralight (\"fuzzy\") dark matter",
+      "claim": "the Lyman-alpha forest requires a fuzzy dark matter mass above 1.9e-21 eV at 95% credibility"
+    },
+    {
+      "ref": "Carr et al., \"Primordial black holes: constraints, potential evidence and prospects\", La Rivista del Nuovo Cimento, 2026",
+      "programme": "Primordial black holes (PBHs)",
+      "claim": "a major review covers constraints and potential evidence, which is not a detection"
+    },
+    {
+      "ref": "arXiv:2406.03114",
+      "programme": "Primordial black holes (PBHs)",
+      "claim": "primordial black holes can be all dark matter only between about 1e17 and 1e23 g"
+    },
+    {
+      "ref": "XRISM, The Astrophysical Journal, 2025",
+      "programme": "Sterile neutrinos / warm dark matter",
+      "claim": "XRISM found no unidentified lines, with limits below Hitomi's but above the XMM-Newton detection"
+    },
+    {
+      "ref": "\"What would it take for dark matter to be literally warm?\", arXiv, 2026",
+      "programme": "Sterile neutrinos / warm dark matter",
+      "claim": "joint lower bounds on the warm dark matter mass are 6.0-9.7 keV"
+    },
+    {
+      "ref": "arXiv:2602.24035, 2026",
+      "programme": "MOND (modified Newtonian dynamics)",
+      "claim": "wide binary stars do not support MOND"
+    },
+    {
+      "ref": "Open Journal of Astrophysics, 2026",
+      "programme": "MOND (modified Newtonian dynamics)",
+      "claim": "wide binary orbits are consistent with Newtonian gravity"
+    },
+    {
+      "ref": "Physical Review D, 2026",
+      "programme": "MOND (modified Newtonian dynamics)",
+      "claim": "Cassini tracking caps the MOND effect near the Sun at 2% at 95% confidence"
+    },
+    {
+      "ref": "arXiv:2602.21975, 2026",
+      "programme": "MOND (modified Newtonian dynamics)",
+      "claim": "MOND still leaves a residual missing gravity problem in galaxy clusters"
+    }
+  ]
+}

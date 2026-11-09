@@ -1,0 +1,262 @@
+{
+  "schema": "normalised-run/2",
+  "id": "bpg8",
+  "case": "case-a-dark-matter-2",
+  "programme_count": 11,
+  "programmes": [
+    {
+      "position": 1,
+      "label": "Cold dark matter as a gravitating component (ΛCDM, no particle specified)",
+      "verdict": "solid",
+      "verdict_note": "",
+      "principal_problem": "none"
+    },
+    {
+      "position": 2,
+      "label": "The QCD axion and ultralight bosons",
+      "verdict": "defensible",
+      "verdict_note": "stagnant",
+      "principal_problem": "not stated"
+    },
+    {
+      "position": 3,
+      "label": "Dark sectors and self-interacting dark matter (SIDM)",
+      "verdict": "defensible",
+      "verdict_note": "stagnant; low confidence",
+      "principal_problem": "not stated"
+    },
+    {
+      "position": 4,
+      "label": "WIMPs (weakly interacting massive particles)",
+      "verdict": "fragile",
+      "verdict_note": "",
+      "principal_problem": "one fitted model per anomaly, such as several separate fits to the single LZ event"
+    },
+    {
+      "position": 5,
+      "label": "MOND and its relativistic extensions (e.g. AeST)",
+      "verdict": "fragile",
+      "verdict_note": "",
+      "principal_problem": "successive additions to fill the cluster mass deficit, plus a CMB-fitted relativistic theory"
+    },
+    {
+      "position": 6,
+      "label": "Primordial black holes",
+      "verdict": "fragile",
+      "verdict_note": "",
+      "principal_problem": "mass window relocated repeatedly, each surviving window needing its own tuned density peak"
+    },
+    {
+      "position": 7,
+      "label": "keV sterile neutrinos (warm dark matter)",
+      "verdict": "fragile",
+      "verdict_note": "",
+      "principal_problem": "flagship 3.5 keV line not confirmed at high spectral resolution"
+    },
+    {
+      "position": null,
+      "label": "Superfluid dark matter",
+      "verdict": "not stated",
+      "verdict_note": "",
+      "principal_problem": "not stated"
+    },
+    {
+      "position": null,
+      "label": "Verlinde's emergent gravity",
+      "verdict": "not stated",
+      "verdict_note": "",
+      "principal_problem": "not stated"
+    },
+    {
+      "position": null,
+      "label": "Gravitons from a micron-scale \"dark dimension\"",
+      "verdict": "not stated",
+      "verdict_note": "",
+      "principal_problem": "not stated"
+    },
+    {
+      "position": null,
+      "label": "Dark matter that interacts only through gravity (the \"nightmare scenario\")",
+      "verdict": "not stated",
+      "verdict_note": "",
+      "principal_problem": "not stated"
+    }
+  ],
+  "ranking": [
+    "Cold dark matter as a gravitating component (ΛCDM, no particle specified)",
+    "The QCD axion and ultralight bosons",
+    "Dark sectors and self-interacting dark matter (SIDM)",
+    "WIMPs (weakly interacting massive particles)",
+    "MOND and its relativistic extensions (e.g. AeST)",
+    "Primordial black holes",
+    "keV sterile neutrinos (warm dark matter)"
+  ],
+  "source_count": 33,
+  "sources": [
+    {
+      "ref": "ADMX Collaboration, \"ADMX Axion Dark Matter Bounds around 3.3 μeV with DFSZ Discovery Ability\", Phys. Rev. Lett. 134, 111002, 2025",
+      "programme": "The QCD axion and ultralight bosons",
+      "claim": "ADMX excluded DFSZ axions at 3.27-3.34 μeV"
+    },
+    {
+      "ref": "ADMX Collaboration, \"Search for Axion Dark Matter from 1.1 to 1.3 GHz with ADMX\", PRL 135, 191001, 2025",
+      "programme": "The QCD axion and ultralight bosons",
+      "claim": "ADMX extended its search to 1.1-1.3 GHz"
+    },
+    {
+      "ref": "Bai et al., \"Dark Matter Axion Search with HAYSTAC Phase II\", PRL 134, 151006, 2025",
+      "programme": "The QCD axion and ultralight bosons",
+      "claim": "HAYSTAC Phase II broadens the axion search techniques"
+    },
+    {
+      "ref": "MADMAX Collaboration, \"First Search for Axion Dark Matter with a MADMAX Prototype\", 2025",
+      "programme": "The QCD axion and ultralight bosons",
+      "claim": "the first MADMAX prototype search broadens the axion search techniques"
+    },
+    {
+      "ref": "\"Lyman-α forest constraints on pure and mixed fuzzy dark matter\", JCAP 2026(09) 051, arXiv:2606.06969",
+      "programme": "The QCD axion and ultralight bosons",
+      "claim": "Lyman-alpha data require pure fuzzy dark matter heavier than about 2e-20 eV"
+    },
+    {
+      "ref": "Hu, Barkana & Gruzinov, \"Fuzzy Cold Dark Matter\", PRL 85, 1158, 2000",
+      "programme": "The QCD axion and ultralight bosons",
+      "claim": "fuzzy dark matter was originally motivated at masses around 1e-22 eV"
+    },
+    {
+      "ref": "D. Garisto, \"The search for dark matter has been blown wide open\", MIT Technology Review, 18 June 2026",
+      "programme": "Dark sectors and self-interacting dark matter (SIDM)",
+      "claim": "the dark matter search has opened to a wide range of candidates"
+    },
+    {
+      "ref": "FASER Collaboration, \"New dark photon results\", CERN briefing, March 2026",
+      "programme": "Dark sectors and self-interacting dark matter (SIDM)",
+      "claim": "dark photon searches are running at accelerators"
+    },
+    {
+      "ref": "Caputo & Essig, \"The Dark Photon: a 2026 Perspective\", arXiv:2603.08430",
+      "programme": "Dark sectors and self-interacting dark matter (SIDM)",
+      "claim": "dark photon searches are running at accelerators"
+    },
+    {
+      "ref": "Li et al. (incl. Frenk), \"The 'Little Dark Dot': Evidence for Self-interacting Dark Matter in the Strong Lens SDSS J0946+1006?\", ApJ 994, 201, 2025",
+      "programme": "Dark sectors and self-interacting dark matter (SIDM)",
+      "claim": "a compact dark object in the Jackpot lens is modelled as a self-interaction hint"
+    },
+    {
+      "ref": "\"The large cores of dark matter and globular clusters in AS1063: Possible evidence of self-interacting dark matter, or not\", A&A, 2026",
+      "programme": "Dark sectors and self-interacting dark matter (SIDM)",
+      "claim": "the AS1063 cluster gives an equivocal self-interaction hint"
+    },
+    {
+      "ref": "LZ Collaboration, \"Dark Matter Search Results from 4.2 Tonne-Years of Exposure of the LUX-ZEPLIN (LZ) Experiment\", PRL 135, 011802, 2025",
+      "programme": "WIMPs (weakly interacting massive particles)",
+      "claim": "LZ set the tightest WIMP limits so far with 4.2 tonne-years of exposure"
+    },
+    {
+      "ref": "XENON Collaboration, \"Probing the Solar ⁸B Neutrino Fog with XENONnT\", arXiv:2604.06002, 2026",
+      "programme": "WIMPs (weakly interacting massive particles)",
+      "claim": "XENONnT reports diminishing returns from more exposure in the neutrino fog"
+    },
+    {
+      "ref": "LZ Collaboration, \"Search for dark matter particle interactions in an extended nuclear recoil energy window…\", arXiv:2609.02823, 2026",
+      "programme": "WIMPs (weakly interacting massive particles)",
+      "claim": "LZ recorded one 248 keV nuclear-recoil event"
+    },
+    {
+      "ref": "arXiv:2609.30255",
+      "programme": "WIMPs (weakly interacting massive particles)",
+      "claim": "the LZ event has 3.4 sigma local and 2.6 sigma global significance"
+    },
+    {
+      "ref": "arXiv:2609.05204, 2026",
+      "programme": "WIMPs (weakly interacting massive particles)",
+      "claim": "the LZ event has 3.4 sigma local and 2.6 sigma global significance, and is fitted with exothermic dark matter"
+    },
+    {
+      "ref": "T. Totani, \"20 GeV halo-like excess of the Galactic diffuse emission and implications for dark matter annihilation\", arXiv:2507.07209, 2025",
+      "programme": "WIMPs (weakly interacting massive particles)",
+      "claim": "a 20 GeV gamma-ray halo excess was reported"
+    },
+    {
+      "ref": "Abazajian, Li & Macias, \"Foreground dependence of the 20 GeV Galactic halo gamma-ray excess and its proposed connection to the LUX-ZEPLIN event\", arXiv:2610.23713, 2026",
+      "programme": "WIMPs (weakly interacting massive particles)",
+      "claim": "the strength of the halo excess depends on foreground modelling"
+    },
+    {
+      "ref": "arXiv:2609.01583, 2026",
+      "programme": "WIMPs (weakly interacting massive particles)",
+      "claim": "the LZ event is fitted with a Higgsino"
+    },
+    {
+      "ref": "Lou & Lu, arXiv:2609.01592, 2026",
+      "programme": "WIMPs (weakly interacting massive particles)",
+      "claim": "the LZ event is fitted with dark matter absorption"
+    },
+    {
+      "ref": "arXiv:2609.06890, 2026",
+      "programme": "WIMPs (weakly interacting massive particles)",
+      "claim": "the LZ event is fitted with boosted dark matter"
+    },
+    {
+      "ref": "F. Combes, \"Modified Newtonian Dynamics and galaxy clusters\", PNAS (accepted), arXiv:2611.08702, 2026",
+      "programme": "MOND and its relativistic extensions (e.g. AeST)",
+      "claim": "galaxy clusters still need unseen mass under MOND, proposed as dark baryons"
+    },
+    {
+      "ref": "Pittordis et al., \"Wide Binaries from Gaia DR3: testing GR vs MOND with realistic triple modelling\", arXiv:2504.07569, 2025",
+      "programme": "MOND and its relativistic extensions (e.g. AeST)",
+      "claim": "modelling triple-star contamination, Gaia DR3 wide binaries strongly favour Newtonian gravity without excluding MOND"
+    },
+    {
+      "ref": "ESA, \"Gaia Data Release 4\" web page",
+      "programme": "MOND and its relativistic extensions (e.g. AeST)",
+      "claim": "Gaia DR4 is due on 2 December 2026"
+    },
+    {
+      "ref": "McGaugh et al., \"Accelerated Structure Formation: The Early Emergence of Massive Galaxies and Clusters of Galaxies\", ApJ, 2024",
+      "programme": "MOND and its relativistic extensions (e.g. AeST)",
+      "claim": "early massive galaxies are claimed as a MOND prediction made before observation"
+    },
+    {
+      "ref": "Zhang, Hasani Zonoozi & Kroupa, \"Revisiting the missing mass problem in MOND for nearby galaxy clusters\", Phys. Rev. D, 2026",
+      "programme": "MOND and its relativistic extensions (e.g. AeST)",
+      "claim": "a revised stellar mass function roughly doubles cluster stellar masses"
+    },
+    {
+      "ref": "Mróz et al., \"No massive black holes in the Milky Way halo\", Nature 632, 749, 2024",
+      "programme": "Primordial black holes",
+      "claim": "twenty years of OGLE microlensing found 13 events where 258 were expected for 10 solar-mass black holes"
+    },
+    {
+      "ref": "García-Bellido and co-author, \"A critical analysis of the recent OGLE limits on stellar mass primordial black holes…\", arXiv:2509.05400, 2025",
+      "programme": "Primordial black holes",
+      "claim": "the OGLE limit on stellar-mass primordial black holes is contested"
+    },
+    {
+      "ref": "\"Stronger constraints on primordial black holes as dark matter derived from the thermal evolution of the intergalactic medium\", PRD 112, 123019, 2025",
+      "programme": "Primordial black holes",
+      "claim": "intergalactic gas heating tightens other primordial black hole limits by at least tenfold"
+    },
+    {
+      "ref": "A. Green, \"Stellar microlensing surveys as a probe of Primordial Black Holes: status and prospects\", arXiv:2602.15974, 2026",
+      "programme": "Primordial black holes",
+      "claim": "the asteroid-mass window remains open"
+    },
+    {
+      "ref": "\"XRISM Constraints on Unidentified X-Ray Emission Lines, Including the 3.5 keV Line, in the Stacked Spectrum of 10 Galaxy Clusters\", ApJ Letters, arXiv:2510.24560, 2025",
+      "programme": "keV sterile neutrinos (warm dark matter)",
+      "claim": "ten stacked clusters show no unidentified line, with a 3.5 keV limit 3-4 times below Hitomi's"
+    },
+    {
+      "ref": "Berezhiani, Cintia, De Luca & Khoury, \"Superfluid Dark Matter\", arXiv:2505.23900, 2025",
+      "programme": "Superfluid dark matter",
+      "claim": "superfluid dark matter is a hybrid behaving like MOND inside galaxies"
+    },
+    {
+      "ref": "Gonzalo, Montero, Obied & Vafa, \"Dark dimension gravitons as dark matter\", JHEP 11 (2023) 109",
+      "programme": "Gravitons from a micron-scale \"dark dimension\"",
+      "claim": "gravitons from a micron-scale extra dimension are proposed as dark matter"
+    }
+  ]
+}

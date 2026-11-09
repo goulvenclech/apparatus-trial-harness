@@ -1,0 +1,247 @@
+{
+  "schema": "normalised-run/2",
+  "id": "s7rg",
+  "case": "case-a-dark-matter-2",
+  "programme_count": 8,
+  "programmes": [
+    {
+      "position": 1,
+      "label": "Fuzzy (ultralight wave) dark matter, around 10⁻²² eV",
+      "verdict": "fragile",
+      "verdict_note": "",
+      "principal_problem": "the mass range that motivated it is excluded"
+    },
+    {
+      "position": 2,
+      "label": "QCD axion",
+      "verdict": "defensible",
+      "verdict_note": "",
+      "principal_problem": "none"
+    },
+    {
+      "position": 3,
+      "label": "Sterile neutrinos and warm dark matter",
+      "verdict": "fragile",
+      "verdict_note": "",
+      "principal_problem": "its one signal has faded and the remaining parameter space is small"
+    },
+    {
+      "position": 4,
+      "label": "Light (sub-GeV) and hidden-sector dark matter",
+      "verdict": "inconclusive (evidence)",
+      "verdict_note": "",
+      "principal_problem": "the framework is too flexible to be tested as a whole"
+    },
+    {
+      "position": 5,
+      "label": "WIMPs (weakly interacting massive particles)",
+      "verdict": "defensible",
+      "verdict_note": "",
+      "principal_problem": "none"
+    },
+    {
+      "position": 6,
+      "label": "Self-interacting dark matter (SIDM)",
+      "verdict": "inconclusive (balance)",
+      "verdict_note": "",
+      "principal_problem": "effects hard to separate from those of ordinary-matter physics"
+    },
+    {
+      "position": 7,
+      "label": "Primordial black holes (PBHs)",
+      "verdict": "fragile",
+      "verdict_note": "",
+      "principal_problem": "only one untested window remains, and it needs tuned initial conditions"
+    },
+    {
+      "position": 8,
+      "label": "MOND and relativistic modified gravity",
+      "verdict": "fragile",
+      "verdict_note": "",
+      "principal_problem": "clusters and cosmology need extra unseen mass anyway"
+    }
+  ],
+  "ranking": [
+    "QCD axion",
+    "WIMPs (weakly interacting massive particles)",
+    "Light (sub-GeV) and hidden-sector dark matter",
+    "Self-interacting dark matter (SIDM)",
+    "Primordial black holes (PBHs)",
+    "MOND and relativistic modified gravity",
+    "Sterile neutrinos and warm dark matter",
+    "Fuzzy (ultralight wave) dark matter, around 10⁻²² eV"
+  ],
+  "source_count": 34,
+  "sources": [
+    {
+      "ref": "Planck Collaboration, A&A 641, A6, 2020",
+      "programme": "general",
+      "claim": "the CMB supports a component with the gravitational behaviour of cold, non-baryonic matter"
+    },
+    {
+      "ref": "Cha et al., ApJL 987, L15, 2025",
+      "programme": "general",
+      "claim": "Bullet Cluster lensing maps have been redone with JWST"
+    },
+    {
+      "ref": "A&A, 2026",
+      "programme": "general",
+      "claim": "Bullet Cluster lensing maps have been redone with JWST"
+    },
+    {
+      "ref": "JCAP 2026/09/051",
+      "programme": "Fuzzy (ultralight wave) dark matter, around 10⁻²² eV",
+      "claim": "the Lyman-alpha forest requires a mass above 1.9e-21 eV if fuzzy matter is all dark matter"
+    },
+    {
+      "ref": "Zimmermann et al., 2025",
+      "programme": "Fuzzy (ultralight wave) dark matter, around 10⁻²² eV",
+      "claim": "star motions in Leo II give a fuzzy dark matter mass bound of about 2e-21 eV"
+    },
+    {
+      "ref": "Phys.org",
+      "programme": "Fuzzy (ultralight wave) dark matter, around 10⁻²² eV",
+      "claim": "star motions in Leo II give a fuzzy dark matter mass bound of about 2e-21 eV"
+    },
+    {
+      "ref": "Nishizawa, Taruya & Himemoto, PTEP 2026, 073E02",
+      "programme": "Fuzzy (ultralight wave) dark matter, around 10⁻²² eV",
+      "claim": "using the Earth's magnetic field as a detector sets new axion limits"
+    },
+    {
+      "ref": "ADMX, PRL 134, 111002, 2025",
+      "programme": "QCD axion",
+      "claim": "ADMX excluded the DFSZ axion as the dominant local dark matter near 3.3 μeV"
+    },
+    {
+      "ref": "ADMX, PRL 135, 191001, 2025",
+      "programme": "QCD axion",
+      "claim": "ADMX searched 1.1-1.3 GHz"
+    },
+    {
+      "ref": "Bai et al., PRL 134, 151006, 2025",
+      "programme": "QCD axion",
+      "claim": "HAYSTAC used quantum-enhanced readout in its Phase II run"
+    },
+    {
+      "ref": "Dessert, Rodd & Safdi, Science 367, 2020",
+      "programme": "Sterile neutrinos and warm dark matter",
+      "claim": "blank-sky observations rule out a dark matter interpretation of the 3.5 keV line"
+    },
+    {
+      "ref": "XRISM Collaboration, arXiv:2510.24560, 2025",
+      "programme": "Sterile neutrinos and warm dark matter",
+      "claim": "ten stacked clusters show no unidentified lines, though the original line is below XRISM's limit"
+    },
+    {
+      "ref": "DAMIC-M, PRL, 2025, doi:10.1103/2tcc-bqck",
+      "programme": "Light (sub-GeV) and hidden-sector dark matter",
+      "claim": "DAMIC-M excluded benchmark freeze-in and freeze-out scenarios over large mass ranges"
+    },
+    {
+      "ref": "Nishizawa et al., 2026",
+      "programme": "Light (sub-GeV) and hidden-sector dark matter",
+      "claim": "dark-photon candidate signals have been reported"
+    },
+    {
+      "ref": "LZ, PRL 135, 011802, 2025",
+      "programme": "WIMPs (weakly interacting massive particles)",
+      "claim": "LZ set world-leading limits from 4.2 tonne-years of exposure"
+    },
+    {
+      "ref": "LZ release, December 2025",
+      "programme": "WIMPs (weakly interacting massive particles)",
+      "claim": "after 417 live days LZ saw no low-mass WIMPs and detected boron-8 solar neutrinos at 4.5 sigma"
+    },
+    {
+      "ref": "UCL release, December 2025",
+      "programme": "WIMPs (weakly interacting massive particles)",
+      "claim": "after 417 live days LZ saw no low-mass WIMPs and detected boron-8 solar neutrinos at 4.5 sigma"
+    },
+    {
+      "ref": "Brown release, December 2025",
+      "programme": "WIMPs (weakly interacting massive particles)",
+      "claim": "after 417 live days LZ saw no low-mass WIMPs and detected boron-8 solar neutrinos at 4.5 sigma"
+    },
+    {
+      "ref": "JHEP 08 (2025) 043",
+      "programme": "WIMPs (weakly interacting massive particles)",
+      "claim": "PandaX-4T and XENONnT earlier saw the solar neutrino signal at 2.6 and 2.7 sigma"
+    },
+    {
+      "ref": "Phys.org / University of Sheffield",
+      "programme": "WIMPs (weakly interacting massive particles)",
+      "claim": "LZ reported one unexplained 248 keV nuclear-recoil event at 2.6 sigma global significance"
+    },
+    {
+      "ref": "Brown University, 2026",
+      "programme": "WIMPs (weakly interacting massive particles)",
+      "claim": "LZ reported one unexplained 248 keV nuclear-recoil event at 2.6 sigma global significance"
+    },
+    {
+      "ref": "arXiv:2508.06314",
+      "programme": "WIMPs (weakly interacting massive particles)",
+      "claim": "a 2025 simulation study found dark matter and millisecond pulsars equally plausible for the Galactic Centre excess"
+    },
+    {
+      "ref": "PRD 114, 043053, 2026",
+      "programme": "WIMPs (weakly interacting massive particles)",
+      "claim": "a 2026 study favours a stellar origin for the Galactic Centre excess"
+    },
+    {
+      "ref": "Totani, JCAP 2025/11/080",
+      "programme": "WIMPs (weakly interacting massive particles)",
+      "claim": "a 20 GeV gamma-ray halo excess was reported"
+    },
+    {
+      "ref": "arXiv:2512.12176",
+      "programme": "WIMPs (weakly interacting massive particles)",
+      "claim": "the 20 GeV halo excess conflicts with AMS-02 antiproton data"
+    },
+    {
+      "ref": "Yu et al., PRL, 2026",
+      "programme": "Self-interacting dark matter (SIDM)",
+      "claim": "dense SIDM clumps formed by gravothermal collapse explain three separate astrophysical puzzles"
+    },
+    {
+      "ref": "Mróz et al., ApJS 280, 49, 2025",
+      "programme": "Primordial black holes (PBHs)",
+      "claim": "20 years of OGLE microlensing keep tightening primordial black hole bounds"
+    },
+    {
+      "ref": "JCAP 2025/12/008",
+      "programme": "Primordial black holes (PBHs)",
+      "claim": "six ultrashort OGLE events could be 1e-5 solar-mass black holes, with halo-dependent limits"
+    },
+    {
+      "ref": "Cookson, Banik, El-Badry, Sutherland et al., MNRAS 547, stag342, 2026",
+      "programme": "MOND and relativistic modified gravity",
+      "claim": "wide binary stars show no MOND signal"
+    },
+    {
+      "ref": "Pittordis et al., arXiv:2504.07569",
+      "programme": "MOND and relativistic modified gravity",
+      "claim": "wide binary stars show no MOND signal"
+    },
+    {
+      "ref": "Chae, arXiv:2607.14450, 2026",
+      "programme": "MOND and relativistic modified gravity",
+      "claim": "a MOND signal in wide binaries is claimed, and the null sample had only 61 MOND-regime binaries"
+    },
+    {
+      "ref": "Zhang et al., PRD, 2026",
+      "programme": "MOND and relativistic modified gravity",
+      "claim": "the extra mass MOND needs in clusters is attributed to stellar remnants"
+    },
+    {
+      "ref": "MNRAS 547, stag399, 2026",
+      "programme": "MOND and relativistic modified gravity",
+      "claim": "some MOND cosmologies add sterile neutrinos"
+    },
+    {
+      "ref": "lilting.ch",
+      "programme": "WIMPs (weakly interacting massive particles)",
+      "claim": "the local significance of the LZ event reportedly reaches 3.4 sigma"
+    }
+  ]
+}

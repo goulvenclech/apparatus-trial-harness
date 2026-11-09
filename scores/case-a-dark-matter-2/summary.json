@@ -1,0 +1,943 @@
+{
+  "schema": "blind-score-summary/1",
+  "campaign": "case-a-dark-matter-2",
+  "scored_on": "2026-11-09",
+  "answer_key": "docs/cases/case-A-dark-matter-answer-key.md (v2)",
+  "protocol": "docs/protocol.md",
+  "blinding": "Scored from normalised/case-a-dark-matter-2 only; keys/, runs/, blind/, prompts/, docs/skill/ and campaign-1 scores not opened. No aggregation by arm.",
+  "sampling": {
+    "seed": "1c429ef1185544d68b26e4bb435dac41",
+    "generator": "mulberry32, state = parseInt(sha256hex(seed).slice(0,8),16) = 0x56899d83 (same generator as the harness's seededRandomInt)",
+    "procedure": "One generator stream for the campaign. Records in ascending id order (2tyf, 3tsf, 49dk, 65n9, 688p, 6hcn, 9ams, an5x, bpg8, f899, pcwk, qczx, s7rg, scck, t7hq). For each record with n sources: idx=[0..n-1]; for i in 0..4: j=i+rand(n-i); swap idx[i],idx[j]; sample = idx[0..4] in draw order. rand(m)=floor(mulberry32()*m).",
+    "script_source": "// Draws 5 references per record for support checking.\n// Generator: mulberry32 seeded with parseInt(sha256(seed).slice(0,8),16), as in the harness.\n// Records in ascending id order, one generator stream for the whole campaign.\n// Per record: partial Fisher-Yates over source indices 0..n-1, i = 0..4, j = i + rand(n - i), swap; take first 5.\nimport { createHash } from \"node:crypto\";\nimport { readFileSync, readdirSync } from \"node:fs\";\nconst seed = \"1c429ef1185544d68b26e4bb435dac41\";\nconst dir = process.argv[2];\nlet state = Number.parseInt(createHash(\"sha256\").update(seed).digest(\"hex\").slice(0, 8), 16);\nconst rand = (max) => {\n  state = (state + 0x6d2b79f5) | 0;\n  let t = Math.imul(state ^ (state >>> 15), 1 | state);\n  t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;\n  return Math.floor((((t ^ (t >>> 14)) >>> 0) / 4294967296) * max);\n};\nconst out = {};\nfor (const f of readdirSync(dir).filter((f) => f.endsWith(\".json\")).sort()) {\n  const rec = JSON.parse(readFileSync(`${dir}/${f}`, \"utf8\"));\n  const n = rec.sources.length;\n  const idx = [...Array(n).keys()];\n  for (let i = 0; i < Math.min(5, n); i++) {\n    const j = i + rand(n - i);\n    [idx[i], idx[j]] = [idx[j], idx[i]];\n  }\n  out[rec.id] = { n, drawOrder: idx.slice(0, 5) };\n}\nconsole.log(JSON.stringify({ seed, seedState: createHash(\"sha256\").update(seed).digest(\"hex\").slice(0, 8), samples: out }, null, 1));\n",
+    "draws": {
+      "2tyf": [
+        12,
+        27,
+        17,
+        28,
+        31
+      ],
+      "3tsf": [
+        19,
+        4,
+        16,
+        30,
+        23
+      ],
+      "49dk": [
+        15,
+        19,
+        11,
+        17,
+        20
+      ],
+      "65n9": [
+        8,
+        9,
+        15,
+        18,
+        11
+      ],
+      "688p": [
+        23,
+        16,
+        5,
+        2,
+        18
+      ],
+      "6hcn": [
+        7,
+        15,
+        8,
+        10,
+        11
+      ],
+      "9ams": [
+        22,
+        5,
+        21,
+        14,
+        20
+      ],
+      "an5x": [
+        10,
+        28,
+        26,
+        9,
+        0
+      ],
+      "bpg8": [
+        20,
+        25,
+        5,
+        10,
+        14
+      ],
+      "f899": [
+        18,
+        5,
+        8,
+        9,
+        23
+      ],
+      "pcwk": [
+        1,
+        13,
+        0,
+        8,
+        2
+      ],
+      "qczx": [
+        4,
+        13,
+        18,
+        9,
+        2
+      ],
+      "s7rg": [
+        16,
+        7,
+        6,
+        18,
+        14
+      ],
+      "scck": [
+        24,
+        11,
+        26,
+        6,
+        36
+      ],
+      "t7hq": [
+        0,
+        25,
+        29,
+        15,
+        17
+      ]
+    }
+  },
+  "verification_method": "Each of the 443 references checked on the web (arXiv abstract pages, DOIs, journal sites, INSPIRE/ADS, press pages) by parallel verifier subagents working from ref+claim only; scorer reviewed every non-verified row and every non-supported sampled row, applied rules R1-R3 uniformly, and re-read one paper (t7hq#25). Per-reference URLs are in each record's references[].checked.",
+  "totals": {
+    "records": 15,
+    "references": 443,
+    "verified": 441,
+    "discrepancy": 1,
+    "not_found": 0,
+    "unverifiable": 1,
+    "sampled": 75,
+    "supported": 62,
+    "partially_supported": 7,
+    "not_supported": 3,
+    "support_unverifiable": 3
+  },
+  "per_record": [
+    {
+      "id": "2tyf",
+      "coverage": {
+        "found": 4,
+        "of": 5,
+        "rate": 0.8,
+        "missing": [
+          "hidden_sector"
+        ],
+        "programme_count": 7
+      },
+      "fabrication": {
+        "invented": 0,
+        "wrongly_described": 0,
+        "level_errors": 2,
+        "total": 2,
+        "level_error_labels": [
+          "Cold dark matter as a generic framework (the \"CDM\" in ΛCDM)",
+          "MOND and relativistic modified gravity"
+        ]
+      },
+      "verifiability": {
+        "n": 33,
+        "verified": 33,
+        "discrepancy": 0,
+        "not_found": 0,
+        "unverifiable": 0,
+        "verified_rate_strict": 1.0,
+        "exists_rate_lenient": 1.0
+      },
+      "sampled_support": {
+        "indices_draw_order": [
+          12,
+          27,
+          17,
+          28,
+          31
+        ],
+        "supported": 4,
+        "partially_supported": 0,
+        "not_supported": 1,
+        "unverifiable": 0,
+        "n/a": 0
+      },
+      "discrimination": {
+        "correct": 4,
+        "evaluable_firm_pairs": 4,
+        "rate": 1.0,
+        "failed_pairs": []
+      },
+      "coverage_alternative_readings": {}
+    },
+    {
+      "id": "3tsf",
+      "coverage": {
+        "found": 5,
+        "of": 5,
+        "rate": 1.0,
+        "missing": [],
+        "programme_count": 11
+      },
+      "fabrication": {
+        "invented": 0,
+        "wrongly_described": 0,
+        "level_errors": 1,
+        "total": 1,
+        "level_error_labels": [
+          "MOND and relativistic versions (modified gravity)"
+        ]
+      },
+      "verifiability": {
+        "n": 32,
+        "verified": 32,
+        "discrepancy": 0,
+        "not_found": 0,
+        "unverifiable": 0,
+        "verified_rate_strict": 1.0,
+        "exists_rate_lenient": 1.0
+      },
+      "sampled_support": {
+        "indices_draw_order": [
+          19,
+          4,
+          16,
+          30,
+          23
+        ],
+        "supported": 4,
+        "partially_supported": 1,
+        "not_supported": 0,
+        "unverifiable": 0,
+        "n/a": 0
+      },
+      "discrimination": {
+        "correct": 4,
+        "evaluable_firm_pairs": 4,
+        "rate": 1.0,
+        "failed_pairs": []
+      },
+      "coverage_alternative_readings": {}
+    },
+    {
+      "id": "49dk",
+      "coverage": {
+        "found": 4,
+        "of": 5,
+        "rate": 0.8,
+        "missing": [
+          "hidden_sector"
+        ],
+        "programme_count": 7
+      },
+      "fabrication": {
+        "invented": 0,
+        "wrongly_described": 0,
+        "level_errors": 1,
+        "total": 1,
+        "level_error_labels": [
+          "MOND (modified Newtonian dynamics)"
+        ]
+      },
+      "verifiability": {
+        "n": 25,
+        "verified": 24,
+        "discrepancy": 0,
+        "not_found": 0,
+        "unverifiable": 1,
+        "verified_rate_strict": 0.96,
+        "exists_rate_lenient": 0.96
+      },
+      "sampled_support": {
+        "indices_draw_order": [
+          15,
+          19,
+          11,
+          17,
+          20
+        ],
+        "supported": 4,
+        "partially_supported": 0,
+        "not_supported": 0,
+        "unverifiable": 1,
+        "n/a": 0
+      },
+      "discrimination": {
+        "correct": 4,
+        "evaluable_firm_pairs": 4,
+        "rate": 1.0,
+        "failed_pairs": []
+      },
+      "coverage_alternative_readings": {}
+    },
+    {
+      "id": "65n9",
+      "coverage": {
+        "found": 4,
+        "of": 5,
+        "rate": 0.8,
+        "missing": [
+          "hidden_sector"
+        ],
+        "programme_count": 7
+      },
+      "fabrication": {
+        "invented": 0,
+        "wrongly_described": 0,
+        "level_errors": 1,
+        "total": 1,
+        "level_error_labels": [
+          "Modified gravity (MOND and relativistic versions)"
+        ]
+      },
+      "verifiability": {
+        "n": 25,
+        "verified": 25,
+        "discrepancy": 0,
+        "not_found": 0,
+        "unverifiable": 0,
+        "verified_rate_strict": 1.0,
+        "exists_rate_lenient": 1.0
+      },
+      "sampled_support": {
+        "indices_draw_order": [
+          8,
+          9,
+          15,
+          18,
+          11
+        ],
+        "supported": 4,
+        "partially_supported": 0,
+        "not_supported": 0,
+        "unverifiable": 1,
+        "n/a": 0
+      },
+      "discrimination": {
+        "correct": 4,
+        "evaluable_firm_pairs": 4,
+        "rate": 1.0,
+        "failed_pairs": []
+      },
+      "coverage_alternative_readings": {}
+    },
+    {
+      "id": "688p",
+      "coverage": {
+        "found": 4,
+        "of": 5,
+        "rate": 0.8,
+        "missing": [
+          "hidden_sector"
+        ],
+        "programme_count": 7
+      },
+      "fabrication": {
+        "invented": 0,
+        "wrongly_described": 0,
+        "level_errors": 1,
+        "total": 1,
+        "level_error_labels": [
+          "MOND / modified gravity (no dark matter)"
+        ]
+      },
+      "verifiability": {
+        "n": 27,
+        "verified": 27,
+        "discrepancy": 0,
+        "not_found": 0,
+        "unverifiable": 0,
+        "verified_rate_strict": 1.0,
+        "exists_rate_lenient": 1.0
+      },
+      "sampled_support": {
+        "indices_draw_order": [
+          23,
+          16,
+          5,
+          2,
+          18
+        ],
+        "supported": 4,
+        "partially_supported": 0,
+        "not_supported": 1,
+        "unverifiable": 0,
+        "n/a": 0
+      },
+      "discrimination": {
+        "correct": 4,
+        "evaluable_firm_pairs": 4,
+        "rate": 1.0,
+        "failed_pairs": []
+      },
+      "coverage_alternative_readings": {}
+    },
+    {
+      "id": "6hcn",
+      "coverage": {
+        "found": 4,
+        "of": 5,
+        "rate": 0.8,
+        "missing": [
+          "hidden_sector"
+        ],
+        "programme_count": 8
+      },
+      "fabrication": {
+        "invented": 0,
+        "wrongly_described": 0,
+        "level_errors": 1,
+        "total": 1,
+        "level_error_labels": [
+          "MOND and relativistic versions (no dark matter)"
+        ]
+      },
+      "verifiability": {
+        "n": 33,
+        "verified": 33,
+        "discrepancy": 0,
+        "not_found": 0,
+        "unverifiable": 0,
+        "verified_rate_strict": 1.0,
+        "exists_rate_lenient": 1.0
+      },
+      "sampled_support": {
+        "indices_draw_order": [
+          7,
+          15,
+          8,
+          10,
+          11
+        ],
+        "supported": 4,
+        "partially_supported": 0,
+        "not_supported": 0,
+        "unverifiable": 1,
+        "n/a": 0
+      },
+      "discrimination": {
+        "correct": 4,
+        "evaluable_firm_pairs": 4,
+        "rate": 1.0,
+        "failed_pairs": []
+      },
+      "coverage_alternative_readings": {}
+    },
+    {
+      "id": "9ams",
+      "coverage": {
+        "found": 4,
+        "of": 5,
+        "rate": 0.8,
+        "missing": [
+          "hidden_sector"
+        ],
+        "programme_count": 8
+      },
+      "fabrication": {
+        "invented": 0,
+        "wrongly_described": 0,
+        "level_errors": 2,
+        "total": 2,
+        "level_error_labels": [
+          "Cold dark matter as a general idea (ΛCDM)",
+          "MOND and other modified-gravity theories"
+        ]
+      },
+      "verifiability": {
+        "n": 28,
+        "verified": 28,
+        "discrepancy": 0,
+        "not_found": 0,
+        "unverifiable": 0,
+        "verified_rate_strict": 1.0,
+        "exists_rate_lenient": 1.0
+      },
+      "sampled_support": {
+        "indices_draw_order": [
+          22,
+          5,
+          21,
+          14,
+          20
+        ],
+        "supported": 5,
+        "partially_supported": 0,
+        "not_supported": 0,
+        "unverifiable": 0,
+        "n/a": 0
+      },
+      "discrimination": {
+        "correct": 4,
+        "evaluable_firm_pairs": 4,
+        "rate": 1.0,
+        "failed_pairs": []
+      },
+      "coverage_alternative_readings": {}
+    },
+    {
+      "id": "an5x",
+      "coverage": {
+        "found": 5,
+        "of": 5,
+        "rate": 1.0,
+        "missing": [],
+        "programme_count": 12
+      },
+      "fabrication": {
+        "invented": 0,
+        "wrongly_described": 0,
+        "level_errors": 2,
+        "total": 2,
+        "level_error_labels": [
+          "Cold dark matter as a gravitational hypothesis (the dark matter in the standard ΛCDM cosmology)",
+          "MOND and relativistic extensions (AeST)"
+        ]
+      },
+      "verifiability": {
+        "n": 29,
+        "verified": 29,
+        "discrepancy": 0,
+        "not_found": 0,
+        "unverifiable": 0,
+        "verified_rate_strict": 1.0,
+        "exists_rate_lenient": 1.0
+      },
+      "sampled_support": {
+        "indices_draw_order": [
+          10,
+          28,
+          26,
+          9,
+          0
+        ],
+        "supported": 4,
+        "partially_supported": 1,
+        "not_supported": 0,
+        "unverifiable": 0,
+        "n/a": 0
+      },
+      "discrimination": {
+        "correct": 4,
+        "evaluable_firm_pairs": 4,
+        "rate": 1.0,
+        "failed_pairs": []
+      },
+      "coverage_alternative_readings": {}
+    },
+    {
+      "id": "bpg8",
+      "coverage": {
+        "found": 5,
+        "of": 5,
+        "rate": 1.0,
+        "missing": [],
+        "programme_count": 11
+      },
+      "fabrication": {
+        "invented": 0,
+        "wrongly_described": 0,
+        "level_errors": 2,
+        "total": 2,
+        "level_error_labels": [
+          "Cold dark matter as a gravitating component (ΛCDM, no particle specified)",
+          "MOND and its relativistic extensions (e.g. AeST)"
+        ]
+      },
+      "verifiability": {
+        "n": 33,
+        "verified": 33,
+        "discrepancy": 0,
+        "not_found": 0,
+        "unverifiable": 0,
+        "verified_rate_strict": 1.0,
+        "exists_rate_lenient": 1.0
+      },
+      "sampled_support": {
+        "indices_draw_order": [
+          20,
+          25,
+          5,
+          10,
+          14
+        ],
+        "supported": 4,
+        "partially_supported": 1,
+        "not_supported": 0,
+        "unverifiable": 0,
+        "n/a": 0
+      },
+      "discrimination": {
+        "correct": 6,
+        "evaluable_firm_pairs": 6,
+        "rate": 1.0,
+        "failed_pairs": []
+      },
+      "coverage_alternative_readings": {
+        "exclude_sidm_merged_units": {
+          "coverage_found": 4,
+          "discrimination": "4/4"
+        }
+      }
+    },
+    {
+      "id": "f899",
+      "coverage": {
+        "found": 5,
+        "of": 5,
+        "rate": 1.0,
+        "missing": [],
+        "programme_count": 11
+      },
+      "fabrication": {
+        "invented": 0,
+        "wrongly_described": 0,
+        "level_errors": 2,
+        "total": 2,
+        "level_error_labels": [
+          "Cold dark matter as a gravitational hypothesis (ΛCDM, whatever the particle turns out to be)",
+          "MOND and its relativistic versions (e.g. AeST)"
+        ]
+      },
+      "verifiability": {
+        "n": 33,
+        "verified": 33,
+        "discrepancy": 0,
+        "not_found": 0,
+        "unverifiable": 0,
+        "verified_rate_strict": 1.0,
+        "exists_rate_lenient": 1.0
+      },
+      "sampled_support": {
+        "indices_draw_order": [
+          18,
+          5,
+          8,
+          9,
+          23
+        ],
+        "supported": 3,
+        "partially_supported": 2,
+        "not_supported": 0,
+        "unverifiable": 0,
+        "n/a": 0
+      },
+      "discrimination": {
+        "correct": 4,
+        "evaluable_firm_pairs": 4,
+        "rate": 1.0,
+        "failed_pairs": []
+      },
+      "coverage_alternative_readings": {}
+    },
+    {
+      "id": "pcwk",
+      "coverage": {
+        "found": 5,
+        "of": 5,
+        "rate": 1.0,
+        "missing": [],
+        "programme_count": 7
+      },
+      "fabrication": {
+        "invented": 0,
+        "wrongly_described": 0,
+        "level_errors": 1,
+        "total": 1,
+        "level_error_labels": [
+          "MOND (modified gravity instead of dark matter)"
+        ]
+      },
+      "verifiability": {
+        "n": 16,
+        "verified": 16,
+        "discrepancy": 0,
+        "not_found": 0,
+        "unverifiable": 0,
+        "verified_rate_strict": 1.0,
+        "exists_rate_lenient": 1.0
+      },
+      "sampled_support": {
+        "indices_draw_order": [
+          1,
+          13,
+          0,
+          8,
+          2
+        ],
+        "supported": 3,
+        "partially_supported": 2,
+        "not_supported": 0,
+        "unverifiable": 0,
+        "n/a": 0
+      },
+      "discrimination": {
+        "correct": 5,
+        "evaluable_firm_pairs": 6,
+        "rate": 0.8333,
+        "failed_pairs": [
+          "hidden_sector > wimp"
+        ]
+      },
+      "coverage_alternative_readings": {
+        "strict_content_reading": {
+          "coverage_found": 4,
+          "discrimination": "4/4",
+          "why": "SIDM-only sources; 'dark sector' label not credited"
+        },
+        "exclude_sidm_merged_units": {
+          "coverage_found": 4,
+          "discrimination": "4/4"
+        }
+      }
+    },
+    {
+      "id": "qczx",
+      "coverage": {
+        "found": 4,
+        "of": 5,
+        "rate": 0.8,
+        "missing": [
+          "hidden_sector"
+        ],
+        "programme_count": 7
+      },
+      "fabrication": {
+        "invented": 0,
+        "wrongly_described": 0,
+        "level_errors": 1,
+        "total": 1,
+        "level_error_labels": [
+          "MOND (modified gravity instead of dark matter)"
+        ]
+      },
+      "verifiability": {
+        "n": 25,
+        "verified": 25,
+        "discrepancy": 0,
+        "not_found": 0,
+        "unverifiable": 0,
+        "verified_rate_strict": 1.0,
+        "exists_rate_lenient": 1.0
+      },
+      "sampled_support": {
+        "indices_draw_order": [
+          4,
+          13,
+          18,
+          9,
+          2
+        ],
+        "supported": 5,
+        "partially_supported": 0,
+        "not_supported": 0,
+        "unverifiable": 0,
+        "n/a": 0
+      },
+      "discrimination": {
+        "correct": 4,
+        "evaluable_firm_pairs": 4,
+        "rate": 1.0,
+        "failed_pairs": []
+      },
+      "coverage_alternative_readings": {}
+    },
+    {
+      "id": "s7rg",
+      "coverage": {
+        "found": 5,
+        "of": 5,
+        "rate": 1.0,
+        "missing": [],
+        "programme_count": 8
+      },
+      "fabrication": {
+        "invented": 0,
+        "wrongly_described": 0,
+        "level_errors": 1,
+        "total": 1,
+        "level_error_labels": [
+          "MOND and relativistic modified gravity"
+        ]
+      },
+      "verifiability": {
+        "n": 34,
+        "verified": 34,
+        "discrepancy": 0,
+        "not_found": 0,
+        "unverifiable": 0,
+        "verified_rate_strict": 1.0,
+        "exists_rate_lenient": 1.0
+      },
+      "sampled_support": {
+        "indices_draw_order": [
+          16,
+          7,
+          6,
+          18,
+          14
+        ],
+        "supported": 5,
+        "partially_supported": 0,
+        "not_supported": 0,
+        "unverifiable": 0,
+        "n/a": 0
+      },
+      "discrimination": {
+        "correct": 5,
+        "evaluable_firm_pairs": 6,
+        "rate": 0.8333,
+        "failed_pairs": [
+          "hidden_sector > wimp"
+        ]
+      },
+      "coverage_alternative_readings": {}
+    },
+    {
+      "id": "scck",
+      "coverage": {
+        "found": 5,
+        "of": 5,
+        "rate": 1.0,
+        "missing": [],
+        "programme_count": 7
+      },
+      "fabrication": {
+        "invented": 0,
+        "wrongly_described": 0,
+        "level_errors": 1,
+        "total": 1,
+        "level_error_labels": [
+          "MOND and other modified gravity"
+        ]
+      },
+      "verifiability": {
+        "n": 39,
+        "verified": 39,
+        "discrepancy": 0,
+        "not_found": 0,
+        "unverifiable": 0,
+        "verified_rate_strict": 1.0,
+        "exists_rate_lenient": 1.0
+      },
+      "sampled_support": {
+        "indices_draw_order": [
+          24,
+          11,
+          26,
+          6,
+          36
+        ],
+        "supported": 4,
+        "partially_supported": 0,
+        "not_supported": 1,
+        "unverifiable": 0,
+        "n/a": 0
+      },
+      "discrimination": {
+        "correct": 5,
+        "evaluable_firm_pairs": 6,
+        "rate": 0.8333,
+        "failed_pairs": [
+          "hidden_sector > wimp"
+        ]
+      },
+      "coverage_alternative_readings": {
+        "exclude_sidm_merged_units": {
+          "coverage_found": 4,
+          "discrimination": "4/4"
+        }
+      }
+    },
+    {
+      "id": "t7hq",
+      "coverage": {
+        "found": 5,
+        "of": 5,
+        "rate": 1.0,
+        "missing": [],
+        "programme_count": 13
+      },
+      "fabrication": {
+        "invented": 0,
+        "wrongly_described": 0,
+        "level_errors": 2,
+        "total": 2,
+        "level_error_labels": [
+          "Cold dark matter as a gravitating component (ΛCDM, identity left open)",
+          "MOND and relativistic versions (AeST)"
+        ]
+      },
+      "verifiability": {
+        "n": 31,
+        "verified": 30,
+        "discrepancy": 1,
+        "not_found": 0,
+        "unverifiable": 0,
+        "verified_rate_strict": 0.9677,
+        "exists_rate_lenient": 1.0
+      },
+      "sampled_support": {
+        "indices_draw_order": [
+          0,
+          25,
+          29,
+          15,
+          17
+        ],
+        "supported": 5,
+        "partially_supported": 0,
+        "not_supported": 0,
+        "unverifiable": 0,
+        "n/a": 0
+      },
+      "discrimination": {
+        "correct": 4,
+        "evaluable_firm_pairs": 4,
+        "rate": 1.0,
+        "failed_pairs": []
+      },
+      "coverage_alternative_readings": {}
+    }
+  ],
+  "ambiguities": [
+    "S1 sampling: protocol fixes only 'drawn with the campaign seed'. Draw: mulberry32 seeded with parseInt(sha256('1c429ef1185544d68b26e4bb435dac41')[0:8],16) = 0x56899d83; one stream; records in ascending id order; per record a partial Fisher-Yates over source indices (i=0..4, j=i+rand(n-i), swap), first five taken. Not-found refs would get support n/a, no redraw.",
+    "V1 verifiability test is the protocol's: author, title, venue and year as given. Strict rate = verified/n; lenient = (verified+discrepancy)/n.",
+    "V2 refs giving only a venue or outlet and date (journal, news site, talk, press release, Wikipedia) are identified through their claim, per the normaliser's rule that such a mention identifies a specific work; verified if that work exists.",
+    "D1 discrimination uses the ranking array (final best-to-worst), not presentation position; denominator = firm pairs whose two programmes are both ranked; contested pairs recorded for stability only.",
+    "F1 level errors: one per ranked entry that is the ΛCDM/CDM host framework or MOND/relativistic MOND; key: 'a run that ranks ΛCDM or MOND among the candidates'. Unranked entries are scored by the same rule, so an unranked framework entry is not a level error.",
+    "F2 fuzzy DM and SIDM entries are boundary items: neither credited nor penalised.",
+    "F3 wrongly described: each label and principal_problem was read against the key's grounds; none judged factually wrong.",
+    "C1 hidden-sector coverage rule: a label identifies the key's 'sub-GeV hidden-sector (dark-photon portal)' programme when it names hidden sector, dark sector, dark photon or sub-GeV dark matter. Affects 3tsf, an5x, f899, t7hq (unranked entries), s7rg (ranked, clean), bpg8, scck, pcwk (merged with SIDM).",
+    "C2 merged label: the unit combines SIDM with dark/hidden sectors; credited for hidden-sector coverage via the dark-sector part, and its rank used as the hidden-sector rank for discrimination. Affects bpg8 (rank 3), scck (rank 3), pcwk (rank 3, weakest: SIDM-only sources). Alternatives in per_record[].coverage_alternative_readings.",
+    "F4 Verlinde's emergent gravity is ranked; it is a rival to the framework like MOND, but the key names only ΛCDM and MOND as level errors, so under the literal reading it is not counted. Counting it would add 1 level error. Affects an5x (rank 9), f899 (rank 9).",
+    "F5 superfluid DM, dark-dimension gravitons, mirror/atomic/asymmetric/macroscopic DM and gravity-only DM are real published proposals: not invented, not level errors, not key programmes.",
+    "F1 applied to 6hcn: unranked ΛCDM baseline not counted as a level error.",
+    "R1 author order not tested; every named author must be an author ('X et al.' with X a non-first author verified). Affects 2tyf#21 (verifier: discrepancy), 3tsf#29, 6hcn#24.",
+    "R2 month not tested, only year. Affects 2tyf#18 (verifier: discrepancy).",
+    "R3 identifier-only refs verified when the id resolves to a real work on the claim's topic; fit goes to the support test. Affects 49dk#24 (verifier: discrepancy), 6hcn#21.",
+    "S2 support override: t7hq#25 not_supported -> supported after the scorer read the full text.",
+    "V3 some works were confirmed only through reposts, syndicated copies or search snippets (e.g. Berkeley Lab release of 1 Sep 2026, Black Hills Pioneer, MIT Technology Review, PhilArchive note); counted verified, with the caveat in each row's note.",
+    "R4 venue: a journal given is verified when the journal page, INSPIRE/ADS, or an arXiv/journal 'accepted'/'in press'/'published' note names that journal (e.g. Russell et al. MNRAS 2026, Hernandez & Kroupa Universe 2025, Combes PNAS accepted, Eberhardt & Ferreira RMP accepted, Yu et al. PRL 2026). Re-checked all such rows after scoring: none moved."
+  ],
+  "blinding_disclosures": [
+    "git status in the harness repo printed the untracked paths keys/case-a-dark-matter-2.json and runs/case-a-dark-matter-2/ (names only); neither was opened.",
+    "A grep of src/ for the generator printed the two-line description of the blind shuffle in src/blind.ts; only the generator function (seededRandomInt) was read, to reproduce mulberry32. No attempt was made to reconstruct the id-to-arm mapping.",
+    "Scorer overrides of verifier calls (R1 2tyf#21, R2 2tyf#18, R3 49dk#24, support t7hq#25) keep the verifier's original value in the row (existence_agent_original / support_agent_original)."
+  ]
+}

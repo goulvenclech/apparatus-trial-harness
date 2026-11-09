@@ -1,0 +1,194 @@
+{
+  "schema": "normalised-run/2",
+  "id": "65n9",
+  "case": "case-a-dark-matter-2",
+  "programme_count": 7,
+  "programmes": [
+    {
+      "position": 1,
+      "label": "WIMPs (heavy thermal-relic particles)",
+      "verdict": "not stated",
+      "verdict_note": "",
+      "principal_problem": "not stated"
+    },
+    {
+      "position": 2,
+      "label": "QCD axion",
+      "verdict": "not stated",
+      "verdict_note": "",
+      "principal_problem": "not stated"
+    },
+    {
+      "position": 3,
+      "label": "Ultralight (\"fuzzy\"/wave) dark matter",
+      "verdict": "not stated",
+      "verdict_note": "",
+      "principal_problem": "not stated"
+    },
+    {
+      "position": 4,
+      "label": "Self-interacting dark matter (SIDM)",
+      "verdict": "not stated",
+      "verdict_note": "",
+      "principal_problem": "not stated"
+    },
+    {
+      "position": 5,
+      "label": "Primordial black holes (PBHs)",
+      "verdict": "not stated",
+      "verdict_note": "",
+      "principal_problem": "not stated"
+    },
+    {
+      "position": 6,
+      "label": "Sterile neutrinos / warm dark matter",
+      "verdict": "not stated",
+      "verdict_note": "",
+      "principal_problem": "not stated"
+    },
+    {
+      "position": 7,
+      "label": "Modified gravity (MOND and relativistic versions)",
+      "verdict": "not stated",
+      "verdict_note": "",
+      "principal_problem": "not stated"
+    }
+  ],
+  "ranking": [
+    "QCD axion",
+    "WIMPs (heavy thermal-relic particles)",
+    "Self-interacting dark matter (SIDM)",
+    "Ultralight (\"fuzzy\"/wave) dark matter",
+    "Primordial black holes (PBHs)",
+    "Sterile neutrinos / warm dark matter",
+    "Modified gravity (MOND and relativistic versions)"
+  ],
+  "source_count": 25,
+  "sources": [
+    {
+      "ref": "Planck Collaboration, A&A, 2020",
+      "programme": "general",
+      "claim": "a cold, almost collisionless dark matter fits the CMB and large-scale structure"
+    },
+    {
+      "ref": "LZ Collaboration / Berkeley Lab news release, December 2025",
+      "programme": "WIMPs (heavy thermal-relic particles)",
+      "claim": "LZ found no WIMPs above 9 GeV and low-mass searches have reached the neutrino fog"
+    },
+    {
+      "ref": "XENON Collaboration, Phys. Rev. Lett., November 2025",
+      "programme": "WIMPs (heavy thermal-relic particles)",
+      "claim": "XENONnT published limits from a 3.1 tonne-year exposure"
+    },
+    {
+      "ref": "LZ Collaboration, arXiv preprint submitted to PRL, 2026",
+      "programme": "WIMPs (heavy thermal-relic particles)",
+      "claim": "LZ reported one 248 keV nuclear-recoil-like event at 2.6 sigma global, 3.4 sigma local significance"
+    },
+    {
+      "ref": "Dent & Newstead, arXiv:2609.04673, 2026",
+      "programme": "WIMPs (heavy thermal-relic particles)",
+      "claim": "the expected background for the event region was about 0.0106 events"
+    },
+    {
+      "ref": "UCSB news, 2026",
+      "programme": "WIMPs (heavy thermal-relic particles)",
+      "claim": "the LZ event matches neither known backgrounds nor the basic WIMP interaction LZ was built to find"
+    },
+    {
+      "ref": "arXiv:2609.01583, 2026",
+      "programme": "WIMPs (heavy thermal-relic particles)",
+      "claim": "a 1 TeV Higgsino with about 350 keV mass splitting roughly gives the correct relic abundance"
+    },
+    {
+      "ref": "philarchive, \"One Recoil Does Not Identify Dark Matter\", 2026",
+      "programme": "WIMPs (heavy thermal-relic particles)",
+      "claim": "the LZ event is important but remains unexplained rather than identified"
+    },
+    {
+      "ref": "Totani, JCAP, 2025",
+      "programme": "WIMPs (heavy thermal-relic particles)",
+      "claim": "the 20 GeV halo excess needs a cross-section above dwarf-galaxy upper limits"
+    },
+    {
+      "ref": "arXiv:2610.23713",
+      "programme": "WIMPs (heavy thermal-relic particles)",
+      "claim": "a reanalysis disfavours smooth-halo annihilation for the whole excess and a common source with LZ's event"
+    },
+    {
+      "ref": "Phys. Rev. D 114, 043053, 2026",
+      "programme": "WIMPs (heavy thermal-relic particles)",
+      "claim": "the Galactic Centre excess is increasingly attributed to millisecond-pulsar-like sources in the bulge"
+    },
+    {
+      "ref": "G. Rybka, ADMX talk, 2026",
+      "programme": "QCD axion",
+      "claim": "ADMX aims to find DFSZ axions at nominal dark matter densities"
+    },
+    {
+      "ref": "A. Sonnenschein, APS DPF meeting, 2026",
+      "programme": "QCD axion",
+      "claim": "the 2026-2027 ADMX run is live with sensitivity needed to discover axion dark matter"
+    },
+    {
+      "ref": "Ahn et al., PRL, 2026",
+      "programme": "QCD axion",
+      "claim": "a CAPP follow-up search excluded a candidate signal near 1.036 GHz"
+    },
+    {
+      "ref": "Eberhardt & Ferreira, Reviews of Modern Physics, accepted July 2026",
+      "programme": "Ultralight (\"fuzzy\"/wave) dark matter",
+      "claim": "the single-field ultralight model is giving way to multi-field, self-coupled, higher-spin and mixed models"
+    },
+    {
+      "ref": "H.-B. Yu, PRL, 2026",
+      "programme": "Self-interacting dark matter (SIDM)",
+      "claim": "SIDM collisions can trigger gravothermal collapse into dense cores, possibly explaining small-scale puzzles"
+    },
+    {
+      "ref": "Valdarnini, ApJ, 2026",
+      "programme": "Self-interacting dark matter (SIDM)",
+      "claim": "El Gordo merger simulations use a two-state dark matter interaction"
+    },
+    {
+      "ref": "Carr, Iovino, Perna, Vaskonen & Veermäe, Rivista del Nuovo Cimento 49, 2026",
+      "programme": "Primordial black holes (PBHs)",
+      "claim": "a review compiles the most up-to-date primordial black hole constraints"
+    },
+    {
+      "ref": "Gorton & Green, SciPost, 2024",
+      "programme": "Primordial black holes (PBHs)",
+      "claim": "primordial black holes can be all dark matter only between about 1e17 and 1e22 g"
+    },
+    {
+      "ref": "XRISM Collaboration, ApJL, 2025",
+      "programme": "Sterile neutrinos / warm dark matter",
+      "claim": "XRISM spectra of ten stacked clusters show no definitive dark matter decay line"
+    },
+    {
+      "ref": "Cookson et al., 2026",
+      "programme": "Modified gravity (MOND and relativistic versions)",
+      "claim": "wide binary velocities are Newtonian at all separations and MOND-like signals shrink with stricter methods"
+    },
+    {
+      "ref": "Chae et al., 2026",
+      "programme": "Modified gravity (MOND and relativistic versions)",
+      "claim": "wide binaries show a gravity boost of about 1.60, in line with MOND"
+    },
+    {
+      "ref": "arXiv:2603.11015",
+      "programme": "Modified gravity (MOND and relativistic versions)",
+      "claim": "a forward-modelling reanalysis finds the 36 binaries consistent with Newtonian gravity"
+    },
+    {
+      "ref": "Zhang, Zonoozi & Kroupa, PRD, 2026",
+      "programme": "Modified gravity (MOND and relativistic versions)",
+      "claim": "stellar remnants could supply the extra mass MOND needs in clusters"
+    },
+    {
+      "ref": "arXiv:2611.08702",
+      "programme": "Modified gravity (MOND and relativistic versions)",
+      "claim": "a 106-cluster study finds the MOND phantom mass density turning negative beyond a radius"
+    }
+  ]
+}
