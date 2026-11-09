@@ -6,10 +6,18 @@ import { listRunFiles, readRunRecord } from "../src/archive.js";
 import { loadConfig } from "../src/config.js";
 import { sha256HexOfFile } from "../src/hash.js";
 
-const CASE_DOC = "docs/cases/case-A-dark-matter-prompts.md";
-
-// One config per campaign; archived campaigns' prompts are never rebuilt in place.
-const CAMPAIGN_CONFIGS = ["config.json", "config.case-a-dark-matter-2.json"];
+// Archived campaigns' prompts are never rebuilt in place.
+const CAMPAIGNS = [
+  { config: "config.json", caseDoc: "docs/cases/case-A-dark-matter-prompts.md" },
+  {
+    config: "config.case-a-dark-matter-2.json",
+    caseDoc: "docs/cases/case-A-dark-matter-prompts.md",
+  },
+  {
+    config: "config.case-b-americas.json",
+    caseDoc: "docs/cases/case-B-peopling-of-the-americas-prompts.md",
+  },
+];
 
 // Keeps the trailing newline the prompt files carry.
 function fencedBlockAfter(markdown: string, heading: string): string {
@@ -35,12 +43,9 @@ async function readPrompts(configPath: string) {
   return { core, armB, armC };
 }
 
-describe.each(CAMPAIGN_CONFIGS)("frozen prompts of %s", (configPath) => {
+describe.each(CAMPAIGNS)("frozen prompts of $config", ({ config: configPath, caseDoc }) => {
   it("keeps arm A identical to the task core published in the case doc", async () => {
-    const [{ core }, doc] = await Promise.all([
-      readPrompts(configPath),
-      readFile(CASE_DOC, "utf8"),
-    ]);
+    const [{ core }, doc] = await Promise.all([readPrompts(configPath), readFile(caseDoc, "utf8")]);
     expect(core).toBe(fencedBlockAfter(doc, "## Task core"));
   });
 

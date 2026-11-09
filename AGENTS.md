@@ -7,7 +7,7 @@ apparatus-trial-harness is a TypeScript CLI harness for a controlled A/B/C promp
 ```sh
 npm run harness              # perform the missing runs of the campaign (costs money — see guardrails)
 npm run harness -- --help    # CLI usage; --config <path> picks the campaign (default config.json)
-npm run arm-c -- <SKILL.md>  # swap in a skill version and rebuild the current campaign's arm-c.txt (pre-freeze only)
+npm run arm-c -- --config <path> [SKILL.md]  # rebuild a campaign's arm-c.txt, swapping in a skill version first (pre-freeze only)
 npm run blind                # export a finished campaign's final answers for blind normalisation (--config too)
 npm run check                # tsc + oxlint + oxfmt --check + vitest (run before committing)
 npm test                     # unit tests only — never makes live API calls
