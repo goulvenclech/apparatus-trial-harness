@@ -1,6 +1,13 @@
 import { readFile } from "node:fs/promises";
 import { describe, expect, it } from "vitest";
-import { ARM_C_TRIGGER, assembleArmC, skillBody } from "../src/arm-c.js";
+import {
+  ARM_C_PATH,
+  ARM_C_TRIGGER,
+  PACKAGED_SKILL_PATH,
+  TASK_CORE_PATH,
+  assembleArmC,
+  skillBody,
+} from "../src/arm-c.js";
 
 const SKILL = '---\nname: "skill"\ndescription: "Use it."\n---\n\n# Skill\n\nBody.';
 
@@ -19,11 +26,11 @@ describe("assembleArmC", () => {
     expect(() => skillBody("# Skill\n\nBody.")).toThrow(/frontmatter/);
   });
 
-  it("reproduces the committed prompts/arm-c.txt byte for byte", async () => {
+  it("reproduces the current campaign's arm-c.txt byte for byte", async () => {
     const [core, skill, armC] = await Promise.all([
-      readFile("prompts/arm-a.txt", "utf8"),
-      readFile("docs/skill/epistemological-apparatus/SKILL.md", "utf8"),
-      readFile("prompts/arm-c.txt", "utf8"),
+      readFile(TASK_CORE_PATH, "utf8"),
+      readFile(PACKAGED_SKILL_PATH, "utf8"),
+      readFile(ARM_C_PATH, "utf8"),
     ]);
     expect(assembleArmC(core, skill)).toBe(armC);
   });

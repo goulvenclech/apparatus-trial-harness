@@ -10,8 +10,9 @@ TypeScript (strict, ESM) on the official [`@anthropic-ai/sdk`](https://www.npmjs
 
 | Path | Description |
 | --- | --- |
-| [`config.json`](./config.json) | Experiment parameters — frozen before the first run |
-| [`prompts/`](./prompts) | System template and the three arm prompts, sent verbatim |
+| [`config.json`](./config.json) | Experiment parameters of the first campaign — frozen before its first run |
+| `config.<campaign>.json` | One config per later campaign, run with `--config` |
+| [`prompts/`](./prompts) | System template and the three arm prompts, sent verbatim — the first campaign's at the root, later ones in `prompts/<campaign>/` |
 | `runs/<campaign>/` | Archived raw responses plus `index.jsonl` — the data, committed |
 | `blind/<campaign>/` | The final answer of each run under an opaque id, written by `npm run blind` — all the normaliser gets |
 | `normalised/<campaign>/` | One record per run in a fixed schema, under an opaque id — what the blind scoring pass reads |

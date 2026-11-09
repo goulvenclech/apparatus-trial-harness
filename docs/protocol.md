@@ -38,7 +38,7 @@ The API runs are the measurement. The product runs check that the result carries
 
 Per case, 3 arms × 5 API runs, plus 3 runs each of B and C in the product.
 
-API runs. Pinned model id (never an alias), the id the API reports archived per run. `max_uses` identical across arms and above what any arm consumes, counter logged (the pilot saturated at 8 of 8). Default temperature, since the variance is part of the measurement. Fixed `user_location` and campaign date. Full JSON archived, tool-use blocks included, since the queries show how each arm worked. B's scaffolding and the SKILL.md body for C sit at the same position in the user message, so arm C tests the skill's content. Triggering is checked on the first product run.
+API runs. Pinned model id (never an alias), the id the API reports archived per run. `max_uses` identical across arms and above what any arm consumes, counter logged (the pilot saturated at 8 of 8). Default temperature, since the variance is part of the measurement. Fixed `user_location` and campaign date. Prompt caching on, which changes the bill and not the output. A turn the server pauses (`pause_turn`) is continued with the same request and the paused responses, up to ten times. `max_tokens` 64,000, far above any observed run, and a turn cut by it or still paused after the last continuation is archived and marked incomplete. Full JSON archived, tool-use blocks included, since the queries show how each arm worked. B's scaffolding and the SKILL.md body for C sit at the same position in the user message, so arm C tests the skill's content. Triggering is checked on the first product run.
 
 Product runs. Incognito, memory off, skill removed from the account, research mode on, a fresh conversation each time. If the B→C gap vanishes or reverses there, research mode already does part of the apparatus's work.
 
@@ -69,17 +69,24 @@ Blind, per run, from `normalised/` only.
 - *Fabrication*. Programmes invented or wrongly described.
 - *Discrimination*. Pairs correctly ordered, over the intersection with the answer key.
 
-After unblinding, with the per-run scores fixed. Group by arm, compute the rates, the A→B and B→C gaps (discrimination with its per-pair breakdown) and stability. Ordering stability is the share of the arm's runs following the majority order of each answer-key pair, averaged over pairs. Verdict stability is the share of runs giving the modal verdict of each answer-key programme, averaged over programmes. Report the lowest pair and programme next to each mean.
+After unblinding, with the per-run scores fixed. Group by arm, compute the rates, the A→B and B→C gaps (discrimination with its per-pair breakdown) and stability. Ordering stability is the share of the arm's runs following the majority order of each answer-key pair, averaged over pairs. Verdict stability is the share of runs giving the modal verdict of each answer-key programme, averaged over programmes. Each share is taken over the runs that rank both programmes of the pair, or give the programme a verdict. A pair or programme counts only when at least 3 of the arm's 5 runs do so; below that it is reported as « insufficient data » and left out of the mean. Report the lowest pair and programme next to each mean.
 
 ## Thresholds
 
-Per arm. An arm below any of them is reported but left out of the comparison. The article's claim needs C above all four and ahead of B on discrimination. A tie between B and C is reported as one.
+Per arm. An arm below any of them is reported but left out of the comparison. The article's claim needs C at or above all four and ahead of B on discrimination. A tie between B and C is reported as one.
 
 - Ordering stability ≥ 0.80.
 - Verdict stability ≥ 0.80.
 - Verifiable sources ≥ 0.95.
 - Coverage ≥ 0.80.
 
-Calibrated on the pilot (ordering 1.00 for A and B, 0.87 for C, verdicts 0.87 for B and C, sources 0.98 to 1.00, coverage 1.00). Chance on ordering is near 0.69 with five runs. With three key pairs, ordering takes only seven values, so the next key should individuate five or six programmes.
+Calibrated on the pilot (ordering 1.00 for A and B, 0.87 for C, verdicts 0.87 for B and C, sources 0.98 to 1.00, coverage 1.00). At full support, chance on ordering is near 0.69 with five runs, and with three key pairs ordering takes only seven values, so the next key should individuate five or six programmes.
 
 The trial cannot separate the effect of splitting the assessment into axes from the effect of these particular axes. They count as one contribution.
+
+## Campaigns
+
+Each campaign has its own config and prompt set. Earlier ones stay as archived.
+
+- `case-a-dark-matter` (`config.json`, `prompts/`). The skill as packaged on 8 November 2026 (commit f3b16d1, its body verbatim in `prompts/arm-c.txt`). The minimum-support stability rule and the « at or above » reading of the thresholds were fixed after this campaign was unblinded; its figures of record use them, with the earlier readings kept in `scores/case-a-dark-matter/unblinded.md`.
+- `case-a-dark-matter-2` (`config.case-a-dark-matter-2.json`, `prompts/case-a-dark-matter-2/`). Same model, settings and campaign date, with the revised skill. In the first campaign C ran fewer web searches than A and B (20–30 against 31–37 and 30–45), with fewer follow-up rounds. No arm searched for rivals beyond the familiar candidates, the closest being generic « candidates review » queries. C missed the hidden-sector programme in all five runs. The revision keeps conciseness to the write-up, asks for a survey of the field when no artefact is under review, and makes axis 5 a search for rivals.

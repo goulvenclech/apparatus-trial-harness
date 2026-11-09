@@ -1,0 +1,21 @@
+{
+  "campaign": "case-a-dark-matter-2",
+  "promptsDir": "prompts/case-a-dark-matter-2",
+  "model": "claude-opus-5-5",
+  "campaignDate": "2026-11-08",
+  "runsPerArm": 5,
+  "maxTokens": 64000,
+  "maxUses": 50,
+  "maxContinuations": 10,
+  "delayMs": 5000,
+  "userLocation": {
+    "type": "approximate",
+    "city": "Paris",
+    "country": "FR",
+    "timezone": "Europe/Paris"
+  },
+  "webSearchToolType": "web_search_20260318",
+  "effort": "high",
+  "promptCaching": true,
+  "blockedDomains": ["github.com/goulvenclech", "raw.githubusercontent.com/goulvenclech", "goulven-clech.dev"]
+}

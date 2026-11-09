@@ -2,6 +2,11 @@
 // (docs/protocol.md, "Harness").
 export const ARM_C_TRIGGER = "Apply the epistemological apparatus.";
 
+// The prompt set under preparation: earlier campaigns keep their own, frozen.
+export const PACKAGED_SKILL_PATH = "docs/skill/epistemological-apparatus/SKILL.md";
+export const TASK_CORE_PATH = "prompts/case-a-dark-matter-2/arm-a.txt";
+export const ARM_C_PATH = "prompts/case-a-dark-matter-2/arm-c.txt";
+
 const FRONTMATTER = /^---\n[\s\S]*?\n---\n/;
 
 // The frontmatter is skill packaging (name, triggering description), not

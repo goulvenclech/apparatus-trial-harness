@@ -135,7 +135,7 @@ async function warnOnInstrumentDrift(
   }
   const drift: string[] = [];
   if (typeof metadata["config_hash"] === "string" && metadata["config_hash"] !== current.config) {
-    drift.push("config.json");
+    drift.push("the config");
   }
   const promptHashes = metadata["prompt_hashes"];
   if (typeof promptHashes === "object" && promptHashes !== null) {

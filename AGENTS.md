@@ -6,9 +6,9 @@ apparatus-trial-harness is a TypeScript CLI harness for a controlled A/B/C promp
 
 ```sh
 npm run harness              # perform the missing runs of the campaign (costs money — see guardrails)
-npm run harness -- --help    # CLI usage
-npm run arm-c -- <SKILL.md>  # swap in a skill version and rebuild prompts/arm-c.txt (pre-freeze only)
-npm run blind                # export a finished campaign's final answers for blind normalisation
+npm run harness -- --help    # CLI usage; --config <path> picks the campaign (default config.json)
+npm run arm-c -- <SKILL.md>  # swap in a skill version and rebuild the current campaign's arm-c.txt (pre-freeze only)
+npm run blind                # export a finished campaign's final answers for blind normalisation (--config too)
 npm run check                # tsc + oxlint + oxfmt --check + vitest (run before committing)
 npm test                     # unit tests only — never makes live API calls
 npm run fmt                  # format src/ and tests/ only; frozen inputs are excluded
@@ -28,7 +28,7 @@ npm run lint                 # oxlint
 - Do not add external dependencies without justification. Prefer the standard library and existing utilities.
 - Match the current project structure, naming, and style; do not create parallel patterns and avoid duplication.
 - All code, comments, documentation, commit messages, and user-facing output must be in English.
-- Never edit the frozen inputs — `prompts/`, `docs/`, and `config.json` once frozen — and never touch anything under `runs/`: raw bytes are hashed, and the archived runs are the experiment's primary data.
+- Never edit the frozen inputs — a campaign's prompt set and config once frozen, `docs/cases/`, and `docs/protocol.md` unless the owner asks; `docs/skill/` changes only through `npm run arm-c` for a new campaign — and never touch anything under `runs/`: raw bytes are hashed, and the archived runs are the experiment's primary data.
 - Never run the formatter outside `src/` and `tests/`; `.oxfmtrc.json` ignores the frozen paths — keep it that way.
 - The harness only collects and archives: do not add scoring, analysis, or summarisation code — that happens elsewhere, blind.
 - Tests must never make live API calls; response parsing is pinned against the recorded fixtures in `tests/fixtures/`.
